@@ -35,6 +35,8 @@ regular reels from the mack-fitz/clips repo. X and TikTok setups are not touched
 - **Every IG account gets its own version.** If a reel has also gone out on @moremackygolfs (or
   the other trial account), make sure cuts and cover differ from those versions. Never skip a reel
   for being a duplicate: re-edit it.
+- **Assignment is random, never by length or anything else.** When picking today's reels, shuffle
+  and assign by coin flip.
 - **Order: each account pulls randomly on its own.** B is NOT staggered behind A. Each day pick
   B's reels at random from everything in /Golf Captions not yet used on B (same for A). The only
   rule: never post the same reel on both accounts on the same day.
