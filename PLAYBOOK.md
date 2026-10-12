@@ -17,7 +17,8 @@ regular reels from the mack-fitz/clips repo. X and TikTok setups are not touched
 - **Source:** Dropbox `/Golf Captions`, captioned reels
   only. Pull in random order. Relay via `inbox/want.txt` (names only), files land in
   `inbox/videos/`. Track in `state/trials.json` (secret DROPBOX_FOLDER_URL holds the folder link; per reel: Dropbox ID, A version + date + post ID,
-  B version + date + post ID, opening style, views/shares/saves/watch time when available).
+  B version + date + post ID, opening style, A `cover_words` (the words on the cover, "" for none),
+  views/shares/saves/watch time when available).
 - **NO burned-in text on any A or B video.** Render with `tools/render.sh src segs.json "" "" out.mp4`
   (empty hooks = nothing drawn). Don't add hook text, subtitles, captions or labels to
   the picture. Mack's own captions already in the video stay as they are. (Cover words on A's
@@ -49,6 +50,14 @@ regular reels from the mack-fitz/clips repo. X and TikTok setups are not touched
   no hashtags or links.
 - **Weekly review:** compare A vs B and the two B openings; say which trials graduated.
 
+### Dashboards
+- A (@mackygolfs): "Mackygolfs Trials" https://claude.ai/artifact/UjxPU7xShmePKLoJhjQFwc
+- B (@mackthegolfer): "Mackthegolfer Trials" https://claude.ai/artifact/UsvudPUSVtCX3yPFqj4Knc
+Stats and followers are live Zernio queries scoped to each profile_id (nothing to refresh). Two file
+datasets per dashboard need refreshing by the daily run: `trials` (trial log: cover test for A,
+opening test for B, built from state/trials.json) and `upnext` (scheduled trial reels, time in MT).
+Build them with `tools/dash_trials.py` (see its header).
+
 ### Trial pipeline (daily task "Golf trial reels daily run")
 1. List `/Golf Captions`; new = file IDs not in state/trials.json. Relay a few at a time (only what
    the next 3 days need, plus 2 spare) via `inbox/want.txt`; wait for "Fetch inbox videos";
@@ -62,7 +71,16 @@ regular reels from the mack-fitz/clips repo. X and TikTok setups are not touched
 4. Schedule: keep 3 days of slots filled on each account, each picking its own random reels
    (never the same reel on both accounts the same day). posts_create_post with the account's exact ID and trialParams. Record in
    state/trials.json.
-5. Fix it yourself rules apply. Then message Mack in the same short format as the main run.
+5. Refresh both dashboards' trial file datasets (after scheduling and recording in state/trials.json):
+   for each account (A → UjxPU7xShmePKLoJhjQFwc, B → UsvudPUSVtCX3yPFqj4Knc):
+   - `python3 tools/dash_trials.py trials A /tmp/dash/a/trials.json` (B likewise).
+   - Zernio posts_list_posts with that account's profile_id (limit 50, sort_by "scheduled-asc"),
+     save the raw answer to a file, then `python3 tools/dash_trials.py upnext A <answer file> /tmp/dash/a/upnext.json`.
+   - Upload each JSON as an asset to that dashboard (Artifact publish, `url` = the dashboard, `asset: true`).
+   - ArtifactData: `get` datasets/trials and datasets/upnext, then `update` each (pinned with
+     if_version) with `source.url` = the new `/_blob/<id>` url, `source.name`, and
+     `updated: {at: <ISO now>, by: "Claude"}`. Don't touch the posts/followers queries or the page.
+6. Fix it yourself rules apply. Then message Mack in the same short format as the main run.
 
 ## Editing rules (B edits, and A re-edits)
 - Open on the attention moment if there is one (e.g. the shirt wipe) and keep it,
