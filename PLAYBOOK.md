@@ -125,3 +125,25 @@ Mack should never have to tell you to circle back. Every run, before messaging h
 **Macky To Do** (https://claude.ai/artifact/NkJnRhgLLfSWz1XXfHbQ79): every run, ArtifactData `update` this account's doc in collection `queues` with `days_left` (number), `detail` (one plain line: what is left and the pace) and `updated` ("Mon D"). Sundays: add 2-3 new docs to `ideas` (fields order, title, where, effort, what, why) that fit Mack's masc/dry/silly vibe. Doc id(s) for this repo: trials-mackygolfs and trials-mackthegolfer.
 
 Base Camp schedule (same page): every run, ArtifactData `set` collection `schedule`, doc id(s) mackygolfs and mackthegolfer, to `{items: [{date: "YYYY-MM-DD" (Mountain), time: "HH:MM" 24h Mountain, caption, where?}]}` covering today and tomorrow for that account. The page is now named "Base Camp".
+
+## Duplicate check (MANDATORY before scheduling any trial)
+Instagram buries reposts. Golf Captions overlaps heavily with what Mack has ALREADY posted himself
+(Oct 12: the "lag masta", "Bomb City", "blue ball", "mama didn't raise" and "wet or dry" reels were all
+already on @mackthegolfer; "new shirt" and "absolutely brutal" were already on @mackygolfs).
+1. Pull the target account's full post history: analytics_get_analytics(profile_id, source "all",
+   limit 100, paginate) -> each post's caption + videoDurationSeconds. Also pull the other
+   golf accounts (@moremackygolfs, the other trial account) for the last 7 days.
+2. A reel is a LIKELY DUPLICATE if its length is within 3 s of a post on that account AND the
+   content matches (same course/outfit/story/line: read your contact sheet and Mack's caption
+   on that post), or the caption plainly describes the same moment.
+3. Likely duplicate on the SAME account: never post it as-is, and don't post a light re-edit
+   either. Use it only inside a genuinely new edit (see compilations below), or skip it.
+4. Same footage on any other account in the last 7 days: skip it for now.
+5. Log every check in state/trials.json (`dup_check`: matched post date + caption, or "clear").
+
+## @mackthegolfer source problem + compilations
+Most Golf Captions reels are already on @mackthegolfer. Until Mack adds footage he hasn't posted
+there, B's trials should be NEW EDITS built from several reels: e.g. "every bad chip from this
+week", "best reactions", "worst lies", a 60-90 s supercut with one through-line, opening on the
+strongest moment. A compilation is a new video, not a repost. Still no burned-in text, no shirt
+wipe, clean for brand deals.
