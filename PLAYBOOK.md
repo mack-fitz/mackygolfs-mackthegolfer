@@ -44,8 +44,8 @@ regular reels from the mack-fitz/clips repo. X and TikTok setups are not touched
   B offset by ~45 min). Raise to 4-5 a day only if reach holds and no Account Status warnings.
   Stay under 10 a day.
 - **Posting:** Zernio posts_create_post, instagram, platformSpecificData
-  `{"trialParams": {"graduationStrategy": "SS_PERFORMANCE"}}` (Instagram auto-shares strong
-  trials to followers), `instagramThumbnail` for the cover. Captions: same dumb lowercase voice,
+  `{"trialParams": {"graduationStrategy": "MANUAL"}}` (NEVER auto-share: Mack shares
+  trials to followers himself. Never use SS_PERFORMANCE.), `instagramThumbnail` for the cover. Captions: same dumb lowercase voice,
   no hashtags or links.
 - **Weekly review:** compare A vs B and the two B openings; say which trials graduated.
 
