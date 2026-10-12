@@ -16,7 +16,7 @@ regular reels from the mack-fitz/clips repo. X and TikTok setups are not touched
 
 - **Source:** Dropbox `/Golf Captions`, captioned reels
   only. Pull in random order. Relay via `inbox/want.txt` (names only), files land in
-  `inbox/videos/`. Track in `state/trials.json` (secret DROPBOX_TRIALS_URL holds the folder link; per reel: Dropbox ID, A version + date + post ID,
+  `inbox/videos/`. Track in `state/trials.json` (secret DROPBOX_FOLDER_URL holds the folder link; per reel: Dropbox ID, A version + date + post ID,
   B version + date + post ID, opening style, views/shares/saves/watch time when available).
 - **NO burned-in text on any A or B video.** Render with `tools/render.sh src segs.json "" "" out.mp4`
   (empty hooks = nothing drawn). Don't add hook text, subtitles, captions or labels to
