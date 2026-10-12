@@ -9,7 +9,9 @@
     "version": "original",
     "posted": "2026-10-12 09:00 MT",
     "caption": "par 4. took 11. no notes",
-    "zernio": "6accf62120f35c897946a37e"
+    "zernio": "6accf62120f35c897946a37e",
+    "cover_words": "",
+    "cover_note": "published before the custom-cover rule; cover was a swing frame, not the shirt wipe"
    }
   },
   "id:etyjxrk_8sAAAAAAAAAE3Q": {
@@ -23,6 +25,62 @@
     "posted": "2026-10-12 09:01 MT",
     "caption": "lock in your guess before the putt",
     "zernio": "6accf63281bff2930339a085"
+   }
+  },
+  "id:etyjxrk_8sAAAAAAAAAE4w": {
+   "name": "Video Oct 11 2026, 9 02 57 AM (2).mp4",
+   "slug": "003_new-shirt-four-putt",
+   "A": {
+    "file": "inbox/videos/Video Oct 11 2026, 9 02 57 AM (2).mp4",
+    "version": "original",
+    "posted": "2026-10-12 13:22 MT",
+    "caption": "new shirt. same four putt",
+    "zernio": "6accfd5ce1d0494ec8318906",
+    "cover": "trials/003_new-shirt-four-putt_a_cover.jpg",
+    "cover_frame": "shirt wipe @0.4s",
+    "cover_words": "FOUR PUTT"
+   }
+  },
+  "id:etyjxrk_8sAAAAAAAAAE4Q": {
+   "name": "Video Oct 12 2026, 12 03 20 AM.mov",
+   "slug": "004_double-is-par-in-texas",
+   "A": {
+    "file": "inbox/videos/Video Oct 12 2026, 12 03 20 AM.mp4",
+    "version": "original",
+    "posted": "2026-10-12 18:51 MT",
+    "caption": "a double is basically par in texas",
+    "zernio": "6accfd64e1d0494ec8318920",
+    "cover": "trials/004_double-is-par-in-texas_a_cover.jpg",
+    "cover_frame": "shirt wipe @0.4s",
+    "cover_words": ""
+   }
+  },
+  "id:etyjxrk_8sAAAAAAAAAE6Q": {
+   "name": "Video Oct 12 2026, 7 33 50 AM.mov",
+   "slug": "005_guess-my-handicap-par-5",
+   "A": {
+    "file": "inbox/videos/Video Oct 12 2026, 7 33 50 AM.mov",
+    "version": "original",
+    "posted": "2026-10-13 10:07 MT",
+    "caption": "guess my handicap off this par 5",
+    "zernio": "6accfd65e394d8722477be57",
+    "cover": "trials/005_guess-my-handicap-par-5_a_cover.jpg",
+    "cover_frame": "shirt wipe @0.4s",
+    "cover_words": "GUESS MY HANDICAP"
+   }
+  },
+  "id:etyjxrk_8sAAAAAAAAAE3A": {
+   "name": "Video Oct 12 2026, 12 14 03 AM.mov",
+   "slug": "006_hole-in-one-loading",
+   "A": {
+    "file": "inbox/videos/Video Oct 12 2026, 12 14 03 AM.mp4",
+    "version": "original",
+    "posted": "2026-10-13 13:38 MT",
+    "caption": "hole in one loading",
+    "zernio": "6accfd67f587a09a885807c6",
+    "cover": "trials/006_hole-in-one-loading_a_cover.jpg",
+    "cover_frame": "shirt wipe @0.4s",
+    "cover_words": ""
    }
   }
  }
