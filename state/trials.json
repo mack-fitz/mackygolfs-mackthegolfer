@@ -81,6 +81,25 @@
     "cover": "trials/006_hole-in-one-loading_a_cover.jpg",
     "cover_frame": "shirt wipe @0.4s",
     "cover_words": ""
+   },
+   "B": {
+    "file": "trials/006_hole-in-one-loading_b.mp4",
+    "version": "clean edit",
+    "opening": "teaser (putt) then talk",
+    "scheduled": "2026-10-12 14:05 MT",
+    "caption": "said hole in one. close enough",
+    "zernio": "6acd0780563d17836c8b56d4"
+   }
+  },
+  "id:etyjxrk_8sAAAAAAAAAE7g": {
+   "name": "Video Oct 12 2026, 7 16 02 AM.mov",
+   "B": {
+    "file": "trials/007_found-the-trees_b.mp4",
+    "version": "clean edit",
+    "opening": "talk first",
+    "scheduled": "2026-10-12 19:35 MT",
+    "caption": "wide open fairway. found the trees anyway",
+    "zernio": "6acd0992a2dfc732ed1bb5ca"
    }
   }
  }
