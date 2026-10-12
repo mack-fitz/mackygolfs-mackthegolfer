@@ -141,9 +141,20 @@ already on @mackthegolfer; "new shirt" and "absolutely brutal" were already on @
 4. Same footage on any other account in the last 7 days: skip it for now.
 5. Log every check in state/trials.json (`dup_check`: matched post date + caption, or "clear").
 
-## @mackthegolfer source problem + compilations
-Most Golf Captions reels are already on @mackthegolfer. Until Mack adds footage he hasn't posted
-there, B's trials should be NEW EDITS built from several reels: e.g. "every bad chip from this
-week", "best reactions", "worst lies", a 60-90 s supercut with one through-line, opening on the
-strongest moment. A compilation is a new video, not a repost. Still no burned-in text, no shirt
-wipe, clean for brand deals.
+## What to post (Mack's rules, Oct 12)
+- NO compilations for now.
+- PRIORITY 1: UNUSED reels (never posted on any of Mack's accounts: check @mackygolfs and
+  @mackthegolfer full history per the duplicate check). Most unused reels go to @mackygolfs
+  (as originals, shirt wipe first), but give @mackthegolfer some too (about 1 in 3 unused reels).
+  An unused reel can go to both accounts on different days.
+- Unused footage NEVER goes to @moremackygolfs.
+- Only once unused reels run out: already-posted reels, following the duplicate rules above
+  (never on the account that already posted it).
+- @mackthegolfer edits must be CLEARLY DIFFERENT from the original, not just the wipe trimmed:
+  new opening (cold open on the payoff or best reaction), restructured order where the story
+  allows, 25-40% of the runtime cut (dead time, walking, setup, repeats), punch-ins on 3+
+  moments, a different end beat, a different cover. Before posting, compare your edit to the
+  original side by side (contact sheets): if a viewer would recognize it as the same video in
+  the first 3 seconds, re-edit.
+- The unused "putting with a driver" video (golfclips 010_wrong-clubs, find it in Golf Captions
+  by content/length ~99.5 s) was pulled from @moremackygolfs: use it on the trials.
