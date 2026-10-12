@@ -20,9 +20,12 @@ regular reels from the mack-fitz/clips repo. X and TikTok setups are not touched
   B version + date + post ID, opening style, views/shares/saves/watch time when available).
 - **NO burned-in text on any A or B video.** Render with `tools/render.sh src segs.json "" "" out.mp4`
   (empty hooks = nothing drawn). Don't add hook text, subtitles, captions or labels to
-  the picture. Mack's own captions already in the video stay as they are. Covers: strongest frame,
-  no text.
-- **A (@mackygolfs):** post the original, unedited, opening on the shirt wipe ALWAYS. If the reel
+  the picture. Mack's own captions already in the video stay as they are. (Cover words on A's
+  cover image are allowed for the cover test; that's the cover, not the video.)
+- **A (@mackygolfs):** post the original, unedited, opening on the shirt wipe ALWAYS.
+  **A's cover is ALWAYS a shirt-wipe frame.** Test cover words: alternate covers with 1-3 blunt
+  words (big, inside the center square) and covers with no words; record `cover_words` per reel
+  in state/trials.json and compare views weekly, then lean toward the winner (keep testing ~1 in 4). If the reel
   looks like it was already posted on A (compare against A's existing reels), make a different edit
   for A instead: new cut points and punch-ins, still opening on the shirt wipe.
 - **B (@mackthegolfer):** its own clean edit. NEVER the shirt wipe. Open either on the first spoken
@@ -53,7 +56,7 @@ regular reels from the mack-fitz/clips repo. X and TikTok setups are not touched
    length. If it can't be checked, treat the reel as new for A.
 3. Make the versions: A = original (scale 1080x1920, ~4.5 Mbps, shirt wipe first) or, if already
    on A, a different edit that still opens on the wipe. B = clean edit, no wipe (opening per rules).
-   Covers: plain strongest frame, no text. Save to trials/NNN_slug_{a,b}.mp4 + _{a,b}_cover.jpg.
+   Covers: A = shirt-wipe frame (words on/off per the test); B = plain strongest frame, no text, never the wipe. Save to trials/NNN_slug_{a,b}.mp4 + _{a,b}_cover.jpg.
 4. Schedule: keep 3 days of slots filled on each account, each picking its own random reels
    (never the same reel on both accounts the same day). posts_create_post with the account's exact ID and trialParams. Record in
    state/trials.json.
