@@ -41,7 +41,7 @@ regular reels from the mack-fitz/clips repo. X and TikTok setups are not touched
 - **Order: each account pulls randomly on its own.** B is NOT staggered behind A. Each day pick
   B's reels at random from everything in /Golf Captions not yet used on B (same for A). The only
   rule: never post the same reel on both accounts on the same day.
-- **Pace:** start at 3 trial reels a day per account (A ~9:30-10:30am, 1-2pm, 6:30-7:30pm MT;
+- **Pace:** start at 3 trial reels a day per account (A ~7:30-8:00am, 1-2pm, 6:30-7:30pm MT; mornings early to catch the East Coast;
   B offset by ~45 min). Raise to 4-5 a day only if reach holds and no Account Status warnings.
   Stay under 10 a day.
 - **Posting:** Zernio posts_create_post, instagram, platformSpecificData
