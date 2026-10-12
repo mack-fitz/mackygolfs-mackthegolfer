@@ -120,3 +120,6 @@ Mack should never have to tell you to circle back. Every run, before messaging h
 - In the message, report fixes as done ("Thursday 8pm was empty — filled it with X"), not as
   questions. Only ask Mack for things you truly can't do.
 
+
+## Macky To Do page
+**Macky To Do** (https://claude.ai/artifact/NkJnRhgLLfSWz1XXfHbQ79): every run, ArtifactData `update` this account's doc in collection `queues` with `days_left` (number), `detail` (one plain line: what is left and the pace) and `updated` ("Mon D"). Sundays: add 2-3 new docs to `ideas` (fields order, title, where, effort, what, why) that fit Mack's masc/dry/silly vibe. Doc id(s) for this repo: trials-mackygolfs and trials-mackthegolfer.
