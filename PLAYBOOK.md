@@ -32,7 +32,9 @@ regular reels from the mack-fitz/clips repo. X and TikTok setups are not touched
 - **Every IG account gets its own version.** If a reel has also gone out on @moremackygolfs (or
   the other trial account), make sure cuts and cover differ from those versions. Never skip a reel
   for being a duplicate: re-edit it.
-- **Timing:** post a reel to A first; B's version goes up 2-4 days later, never the same day.
+- **Order: each account pulls randomly on its own.** B is NOT staggered behind A. Each day pick
+  B's reels at random from everything in /Golf Captions not yet used on B (same for A). The only
+  rule: never post the same reel on both accounts on the same day.
 - **Pace:** start at 3 trial reels a day per account (A ~9:30-10:30am, 1-2pm, 6:30-7:30pm MT;
   B offset by ~45 min). Raise to 4-5 a day only if reach holds and no Account Status warnings.
   Stay under 10 a day.
@@ -52,8 +54,8 @@ regular reels from the mack-fitz/clips repo. X and TikTok setups are not touched
 3. Make the versions: A = original (scale 1080x1920, ~4.5 Mbps, shirt wipe first) or, if already
    on A, a different edit that still opens on the wipe. B = clean edit, no wipe (opening per rules).
    Covers: plain strongest frame, no text. Save to trials/NNN_slug_{a,b}.mp4 + _{a,b}_cover.jpg.
-4. Schedule: keep 3 days of slots filled on each account (A now, B 2-4 days after that reel's A
-   post). posts_create_post with the account's exact ID and trialParams. Record in
+4. Schedule: keep 3 days of slots filled on each account, each picking its own random reels
+   (never the same reel on both accounts the same day). posts_create_post with the account's exact ID and trialParams. Record in
    state/trials.json.
 5. Fix it yourself rules apply. Then message Mack in the same short format as the main run.
 

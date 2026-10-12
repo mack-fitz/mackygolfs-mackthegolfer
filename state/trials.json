@@ -1,1 +1,29 @@
-{"note":"Trial reels for @mackygolfs (A) and @mackthegolfer (B). Keyed by Dropbox file ID.","reels":{}}
+{
+ "note": "Trial reels for @mackygolfs (A) and @mackthegolfer (B). Keyed by Dropbox file ID.",
+ "reels": {
+  "id:etyjxrk_8sAAAAAAAAAE2w": {
+   "name": "Video Oct 12 2026, 12 00 30 AM.mov",
+   "slug": "001_eleven-on-a-par-4",
+   "A": {
+    "file": "trials/001_eleven-on-a-par-4_a.mp4",
+    "version": "original",
+    "posted": "2026-10-12 09:00 MT",
+    "caption": "par 4. took 11. no notes",
+    "zernio": "6accf62120f35c897946a37e"
+   }
+  },
+  "id:etyjxrk_8sAAAAAAAAAE3Q": {
+   "name": "Video Oct 12 2026, 12 05 56 AM.mov",
+   "slug": "002_guess-my-score",
+   "note": "same video as @moremackygolfs clip 003 (guess my score); B cut and cover differ",
+   "B": {
+    "file": "trials/002_guess-my-score_b.mp4",
+    "version": "clean edit",
+    "opening": "teaser (putt celebration) then talk",
+    "posted": "2026-10-12 09:01 MT",
+    "caption": "lock in your guess before the putt",
+    "zernio": "6accf63281bff2930339a085"
+   }
+  }
+ }
+}
