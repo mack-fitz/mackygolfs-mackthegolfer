@@ -40,5 +40,22 @@ it's never my fault
 - 7 19 40 AM.mov 74.3–77 "there's really nothing worse than having a perfect drive and then being shit the rest of the time"
 - copy_2CC073A6 (beach day) 18.3 "I hit it better when there was a child target around"
 
-## Round 2 — IN PROGRESS (compilation job, started 2026-10-13 20:15Z)
-Mack: first clip + cactus clip good; cut the altitude clip off at "Texas"; find other clips; cactus first; cover text "what's keeping me from being a pro golfer"; caption "it's out of my control".
+## Round 2 (Oct 13) — Mack's notes applied
+Mack: "First clip and cactus clip were good. Cut the altitude clip off at Texas. Find other clips. First clip should be the cactus. Cover text say 'what's keeping me from being a pro golfer'. Caption - it's out of my control"
+- Kept: cactus (now FIRST) and the slice ("f*cking dumping"). Altitude bit now ends on "…and right now I'm in Texas" (cut in the 80 ms gap before "so I really").
+- Replaced: water hazard and "eleven is my lucky number" bits → 3 new excuses: neon yellow ball, child target, lack of bathrooms.
+- Caption → **it's out of my control**. Cover text → **what's keeping me / from being a / pro golfer** (4 new options).
+- Video: `compilations/comp3_excuses.mp4` (replaced) — 33.7 s, 1080x1920 30 fps, H.264 High crf 17 slow, AAC 192k, one encode from the true originals (`tools/render_comp.py`, bits in `comp3_r2_bits.json`). Loudness −15.9 LUFS, peak −1.5 dBFS.
+- Outfits: pinstripe (cactus) → blue polo → pinstripe → white polo/camo hat → green stripe → dark olive. No same shirt back to back.
+- Not reused from comp 1/2/4 (comp4's 7 17 58 bit ends at 37.34 s, her scene cut at 37.40 starts this altitude bit; comp4's 7 30 44 bit is 119.3–127.5, this uses 84.6–95.9 and 135.2–142.6).
+
+| # | out (s) | source (originals) | source in–out (s) | excuse |
+|---|---|---|---|---|
+| 1 | 0.00–9.83 | Video Oct 12 2026, 7 30 44 AM.mov | 84.600–90.300 (punch-in) + 91.767–95.900 | "or maybe the distances are just getting to my head because I had that traumatic event with a cactus" → swing → "right in to the sun" |
+| 2 | 9.83–15.43 | Video Oct 12 2026, 12 00 30 AM.mov | 15.133–20.733 (punch-in from 17.167) | slice → "I did not have a good grip on that, it is f*cking dumping" |
+| 3 | 15.43–20.52 | Video Oct 12 2026, 12 14 03 AM.mov | 49.995–55.080 (picture from her scene cut at 50.033) | "think I've really got to stop playing with a neon yellow ball when the grass is so bright green" |
+| 4 | 20.52–23.67 | Video Oct 12 2026, 7 17 58 AM.mov | 37.400–40.550 | "I just remembered I normally golf at altitude, and right now I'm in Texas" |
+| 5 | 23.67–26.20 | copy_2CC073A6 (beach day) | 18.250–20.780 | "I hit it better when there was a child target around" |
+| 6 | 26.20–33.70 | Video Oct 12 2026, 7 30 44 AM.mov | 135.160–140.500 + 140.500–142.580 (punch-in) | "so I really have to pee, and that's one of my issues with the sport of golf, it's the lack of bathrooms, but I guess that's what I get for joining a male dominated field" |
+
+Covers (round 2): `comp3_excuses_r2_cover_opt1.jpg` grimace on "f*cking dumping" red · `_opt2` neon yellow ball purple · `_opt3` golf-cart altitude face orange · `_opt4` wince blue.
