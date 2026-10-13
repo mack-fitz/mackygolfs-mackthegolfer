@@ -43,3 +43,14 @@ Inbox file `Video Oct 12 2026, 12 17 30 AM.mov` / `12 22 39 AM.mov` are original
   3. `comp1_cover_opt3.jpg` — comp @ 28.00 s, exasperated selfie on "f*ck the texas wedge" (bit 7)
   4. `comp1_cover_opt4.jpg` — comp @ 37.17 s, pointing at camera, "you are my enemy" (bit 10)
   5. `comp1_cover_opt5.jpg` — comp @ 35.17 s, glare into camera, "if any of you guessed higher than par" (bit 10)
+
+## Full-quality rebuild (Oct 13) — sources swapped to Mack's true originals, edit unchanged
+- Bits 1, 2, 5, 7, 8, 10 were cut from clips/queue/*_full.mp4 (~4–6 Mbps re-encodes). Now cut from the byte-exact Dropbox /golfclips originals (sha256 verified against relay .sha256 / Dropbox size):
+  - 007_ugly-bounce → IMG_6391.MP4 (H.264, 8.5 Mbps; relayed in clips@654e995)
+  - 002_beach-day → copy_2CC073A6-0417-450E-A364-BDCE638A2D66.MOV (HEVC, 11.2 Mbps; clips@f36a504)
+  - 016_help-my-swing → copy_A526847D-927A-4E66-BA6A-83EF27833CEC.MOV (HEVC, 11.1 Mbps; clips@654e995)
+  - 003_guess-my-score → copy_0B6BFBE5-2F81-487A-9544-B2C587E0EE74.MOV (HEVC, 11.2 Mbps, slight VFR; clips@f36a504)
+  - Bits 3, 4, 6, 9 unchanged (inbox .mov originals rejoined, 10.7 Mbps).
+- Alignment: every comp frame matched to its source frame (54x96 gray MSE, full + 1.15 punch-in candidates); originals share the _full timeline exactly (0-frame offset, audio x-corr offsets identical), so in/out times above stand. Frame-exact source windows used (first/last source frame per bit; punch-in switches at src 21.40 s in bit 1 and 34.367 s in bit 6).
+- Audio: same per-bit gains (fitted to the old mix, corr 0.996–0.9999 per bit), alimiter, loudnorm 2-pass linear → −16.0 LUFS, TP −5.0, LRA 4.2 (old: −15.97 / −4.98 / 4.20). Whole mix sits 3 ms earlier than the old file (inaudible).
+- Check vs previous file: 1149/1149 frames, per-frame MSE max 1.65 (encode noise only); contact sheets identical. New file: 1080x1920, 30 fps, H.264 High crf 17 slow, 12.9 Mbps, AAC 192k, +faststart, 38.32 s. Covers unchanged.
