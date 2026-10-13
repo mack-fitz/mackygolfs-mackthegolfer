@@ -315,15 +315,15 @@
     "source": "inbox/videos/Video Oct 12 2026, 7 19 40 AM.mov (true original, rejoined parts, sha256 verified, 9.5 Mbps)",
     "version": "re-edit of already-posted footage (A's daily re-edit slot)",
     "scheduled": "2026-10-14 07:36 MT (planned; Zernio DRAFT until Mack approves)",
-    "caption": "before you say this isn’t a bomb watch my other drives",
+    "caption": "before you say this isn't a bomb watch my other drives",
     "zernio": "6ace5b4b474ae2fdc610b1c0",
     "media_pinned": "ab7119c",
     "cover": "trials/021_bomb-city-short_a_cover.jpg (shirt wipe @0.4s)",
     "cover_frame": "shirt wipe @0.4s",
     "cover_words": "Macky vs. Bomb City",
     "cover_style": "pill orange",
-    "length_test": "mid (~52s: every shot kept per Mack's note)",
-    "duration": 51.9,
+    "length_test": "long (was short; every shot kept per Mack Oct 13)",
+    "duration": 79.2,
     "source_posted_on": "@mackthegolfer Oct 7 2026 (Mack's own 74s Bomb City TX reel)",
     "dup_check": "not on @mackygolfs; on B Oct 7 (7 days); not on @moremackygolfs; not on B's Oct 13-14 trials",
     "diff_check": "87.8s -> 51.9s: shirt wipe + bomb city line, drive with tracer, approach + 'little short but absolutely perfect', 'nice and easy', chip with tracer + 'too nice a little too easy', par putt ('this is for par', 'break in'), 'nothing worse than a perfect drive...' (kept), bogey putt through picking the ball out. Only cut: cart talk + practice swings/waiting (14-46s), walking gaps. 4 alternating punch-ins.",
@@ -333,7 +333,7 @@
      "status": "waiting (round 2)"
     },
     "source_bitrate": "9.5 Mbps",
-    "round2": "Mack round 1 note: 'You can't cut out shots EVER' + new caption. Round 1 had dropped the chip and the par putt; round 2 keeps every shot."
+    "round2": "Oct 13: Mack's notes 'You can't cut out shots EVER' + new caption. Re-cut from trials/015_bomb-city_a.mp4 keeping every shot (drive, approach, chip, par putt, bogey putt) and all talk; only dead air/practice-swing waiting trimmed; still opens on the shirt wipe; 3 punch-ins on selfie bits; cover unchanged."
    }
   },
   "id:etyjxrk_8sAAAAAAAAAE5w": {
@@ -357,11 +357,11 @@
     "segs": "trials/020_lag-master-blue-ball_b_segs.json",
     "version": "re-edit of already-posted footage",
     "scheduled": "2026-10-14 19:15 MT (planned; Zernio DRAFT until Mack approves)",
-    "caption": "they call me the lag master (nobody calls me that)",
+    "caption": "and that is why she’s blue boys",
     "zernio": "6acdc607f81e5c13dbb77bf1",
     "cover": "trials/020_lag-master-blue-ball_b_cover.jpg (4th-shot tracer @49.6s, no text)",
     "length_test": "long",
-    "duration": 62.2,
+    "duration": 81.2,
     "source_posted_on": "@mackthegolfer Oct 8 2026 (Mack's own 95s reel 'that's why she's blue boys')",
     "dup_check": "already posted by Mack on @mackthegolfer Oct 8 (95s) - allowed as a heavy re-edit under the Oct 13 rules; A's Oct 15 post of this footage deleted, so not on A within 3 days; not on @moremackygolfs",
     "diff_check": "97.5s -> 62.2s (36% cut); re-cut Oct 13 per Mack: opens on Mack talking (payoff cold open removed); swearing put back ('holy shit couldn't have been more perfect', 'pured the hell out of that'); dead air/walking/waiting cut plus the first tap-in attempt (repeat line); 9 alternating punch-ins; ends on the tweener tap-in instead of the selfie 'not my best hole'; cover = 4th-shot tracer (no text); side-by-side contact sheets checked",
@@ -371,8 +371,9 @@
     "media_pinned": "f6d7f70 (Zernio media updated Oct 13, caption/time/MANUAL unchanged)",
     "approval": {
      "review_doc": "2026-10-14_B_pm",
-     "status": "waiting"
-    }
+     "status": "waiting (round 3)"
+    },
+    "round3": "Oct 13: never-cut-shots check found the 2nd putt (~69s) and the 3rd putt/first tap-in attempt (~84.4s) cut; re-cut with both putts + talk restored, full backswings on drive/3rd shot, lag putt roll kept; still opens on 'glad I got your attention', swearing kept; single crf17 pass maxrate 9M (94 MB)."
    }
   },
   "id:etyjxrk_8sAAAAAAAAAE5Q": {
@@ -399,7 +400,8 @@
     "approval": {
      "review_doc": "2026-10-14_B_am",
      "status": "waiting"
-    }
+    },
+    "shot_check_oct13": "2nd putt (~23.1s source) is cut from the approved/scheduled version; left as Mack approved it, flagged to her."
    }
   },
   "id:etyjxrk_8sAAAAAAAAAE7A": {
@@ -417,12 +419,13 @@
     "diff_check": "35.2s -> 25.1s (29% cut); re-cut Oct 13 per Mack: opens on Mack talking (teaser removed); wipe cut; ball-flight hang time, walking and waiting cut; 3 alternating punch-ins (2nd talk line, approach, long putt); ends on the tap-in instead of the walk-off; cover = drive tracer (no text); side-by-side contact sheets checked",
     "previous_zernio": "6acd98f634c5533d413a9593 (was Oct 14 19:18, deleted)",
     "length_test": "short",
-    "duration": 25.1,
+    "duration": 32.0,
     "source_posted_on": "@mackygolfs Oct 2 2026 (Mack's own 35s reel 'I have broken 100 once but it is starting to feel like a fluke'); thumbnail verified (dark patterned shirt, cart)",
     "quality": "from the original .mov, single encode libx264 -crf 17 -preset slow, 1080x1920 30fps, AAC 192k 48 kHz",
     "opening": "talk-first",
     "opening_detail": "opens on Mack's first line after the wipe: 'I wanna consistently be breaking 100' (source 1.3s)",
-    "media_pinned": "f6d7f70 (Zernio media updated Oct 13, caption/time/MANUAL unchanged)"
+    "media_pinned": "f6d7f70 (Zernio media updated Oct 13, caption/time/MANUAL unchanged)",
+    "fix_oct13": "never-cut-shots check: the long putt (~21.5s) and the final tap-in (~34.7s) were cut; re-cut with both restored (32.0s). Not swapped into Zernio yet - needs Mack's approval."
    }
   },
   "clips:002_beach-day": {
