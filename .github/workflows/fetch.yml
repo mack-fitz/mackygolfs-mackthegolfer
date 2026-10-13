@@ -43,14 +43,14 @@ jobs:
             done < inbox/links.txt
           fi
           rm -f inbox/links.txt
-          sudo apt-get -qq update >/dev/null 2>&1 || true
-          sudo apt-get -qq install -y ffmpeg >/dev/null 2>&1 || true
+          # Quality rule (Oct 13): never re-encode here. Files over 95 MB are split byte-for-byte
+          # into <name>.part00, .part01 ... (rejoin with cat; the sha256 is in <name>.sha256).
           for f in inbox/videos/*; do
             [ -f "$f" ] || continue
             size=$(stat -c %s "$f")
             if [ "$size" -gt 95000000 ]; then
-              out="${f%.*}.mp4"; [ "$out" = "$f" ] && out="${f%.*}_s.mp4"
-              ffmpeg -nostdin -v error -y -i "$f" -c:v libx264 -preset fast -b:v 4M -maxrate 5M -bufsize 8M -c:a aac -b:a 160k "$out"
+              sha256sum "$f" | cut -d' ' -f1 > "$f.sha256"
+              split -b 90000000 -d -a 2 "$f" "$f.part"
               rm -f "$f"
             fi
           done
