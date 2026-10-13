@@ -64,11 +64,12 @@
     "version": "original",
     "posted": null,
     "caption": "guess my handicap off this par 5",
-    "zernio": "6accfd65e394d8722477be57",
+    "zernio": null,
     "cover": "trials/005_guess-my-handicap-par-5_a_cover.jpg",
     "cover_frame": "shirt wipe @0.4s",
     "cover_words": "GUESS MY HANDICAP",
-    "status": "deleted Oct 12 (duplicate of a post already on @mackygolfs); never published"
+    "status": "deleted Oct 12 (duplicate of a post already on @mackygolfs); never published",
+    "deleted_zernio": "6accfd65e394d8722477be57"
    }
   },
   "id:etyjxrk_8sAAAAAAAAAE3A": {
