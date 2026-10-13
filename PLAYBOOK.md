@@ -179,3 +179,4 @@ Mostly use style 1, some style 2, rarely 3. Words fit the specific video (the ho
 - @mackthegolfer (B), for now (until Mack says otherwise): ONLY re-edits of footage Mack has ALREADY POSTED herself (on @mackygolfs/@mackthegolfer, or via @moremackygolfs/X/TikTok). Never never-posted footage on B. Each re-edit must be clearly different from every existing version (restructure, 25–40% cut, 3+ alternating punch-ins, different open/end/cover; side-by-side check). Don't reuse B's own earlier trials.
 - Never the same footage on both accounts within 3 days.
 - Schedule only today and tomorrow.
+- NEVER cut swearing or profanity out of any edit (Mack, Oct 13). Keep her words as she said them; cuts are only for pacing/structure, at quiet gaps.
