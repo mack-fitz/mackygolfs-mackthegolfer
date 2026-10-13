@@ -158,3 +158,12 @@ already on @mackthegolfer; "new shirt" and "absolutely brutal" were already on @
   the first 3 seconds, re-edit.
 - The unused "putting with a driver" video (golfclips 010_wrong-clubs, find it in Golf Captions
   by content/length ~99.5 s) was pulled from @moremackygolfs: use it on the trials.
+
+## Length test (Mack, Oct 13)
+Each day, of each account's 2 trial reels, one must be SHORTER and one LONGER, so Mack can compare.
+- Shorter = under ~35 s; longer = over ~60 s (A: pick never-posted originals that naturally fall in each range; B: pick source videos and edits that land in each range — still 25–40% cut from the original).
+- Alternate which slot (morning/evening) gets the short one day to day. Log `length_test: "short"|"long"` and the final duration on each entry in state/trials.json, and report short-vs-long views/skip rate in the daily message.
+- This is a deliberate test; it does not change the rule that videos are otherwise picked at random within each length range.
+
+## Cover text style (Mack, Oct 13)
+Cover words should match the style of the covers on Mack's own @mackygolfs main grid. If `covers/grid-reference.*` exists in this repo, Read it and copy that style (wording, length, placement, font look) for every cover that has words. Until it exists, keep 1–3 blunt words.
