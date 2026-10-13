@@ -34,3 +34,12 @@ Inbox file `Video Oct 12 2026, 12 17 30 AM.mov` / `12 22 39 AM.mov` are original
 - Video Oct 12 2026, 12 22 39 AM.mov 4.7–6.3 "i know i'm gonna be pissed with this yellow box"; 159.0–161.3 "and f*ck that marshall"
 - Video Oct 12 2026, 7 17 58 AM.mov 14.3–19.7 "anybody who guesses above one looks like an absolute asshole"; 88.7–92.3 "the motherf*cking lag master"
 - Video Oct 12 2026, 12 17 30 AM.mov 165.3–169.8 "have to get this in or... somebody's in big trouble"
+
+## Round 2 (Oct 13) — Mack: "Give me more cover photo options. The text is fine. Change caption to: why do I like this sport"
+- Caption → **why do I like this sport**
+- Cover options (same red box/text pasted pixel-exact from option 1; frames taken from the compilation itself):
+  1. `comp1_playing-with-me_cover.jpg` — "another stupid bounce" (original)
+  2. `comp1_cover_opt2.jpg` — comp @ 5.97 s, snarl on "that f*cking bounce" (bit 1)
+  3. `comp1_cover_opt3.jpg` — comp @ 28.00 s, exasperated selfie on "f*ck the texas wedge" (bit 7)
+  4. `comp1_cover_opt4.jpg` — comp @ 37.17 s, pointing at camera, "you are my enemy" (bit 10)
+  5. `comp1_cover_opt5.jpg` — comp @ 35.17 s, glare into camera, "if any of you guessed higher than par" (bit 10)
