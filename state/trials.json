@@ -312,26 +312,28 @@
    "A_reedit": {
     "file": "trials/021_bomb-city-short_a.mp4",
     "segs": "trials/021_bomb-city-short_a_segs.json",
-    "source": "trials/015_bomb-city_a.mp4",
+    "source": "inbox/videos/Video Oct 12 2026, 7 19 40 AM.mov (true original, rejoined parts, sha256 verified, 9.5 Mbps)",
     "version": "re-edit of already-posted footage (A's daily re-edit slot)",
     "scheduled": "2026-10-14 07:36 MT (planned; Zernio DRAFT until Mack approves)",
-    "caption": "perfect drive into a bogey. welcome to bomb city",
+    "caption": "before you say this isn’t a bomb watch my other drives",
     "zernio": "6ace5b4b474ae2fdc610b1c0",
     "media_pinned": "ab7119c",
     "cover": "trials/021_bomb-city-short_a_cover.jpg (shirt wipe @0.4s)",
     "cover_frame": "shirt wipe @0.4s",
     "cover_words": "Macky vs. Bomb City",
     "cover_style": "pill orange",
-    "length_test": "short",
-    "duration": 33.9,
+    "length_test": "mid (~52s: every shot kept per Mack's note)",
+    "duration": 51.9,
     "source_posted_on": "@mackthegolfer Oct 7 2026 (Mack's own 74s Bomb City TX reel)",
     "dup_check": "not on @mackygolfs; on B Oct 7 (7 days); not on @moremackygolfs; not on B's Oct 13-14 trials",
-    "diff_check": "87.8s -> 33.9s (61% cut): shirt wipe + bomb city line, drive with tracer, approach + 'little short but absolutely perfect', 'nothing worse than a perfect drive and then being shit the rest of the time' (kept), bogey putt ending on the arm raise; 3 alternating punch-ins; Mack's B version was 74s",
+    "diff_check": "87.8s -> 51.9s: shirt wipe + bomb city line, drive with tracer, approach + 'little short but absolutely perfect', 'nice and easy', chip with tracer + 'too nice a little too easy', par putt ('this is for par', 'break in'), 'nothing worse than a perfect drive...' (kept), bogey putt through picking the ball out. Only cut: cart talk + practice swings/waiting (14-46s), walking gaps. 4 alternating punch-ins.",
     "quality": "single encode libx264 -crf 17 -preset slow from the 1080x1920 A file",
     "approval": {
      "review_doc": "2026-10-14_A_am",
-     "status": "waiting"
-    }
+     "status": "waiting (round 2)"
+    },
+    "source_bitrate": "9.5 Mbps",
+    "round2": "Mack round 1 note: 'You can't cut out shots EVER' + new caption. Round 1 had dropped the chip and the par putt; round 2 keeps every shot."
    }
   },
   "id:etyjxrk_8sAAAAAAAAAE5w": {
