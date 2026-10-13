@@ -40,5 +40,13 @@ confidence is free
 - Video Oct 12 2026, 12 17 30 AM.mov 9.3–33 "it's literally such a straight shot" → "I'm about as straight as it gets / that was a joke by the way"
 - 013_cliff-par-5_full 22.7 "just gotta get this up and over this bunker" → 29.7 "truly terrible"
 
-## Round 2 — IN PROGRESS (:47 review check, started 2026-10-13 19:05Z)
-Mack: bit 2 cut off at "pretty" instead of "pretty close"; the other bits aren't about being delusional — try new clips.
+## Round 2 (Oct 13) — Mack: "On the second clip (orange checkered shirt) you cut off at the word 'pretty' instead of 'pretty close'. None of the other clips have to do with being delusional. Try new clips."
+- `comp2_delusional.mp4` re-cut: 43.4 s, 3 bits, 1080x1920 30 fps crf 17 preset slow, AAC 192k, -15.9 LUFS (per-bit gain -3.3 / +12.5 / -3.4 dB, limiter, linear 2-pass loudnorm). True originals only (10.5 / 7.7 / 10.8 Mbps). Old bits 1, 3, 4 dropped.
+| # | out (s) | source (inbox/videos originals) | source in–out (s) | framing | line → result |
+|---|---|---|---|---|---|
+| 1 | 0.00–15.80 | Video Oct 12 2026, 12 05 56 AM.mov | 101.70–107.60 + 119.40–126.70 + 128.70–131.30 | full, punch-in on the last part | "it's fortunate that I'm one of the best putters that this galaxy has ever seen, so actually won't be a problem" → the whole putt → "didn't get all the way there" → "honestly not bad / if we're being honest not bad" (cut: "but it is shocking", "you're about to see…", walking) |
+| 2 | 15.80–29.30 | Video Oct 11 2026, 9 02 57 AM (3).mp4 | 30.75–44.25 (one continuous take) | punch-in to 38.85, then full | "we could actually be alright here / I'm normally pretty good with a pitching wedge / should be able to get us pretty close / and then hopefully just a little bump and roll" → pitch (tracer) → "no f*cking way". Now runs through "pretty close" (nothing cut inside the bit). |
+| 3 | 29.30–43.32 | Video Oct 12 2026, 12 03 20 AM.mov | 107.60–114.30 + 116.30–123.62 | full, punch-in on the second part | wedge-like-a-putter shot (tracer) → "wow whoever told me to hit my little wedges like a putter" → "but that felt so much better than usual / it noticeably is not on the green / but nevertheless it felt good / and that's half of golf is the stroke feeling good" (cut: "I don't actually know if I did that") |
+- Outfits alternate (green polo / orange checker / green polo). No shirt wipes, no added text, swearing kept, every shot whole.
+- Covers: opt2 (her pick, pitching-wedge frame, blue) still valid; new opt4 = galaxy-putter face (12 05 56 @105.0), orange #F7931E; opt5 = "half of golf is the stroke feeling good" smile (12 03 20 @122.6), red #E8101A. Same title box as before.
+- Spacing note: bit 2 is the putter/driver footage that posts on @mackygolfs Oct 14 6:45pm (010 A). Post comp2 on @mackthegolfer Oct 17 or later (3-day rule).
