@@ -54,3 +54,7 @@ Inbox file `Video Oct 12 2026, 12 17 30 AM.mov` / `12 22 39 AM.mov` are original
 - Alignment: every comp frame matched to its source frame (54x96 gray MSE, full + 1.15 punch-in candidates); originals share the _full timeline exactly (0-frame offset, audio x-corr offsets identical), so in/out times above stand. Frame-exact source windows used (first/last source frame per bit; punch-in switches at src 21.40 s in bit 1 and 34.367 s in bit 6).
 - Audio: same per-bit gains (fitted to the old mix, corr 0.996–0.9999 per bit), alimiter, loudnorm 2-pass linear → −16.0 LUFS, TP −5.0, LRA 4.2 (old: −15.97 / −4.98 / 4.20). Whole mix sits 3 ms earlier than the old file (inaudible).
 - Check vs previous file: 1149/1149 frames, per-frame MSE max 1.65 (encode noise only); contact sheets identical. New file: 1080x1920, 30 fps, H.264 High crf 17 slow, 12.9 Mbps, AAC 192k, +faststart, 38.32 s. Covers unchanged.
+
+## Posted
+- Approved Oct 13 12:37 MT (round 2), cover **option 4** (pointing, "you are my enemy").
+- Trial reel on @mackthegolfer, published 12:39 MT (18:39 UTC) — https://www.instagram.com/reel/DeceNV6D3SR/ — Zernio 6ace7abe2da1fd7d020cc2f1, graduation MANUAL.

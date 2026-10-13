@@ -442,6 +442,27 @@
     "diff_check": "98.2s -> 68.2s (31% cut); restructured: cold open on 'not freaking bad babes' (original/moremacky end) instead of shirt wipe + cart intro; all profanity captions cut (motherfucker x2, putting this bitch, elephant's ass, Jesus..., pisses me off, Lag City bitch); added the one-leg 'right stance' bunker shot; 7 alternating punch-ins; ends on 'was that a six' instead of 'not freaking bad babes'; different cover; side-by-side vs moremackygolfs version checked",
     "quality": "from clips _full source, libx264 crf 18 (maxrate 9M to stay under GitHub 100 MB), 1080x1920"
    }
+  },
+  "comp1_playing-with-me": {
+   "name": "Compilation 1 — what it's like playing with me",
+   "slug": "comp1_playing-with-me",
+   "type": "compilation",
+   "B": {
+    "file": "compilations/comp1_playing-with-me.mp4",
+    "version": "compilation (10 angry bits, 38.2s)",
+    "posted": "2026-10-13 12:39 MT",
+    "posted_utc": "2026-10-13T18:39:52Z",
+    "caption": "why do I like this sport",
+    "zernio": "6ace7abe2da1fd7d020cc2f1",
+    "ig_url": "https://www.instagram.com/reel/DeceNV6D3SR/",
+    "trial": true,
+    "graduation": "MANUAL",
+    "cover": "compilations/comp1_cover_opt4.jpg",
+    "cover_frame": "comp @37.17s pointing, 'you are my enemy'",
+    "cover_words": "what it's like playing with me",
+    "approved": "2026-10-13T18:37:47Z (round 2, picked cover opt4)",
+    "media_commit": "8f571473248c63f31a5e118de7739479af8d6383"
+   }
   }
  },
  "unfilled": {
