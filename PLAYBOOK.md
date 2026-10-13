@@ -198,3 +198,23 @@ Mostly use style 1, some style 2, rarely 3. Words fit the specific video (the ho
   * Stay AHEAD: the next day must ALWAYS be fully prepared and on the review page (at minimum by 9pm Mountain the night before). Work ahead as far as possible — up to 7 days out — whenever footage allows. The day before posting is for working through her notes.
   * When Mack leaves notes: apply them, put the new version back on the review page (round +1, decision reset), and then SendUserMessage her: "Your notes are done — [which reels] are ready to re-review" so she knows to look again. Always notify after notes are applied.
   * Approved reels get scheduled in Zernio at their planned time (trialParams MANUAL). Unapproved reels never post; if a reel isn't approved by its slot, skip that slot and tell her.
+
+## COMPILATIONS (Mack, Oct 13) — make a bunch over the next week
+Why: compilations avoid the duplicate flag that single re-posts get. Mack wants many.
+- Format (proven by comp #1 "what it's like playing with me", which she loved): HER TALKING while playing; 2–7 s bits back to back; 30–45 s; open on the strongest bit; never cut a shot out of a setup→shot→result bit; never cut swearing; no shirt wipes (except the shirt-wipe compilation); no text burned in; even loudness; 1080x1920 30 fps crf 17. Method + sources: compilations/comp1_notes.md.
+- Cover: strong face/reaction frame + the title in her grid style (white bold Poppins on a rounded colored box, mid-frame; rotate colors). Always give 3+ cover options. Caption: short, lowercase, dry (her edit of comp1: "why do I like this sport").
+- Every compilation goes on the review page (https://claude.ai/artifact/KFJoqNkDr6kpxYDkpniAZ7, collection "compilations") for her notes/approval; notify her when one is up or when notes are applied. Nothing posts without approval. Default account: @mackthegolfer trial unless she says otherwise (the shirt-wipe one is for @mackygolfs).
+- Don't reuse the same bit in two compilations that would post within 2 weeks of each other.
+- Idea list (work down it; skip any already made; add new ones as you find patterns in the footage):
+  1. what it's like playing with me (done — comp1)
+  2. what it's like being delusional — confident line → shot → disaster (comp2)
+  3. every excuse I've ever made — blaming wind, ball, bounce, marshall, course
+  4. me talking to my golf ball — "stop stop stop", "get in", "sit", "go"
+  5. what it's like golfing with me in the summer — shirt-wipe montage (@mackygolfs; caption "sorry I'm so wet")
+  6. worst bounces / the course hates me
+  7. "that's not bad" — her rating her own bad shots generously
+  8. almost moments — lip-outs, almost eagle, almost hole-in-one
+  9. me vs. putting — every putt drama, the "lag master"
+  10. me hyping myself up before a shot (then the result)
+  11. guess my score — her asking viewers to guess, with the reveals
+  12. golf math — "6 is basically par", "a double is par in texas", scores talk
