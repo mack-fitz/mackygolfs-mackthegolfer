@@ -490,7 +490,7 @@
     "dup_check": "Oct 13 re-check: matches A Oct 7 30s (not Sep 19 as noted before); not on B; not on A within 3 days",
     "diff_check": "29.8s -> 19.4s (35% cut); re-cut Oct 13 per Mack: opens on Mack talking (teaser removed); wipe cut; walking/waiting between shots cut; 3 alternating punch-ins (par 5 line, 2nd shot, first putt); ends on the tap-in instead of picking the ball out; cover = sunset tee tracer (no text); side-by-side contact sheets checked",
     "length_test": "short",
-    "duration": 19.4,
+    "duration": 25.6,
     "source_posted_on": "@mackygolfs Oct 7 2026 (Mack's own 30s 'Macky vs. a Par 5' reel, caption 'and please remember to consider that I am a really good golfer...'); verified Oct 13 by thumbnail (same blue patterned shirt/cart) + length 30s vs 29.8s",
     "quality": "from the original .mov, single encode libx264 -crf 17 -preset slow, 1080x1920 30fps, AAC 192k 48 kHz",
     "opening": "talk-first",
@@ -498,9 +498,9 @@
     "media_pinned": "f6d7f70 (Zernio media updated Oct 13, caption/time/MANUAL unchanged)",
     "approval": {
      "review_doc": "2026-10-14_B_am",
-     "status": "waiting"
+     "status": "waiting (round 2)"
     },
-    "shot_check_oct13": "2nd putt (~23.1s source) is cut from the approved/scheduled version; left as Mack approved it, flagged to her."
+    "shot_check_oct13": "Oct 13: the middle putt (~23.1s source) was cut from the approved version; Mack asked to see it again. Re-cut with the putt and full 2nd-shot tracer restored (19.4s -> 25.6s), back on the review page as round 2, Zernio post back to draft."
    }
   },
   "id:etyjxrk_8sAAAAAAAAAE7A": {
