@@ -482,6 +482,25 @@
   "page": "https://claude.ai/artifact/KFJoqNkDr6kpxYDkpniAZ7",
   "collection": "reels",
   "rule": "nothing posts on A/B without Mack's approval; unapproved = Zernio draft",
-  "since": "2026-10-13"
+  "since": "2026-10-13",
+  "log": [
+   {
+    "at": "2026-10-13T18:34Z",
+    "item": "2026-10-14_B_am",
+    "action": "approved -> scheduled 2026-10-14 08:21 MT",
+    "zernio": "6acd96d2c5e350234a748092"
+   },
+   {
+    "at": "2026-10-13T18:34Z",
+    "item": "comp_wipes",
+    "action": "approved (post now) -> published @mackygolfs trial MANUAL, cover opt1",
+    "zernio": "6ace79cf213881665566ab8b"
+   },
+   {
+    "at": "2026-10-13T18:45Z",
+    "item": "2026-10-14_A_pm / B_pm",
+    "action": "captions changed per notes, round 2 on review page"
+   }
+  ]
  }
 }
