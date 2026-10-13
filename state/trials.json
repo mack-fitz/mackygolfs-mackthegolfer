@@ -25,7 +25,8 @@
     "posted": "2026-10-12 09:01 MT",
     "caption": "lock in your guess before the putt",
     "zernio": "6accf63281bff2930339a085"
-   }
+   },
+   "A_history": "already on @mackygolfs (Mack, Oct 11, 153s, I will take offense if you guess high)"
   },
   "id:etyjxrk_8sAAAAAAAAAE4w": {
    "name": "Video Oct 11 2026, 9 02 57 AM (2).mp4",
@@ -61,12 +62,13 @@
    "A": {
     "file": "inbox/videos/Video Oct 12 2026, 7 33 50 AM.mov",
     "version": "original",
-    "posted": "2026-10-13 10:07 MT",
+    "posted": null,
     "caption": "guess my handicap off this par 5",
     "zernio": "6accfd65e394d8722477be57",
     "cover": "trials/005_guess-my-handicap-par-5_a_cover.jpg",
     "cover_frame": "shirt wipe @0.4s",
-    "cover_words": "GUESS MY HANDICAP"
+    "cover_words": "GUESS MY HANDICAP",
+    "status": "deleted Oct 12 (duplicate of a post already on @mackygolfs); never published"
    }
   },
   "id:etyjxrk_8sAAAAAAAAAE3A": {
@@ -75,12 +77,12 @@
    "A": {
     "file": "inbox/videos/Video Oct 12 2026, 12 14 03 AM.mp4",
     "version": "original",
-    "posted": "2026-10-13 13:38 MT",
     "caption": "hole in one loading",
-    "zernio": "6accfd67f587a09a885807c6",
+    "zernio": "6accfd67f587a09a885807c4",
     "cover": "trials/006_hole-in-one-loading_a_cover.jpg",
     "cover_frame": "shirt wipe @0.4s",
-    "cover_words": ""
+    "cover_words": "",
+    "scheduled": "2026-10-13 13:38 MT"
    },
    "B": {
     "file": "trials/006_hole-in-one-loading_b.mp4",
@@ -88,7 +90,8 @@
     "opening": "teaser (putt) then talk",
     "scheduled": "2026-10-12 14:05 MT",
     "caption": "said hole in one. close enough",
-    "zernio": "6acd0780563d17836c8b56d4"
+    "zernio": "6acd0780563d17836c8b56d4",
+    "posted": "2026-10-12 14:05 MT"
    }
   },
   "id:etyjxrk_8sAAAAAAAAAE7g": {
@@ -99,7 +102,40 @@
     "opening": "talk first",
     "scheduled": "2026-10-12 19:35 MT",
     "caption": "wide open fairway. found the trees anyway",
-    "zernio": "6acd0992a2dfc732ed1bb5ca"
+    "zernio": null,
+    "status": "deleted Oct 12: same video as Macks own @mackthegolfer post (lag masta, Oct 11); never published"
+   },
+   "slug": "007_found-the-trees"
+  },
+  "id:etyjxrk_8sAAAAAAAAAE3g": {
+   "name": "Video Oct 12 2026, 12 11 12 AM.mov",
+   "slug": "008_san-angelo-water",
+   "A": {
+    "file": "trials/008_san-angelo-water_a.mp4",
+    "version": "original",
+    "scheduled": "2026-10-13 07:42 MT",
+    "caption": "texas has one pond. i found it",
+    "zernio": "6acd92bfe6ae203b5b6a60af",
+    "cover": "trials/008_san-angelo-water_a_cover.jpg",
+    "cover_frame": "shirt wipe @0.4s",
+    "cover_words": "INTO THE WATER",
+    "dup_check": "clear: 173.5s; no post within 3s on @mackygolfs or @mackthegolfer; San Angelo par 4 (green pinstripe) differs from A Oct 11 153s (=002 guess my score) and A Oct 10 110s par 3; not on @moremackygolfs"
+   }
+  },
+  "id:etyjxrk_8sAAAAAAAAAE7w": {
+   "name": "Video Oct 12 2026, 7 30 44 AM.mov",
+   "slug": "011_cactus-par-5",
+   "B": {
+    "file": "trials/011_cactus-par-5_b.mp4",
+    "segs": "trials/011_cactus-par-5_b_segs.json",
+    "version": "clean edit",
+    "opening": "talk-first (cold open on wish I just realized I got cactused / is it cactied / remove needles)",
+    "scheduled": "2026-10-13 08:27 MT",
+    "caption": "the cactus wanted it more",
+    "zernio": "6acd92fde6ae203b5b6a60ea",
+    "cover": "trials/011_cactus-par-5_b_cover.jpg (emerging from cactus with ball @27.9s, no text)",
+    "dup_check": "clear: 175.3s; nearest @mackthegolfer 175s (wet or dry, camo/white outfit) and 171s (Sep 30, different shirt/course) do not match content; nothing on @mackygolfs within 3s; not on @moremackygolfs",
+    "diff_check": "175.3s -> 110.1s (37% cut); restructured (cactus aftermath first, then tee shot); 7 punch-ins alternating; no shirt wipe; ends on final putt + you are kidding instead of bit by a cactus; different cover; side-by-side first 4s: original = cart wipe + I wanna be a better golfer, B = fairway walk-up + cactused line"
    }
   }
  }
