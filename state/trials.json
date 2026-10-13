@@ -336,7 +336,8 @@
         "diff_check": "97.5s -> 62.2s (36% cut); re-cut Oct 13 per Mack: opens on Mack talking (payoff cold open removed); swearing put back ('holy shit couldn't have been more perfect', 'pured the hell out of that'); dead air/walking/waiting cut plus the first tap-in attempt (repeat line); 9 alternating punch-ins; ends on the tweener tap-in instead of the selfie 'not my best hole'; cover = 4th-shot tracer (no text); side-by-side contact sheets checked",
         "quality": "from the original .mov, single encode libx264 -crf 17 -preset slow, 1080x1920 30fps, AAC 192k 48 kHz (maxrate 12M peak cap to stay under GitHub's 100 MB limit)",
         "opening": "talk-first",
-        "opening_detail": "opens on Mack's first line after the wipe: 'glad I got your attention' (source 1.85s)"
+        "opening_detail": "opens on Mack's first line after the wipe: 'glad I got your attention' (source 1.85s)",
+        "media_pinned": "f6d7f70 (Zernio media updated Oct 13, caption/time/MANUAL unchanged)"
       }
     },
     "id:etyjxrk_8sAAAAAAAAAE5Q": {
@@ -358,7 +359,8 @@
         "source_posted_on": "@mackygolfs Oct 7 2026 (Mack's own 30s 'Macky vs. a Par 5' reel, caption 'and please remember to consider that I am a really good golfer...'); verified Oct 13 by thumbnail (same blue patterned shirt/cart) + length 30s vs 29.8s",
         "quality": "from the original .mov, single encode libx264 -crf 17 -preset slow, 1080x1920 30fps, AAC 192k 48 kHz",
         "opening": "talk-first",
-        "opening_detail": "opens on Mack's first line after the wipe: 'hey my name is Mack' (source 1.45s)"
+        "opening_detail": "opens on Mack's first line after the wipe: 'hey my name is Mack' (source 1.45s)",
+        "media_pinned": "f6d7f70 (Zernio media updated Oct 13, caption/time/MANUAL unchanged)"
       }
     },
     "id:etyjxrk_8sAAAAAAAAAE7A": {
@@ -380,7 +382,8 @@
         "source_posted_on": "@mackygolfs Oct 2 2026 (Mack's own 35s reel 'I have broken 100 once but it is starting to feel like a fluke'); thumbnail verified (dark patterned shirt, cart)",
         "quality": "from the original .mov, single encode libx264 -crf 17 -preset slow, 1080x1920 30fps, AAC 192k 48 kHz",
         "opening": "talk-first",
-        "opening_detail": "opens on Mack's first line after the wipe: 'I wanna consistently be breaking 100' (source 1.3s)"
+        "opening_detail": "opens on Mack's first line after the wipe: 'I wanna consistently be breaking 100' (source 1.3s)",
+        "media_pinned": "f6d7f70 (Zernio media updated Oct 13, caption/time/MANUAL unchanged)"
       }
     },
     "clips:002_beach-day": {
