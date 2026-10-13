@@ -120,6 +120,18 @@
     "cover_frame": "shirt wipe @0.4s",
     "cover_words": "INTO THE WATER",
     "dup_check": "clear: 173.5s; no post within 3s on @mackygolfs or @mackthegolfer; San Angelo par 4 (green pinstripe) differs from A Oct 11 153s (=002 guess my score) and A Oct 10 110s par 3; not on @moremackygolfs"
+   },
+   "B": {
+    "file": "trials/008_san-angelo-water_b.mp4",
+    "segs": "trials/008_san-angelo-water_b_segs.json",
+    "version": "clean edit",
+    "opening": "talk-first (cold open on I am so freaking back baby)",
+    "scheduled": "2026-10-15 08:32 MT",
+    "caption": "free lesson from a stranger. did it help",
+    "zernio": "6acd9ac33b194bfe6b312bdd",
+    "cover": "trials/008_san-angelo-water_b_cover.jpg (re-tee swing @33.0s, no text)",
+    "dup_check": "clear: 173.5s; @mackthegolfer 175s posts are Goosey (different reel, other day) and wet or dry (camo/white); no San Angelo water reel on B; A gets the original Oct 13 (different day)",
+    "diff_check": "173.5s -> 105.1s (39% cut); opens on the post-bunker so freaking back line instead of the cart wipe; profanity (bullshit, holy shit, said shit) and the this cock lesson line cut; dress-code cart rant and walking cut; 5 punch-ins alternating; ends on you ever seen a lag putt that good instead of boom; different cover"
    }
   },
   "id:etyjxrk_8sAAAAAAAAAE7w": {
@@ -315,5 +327,18 @@
     "diff_check": "35.2s -> 24.9s (29% cut); teaser cold open on the putt; ball-flight hang time and walking cut; 3 punch-ins alternating; ends right after the tap-in instead of the walk-off; different cover"
    }
   }
+ },
+ "unfilled": {
+  "mackthegolfer": [
+   "2026-10-15 midday",
+   "2026-10-15 evening"
+  ],
+  "why": "Every Golf Captions reel left is either already on @mackthegolfer (Mack's own posts: Bomb City, blue ball/lag masta, Goosey x2, it is a Tuesday, king of the world, mama didnt raise, lag masta 007), the same footage as a reel B already has this week (010/E5A, 012/E6g, 017/E6Q), or went out on @mackygolfs in the last 7 days (001, 003, 004). Needs new Golf Captions uploads.",
+  "as_of": "2026-10-12"
+ },
+ "golf_captions_status": {
+  "never_posted_left_for_A": [],
+  "never_posted_left_for_B": [],
+  "note": "Oct 12 run: all 22 Golf Captions files checked; after Oct 15 the only usable footage is reels already posted once (need re-edits per duplicate rules) or new uploads"
  }
 }
