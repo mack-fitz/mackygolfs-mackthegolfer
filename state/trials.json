@@ -137,6 +137,38 @@
     "dup_check": "clear: 175.3s; nearest @mackthegolfer 175s (wet or dry, camo/white outfit) and 171s (Sep 30, different shirt/course) do not match content; nothing on @mackygolfs within 3s; not on @moremackygolfs",
     "diff_check": "175.3s -> 110.1s (37% cut); restructured (cactus aftermath first, then tee shot); 7 punch-ins alternating; no shirt wipe; ends on final putt + you are kidding instead of bit by a cactus; different cover; side-by-side first 4s: original = cart wipe + I wanna be a better golfer, B = fairway walk-up + cactused line"
    }
+  },
+  "id:etyjxrk_8sAAAAAAAAAE7Q": {
+   "name": "Video Oct 12 2026, 7 26 20 AM.mov",
+   "slug": "009_six-months-par-5",
+   "A": {
+    "file": "trials/009_six-months-par-5_a.mp4",
+    "version": "original",
+    "scheduled": "2026-10-13 18:41 MT",
+    "caption": "six months in. be nice",
+    "zernio": "6acd933f3da189b561e266db",
+    "cover": "trials/009_six-months-par-5_a_cover.jpg",
+    "cover_frame": "shirt wipe @0.3s",
+    "cover_words": "SIX MONTHS IN",
+    "dup_check": "clear: 148.9s; no post within 3s on @mackygolfs or @mackthegolfer (Amarillo white-shirt reels on B are 74/95/114s, different holes); not on @moremackygolfs"
+   }
+  },
+  "id:etyjxrk_8sAAAAAAAAAErg": {
+   "name": "golfclips Video 5_49_54 (clips repo queue/010_wrong-clubs_full.mp4); same footage as Golf Captions Video Oct 11 2026, 9 02 57 AM (3).mp4 (id:etyjxrk_8sAAAAAAAAAE5A, longer cut)",
+   "slug": "010_driver-putter",
+   "B": {
+    "file": "trials/010_driver-putter_b.mp4",
+    "segs": "trials/010_driver-putter_b_segs.json",
+    "source": "/home/claude/clips/queue/010_wrong-clubs_full.mp4",
+    "version": "clean edit",
+    "opening": "teaser (driver putt, oh that was hot) then talk",
+    "scheduled": "2026-10-13 13:04 MT",
+    "caption": "driver is my putter now",
+    "zernio": "6acd9542a6c3f10344d8083e",
+    "cover": "trials/010_driver-putter_b_cover.jpg (fist pump at the flag @94.55s, no text)",
+    "dup_check": "clear: 99.5s; @mackthegolfer 97s (no kids harmed, green shirt) and @mackygolfs 103/106s (children, green/grey) are different reels; pulled from @moremackygolfs before posting (never posted anywhere)",
+    "diff_check": "99.5s -> 67.7s (32% cut); teaser cold open, cut texas wedge/tee-shot setup talk, profanity and rim job line; 4 punch-ins alternating; ends on but that long putt incredible instead of bring the driver out on the green; different cover than @moremackygolfs (wrong clubs text)"
+   }
   }
  }
 }
