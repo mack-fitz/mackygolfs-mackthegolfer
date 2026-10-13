@@ -180,3 +180,4 @@ Mostly use style 1, some style 2, rarely 3. Words fit the specific video (the ho
 - Never the same footage on both accounts within 3 days.
 - Schedule only today and tomorrow.
 - NEVER cut swearing or profanity out of any edit (Mack, Oct 13). Keep her words as she said them; cuts are only for pacing/structure, at quiet gaps.
+- @mackthegolfer (B) OPENING (Mack, Oct 13 10:18am): ALWAYS open on Mack talking at the beginning (the first spoken line right after where the shirt wipe would be). NO cold opens, NO teasers of later moments, NO "cut to the end" openings. Restructure only after the opening (trim, tighten, reorder the middle, change the ending, punch-ins).
