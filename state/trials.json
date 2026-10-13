@@ -298,6 +298,22 @@
     "dup_check": "likely on @mackygolfs (Mack, Sep 19, 31s Texas-wedge series, same blue shirt) -> fine for B; @mackthegolfer 30s (Oct 5) is a grey shirt reel, 27s Oct 11 light shirt: no match; nothing on other accounts in last 7 days",
     "diff_check": "29.8s -> 18.5s (38% cut); teaser cold open on the putt reaction, intro trimmed to the par 5 line; 4 punch-ins alternating; ends on the tap-in instead of picking the ball out; different cover"
    }
+  },
+  "id:etyjxrk_8sAAAAAAAAAE7A": {
+   "name": "Video Oct 12 2026, 7 34 47 AM.mov",
+   "slug": "018_breaking-100",
+   "B": {
+    "file": "trials/018_breaking-100_b.mp4",
+    "segs": "trials/018_breaking-100_b_segs.json",
+    "version": "clean edit",
+    "opening": "teaser (long putt rolling up to the hole) then talk",
+    "scheduled": "2026-10-14 19:18 MT",
+    "caption": "trying to break 100. tips welcome",
+    "zernio": "6acd98f634c5533d413a9593",
+    "cover": "trials/018_breaking-100_b_cover.jpg (drive tracer @7.8s, no text)",
+    "dup_check": "on @mackygolfs (Mack, Oct 2, I have broken 100 once, 35s, same dark shirt) -> not for A; @mackthegolfer 36s help pls (Oct 6) is a light-shirt reel, no match -> clear for B",
+    "diff_check": "35.2s -> 24.9s (29% cut); teaser cold open on the putt; ball-flight hang time and walking cut; 3 punch-ins alternating; ends right after the tap-in instead of the walk-off; different cover"
+   }
   }
  }
 }
