@@ -169,6 +169,23 @@
     "dup_check": "clear: 99.5s; @mackthegolfer 97s (no kids harmed, green shirt) and @mackygolfs 103/106s (children, green/grey) are different reels; pulled from @moremackygolfs before posting (never posted anywhere)",
     "diff_check": "99.5s -> 67.7s (32% cut); teaser cold open, cut texas wedge/tee-shot setup talk, profanity and rim job line; 4 punch-ins alternating; ends on but that long putt incredible instead of bring the driver out on the green; different cover than @moremackygolfs (wrong clubs text)"
    }
+  },
+  "id:etyjxrk_8sAAAAAAAAAE6w": {
+   "name": "Video Oct 12 2026, 7 35 57 AM.mov",
+   "slug": "012_wet-or-dry-par-3",
+   "B": {
+    "file": "trials/012_wet-or-dry-par-3_b.mp4",
+    "segs": "trials/012_wet-or-dry-par-3_b_segs.json",
+    "version": "clean edit",
+    "opening": "talk-first (cold open on walk-up + on the green, then the tee question)",
+    "scheduled": "2026-10-13 19:24 MT",
+    "caption": "par 3 over water. no pressure",
+    "zernio": "6acd95c8fa9f600cba075614",
+    "cover": "trials/012_wet-or-dry-par-3_b_cover.jpg (tee shot tracer arc @8.3s, no text)",
+    "note": "same par-3 footage as Video Oct 12 2026, 7 37 01 AM.mov (id:etyjxrk_8sAAAAAAAAAE6g, hey my name is Mack intro) which goes to @mackygolfs Oct 14",
+    "dup_check": "clear: 25.3s; @mackthegolfer 27s (Oct 11, light shirt, different hole) no match; @mackygolfs 23-28s posts are other outfits; never posted anywhere",
+    "diff_check": "25.3s -> 17.2s (32% cut); opens on the green walk-up/point instead of cart wipe; tee question moved after; 3 punch-ins alternating; dead camera time between putts cut; ends on second putt instead of picking the ball out; different cover (tracer)"
+   }
   }
  }
 }
