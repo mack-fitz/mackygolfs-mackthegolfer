@@ -221,8 +221,8 @@
    "A": {
     "file": "trials/010_driver-putter_a.mp4",
     "version": "original",
-    "scheduled": "2026-10-14 18:45 MT (planned; Zernio DRAFT until Mack approves)",
-    "caption": "putter off the tee. driver on the green. is this legal??",
+    "scheduled": "2026-10-14 18:45 MT (approved round 2, scheduled)",
+    "caption": "please send broomstick putter recs",
     "zernio": "6acdc2818bbebee1aa7901e1",
     "cover": "trials/010_driver-putter_a_cover.jpg (Oct 13 plain shirt-wipe @0.3s)",
     "cover_frame": "shirt wipe @0.3s",
@@ -235,7 +235,7 @@
     "note_length": "no never-posted SHORT original left in Golf Captions for Oct 14 (012 is the same par-3 footage as 013 which posts Oct 13), so A Oct 14 is long+long until Mack uploads new shorts",
     "approval": {
      "review_doc": "2026-10-14_A_pm",
-     "status": "waiting"
+     "status": "approved round 2 -> scheduled"
     }
    }
   },
@@ -503,6 +503,17 @@
     "at": "2026-10-13T18:45Z",
     "item": "2026-10-14_A_pm / B_pm",
     "action": "captions changed per notes, round 2 on review page"
+   },
+   {
+    "at": "2026-10-13T19:05Z",
+    "item": "2026-10-14_A_pm",
+    "action": "approved round 2 -> scheduled 2026-10-14 18:45 MT",
+    "zernio": "6acdc2818bbebee1aa7901e1"
+   },
+   {
+    "at": "2026-10-13T19:05Z",
+    "item": "comp2",
+    "action": "round 2 IN PROGRESS (:47 review check): applying Mack's notes (fix 'pretty close' cut, swap other bits for truly delusional moments)"
    }
   ]
  }

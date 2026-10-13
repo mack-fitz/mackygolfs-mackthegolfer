@@ -39,3 +39,6 @@ confidence is free
 - Video Oct 12 2026, 12 22 39 AM.mov 61.4–69.9 "don't hit this tree above you Mack" → "well I hit the tree"
 - Video Oct 12 2026, 12 17 30 AM.mov 9.3–33 "it's literally such a straight shot" → "I'm about as straight as it gets / that was a joke by the way"
 - 013_cliff-par-5_full 22.7 "just gotta get this up and over this bunker" → 29.7 "truly terrible"
+
+## Round 2 — IN PROGRESS (:47 review check, started 2026-10-13 19:05Z)
+Mack: bit 2 cut off at "pretty" instead of "pretty close"; the other bits aren't about being delusional — try new clips.
