@@ -1,26 +1,46 @@
 #!/bin/bash
 # usage: render.sh src segs.json "hook1" "hook2" out.mp4
+# segs: [[start, end, zoom], ...]  zoom 1 = ~15% center punch-in.
+# Trial accounts: pass "" "" (no text drawn on the video).
+# SINGLE high-quality encode (Mack, Oct 13): all cuts/punch-ins are done in one filtergraph
+# straight from the source file, then one libx264 -crf 17 -preset slow pass at the source
+# resolution and frame rate, AAC 192k 48 kHz. No intermediate encodes, no -b:v cap, no -r 30.
 set -e
 SRC="$1"; SEGS="$2"; H1="$3"; H2="$4"; OUT="$5"
 FONT=/usr/share/fonts/truetype/google-fonts/Poppins-Bold.ttf
-W=$(mktemp -d)
-python3 -I - "$SEGS" > $W/plan.txt <<'PY'
-import json,sys
-s=json.load(open(sys.argv[1]))
-for i,(a,b,z) in enumerate(s):
-    fin = i>0 and abs(s[i-1][1]-a)>0.01
-    fout = i<len(s)-1 and abs(s[i+1][0]-b)>0.01
-    print(a,b,z,int(fin),int(fout))
+read W H FPS < <(ffprobe -v error -select_streams v:0 -show_entries stream=width,height,r_frame_rate -of csv=p=0 "$SRC" | tr ',' ' ')
+FG=$(python3 -I - "$SEGS" "$W" "$H" "$FONT" "$H1" "$H2" <<'PY'
+import json, sys
+segs = json.load(open(sys.argv[1])); w, h = int(sys.argv[2]), int(sys.argv[3])
+font, h1, h2 = sys.argv[4], sys.argv[5], sys.argv[6]
+parts, labels = [], []
+for i, (a, b, z) in enumerate(segs):
+    jin = i > 0 and abs(segs[i-1][1] - a) > 0.01
+    jout = i < len(segs) - 1 and abs(segs[i+1][0] - b) > 0.01
+    d = b - a
+    zv = f",crop=iw/1.15:ih/1.15,scale={w}:{h}:flags=lanczos" if z else ""
+    parts.append(f"[{i}:v]setpts=PTS-STARTPTS{zv},setsar=1[v{i}]")
+    af = ["anull"]
+    if jin: af.append("afade=t=in:d=0.03")
+    if jout: af.append(f"afade=t=out:st={max(0, d-0.03):.3f}:d=0.03")
+    parts.append(f"[{i}:a]asetpts=PTS-STARTPTS,aresample=48000,{','.join(af)}[a{i}]")
+    labels.append(f"[v{i}][a{i}]")
+vf = "null"
+if h1 or h2:
+    vf = (f"drawtext=fontfile={font}:text='{h1}':fontsize=68:fontcolor=white:box=1:boxcolor=black@0.75:boxborderw=22:x=(w-text_w)/2:y=300,"
+          f"drawtext=fontfile={font}:text='{h2}':fontsize=68:fontcolor=white:box=1:boxcolor=black@0.75:boxborderw=22:x=(w-text_w)/2:y=410")
+parts.append(f"{''.join(labels)}concat=n={len(segs)}:v=1:a=1[cv][ca]")
+parts.append(f"[cv]{vf}[ov]")
+print(";".join(parts))
 PY
-i=0; : > $W/list.txt
-while read a b z fin fout; do
-  d=$(python3 -c "print(round($b-$a,3))"); fo=$(python3 -c "print(round($b-$a-0.03,3))")
-  V=""; [ "$z" = 1 ] && V="crop=iw/1.15:ih/1.15,"
-  AF="anull"; [ "$fin" = 1 ] && AF="afade=t=in:d=0.03"; [ "$fout" = 1 ] && AF="$AF,afade=t=out:st=$fo:d=0.03"
-  ffmpeg -nostdin -v error -y -ss $a -i "$SRC" -t $d -vf "${V}scale=1080:1920,setsar=1" -af "$AF" -c:v libx264 -preset veryfast -crf 16 -pix_fmt yuv420p -r 30 -c:a aac -b:a 192k -ar 48000 $W/s$i.mp4
-  echo "file 's$i.mp4'" >> $W/list.txt; i=$((i+1))
-done < $W/plan.txt
-# No hook text (trial accounts): pass "" "" and nothing is drawn on the video.
-if [ -z "$H1$H2" ]; then VF="null"; else VF="drawtext=fontfile=$FONT:text='$H1':fontsize=68:fontcolor=white:box=1:boxcolor=black@0.75:boxborderw=22:x=(w-text_w)/2:y=300,drawtext=fontfile=$FONT:text='$H2':fontsize=68:fontcolor=white:box=1:boxcolor=black@0.75:boxborderw=22:x=(w-text_w)/2:y=410"; fi
-ffmpeg -v error -y -f concat -safe 0 -i $W/list.txt -vf "$VF" -c:v libx264 -preset medium -b:v 4.5M -maxrate 6M -bufsize 10M -profile:v high -pix_fmt yuv420p -r 30 -g 60 -c:a aac -b:a 128k -ar 48000 -movflags +faststart "$OUT"
-rm -rf $W
+)
+# one input per segment (accurate -ss/-t seek, decoded once each) so long edits don't buffer
+# the whole source in memory; still a single encode.
+# GitHub rejects files over 100 MB (media is served from raw.githubusercontent). For a long edit
+# that would exceed that, set MAXRATE (e.g. MAXRATE=12M) to cap peaks only; still crf 17, one encode.
+VBV=""; [ -n "$MAXRATE" ] && VBV="-maxrate $MAXRATE -bufsize $(( ${MAXRATE%M} * 2 ))M"
+INS=()
+while read a d; do INS+=(-ss "$a" -t "$d" -i "$SRC"); done < <(python3 -I -c "import json,sys;[print(a, round(b-a,3)) for a,b,z in json.load(open(sys.argv[1]))]" "$SEGS")
+ffmpeg -nostdin -v error -y "${INS[@]}" -filter_complex "$FG" -map "[ov]" -map "[ca]" \
+  -c:v libx264 -preset slow -crf 17 $VBV -profile:v high -pix_fmt yuv420p -r "$FPS" \
+  -c:a aac -b:a 192k -ar 48000 -movflags +faststart "$OUT"

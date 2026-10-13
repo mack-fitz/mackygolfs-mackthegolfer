@@ -29,9 +29,8 @@ regular reels from the mack-fitz/clips repo. X and TikTok setups are not touched
   in state/trials.json and compare views weekly, then lean toward the winner (keep testing ~1 in 4). If the reel
   looks like it was already posted on A (compare against A's existing reels), make a different edit
   for A instead: new cut points and punch-ins, still opening on the shirt wipe.
-- **B (@mackthegolfer):** its own clean edit. NEVER the shirt wipe. Open either on the first spoken
-  line right after the wipe, or on a 1-2 s teaser of a later payoff moment then cut back to Mack
-  talking. Alternate the two and track which holds better. Fully clean: no innuendo in captions,
+- **B (@mackthegolfer):** its own clean edit. NEVER the shirt wipe. ALWAYS open on Mack talking:
+  the first spoken line right after the wipe (no teasers, no cold opens; Mack, Oct 13). Fully clean: no innuendo in captions,
   nothing suggestive in covers, no OF tie-in, no story shares or links to A or the other accounts.
 - **Every IG account gets its own version.** If a reel has also gone out on @moremackygolfs (or
   the other trial account), make sure cuts and cover differ from those versions. Never skip a reel
@@ -65,7 +64,7 @@ Build them with `tools/dash_trials.py` (see its header).
 2. Check against A's existing reels: try pulling A's Instagram media (analytics_get_analytics for
    A's account, source "all", or posts_list for that profile) and compare thumbnails/captions/
    length. If it can't be checked, treat the reel as new for A.
-3. Make the versions: A = original (scale 1080x1920, ~4.5 Mbps, shirt wipe first) or, if already
+3. Make the versions: A = original (untouched file whenever possible, shirt wipe first) or, if already
    on A, a different edit that still opens on the wipe. B = clean edit, no wipe (opening per rules).
    Covers: A = shirt-wipe frame (words on/off per the test); B = plain strongest frame, no text, never the wipe. Save to trials/NNN_slug_{a,b}.mp4 + _{a,b}_cover.jpg.
 4. Schedule: keep 3 days of slots filled on each account, each picking its own random reels
@@ -94,7 +93,7 @@ Build them with `tools/dash_trials.py` (see its header).
 - Keep Mack's captions untouched (they sit mid-frame).
 - Target length: tight, usually 30–70s depending on the story.
 - Cover: strongest frame (action or reaction, never suggestive out of context), no text.
-- Export H.264 1080x1920, keep files small (~4–5 Mbps) so publishing is fast.
+- Export once, high quality: `tools/render.sh` (libx264 -crf 17 -preset slow, source resolution/fps, AAC 192k 48 kHz). No bitrate caps, no double encodes.
 
 ## Captions (all platforms)
 - Dumb, short, lowercase, Mack's voice. Reference style: "golf is so easy guys",
@@ -151,7 +150,7 @@ already on @mackthegolfer; "new shirt" and "absolutely brutal" were already on @
 - Only once unused reels run out: already-posted reels, following the duplicate rules above
   (never on the account that already posted it).
 - @mackthegolfer edits must be CLEARLY DIFFERENT from the original, not just the wipe trimmed:
-  new opening (cold open on the payoff or best reaction), restructured order where the story
+  opening on Mack's first spoken line after the wipe (never a cold open), restructured middle where the story
   allows, 25-40% of the runtime cut (dead time, walking, setup, repeats), punch-ins on 3+
   moments, a different end beat, a different cover. Before posting, compare your edit to the
   original side by side (contact sheets): if a viewer would recognize it as the same video in
