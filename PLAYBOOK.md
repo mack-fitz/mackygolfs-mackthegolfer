@@ -222,8 +222,9 @@ Why: compilations avoid the duplicate flag that single re-posts get. Mack wants 
 - COMPILATIONS FILL TRIAL SLOTS (Mack, Oct 13): approved compilations count as fresh content and can fill trial slots on @mackygolfs or @mackthegolfer (per the compilation's account). When planning days ahead, mix them in, especially once A runs out of never-posted videos (A then = re-edits + compilations). Re-edits are fine with Mack.
 - BASE CAMP SYNC (Mack, Oct 13): whenever a reel or compilation is approved/scheduled/posted, immediately update Base Camp's schedule (ArtifactData https://claude.ai/artifact/NkJnRhgLLfSWz1XXfHbQ79, collection "schedule", docs "mackygolfs"/"mackthegolfer"/"golf" — read for if_version, keep existing items, add {date, time HH:MM Mountain, caption, where}). The review page only shows items waiting on Mack; approved items live in Base Camp's schedule.
 
-## MACK'S COMPILATION IDEA — "golf lingo" (Mack, Oct 13) — MAKE THIS NEXT (before the rest of the idea list)
-- Bits where Mack uses her hands/body to act out what the shot needs to do: sticking her butt out, "bump and roll", "just up and over", etc. Lots of these are in the ORANGE CHECKERED SHIRT videos — start there, then any others.
+## MACK'S COMPILATION IDEA — "golf lingo" (Mack, Oct 13) — add to the END of the compilation idea list (does NOT jump the line)
+- Bits where Mack uses her hands/body to act out what the shot needs to do: sticking her butt out, "bump and roll", "just up and over", etc. Lots of these are in the ORANGE CHECKERED SHIRT videos — use them, plus bits from other outfits/days.
+- SPACING (Mack): do NOT put the orange-checkered-shirt bits back to back. Alternate outfits/days so it's clear this is over many rounds — no two consecutive bits from the same shirt/day where avoidable. (Applies to all compilations.)
 - Cover text: something about golf lingo to use on your next round (e.g. "golf lingo to use next round"); 3+ cover options in her grid styles.
 - Caption: "make sure to really get your hips involved"
 - Usual compilation rules: her talking, never cut a shot or swearing, no shirt wipes, no added text, true originals, single high-quality export.
