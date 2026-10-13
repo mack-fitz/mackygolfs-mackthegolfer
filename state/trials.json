@@ -224,6 +224,51 @@
     "note": "same par-3 footage as 012 (B Oct 13) with a different intro",
     "dup_check": "clear: 25.8s; @mackygolfs 23-28s posts are other outfits (blue, white, red); never posted anywhere"
    }
+  },
+  "id:etyjxrk_8sAAAAAAAAAE6A": {
+   "name": "Video Oct 12 2026, 7 17 58 AM.mov",
+   "slug": "014_lock-it-in-par-3",
+   "A": {
+    "file": "trials/014_lock-it-in-par-3_a.mp4",
+    "version": "original",
+    "scheduled": "2026-10-15 07:47 MT",
+    "caption": "guess my score. be honest",
+    "zernio": "6acd96542461c71357a65e07",
+    "cover": "trials/014_lock-it-in-par-3_a_cover.jpg",
+    "cover_frame": "shirt wipe @0.23s",
+    "cover_words": "LOCK IT IN",
+    "dup_check": "likely on @mackthegolfer (Mack, Oct 4, 114/115s it is a Tuesday, same white shirt/camo hat): 11 days ago, never on @mackygolfs (A 110s Oct 10 is a green-pinstripe reel) -> OK for A"
+   }
+  },
+  "id:etyjxrk_8sAAAAAAAAAE5g": {
+   "name": "Video Oct 12 2026, 7 19 40 AM.mov",
+   "slug": "015_bomb-city",
+   "A": {
+    "file": "trials/015_bomb-city_a.mp4",
+    "version": "original",
+    "scheduled": "2026-10-15 13:19 MT",
+    "caption": "welcome to bomb city",
+    "zernio": "6acd9657fa9f600cba075ad7",
+    "cover": "trials/015_bomb-city_a_cover.jpg",
+    "cover_frame": "shirt wipe @0.4s",
+    "cover_words": "",
+    "dup_check": "on @mackthegolfer (Mack, Oct 7, Bomb City TX, 74s cut): 8 days before this slot; not on @mackygolfs (Amarillites posts are 178s, different reel) -> OK for A"
+   }
+  },
+  "id:etyjxrk_8sAAAAAAAAAE5w": {
+   "name": "Video Oct 12 2026, 7 13 58 AM.mov",
+   "slug": "016_lag-master-par-4",
+   "A": {
+    "file": "trials/016_lag-master-par-4_a.mp4",
+    "version": "original",
+    "scheduled": "2026-10-15 18:58 MT",
+    "caption": "the lag master doing her thing",
+    "zernio": "6acd9659fa9f600cba075ecf",
+    "cover": "trials/016_lag-master-par-4_a_cover.jpg",
+    "cover_frame": "shirt wipe @0.4s",
+    "cover_words": "LAG MASTER",
+    "dup_check": "on @mackthegolfer (Mack, Oct 8, that is why she is blue boys, 95s): 7+ days before this slot; not on @mackygolfs -> OK for A"
+   }
   }
  }
 }
