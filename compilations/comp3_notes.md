@@ -39,3 +39,6 @@ it's never my fault
 - Oct 11 9 02 57 AM (2).mp4 11.3–17 "I don't know what just happened, I normally do not swing like that"
 - 7 19 40 AM.mov 74.3–77 "there's really nothing worse than having a perfect drive and then being shit the rest of the time"
 - copy_2CC073A6 (beach day) 18.3 "I hit it better when there was a child target around"
+
+## Round 2 — IN PROGRESS (compilation job, started 2026-10-13 20:15Z)
+Mack: first clip + cactus clip good; cut the altitude clip off at "Texas"; find other clips; cactus first; cover text "what's keeping me from being a pro golfer"; caption "it's out of my control".
