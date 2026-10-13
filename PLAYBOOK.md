@@ -166,4 +166,8 @@ Each day, of each account's 2 trial reels, one must be SHORTER and one LONGER, s
 - This is a deliberate test; it does not change the rule that videos are otherwise picked at random within each length range.
 
 ## Cover text style (Mack, Oct 13)
-Cover words should match the style of the covers on Mack's own @mackygolfs main grid. If `covers/grid-reference.*` exists in this repo, Read it and copy that style (wording, length, placement, font look) for every cover that has words. Until it exists, keep 1–3 blunt words.
+Cover words copy Mack's own @mackygolfs grid (screenshot: covers/grid-reference.png — Read it before making covers). Three styles she uses, all placed mid-frame (roughly 45–70% down, over the middle of the shirt-wipe frame, inside the center square so the grid crop keeps it):
+1. **"Macky vs. ___" pill** (her main series): "Macky vs. a Par 4", "Macky vs. a 7 iron", "Macky vs. the LPGA", "macky vs. a chili cheese dawg", "Macky vs. Something that Should Have Stayed a Draft". Bold rounded sans (Poppins Bold/SemiBold is close), white text on a solid rounded-corner color box (orange #F7931E, red #E8101A, yellow #F5C518 with white text, purple #A21CAF, blue #1E90FF). Rotate colors; 1–2 lines.
+2. **Typewriter note**: lowercase monospace black text on a plain white rectangle, deadpan quote/thought, e.g. "i'm so wet :/", "does anyone on instagram know what lag means", "i was served dry burger". Use a monospace font (DejaVu Sans Mono or similar).
+3. **Big question**: heavy italic red text with white outline, right-aligned, stacked one word or two per line, e.g. "Is Macky about to be soaking wet?" Use sparingly.
+Mostly use style 1, some style 2, rarely 3. Words fit the specific video (the hole, club, food or situation). @mackthegolfer covers: same styles but brand-safe (no "wet"/innuendo; never a shirt-wipe frame). "No words" covers stay as the on/off test for A.
