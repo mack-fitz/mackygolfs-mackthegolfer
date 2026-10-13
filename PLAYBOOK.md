@@ -171,3 +171,11 @@ Cover words copy Mack's own @mackygolfs grid (screenshot: covers/grid-reference.
 2. **Typewriter note**: lowercase monospace black text on a plain white rectangle, deadpan quote/thought, e.g. "i'm so wet :/", "does anyone on instagram know what lag means", "i was served dry burger". Use a monospace font (DejaVu Sans Mono or similar).
 3. **Big question**: heavy italic red text with white outline, right-aligned, stacked one word or two per line, e.g. "Is Macky about to be soaking wet?" Use sparingly.
 Mostly use style 1, some style 2, rarely 3. Words fit the specific video (the hole, club, food or situation). @mackthegolfer covers: same styles but brand-safe (no "wet"/innuendo; never a shirt-wipe frame). "No words" covers stay as the on/off test for A.
+
+## CURRENT RULES (Mack, Oct 13, 12am) — override anything above that conflicts
+- Exactly 2 trial reels per day per account (morning + evening). Never 3. No midday.
+- Every day, on EACH account: one SHORT (under ~35 s) and one LONG (over ~60 s). Alternate which slot gets the short one.
+- @mackygolfs (A): never-posted footage only, Mack's original untouched.
+- @mackthegolfer (B), for now (until Mack says otherwise): ONLY re-edits of footage Mack has ALREADY POSTED herself (on @mackygolfs/@mackthegolfer, or via @moremackygolfs/X/TikTok). Never never-posted footage on B. Each re-edit must be clearly different from every existing version (restructure, 25–40% cut, 3+ alternating punch-ins, different open/end/cover; side-by-side check). Don't reuse B's own earlier trials.
+- Never the same footage on both accounts within 3 days.
+- Schedule only today and tomorrow.
