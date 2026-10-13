@@ -228,3 +228,4 @@ Why: compilations avoid the duplicate flag that single re-posts get. Mack wants 
 - Cover text: something about golf lingo to use on your next round (e.g. "golf lingo to use next round"); 3+ cover options in her grid styles.
 - Caption: "make sure to really get your hips involved"
 - Usual compilation rules: her talking, never cut a shot or swearing, no shirt wipes, no added text, true originals, single high-quality export.
+- BASE CAMP — COMPILATIONS (Mack, Oct 13): every compilation that posts or gets scheduled must appear in Base Camp's schedule on its account's doc, with where = 'trial reel (compilation "<title>", posted)' (or 'scheduled'), time in Mountain, and its caption. Do this in the same run that posts it.
