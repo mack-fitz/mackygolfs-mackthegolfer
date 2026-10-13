@@ -136,6 +136,17 @@
     "cover": "trials/011_cactus-par-5_b_cover.jpg (emerging from cactus with ball @27.9s, no text)",
     "dup_check": "clear: 175.3s; nearest @mackthegolfer 175s (wet or dry, camo/white outfit) and 171s (Sep 30, different shirt/course) do not match content; nothing on @mackygolfs within 3s; not on @moremackygolfs",
     "diff_check": "175.3s -> 110.1s (37% cut); restructured (cactus aftermath first, then tee shot); 7 punch-ins alternating; no shirt wipe; ends on final putt + you are kidding instead of bit by a cactus; different cover; side-by-side first 4s: original = cart wipe + I wanna be a better golfer, B = fairway walk-up + cactused line"
+   },
+   "A": {
+    "file": "trials/011_cactus-par-5_a.mp4",
+    "version": "original",
+    "scheduled": "2026-10-14 07:36 MT",
+    "caption": "the cactus won. still mad about it",
+    "zernio": "6acd9609c6f875a29d56fd30",
+    "cover": "trials/011_cactus-par-5_a_cover.jpg",
+    "cover_frame": "shirt wipe @0.15s",
+    "cover_words": "",
+    "dup_check": "clear: 175.3s; @mackygolfs Amarillites posts are 178s (white shirt, Amarillo) - different reel; no green-pinstripe cactus post on either account"
    }
   },
   "id:etyjxrk_8sAAAAAAAAAE7Q": {
@@ -168,6 +179,17 @@
     "cover": "trials/010_driver-putter_b_cover.jpg (fist pump at the flag @94.55s, no text)",
     "dup_check": "clear: 99.5s; @mackthegolfer 97s (no kids harmed, green shirt) and @mackygolfs 103/106s (children, green/grey) are different reels; pulled from @moremackygolfs before posting (never posted anywhere)",
     "diff_check": "99.5s -> 67.7s (32% cut); teaser cold open, cut texas wedge/tee-shot setup talk, profanity and rim job line; 4 punch-ins alternating; ends on but that long putt incredible instead of bring the driver out on the green; different cover than @moremackygolfs (wrong clubs text)"
+   },
+   "A": {
+    "file": "trials/010_driver-putter_a.mp4",
+    "version": "original",
+    "scheduled": "2026-10-14 13:27 MT",
+    "caption": "putter off the tee. driver on the green",
+    "zernio": "6acd960bc6f875a29d56fd34",
+    "cover": "trials/010_driver-putter_a_cover.jpg",
+    "cover_frame": "shirt wipe @0.3s",
+    "cover_words": "DRIVER PUTTER",
+    "dup_check": "clear: 99.5s; @mackygolfs 103s/106s are children-themed green/grey reels; never posted anywhere"
    }
   },
   "id:etyjxrk_8sAAAAAAAAAE6w": {
@@ -185,6 +207,22 @@
     "note": "same par-3 footage as Video Oct 12 2026, 7 37 01 AM.mov (id:etyjxrk_8sAAAAAAAAAE6g, hey my name is Mack intro) which goes to @mackygolfs Oct 14",
     "dup_check": "clear: 25.3s; @mackthegolfer 27s (Oct 11, light shirt, different hole) no match; @mackygolfs 23-28s posts are other outfits; never posted anywhere",
     "diff_check": "25.3s -> 17.2s (32% cut); opens on the green walk-up/point instead of cart wipe; tee question moved after; 3 punch-ins alternating; dead camera time between putts cut; ends on second putt instead of picking the ball out; different cover (tracer)"
+   }
+  },
+  "id:etyjxrk_8sAAAAAAAAAE6g": {
+   "name": "Video Oct 12 2026, 7 37 01 AM.mov",
+   "slug": "013_par-3-hey-mack",
+   "A": {
+    "file": "trials/013_par-3-hey-mack_a.mp4",
+    "version": "original",
+    "scheduled": "2026-10-14 18:52 MT",
+    "caption": "par 3 at sunset. rate it",
+    "zernio": "6acd960efa9f600cba075772",
+    "cover": "trials/013_par-3-hey-mack_a_cover.jpg",
+    "cover_frame": "shirt wipe @0.25s",
+    "cover_words": "",
+    "note": "same par-3 footage as 012 (B Oct 13) with a different intro",
+    "dup_check": "clear: 25.8s; @mackygolfs 23-28s posts are other outfits (blue, white, red); never posted anywhere"
    }
   }
  }
