@@ -162,6 +162,18 @@
     "cover_frame": "shirt wipe @0.3s",
     "cover_words": "SIX MONTHS IN",
     "dup_check": "clear: 148.9s; no post within 3s on @mackygolfs or @mackthegolfer (Amarillo white-shirt reels on B are 74/95/114s, different holes); not on @moremackygolfs"
+   },
+   "B": {
+    "file": "trials/009_six-months-par-5_b.mp4",
+    "segs": "trials/009_six-months-par-5_b_segs.json",
+    "version": "clean edit",
+    "opening": "talk-first (cold open on most of my drives do not look like that)",
+    "scheduled": "2026-10-14 13:53 MT",
+    "caption": "six months in. grade my game",
+    "zernio": "6acd98661bab764f9b9f44e5",
+    "cover": "trials/009_six-months-par-5_b_cover.jpg (third-shot tracer @59.6s, no text)",
+    "dup_check": "clear: 148.9s; no post within 3s on either account; never posted anywhere (A gets the original Oct 13, different day)",
+    "diff_check": "148.9s -> 93.1s (37% cut); opens on the post-drive talking line instead of the cart wipe; intro trimmed; tree shot with god damn it and holy shit line cut; dead walking time cut; 5 punch-ins alternating; ends on I almost missed that instead of but I didnt + ball pickup; different cover"
    }
   },
   "id:etyjxrk_8sAAAAAAAAAErg": {
@@ -268,6 +280,23 @@
     "cover_frame": "shirt wipe @0.4s",
     "cover_words": "LAG MASTER",
     "dup_check": "on @mackthegolfer (Mack, Oct 8, that is why she is blue boys, 95s): 7+ days before this slot; not on @mackygolfs -> OK for A"
+   }
+  },
+  "id:etyjxrk_8sAAAAAAAAAE5Q": {
+   "name": "Video Oct 12 2026, 7 38 06 AM.mov",
+   "slug": "017_par-5-blue",
+   "B": {
+    "file": "trials/017_par-5-blue_b.mp4",
+    "segs": "trials/017_par-5-blue_b_segs.json",
+    "version": "clean edit",
+    "opening": "teaser (putt lean reaction) then talk",
+    "scheduled": "2026-10-14 08:21 MT",
+    "caption": "sunset par 5. grade it",
+    "zernio": "6acd96d2c5e350234a748092",
+    "cover": "trials/017_par-5-blue_b_cover.jpg (sunset tee shot tracer @7.2s, no text)",
+    "note": "same par-5 footage as 005 (Video Oct 12 2026, 7 33 50 AM, guess my handicap intro)",
+    "dup_check": "likely on @mackygolfs (Mack, Sep 19, 31s Texas-wedge series, same blue shirt) -> fine for B; @mackthegolfer 30s (Oct 5) is a grey shirt reel, 27s Oct 11 light shirt: no match; nothing on other accounts in last 7 days",
+    "diff_check": "29.8s -> 18.5s (38% cut); teaser cold open on the putt reaction, intro trimmed to the par 5 line; 4 punch-ins alternating; ends on the tap-in instead of picking the ball out; different cover"
    }
   }
  }
