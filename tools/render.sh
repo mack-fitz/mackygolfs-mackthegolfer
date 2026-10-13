@@ -9,6 +9,9 @@ set -e
 SRC="$1"; SEGS="$2"; H1="$3"; H2="$4"; OUT="$5"
 FONT=/usr/share/fonts/truetype/google-fonts/Poppins-Bold.ttf
 read W H FPS < <(ffprobe -v error -select_streams v:0 -show_entries stream=width,height,r_frame_rate -of csv=p=0 "$SRC" | tr ',' ' ')
+# phone .mp4s carry a -90/90 rotation tag; ffmpeg auto-rotates, so swap W/H to match the upright frames
+ROT=$(ffprobe -v error -select_streams v:0 -show_entries stream_side_data=rotation -of csv=p=0 "$SRC" | tr -d '\r\n ,')
+case "$ROT" in 90|-90|270|-270) T=$W; W=$H; H=$T;; esac
 FG=$(python3 -I - "$SEGS" "$W" "$H" "$FONT" "$H1" "$H2" <<'PY'
 import json, sys
 segs = json.load(open(sys.argv[1])); w, h = int(sys.argv[2]), int(sys.argv[3])
