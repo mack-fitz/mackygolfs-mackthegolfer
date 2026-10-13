@@ -1,5 +1,5 @@
 {
- "note": "Trial reels for @mackygolfs (A) and @mackthegolfer (B). Keyed by Dropbox file ID.",
+ "note": "Trial reels for @mackygolfs (A) and @mackthegolfer (B). Keyed by Dropbox file ID. Oct 13 rules: exactly 2/day (morning+evening), one short (<35s) + one long (>60s) per account; B = re-edits of already-posted footage only.",
  "reels": {
   "id:etyjxrk_8sAAAAAAAAAE2w": {
    "name": "Video Oct 12 2026, 12 00 30 AM.mov",
@@ -117,10 +117,13 @@
     "scheduled": "2026-10-13 07:42 MT",
     "caption": "texas has one pond. i found it",
     "zernio": "6acd92bfe6ae203b5b6a60af",
-    "cover": "trials/008_san-angelo-water_a_cover.jpg",
+    "cover": "trials/008_san-angelo-water_a_cover.jpg (Oct 13 grid-style remake @0.4s)",
     "cover_frame": "shirt wipe @0.4s",
-    "cover_words": "INTO THE WATER",
-    "dup_check": "clear: 173.5s; no post within 3s on @mackygolfs or @mackthegolfer; San Angelo par 4 (green pinstripe) differs from A Oct 11 153s (=002 guess my score) and A Oct 10 110s par 3; not on @moremackygolfs"
+    "cover_words": "found the only pond in texas",
+    "dup_check": "clear: 173.5s; no post within 3s on @mackygolfs or @mackthegolfer; San Angelo par 4 (green pinstripe) differs from A Oct 11 153s (=002 guess my score) and A Oct 10 110s par 3; not on @moremackygolfs",
+    "cover_style": "typewriter",
+    "length_test": "long",
+    "duration": 173.5
    },
    "B": {
     "file": "trials/008_san-angelo-water_b.mp4",
@@ -129,10 +132,12 @@
     "opening": "talk-first (cold open on I am so freaking back baby)",
     "scheduled": "2026-10-15 08:32 MT",
     "caption": "free lesson from a stranger. did it help",
-    "zernio": "6acd9ac33b194bfe6b312bdd",
+    "zernio": null,
     "cover": "trials/008_san-angelo-water_b_cover.jpg (re-tee swing @33.0s, no text)",
     "dup_check": "clear: 173.5s; @mackthegolfer 175s posts are Goosey (different reel, other day) and wet or dry (camo/white); no San Angelo water reel on B; A gets the original Oct 13 (different day)",
-    "diff_check": "173.5s -> 105.1s (39% cut); opens on the post-bunker so freaking back line instead of the cart wipe; profanity (bullshit, holy shit, said shit) and the this cock lesson line cut; dress-code cart rant and walking cut; 5 punch-ins alternating; ends on you ever seen a lag putt that good instead of boom; different cover"
+    "diff_check": "173.5s -> 105.1s (39% cut); opens on the post-bunker so freaking back line instead of the cart wipe; profanity (bullshit, holy shit, said shit) and the this cock lesson line cut; dress-code cart rant and walking cut; 5 punch-ins alternating; ends on you ever seen a lag putt that good instead of boom; different cover",
+    "status": "deleted Oct 13: never-posted footage not allowed on B (Mack Oct 13 rules); was 2026-10-15 08:32",
+    "deleted_zernio": "6acd9ac33b194bfe6b312bdd"
    }
   },
   "id:etyjxrk_8sAAAAAAAAAE7w": {
@@ -156,10 +161,13 @@
     "scheduled": "2026-10-14 07:36 MT",
     "caption": "the cactus won. still mad about it",
     "zernio": "6acd9609c6f875a29d56fd30",
-    "cover": "trials/011_cactus-par-5_a_cover.jpg",
+    "cover": "trials/011_cactus-par-5_a_cover.jpg (Oct 13 grid-style remake @0.15s)",
     "cover_frame": "shirt wipe @0.15s",
-    "cover_words": "",
-    "dup_check": "clear: 175.3s; @mackygolfs Amarillites posts are 178s (white shirt, Amarillo) - different reel; no green-pinstripe cactus post on either account"
+    "cover_words": "Macky vs. a Cactus",
+    "dup_check": "clear: 175.3s; @mackygolfs Amarillites posts are 178s (white shirt, Amarillo) - different reel; no green-pinstripe cactus post on either account",
+    "cover_style": "pill red",
+    "length_test": "long",
+    "duration": 175.3
    }
   },
   "id:etyjxrk_8sAAAAAAAAAE7Q": {
@@ -170,11 +178,13 @@
     "version": "original",
     "scheduled": "2026-10-13 18:41 MT",
     "caption": "six months in. be nice",
-    "zernio": "6acd933f3da189b561e266db",
+    "zernio": null,
     "cover": "trials/009_six-months-par-5_a_cover.jpg",
     "cover_frame": "shirt wipe @0.3s",
     "cover_words": "SIX MONTHS IN",
-    "dup_check": "clear: 148.9s; no post within 3s on @mackygolfs or @mackthegolfer (Amarillo white-shirt reels on B are 74/95/114s, different holes); not on @moremackygolfs"
+    "dup_check": "clear: 148.9s; no post within 3s on @mackygolfs or @mackthegolfer (Amarillo white-shirt reels on B are 74/95/114s, different holes); not on @moremackygolfs",
+    "status": "deleted Oct 13: swapped for a SHORT original (013) per Mack; never published",
+    "deleted_zernio": "6acd933f3da189b561e266db"
    },
    "B": {
     "file": "trials/009_six-months-par-5_b.mp4",
@@ -183,10 +193,12 @@
     "opening": "talk-first (cold open on most of my drives do not look like that)",
     "scheduled": "2026-10-14 13:53 MT",
     "caption": "six months in. grade my game",
-    "zernio": "6acd98661bab764f9b9f44e5",
+    "zernio": null,
     "cover": "trials/009_six-months-par-5_b_cover.jpg (third-shot tracer @59.6s, no text)",
     "dup_check": "clear: 148.9s; no post within 3s on either account; never posted anywhere (A gets the original Oct 13, different day)",
-    "diff_check": "148.9s -> 93.1s (37% cut); opens on the post-drive talking line instead of the cart wipe; intro trimmed; tree shot with god damn it and holy shit line cut; dead walking time cut; 5 punch-ins alternating; ends on I almost missed that instead of but I didnt + ball pickup; different cover"
+    "diff_check": "148.9s -> 93.1s (37% cut); opens on the post-drive talking line instead of the cart wipe; intro trimmed; tree shot with god damn it and holy shit line cut; dead walking time cut; 5 punch-ins alternating; ends on I almost missed that instead of but I didnt + ball pickup; different cover",
+    "status": "deleted Oct 13: never-posted footage not allowed on B; was a midday slot",
+    "deleted_zernio": "6acd98661bab764f9b9f44e5"
    }
   },
   "id:etyjxrk_8sAAAAAAAAAErg": {
@@ -208,13 +220,18 @@
    "A": {
     "file": "trials/010_driver-putter_a.mp4",
     "version": "original",
-    "scheduled": "2026-10-14 13:27 MT",
+    "scheduled": "2026-10-14 18:45 MT",
     "caption": "putter off the tee. driver on the green",
-    "zernio": "6acd960bc6f875a29d56fd34",
-    "cover": "trials/010_driver-putter_a_cover.jpg",
+    "zernio": "6acdc2818bbebee1aa7901e1",
+    "cover": "trials/010_driver-putter_a_cover.jpg (Oct 13 plain shirt-wipe @0.3s)",
     "cover_frame": "shirt wipe @0.3s",
-    "cover_words": "DRIVER PUTTER",
-    "dup_check": "clear: 99.5s; @mackygolfs 103s/106s are children-themed green/grey reels; never posted anywhere"
+    "cover_words": "",
+    "dup_check": "clear: 99.5s; @mackygolfs 103s/106s are children-themed green/grey reels; never posted anywhere",
+    "previous_zernio": "6acd960bc6f875a29d56fd34 (was Oct 14 13:27 midday, deleted)",
+    "cover_style": "none",
+    "length_test": "long",
+    "duration": 99.5,
+    "note_length": "no never-posted SHORT original left in Golf Captions for Oct 14 (012 is the same par-3 footage as 013 which posts Oct 13), so A Oct 14 is long+long until Mack uploads new shorts"
    }
   },
   "id:etyjxrk_8sAAAAAAAAAE6w": {
@@ -240,14 +257,18 @@
    "A": {
     "file": "trials/013_par-3-hey-mack_a.mp4",
     "version": "original",
-    "scheduled": "2026-10-14 18:52 MT",
+    "scheduled": "2026-10-13 18:40 MT",
     "caption": "par 3 at sunset. rate it",
-    "zernio": "6acd960efa9f600cba075772",
+    "zernio": "6acdc26f8bbebee1aa7901be",
     "cover": "trials/013_par-3-hey-mack_a_cover.jpg",
     "cover_frame": "shirt wipe @0.25s",
     "cover_words": "",
     "note": "same par-3 footage as 012 (B Oct 13) with a different intro",
-    "dup_check": "clear: 25.8s; @mackygolfs 23-28s posts are other outfits (blue, white, red); never posted anywhere"
+    "dup_check": "clear: 25.8s; @mackygolfs 23-28s posts are other outfits (blue, white, red); never posted anywhere",
+    "previous_zernio": "6acd960efa9f600cba075772 (was Oct 14 18:52, deleted)",
+    "length_test": "short",
+    "duration": 25.8,
+    "cover_style": "none"
    }
   },
   "id:etyjxrk_8sAAAAAAAAAE6A": {
@@ -258,11 +279,13 @@
     "version": "original",
     "scheduled": "2026-10-15 07:47 MT",
     "caption": "guess my score. be honest",
-    "zernio": "6acd96542461c71357a65e07",
+    "zernio": null,
     "cover": "trials/014_lock-it-in-par-3_a_cover.jpg",
     "cover_frame": "shirt wipe @0.23s",
     "cover_words": "LOCK IT IN",
-    "dup_check": "likely on @mackthegolfer (Mack, Oct 4, 114/115s it is a Tuesday, same white shirt/camo hat): 11 days ago, never on @mackygolfs (A 110s Oct 10 is a green-pinstripe reel) -> OK for A"
+    "dup_check": "likely on @mackthegolfer (Mack, Oct 4, 114/115s it is a Tuesday, same white shirt/camo hat): 11 days ago, never on @mackygolfs (A 110s Oct 10 is a green-pinstripe reel) -> OK for A",
+    "status": "deleted Oct 13 (Mack's Oct 13 rules: 2/day, today+tomorrow only; file kept) (was Oct 15/16)",
+    "deleted_zernio": "6acd96542461c71357a65e07"
    }
   },
   "id:etyjxrk_8sAAAAAAAAAE5g": {
@@ -273,11 +296,13 @@
     "version": "original",
     "scheduled": "2026-10-15 13:19 MT",
     "caption": "welcome to bomb city",
-    "zernio": "6acd9657fa9f600cba075ad7",
+    "zernio": null,
     "cover": "trials/015_bomb-city_a_cover.jpg",
     "cover_frame": "shirt wipe @0.4s",
     "cover_words": "",
-    "dup_check": "on @mackthegolfer (Mack, Oct 7, Bomb City TX, 74s cut): 8 days before this slot; not on @mackygolfs (Amarillites posts are 178s, different reel) -> OK for A"
+    "dup_check": "on @mackthegolfer (Mack, Oct 7, Bomb City TX, 74s cut): 8 days before this slot; not on @mackygolfs (Amarillites posts are 178s, different reel) -> OK for A",
+    "status": "deleted Oct 13 (Mack's Oct 13 rules: 2/day, today+tomorrow only; file kept) (was Oct 15/16)",
+    "deleted_zernio": "6acd9657fa9f600cba075ad7"
    }
   },
   "id:etyjxrk_8sAAAAAAAAAE5w": {
@@ -288,11 +313,29 @@
     "version": "original",
     "scheduled": "2026-10-15 18:58 MT",
     "caption": "the lag master doing her thing",
-    "zernio": "6acd9659fa9f600cba075ecf",
+    "zernio": null,
     "cover": "trials/016_lag-master-par-4_a_cover.jpg",
     "cover_frame": "shirt wipe @0.4s",
     "cover_words": "LAG MASTER",
-    "dup_check": "on @mackthegolfer (Mack, Oct 8, that is why she is blue boys, 95s): 7+ days before this slot; not on @mackygolfs -> OK for A"
+    "dup_check": "on @mackthegolfer (Mack, Oct 8, that is why she is blue boys, 95s): 7+ days before this slot; not on @mackygolfs -> OK for A",
+    "status": "deleted Oct 13 (Mack's Oct 13 rules: 2/day, today+tomorrow only; file kept) (was Oct 15/16)",
+    "deleted_zernio": "6acd9659fa9f600cba075ecf"
+   },
+   "B": {
+    "file": "trials/020_lag-master-blue-ball_b.mp4",
+    "segs": "trials/020_lag-master-blue-ball_b_segs.json",
+    "version": "re-edit of already-posted footage",
+    "opening": "cold open on the payoff line (and that is why she's blue boys)",
+    "scheduled": "2026-10-14 19:15 MT",
+    "caption": "the lag master doing what she does",
+    "zernio": "6acdc607f81e5c13dbb77bf1",
+    "cover": "trials/020_lag-master-blue-ball_b_cover.jpg (4th-shot tracer @49.6s, no text)",
+    "length_test": "long",
+    "duration": 65.3,
+    "source_posted_on": "@mackthegolfer Oct 8 2026 (Mack's own 95s reel 'that's why she's blue boys')",
+    "dup_check": "already posted by Mack on @mackthegolfer Oct 8 (95s) - allowed as a heavy re-edit under the Oct 13 rules; A's Oct 15 post of this footage deleted, so not on A within 3 days; not on @moremackygolfs",
+    "diff_check": "97.5s -> 65.3s (33% cut); cold open on 'and that is why she's blue boys' instead of the cart wipe + 'glad I got your attention'; cart intro, 2nd shot (profanity: holy shit / pured the hell) and dead walking cut; 8 alternating punch-ins; ends on the tweener tap-in instead of the selfie 'not my best hole'; different cover (tracer); side-by-side contact sheets checked",
+    "quality": "from the original .mov via relay, libx264 crf 18 (maxrate 9M), 1080x1920"
    }
   },
   "id:etyjxrk_8sAAAAAAAAAE5Q": {
@@ -308,8 +351,12 @@
     "zernio": "6acd96d2c5e350234a748092",
     "cover": "trials/017_par-5-blue_b_cover.jpg (sunset tee shot tracer @7.2s, no text)",
     "note": "same par-5 footage as 005 (Video Oct 12 2026, 7 33 50 AM, guess my handicap intro)",
-    "dup_check": "likely on @mackygolfs (Mack, Sep 19, 31s Texas-wedge series, same blue shirt) -> fine for B; @mackthegolfer 30s (Oct 5) is a grey shirt reel, 27s Oct 11 light shirt: no match; nothing on other accounts in last 7 days",
-    "diff_check": "29.8s -> 18.5s (38% cut); teaser cold open on the putt reaction, intro trimmed to the par 5 line; 4 punch-ins alternating; ends on the tap-in instead of picking the ball out; different cover"
+    "dup_check": "Oct 13 re-check: matches A Oct 7 30s (not Sep 19 as noted before); not on B; not on A within 3 days",
+    "diff_check": "29.8s -> 18.5s (38% cut); teaser cold open on the putt reaction, intro trimmed to the par 5 line; 4 punch-ins alternating; ends on the tap-in instead of picking the ball out; different cover",
+    "length_test": "short",
+    "duration": 18.5,
+    "source_posted_on": "@mackygolfs Oct 7 2026 (Mack's own 30s 'Macky vs. a Par 5' reel, caption 'and please remember to consider that I am a really good golfer...'); verified Oct 13 by thumbnail (same blue patterned shirt/cart) + length 30s vs 29.8s",
+    "quality": "re-exported Oct 13 from the original .mov, libx264 crf 18, 1080x1920 (pinned 2dde724)"
    }
   },
   "id:etyjxrk_8sAAAAAAAAAE7A": {
@@ -320,22 +367,47 @@
     "segs": "trials/018_breaking-100_b_segs.json",
     "version": "clean edit",
     "opening": "teaser (long putt rolling up to the hole) then talk",
-    "scheduled": "2026-10-14 19:18 MT",
+    "scheduled": "2026-10-13 19:05 MT",
     "caption": "trying to break 100. tips welcome",
-    "zernio": "6acd98f634c5533d413a9593",
+    "zernio": "6acdc45e9254cb99b50f6ac8",
     "cover": "trials/018_breaking-100_b_cover.jpg (drive tracer @7.8s, no text)",
     "dup_check": "on @mackygolfs (Mack, Oct 2, I have broken 100 once, 35s, same dark shirt) -> not for A; @mackthegolfer 36s help pls (Oct 6) is a light-shirt reel, no match -> clear for B",
-    "diff_check": "35.2s -> 24.9s (29% cut); teaser cold open on the putt; ball-flight hang time and walking cut; 3 punch-ins alternating; ends right after the tap-in instead of the walk-off; different cover"
+    "diff_check": "35.2s -> 24.9s (29% cut); teaser cold open on the putt; ball-flight hang time and walking cut; 3 punch-ins alternating; ends right after the tap-in instead of the walk-off; different cover",
+    "previous_zernio": "6acd98f634c5533d413a9593 (was Oct 14 19:18, deleted)",
+    "length_test": "short",
+    "duration": 24.9,
+    "source_posted_on": "@mackygolfs Oct 2 2026 (Mack's own 35s reel 'I have broken 100 once but it is starting to feel like a fluke'); thumbnail verified (dark patterned shirt, cart)",
+    "quality": "re-exported Oct 13 from the original .mov, crf 18, 1080x1920 (pinned 2dde724)"
+   }
+  },
+  "clips:002_beach-day": {
+   "name": "clips repo queue/002_beach-day_full.mp4 (copy_2CC073A6 chat upload); same footage as Mack's @mackygolfs Oct 1 119s and @mackthegolfer Oct 6 97s reels",
+   "slug": "019_beach-day-par-4",
+   "B": {
+    "file": "trials/019_beach-day-par-4_b.mp4",
+    "segs": "trials/019_beach-day-par-4_b_segs.json",
+    "version": "re-edit of already-posted footage",
+    "opening": "cold open on the ending line (not freaking bad babes) then the tee talk",
+    "scheduled": "2026-10-13 08:27 MT",
+    "caption": "short par 4. spent most of it at the beach",
+    "zernio": "6acdc1df7951a35265f9e99f",
+    "cover": "trials/019_beach-day-par-4_b_cover.jpg (fist pump at the flag @93.0s, no text)",
+    "length_test": "long",
+    "duration": 68.2,
+    "source_posted_on": "@moremackygolfs/X/TikTok Oct 11 2026 (clip 002_beach-day, published); also Mack's own @mackygolfs Oct 1 ('come play a par 4 with me??', 119s) and @mackthegolfer Oct 6 ('no kids were harmed this time', 97s, thumbnail verified)",
+    "dup_check": "posted on A Oct 1 and B Oct 6 (>3 days ago), moremackygolfs Oct 11; not on A within 3 days",
+    "diff_check": "98.2s -> 68.2s (31% cut); restructured: cold open on 'not freaking bad babes' (original/moremacky end) instead of shirt wipe + cart intro; all profanity captions cut (motherfucker x2, putting this bitch, elephant's ass, Jesus..., pisses me off, Lag City bitch); added the one-leg 'right stance' bunker shot; 7 alternating punch-ins; ends on 'was that a six' instead of 'not freaking bad babes'; different cover; side-by-side vs moremackygolfs version checked",
+    "quality": "from clips _full source, libx264 crf 18 (maxrate 9M to stay under GitHub 100 MB), 1080x1920"
    }
   }
  },
  "unfilled": {
-  "mackthegolfer": [
-   "2026-10-15 midday",
-   "2026-10-15 evening"
+  "as_of": "2026-10-13",
+  "mackygolfs": [
+   "Oct 14 has no SHORT original: every never-posted Golf Captions reel under 35s is used or is the same footage as 013"
   ],
-  "why": "Every Golf Captions reel left is either already on @mackthegolfer (Mack's own posts: Bomb City, blue ball/lag masta, Goosey x2, it is a Tuesday, king of the world, mama didnt raise, lag masta 007), the same footage as a reel B already has this week (010/E5A, 012/E6g, 017/E6Q), or went out on @mackygolfs in the last 7 days (001, 003, 004). Needs new Golf Captions uploads.",
-  "as_of": "2026-10-12"
+  "mackthegolfer": [],
+  "why": "Needs new Golf Captions uploads (short never-posted reels for A)."
  },
  "golf_captions_status": {
   "never_posted_left_for_A": [],
