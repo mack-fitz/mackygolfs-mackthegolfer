@@ -35,3 +35,17 @@
 - Video Oct 12 2026, 7 17 58 AM.mov 24.5–37 "into the hole" → 8 iron → "not bad not bad" (was comp4's ender); ~100–107 "bump bump / I'll take a bog"
 - Video Oct 12 2026, 12 03 20 AM.mov ~89–101 "well it technically did go over the tree / … at least I'm in the shade now"
 - Video Oct 12 2026, 12 11 12 AM.mov 155–171 ball across the green → "that's okay, still feeling absolutely electric" → "lag putt of the century"
+
+## Round 2 (Oct 14) — Mack: "This doesn't make sense go back to the drawing board"
+Rebuilt from scratch. Problem with r1: bits mixed themes (a "if I bog this" setup = delusional, "that was gonna be a perfect shot" = excuse) and some verdicts needed context. New rule for every bit: ONE shot that clearly goes wrong → her immediately rating it way too kindly. No setups that need explaining.
+- Video: `compilations/comp7_not-bad_r2.mp4` — 46.3 s, 4 bits, single crf-17 encode from the true originals (`comp7_r2_bits.json`, `tools/render_comp.py`).
+| # | out (s) | source | src in–out (s) | what happens |
+|---|---|---|---|---|
+| 1 | 0.0–14.3 | Video Oct 12 2026, 12 03 20 AM.mov (green, San Angelo) | 84.70–86.15 + 89.60–102.45 | "I've got to pop it over this tree" → shot (tracer) → "well it technically did go over the tree / but then it fell down the right side of the green so / hate to see that, at least I'm in the shade now / that's genuinely the only good news" |
+| 2 | 14.3–22.7 | Video Oct 12 2026, 7 13 58 AM.mov (white/camo, Amarillo) | 28.30–33.85 + 36.45–39.30 (punch-in) | shot → "holy shit couldn't have been more perfect" → "still not on the green but absolutely pured the hell out of that" |
+| 3 | 22.7–35.7 | Video Oct 11 2026, 9 02 57 AM (3).mp4 (orange checker, Colorado) | 84.90–89.30 + 90.80–99.40 | long putt "get in there get in there" slides by → tap-in → "honestly a four putt is pretty standard / but that long putt incredible" |
+| 4 | 35.7–46.3 | Video Oct 12 2026, 7 26 20 AM.mov (white/camo) | 55.20–60.90 + 63.20–67.95 (punch-in) | shot pops up and comes down short (tracer) → "would have liked to see a little more distance / but otherwise pure like butter" |
+- Every shot kept whole; cuts only in silent address/walking (0.1 s RMS maps); her own scene cut used at 90.80 in bit 3. No swearing in kept bits was cut. No text added. Outfits alternate green → white/camo → orange → white/camo.
+- Not reused from comp1, comp2, comp3, edging, wipes (bit 4 seconds overlap dropped comp6's tree shot window edge only: comp6 ended at 53.44, this starts 55.20).
+- Covers (r2): opt1 shade face @11.0 red pill "that's not bad"; opt2 orange checker grin @33.0 blue pill; opt3 camo close-up "pure like butter" @44.6 purple pill; opt4 typewriter "my golf shots, rated by me" @12.4.
+- Caption unchanged: "i'm my biggest fan".
