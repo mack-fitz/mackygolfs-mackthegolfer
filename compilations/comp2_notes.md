@@ -52,4 +52,14 @@ confidence is free
 - Spacing note: bit 2 is the putter/driver footage that posts on @mackygolfs Oct 14 6:45pm (010 A). Post comp2 on @mackthegolfer Oct 17 or later (3-day rule).
 
 
-## Round notes IN PROGRESS (Oct 14, 17:02–, still working at 17:31 UTC, :47 review-check run) — another run: skip this one
+## Round 3 (Oct 14) — Mack: "You have misunderstood the prompt. I shouldn't ever have a good shot after saying I'm good"
+- Rule now: every bit = she says she's good / it's going to be great → the shot is bad. Pitching-wedge bit dropped (that shot came off), "felt so much better" wedge bit dropped (no claim before it).
+- `comp2_delusional.mp4` re-cut: 38.0 s, 3 bits, one encode from the true originals (`tools/render_comp.py`, bits in `comp2_r3_bits.json`).
+| # | source (originals) | source in–out (s) | claim → result |
+|---|---|---|---|
+| 1 | Video Oct 12 2026, 12 14 03 AM.mov (green pinstripe) | 2.20–4.40 + 30.45–31.10 (punch-in) + 35.60–46.60 | "I'm getting a hole in one on this par 3" → "you ready for this" → tee shot (tracer) → "oh it's gonna be a little left" → "and about 40 yards past it" → "all right wasn't an ace" (cut: tee-up talk + standing at address) |
+| 2 | Video Oct 12 2026, 7 16 02 AM.mov (white shirt, camo hat) | 122.07–124.20 (punch-in) + 124.20–130.40 | "all right you're about to see the lag MASTA at work" → lag putt → "maybe the lag master took the day off after all" (her scene cuts both ends) |
+| 3 | Video Oct 12 2026, 12 05 56 AM.mov (green polo) | 101.70–107.60 + 119.40–126.70 + 128.70–131.30 (punch-in) | "it's fortunate that I'm one of the best putters this galaxy has ever seen, so actually won't be a problem" → putt comes up short → "didn't get all the way there… honestly not bad" (kept from round 2) |
+- Outfits: green → white/camo → green (no same shirt back to back). No shirt wipes, no added text, swearing kept, every shot whole.
+- Covers ("what it's like / being delusional", one rounded box mid-frame): r3opt1 hole-in-one claim w/ glove (comp @0.6, blue), r3opt2 "lag master took the day off" (comp @20.3, red), r3opt3 "wasn't an ace" in the cart (comp @13.0, purple), opt4 galaxy face (kept).
+- Spacing: footage last posted on B Oct 12 (hole-in-one, galaxy); lag-masta footage never posted on B. comp3 (B) uses a different 12 14 03 bit (neon ball, 50–55 s).
