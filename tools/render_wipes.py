@@ -1,6 +1,6 @@
-# usage: python3 render_wipes.py comps.json comp2 out.mp4
+# usage: python3 render_wipes.py compilations/comp_wipes_2_3.json comp2 out.mp4 [srcdir]
 import json,sys,subprocess,numpy as np
-d=json.load(open(sys.argv[1]))[sys.argv[2]]; out=sys.argv[3]; S="/home/claude/src/"
+d=json.load(open(sys.argv[1]))[sys.argv[2]]; out=sys.argv[3]; S=(sys.argv[4] if len(sys.argv)>4 else "src")+"/"  # dir with the rejoined originals
 def lvl(src,n):
     b=subprocess.run(["ffmpeg","-v","error","-t",f"{n/30:.4f}","-i",S+src,"-ac","1","-ar","48000","-f","s16le","-"],capture_output=True).stdout
     x=np.frombuffer(b,np.int16).astype(float)/32768; w=2400
