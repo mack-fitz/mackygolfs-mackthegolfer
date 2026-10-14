@@ -1,3 +1,2 @@
 # Review-check claims (another run: skip anything listed here as IN PROGRESS)
-- Oct 14 20:10 UTC (:47 review-check run) DONE: scheduled 2026-10-15_A_pm, 2026-10-15_B_pm, 2026-10-16_A_am, 2026-10-16_B_am, 2026-10-16_B_pm (cover opt2) in Zernio; review docs set "scheduled".
-- Oct 14 20:10 UTC (:47 review-check run) IN PROGRESS: notes for 2026-10-15_B_am (023 r3), comp2 r4, comp3 r5; full untouched version of 022 footage (Mack asked "also the full thing posted").
+- Oct 14 20:40 UTC (:47 review-check run) DONE: scheduled 2026-10-15_A_pm, 2026-10-15_B_pm, 2026-10-16_A_am, 2026-10-16_B_pm (cover opt2) in Zernio (026/10-16_B_am was moved to 2026-10-18_B_am by another session, Zernio post confirmed Oct 18 08:23 MT). Notes applied and back on the review page: 2026-10-15_B_am (023 r3), comp2 r4, comp3 r5. New card 2026-10-18_A_am = full untouched 022 footage (028, Zernio draft 6acfe80cb278a89ea3578c8e). Base Camp schedule synced. Nothing in progress.
