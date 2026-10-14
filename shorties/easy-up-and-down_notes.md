@@ -17,3 +17,7 @@
 - Already posted (>= 15 s in one post by Mack): @mackygolfs 2026-07-26 "we’ve got a DUMPER boys" (39.7 s of this source; posted_index.json). Moment not in any compilation (comp3 uses 15.1–20.7 and 40.8–48.2 of this file; wipe comps 0–1.2).
 - Covers r2: opt1 address in the bunker, opt2 tracer on the 2nd try, opt3 the ball finally leaving.
 - Checked: 3 fps sheet of the export + first/last frames; line spelled right and legible.
+
+## Round 3 (Oct 14) — Mack: "Use this clip with text that's like classic follow up to a piped drive. Then do a different clip for the current text"
+- Same one clip as r2 (`Video Oct 12 2026, 12 00 30 AM.mov` 23.633–34.267, bunker, three swings to get out), new line: "me after piping my drive / down the middle" (y 290–460, white Inter SemiBold 66, soft shadow). File `shorties/easy-up-and-down_r3.mp4`, 10.63 s, single crf-17 export from the original. Covers r3_opt1–3 (address in the bunker, 2nd swing, ball finally out).
+- The "easy up and down" line moved to a new one-clip shorty: `shorties/easy-up-and-down-lag.mp4` (doc shorty_easy-up-and-down-lag).
