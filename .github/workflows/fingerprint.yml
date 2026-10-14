@@ -1,0 +1,84 @@
+name: fingerprint
+# Duplicate check V2 (PLAYBOOK.md). Downloads videos, computes fingerprints, commits ONLY the small
+# JSON fingerprints under state/fp/. Never commits Instagram videos or Dropbox originals.
+# Inputs (push any of these; the workflow deletes them when done):
+#  - fp/want_posts.tsv   one posted reel per line: key<TAB>permalink<TAB>video_url<TAB>thumb_url
+#                        (fresh Zernio mediaItems URLs; IG CDN URLs expire). Tries video_url, then
+#                        yt-dlp on the permalink, then the thumbnail. -> state/fp/posts/<key>.json
+#  - fp/want_sources.txt Dropbox /Golf Captions file names, or ALL (folder link = DROPBOX_FOLDER_URL
+#                        secret). -> state/fp/sources/<name>.json (with dense 0.5 s frames)
+#  - fp/want_repo.txt    repo paths to fingerprint (e.g. trials/010_driver-putter_a.mp4)
+#                        -> state/fp/repo/<basename>.json
+on:
+  push:
+    paths: ['fp/want_posts.tsv', 'fp/want_sources.txt', 'fp/want_repo.txt']
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: fingerprint
+  cancel-in-progress: false
+jobs:
+  fp:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+      - name: Tools
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq libchromaprint-tools ffmpeg >/dev/null
+          pip install -q imagehash pillow yt-dlp
+      - name: Posted reels
+        run: |
+          mkdir -p state/fp/posts /tmp/w
+          log=state/fp/last_posts_run.tsv; : > $log
+          [ -s fp/want_posts.tsv ] || exit 0
+          while IFS=$'\t' read -r key link vurl turl; do
+            [ -z "$key" ] && continue
+            rm -f /tmp/w/v.mp4 /tmp/w/t.jpg; how=""
+            if [ -n "$vurl" ] && curl -sSL --fail --retry 2 -A "Mozilla/5.0" -o /tmp/w/v.mp4 "$vurl" </dev/null && [ -s /tmp/w/v.mp4 ]; then how=video_url
+            elif [ -n "$link" ] && yt-dlp -q --no-warnings -f "b[ext=mp4]/b" -o /tmp/w/v.mp4 "$link" </dev/null 2>/tmp/w/ytdlp.err && [ -s /tmp/w/v.mp4 ]; then how=yt_dlp
+            fi
+            if [ -n "$how" ]; then
+              python3 tools/fingerprint.py video /tmp/w/v.mp4 "state/fp/posts/$key.json" "got=$how" "permalink=$link" || how=""
+            fi
+            if [ -z "$how" ] && [ -n "$turl" ] && curl -sSL --fail --retry 2 -A "Mozilla/5.0" -o /tmp/w/t.jpg "$turl" </dev/null && [ -s /tmp/w/t.jpg ]; then
+              python3 tools/fingerprint.py image /tmp/w/t.jpg "state/fp/posts/$key.json" "got=thumbnail" "permalink=$link" && how=thumbnail
+            fi
+            printf '%s\t%s\t%s\n' "$key" "${how:-FAILED}" "$(head -c 200 /tmp/w/ytdlp.err 2>/dev/null | tr '\n\t' '  ')" >> $log
+            rm -f /tmp/w/v.mp4 /tmp/w/t.jpg /tmp/w/ytdlp.err
+          done < fp/want_posts.tsv
+          cut -f2 $log | sort | uniq -c
+      - name: Dropbox sources
+        env:
+          FOLDER_URL: ${{ secrets.DROPBOX_FOLDER_URL }}
+        run: |
+          mkdir -p state/fp/sources
+          [ -s fp/want_sources.txt ] || exit 0
+          url=$(echo "$FOLDER_URL" | sed -E 's/([?&])dl=0/\1dl=1/')
+          case "$url" in *dl=1*) ;; *\?*) url="$url&dl=1";; *) url="$url?dl=1";; esac
+          curl -sSL --fail --retry 3 -o /tmp/folder.zip "$url"
+          mkdir -p /tmp/folder && unzip -qo /tmp/folder.zip -d /tmp/folder || true
+          rm -f /tmp/folder.zip
+          find /tmp/folder -type f \( -iname '*.mov' -o -iname '*.mp4' -o -iname '*.m4v' \) | while IFS= read -r f; do
+            name=$(basename "$f")
+            if grep -qx "ALL" fp/want_sources.txt || grep -qxF "$name" fp/want_sources.txt; then
+              python3 tools/fingerprint.py video "$f" "state/fp/sources/$name.json" --dense "name=$name" "bytes=$(stat -c %s "$f")"
+            fi
+          done
+      - name: Repo files
+        run: |
+          mkdir -p state/fp/repo
+          [ -s fp/want_repo.txt ] || exit 0
+          while IFS= read -r p; do
+            [ -f "$p" ] || continue
+            python3 tools/fingerprint.py video "$p" "state/fp/repo/$(basename "$p").json" "path=$p"
+          done < fp/want_repo.txt
+      - name: Commit (fingerprint JSON only)
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@users.noreply.github.com"
+          git rm -q --ignore-unmatch fp/want_posts.tsv fp/want_sources.txt fp/want_repo.txt
+          git add state/fp
+          git commit -m "Fingerprints" || exit 0
+          for i in 1 2 3 4 5; do git pull -q --rebase && git push && break; sleep 5; done
