@@ -70,3 +70,10 @@ confidence is free
 - Galaxy-putter bit (12 05 56) dropped entirely per her last line (so the "problem" cut no longer applies).
 - `comp2_delusional.mp4` re-cut: 21.0 s, 2 bits, one encode from the true originals (`tools/render_comp.py`, bits in `comp2_r4_bits.json`). Under the usual 30 s: flagged on the page, swaps listed above if she wants a third bit.
 - Covers: r3opt3 (cart "wasn't an ace") and opt4 (galaxy face) removed (their frames are cut); new r4opt5 = "lag MASTA at work" frame, purple pill.
+
+
+## Round 5 (Oct 14) — Mack: "Needs more than two clips"
+- Added a third bit (Bomb City par 4, white shirt/camo, Video Oct 12 2026, 7 19 40 AM.mov 45.60–65.30, one continuous take, punch-in 53.95–57.40): "let's get on the green, might as well right?" → approach comes up short → "absolutely perfect / a little short but absolutely perfect / in the sense that little short is absolutely perfect" → "nice and easy" → chip → "that was a little too nice, a little too easy". Both shots kept whole. Picked from word-timestamped transcripts of 9 originals (state/transcripts/).
+- Order changed so the two white-shirt/camo bits aren't back to back: lag MASTA (7 16 02) → hole in one (12 14 03) → Bomb City (7 19 40). Bits 1-2 unchanged from r4.
+- `comp2_delusional.mp4`: 40.8 s, one encode from the true originals (render_comp.py, comp2_r5_bits.json; sources sha256-checked). Covers unchanged (all three frames still in the video).
+- Bomb City footage was already posted on @mackthegolfer Oct 12 (this bit is < 15 s of new-to-comp use, inside a compilation).
