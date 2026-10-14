@@ -44,7 +44,16 @@ jobs:
           done < /tmp/links/want_links.tsv > /tmp/links/index.tsv
           cut -f1,3 /tmp/links/index.tsv | xargs -P 6 -L 1 sh -c 'curl -sSL --fail --retry 2 -o "/tmp/links/$0.bin" "$1" || echo "FAILED $0"'
           ls -la /tmp/links | head -60; df -h /tmp | tail -1
+      # Sparse checkout: the full tree is ~10 GB of videos and took 20+ min. Only the tools, the
+      # state and the request files are needed (want_repo.txt paths are added in "Repo files").
       - uses: actions/checkout@v4
+        with:
+          sparse-checkout: |
+            /tools/
+            /state/
+            /fp/
+            /.github/
+          sparse-checkout-cone-mode: false
       - name: Tools
         run: |
           mkdir -p /tmp/inputs && cp fp/want_* /tmp/inputs/ 2>/dev/null || true
@@ -103,6 +112,7 @@ jobs:
         run: |
           mkdir -p state/fp/repo
           [ -s fp/want_repo.txt ] || exit 0
+          while IFS= read -r p; do [ -n "$p" ] && git sparse-checkout add "/$p"; done < fp/want_repo.txt
           while IFS= read -r p; do
             [ -f "$p" ] || continue
             python3 tools/fingerprint.py video "$p" "state/fp/repo/$(basename "$p").json" "path=$p"
