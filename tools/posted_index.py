@@ -50,6 +50,15 @@ def want(posts_path):
         open(os.path.join(ROOT, "fp", "want_sources.txt"), "w").write("\n".join(missing) + "\n")
     print(f"want_posts: {len(rows)}  want_sources: {len(missing)}")
 
+def posted_amount(r, src):
+    """DUP CHECK FIX (PLAYBOOK): ALREADY POSTED only if ONE post holds >= 15 s of the source (audio or frames),
+    or >= 80% of a short clip (a 15 s clip posted whole). Thumbnail-only posts: cover match."""
+    if r.get("thumb_dist") is not None:
+        return M.is_match(r)
+    amt = max(r.get("audio_s") or 0, r.get("audio_total_s") or 0, r.get("frames_s") or 0)
+    dur = src.get("duration") or 0
+    return amt >= 15.0 or (dur and amt >= 0.8 * dur)
+
 def mt(iso):
     t = datetime.datetime.fromisoformat(iso.replace("Z", "+00:00"))
     return (t - datetime.timedelta(hours=6)).strftime("%Y-%m-%d %H:%M MT")  # MDT (until Nov 1)
@@ -83,7 +92,7 @@ def build(posts_path):
         matches = []
         for k, d in pfp.items():
             r = M.overlap(d, s)
-            if M.is_match(r):
+            if posted_amount(r, s):
                 pr = by_key[k]
                 aud = r["audio_s"] > M.THRESH_S or r.get("audio_total_s", 0) >= M.TOTAL_THRESH_S
                 fr = r["frames_s"] >= M.FRAME_THRESH_S
@@ -116,11 +125,24 @@ def build(posts_path):
     # keep hand-kept fields (lined_up / used) from the previous never_posted.json
     np_path = os.path.join(ROOT, "state", "never_posted.json")
     prev = {v["name"]: v for v in load(np_path).get("videos", [])} if os.path.exists(np_path) else {}
-    keep = lambda n: {k: v for k, v in prev.get(n, {}).items() if k in ("lined_up", "used", "subfolder")}
+    keep = lambda n: {k: v for k, v in prev.get(n, {}).items() if k in ("lined_up", "used", "subfolder", "path", "folder", "files", "trip", "fingerprints", "short_overlaps", "group_size")}
     never = {"updated": now, "from": "state/posted_index.json (fingerprint-checked against every post on @mackygolfs, @mackthegolfer, @moremackygolfs)",
              "note": "Never-posted status comes ONLY from this file (PLAYBOOK DUPLICATE CHECK V2). 'lined_up' = already on the review page / scheduled; once it posts, the next refresh drops it (it matches its own post).",
              "videos": [dict({"name": s["name"], "dropbox_id": s["dropbox_id"], "duration": s["duration"]}, **keep(s["name"]))
                         for s in out_sources if not s["matches"]]}
+    # All-folders full count (tools/full_count.py + PLAYBOOK "Source folders for new videos"): entries outside
+    # /Golf Captions are kept, unless one of their fingerprints now matches a post (then it posted).
+    gc_names = {v["name"] for v in never["videos"]}
+    prev_all = load(np_path) if os.path.exists(np_path) else {}
+    for v in prev_all.get("videos", []):
+        if v.get("folder", "Golf Captions") == "Golf Captions" or v["name"] in gc_names:
+            continue
+        fps = [load(os.path.join(ROOT, f)) for f in v.get("fingerprints", []) if os.path.exists(os.path.join(ROOT, f))]
+        if any(posted_amount(M.overlap(d, f), f) for d in pfp.values() for f in fps):
+            print("  now posted:", v["name"]); continue
+        never["videos"].append(v)
+    for k in ("scope", "summary", "full_rounds_not_counted"):
+        if k in prev_all: never[k] = prev_all[k]
     json.dump(never, open(os.path.join(ROOT, "state", "never_posted.json"), "w"), indent=1, ensure_ascii=False)
     print(f"posts {len(out_posts)} (fp {n_fp}); sources {len(out_sources)}; never posted {len(never['videos'])}")
     for s in out_sources:
