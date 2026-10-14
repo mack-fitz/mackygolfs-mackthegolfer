@@ -1,0 +1,75 @@
+name: transcribe
+# Word-timestamped transcripts for editing (cut only at real pauses, never mid-word, keep every line).
+# Push fp/want_transcribe.txt: one repo path per line (an inbox/videos file, or <name> whose .partNN
+# pieces are in the repo). -> state/transcripts/<basename>.json (faster-whisper small.en, word times).
+on:
+  push:
+    paths: ['fp/want_transcribe.txt']
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: transcribe
+  cancel-in-progress: false
+jobs:
+  tx:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: |
+            /fp/
+            /state/transcripts/
+          sparse-checkout-cone-mode: false
+      - name: Fetch the requested media (sparse)
+        run: |
+          [ -s fp/want_transcribe.txt ] || exit 0
+          while IFS= read -r p; do
+            [ -z "$p" ] && continue
+            git sparse-checkout add "/$p" "/$p.part*"
+          done < fp/want_transcribe.txt
+          ls -la inbox/videos 2>/dev/null || true
+      - name: Transcribe
+        run: |
+          [ -s fp/want_transcribe.txt ] || exit 0
+          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg >/dev/null
+          pip install -q faster-whisper
+          mkdir -p state/transcripts /tmp/tx
+          while IFS= read -r p; do
+            [ -z "$p" ] && continue
+            src="$p"
+            if [ ! -f "$src" ]; then cat "$p".part* > /tmp/tx/src.bin && src=/tmp/tx/src.bin; fi
+            ffmpeg -nostdin -v error -y -i "$src" -ac 1 -ar 16000 /tmp/tx/a.wav
+            python3 - "$p" <<'PY'
+          import json, os, sys
+          from faster_whisper import WhisperModel
+          p = sys.argv[1]
+          m = WhisperModel("small.en", device="cpu", compute_type="int8")
+          segs, info = m.transcribe("/tmp/tx/a.wav", word_timestamps=True, vad_filter=False, beam_size=5)
+          out = {"source": p, "duration": info.duration, "segments": []}
+          for s in segs:
+              out["segments"].append({"start": round(s.start, 2), "end": round(s.end, 2), "text": s.text.strip(),
+                                      "words": [[round(w.start, 2), round(w.end, 2), w.word] for w in (s.words or [])]})
+          name = os.path.basename(p)
+          json.dump(out, open(f"state/transcripts/{name}.json", "w"), indent=0, ensure_ascii=False)
+          print(name, len(out["segments"]), "segments")
+          PY
+            rm -f /tmp/tx/src.bin /tmp/tx/a.wav
+          done < fp/want_transcribe.txt
+      - name: Commit
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@users.noreply.github.com"
+          cp -r state/transcripts /tmp/txout
+          cp fp/want_transcribe.txt /tmp/want_tx.txt
+          for i in 1 2 3 4 5 6; do
+            git fetch -q origin main && git reset -q --hard origin/main
+            mkdir -p state/transcripts && cp -r /tmp/txout/. state/transcripts/
+            [ -f fp/want_transcribe.txt ] && cmp -s fp/want_transcribe.txt /tmp/want_tx.txt && git rm -q fp/want_transcribe.txt
+            git add state/transcripts
+            git commit -q -m "Transcripts [skip ci]" || exit 0
+            git push -q origin HEAD:main && exit 0
+            sleep $((i * 7))
+          done
+          exit 1
