@@ -101,18 +101,21 @@
     "planned": "2026-10-16 07:38 MT (Zernio DRAFT until Mack approves)",
     "caption": "called the hole in one. got the par",
     "zernio": "6ace7fc243ef21a82a0d2fc1",
-    "media_pinned": "c396e8a",
+    "media_pinned": "26d1141",
     "length_test": "short",
-    "duration": 33.0,
+    "duration": 35.0,
     "source": "/Golf Captions/Video Oct 12 2026, 12 14 03 AM.mov",
     "source_bitrate_bps": 11144942,
     "reuses": "Re-edit of the \"hole in one loading\" par 3 (green pinstripe), which ran as a @mackthegolfer trial Oct 12; never on @mackygolfs. New 33s cut: shirt wipe + \"I'm getting a hole in one\", \"get your shit together Mack\", tee shot, \"wasn't an ace\", chip, 8-footer for par + \"whoo\". All 3 shots kept, swearing kept.",
     "cover_note": "shirt-wipe frame, yellow \"Macky vs. a Par 3\" pill",
     "approval": {
      "review_doc": "2026-10-16_A_am",
-     "status": "waiting"
+     "status": "waiting (round 2)"
     },
-    "segs": "trials/025_hole-in-one-par-3_a_segs.json"
+    "segs": "trials/025_hole-in-one-par-3_a_segs.json",
+    "rounds": [
+     "round 2: full \"get your shit together Mack\", full ending"
+    ]
    }
   },
   "id:etyjxrk_8sAAAAAAAAAE7g": {
@@ -231,8 +234,10 @@
     "cover_note": "shirt-wipe frame, no words (cover test)",
     "approval": {
      "review_doc": "2026-10-16_A_pm",
-     "status": "waiting"
-    }
+     "status": "approved",
+     "decided_at": "2026-10-14T17:10:56Z"
+    },
+    "scheduled": "2026-10-16 18:44 MT (approved, Zernio scheduled)"
    },
    "B": {
     "file": "trials/009_six-months-par-5_b.mp4",
@@ -251,7 +256,7 @@
    "A_previous": {
     "file": "trials/009_six-months-par-5_a.mp4",
     "version": "original",
-    "scheduled": "2026-10-13 18:41 MT",
+    "scheduled": "2026-10-16 18:44 MT (approved, Zernio scheduled)",
     "caption": "six months in. be nice",
     "zernio": null,
     "cover": "trials/009_six-months-par-5_a_cover.jpg",
@@ -259,7 +264,12 @@
     "cover_words": "SIX MONTHS IN",
     "dup_check": "clear: 148.9s; no post within 3s on @mackygolfs or @mackthegolfer (Amarillo white-shirt reels on B are 74/95/114s, different holes); not on @moremackygolfs",
     "status": "deleted Oct 13: swapped for a SHORT original (013) per Mack; never published",
-    "deleted_zernio": "6acd933f3da189b561e266db"
+    "deleted_zernio": "6acd933f3da189b561e266db",
+    "approval": {
+     "review_doc": "2026-10-16_A_pm",
+     "status": "approved",
+     "decided_at": "2026-10-14T17:10:56Z"
+    }
    }
   },
   "id:etyjxrk_8sAAAAAAAAAErg": {
@@ -320,21 +330,24 @@
     "cover": "trials/027_par-3-sunset_b_cover.jpg",
     "version": "re-edit of already-posted footage",
     "planned": "2026-10-16 19:29 MT (Zernio DRAFT until Mack approves)",
-    "caption": "par 3 at golden hour. guess the score",
+    "caption": "wet or dry??",
     "zernio": "6ace7fc434b0ea05e90fe547",
-    "media_pinned": "c396e8a",
+    "media_pinned": "26d1141",
     "length_test": "short",
-    "duration": 18.0,
+    "duration": 20.6,
     "source": "/Golf Captions/Video Oct 12 2026, 7 35 57 AM.mov",
     "source_bitrate_bps": 5124194,
     "reuses": "Re-edit of the sunset par 3 (black shirt), which @mackygolfs posts tonight Oct 13 6:40pm (a different intro). This slot is 3 days later. Opens on you talking, 25s cut to 18s: tee shot and both putts kept; cut walking and picking the ball out. 3 punch-ins. Short is in the evening again (no other short footage clears the 3-day rule for Friday morning).",
     "cover_note": "sunset tee-shot tracer, no words",
     "approval": {
      "review_doc": "2026-10-16_B_pm",
-     "status": "waiting"
+     "status": "waiting (round 2)"
     },
     "segs": "trials/027_par-3-sunset_b_segs.json",
-    "opening": "talk-first (first spoken line after where the wipe is)"
+    "opening": "talk-first (first spoken line after where the wipe is)",
+    "rounds": [
+     "round 2: ball going in + full ending, 5 cover options (default opt1), caption \"wet or dry??\""
+    ]
    }
   },
   "id:etyjxrk_8sAAAAAAAAAE6g": {
@@ -380,18 +393,21 @@
     "planned": "2026-10-15 18:52 MT (Zernio DRAFT until Mack approves)",
     "caption": "lock it in. be nice",
     "zernio": "6ace7f9c34b0ea05e90fe4a6",
-    "media_pinned": "c396e8a",
+    "media_pinned": "26d1141",
     "length_test": "short",
-    "duration": 34.9,
+    "duration": 30.7,
     "source": "/Golf Captions/Video Oct 12 2026, 7 17 58 AM.mov",
     "source_bitrate_bps": 8075636,
     "reuses": "Re-edit of your \"it's a Tuesday\" par 3 (white shirt, camo hat), which you posted on @mackthegolfer Oct 4 (114s); never on @mackygolfs. New 35s cut: shirt wipe + \"lock it in\", the asshole line, tee shot, chip, lag putt, \"motherfucking lag master\", tap-in, \"did you guess a 4\". All 4 shots kept, swearing kept; cut the altitude selfie, 8-iron setup talk and waiting.",
-    "cover_note": "shirt-wipe frame, typewriter note \"par 3. lock it in in the comments\"",
+    "cover_note": "shirt-wipe frame, orange \"Macky vs. A Par 3\" pill",
     "approval": {
      "review_doc": "2026-10-15_A_pm",
-     "status": "waiting"
+     "status": "waiting (round 2)"
     },
-    "segs": "trials/022_lock-it-in-par-3_a_segs.json"
+    "segs": "trials/022_lock-it-in-par-3_a_segs.json",
+    "rounds": [
+     "round 2 (Mack notes Oct 14): tee-box line cut, full lag master, full ending, cover orange pill \"Macky vs. A Par 3\""
+    ]
    }
   },
   "id:etyjxrk_8sAAAAAAAAAE5g": {
@@ -578,21 +594,24 @@
     "cover": "trials/023_lucy-goosey-par-5_b_cover.jpg",
     "version": "re-edit of already-posted footage",
     "planned": "2026-10-15 08:27 MT (Zernio DRAFT until Mack approves)",
-    "caption": "loosey goosey. no thoughts",
+    "caption": "they call me Goosey, Lucy Goosey",
     "zernio": "6ace7f9ee1038e35e001b106",
-    "media_pinned": "c396e8a",
+    "media_pinned": "59e2dad",
     "length_test": "long",
-    "duration": 112.2,
+    "duration": 110.9,
     "source": "/Golf Captions/Video Oct 12 2026, 12 22 39 AM.mov",
     "source_bitrate_bps": 9871600,
     "reuses": "Re-edit of your Lucy Goosey par 5 (green polo), posted on @mackthegolfer Oct 10. Opens on you talking (\"hey I'm literally begging you\"), 161s cut to 111s: every shot kept (tee balls, the tree, both bunker shots, the putt), swearing kept; cut the marshal small talk, the 'tight shot' asides and waiting. 10 punch-ins. Ends on \"LGB loosey goosey baby\" after the marshal line instead of on the marshal line.",
     "cover_note": "tee-shot tracer, no words",
     "approval": {
      "review_doc": "2026-10-15_B_am",
-     "status": "waiting"
+     "status": "waiting (round 2)"
     },
     "segs": "trials/023_lucy-goosey-par-5_b_segs.json",
-    "opening": "talk-first (first spoken line after where the wipe is)"
+    "opening": "talk-first (first spoken line after where the wipe is)",
+    "rounds": [
+     "round 2: opening talk -> \"about to get a lesson\" -> marshal Lucy Goosey -> rest; caption \"they call me Goosey, Lucy Goosey\"; MAXRATE 6M to stay under 100 MB"
+    ]
    }
   },
   "id:etyjxrk_8sAAAAAAAAAE4A": {
@@ -605,19 +624,22 @@
     "planned": "2026-10-15 19:37 MT (Zernio DRAFT until Mack approves)",
     "caption": "perfect drive. perfect bogey",
     "zernio": "6ace7fa134b0ea05e90fe4d0",
-    "media_pinned": "c396e8a",
+    "media_pinned": "26d1141",
     "length_test": "short",
-    "duration": 35.2,
+    "duration": 41.1,
     "source": "/Golf Captions/Video Oct 11 2026, 9 02 57 AM (1).mp4",
     "source_bitrate_bps": 7604760,
     "reuses": "Re-edit of the orange-checker \"perfect perfect bogey\" par 4, which went out on @moremackygolfs Oct 11 (4 days before this slot). Opens on you talking, 51s cut to 35s: drive, approach, both putts kept, \"send it or be a pussy\" kept; cut the 'green's up on that hill' setup and waiting. 5 punch-ins.",
     "cover_note": "drive with tracer (orange checkered shirt), no words",
     "approval": {
      "review_doc": "2026-10-15_B_pm",
-     "status": "waiting"
+     "status": "waiting (round 2)"
     },
     "segs": "trials/024_perfect-drive-bogey_b_segs.json",
-    "opening": "talk-first (first spoken line after where the wipe is)"
+    "opening": "talk-first (first spoken line after where the wipe is)",
+    "rounds": [
+     "round 2: send-it talk uncut 15.95-30.95, full ending; now 41s (not under 35)"
+    ]
    }
   },
   "id:etyjxrk_8sAAAAAAAAAE4g": {
@@ -628,21 +650,24 @@
     "cover": "trials/026_triple-dipper-par-4_b_cover.jpg",
     "version": "re-edit of already-posted footage",
     "planned": "2026-10-16 08:23 MT (Zernio DRAFT until Mack approves)",
-    "caption": "par 4 then chili's",
+    "caption": "I want my baby back",
     "zernio": "6ace82e53a3c4e8d0e5fbc53",
-    "media_pinned": "ac596df",
+    "media_pinned": "59e2dad",
     "length_test": "long",
-    "duration": 121.2,
+    "duration": 122.7,
     "source": "/Golf Captions/Video Oct 12 2026, 12 17 30 AM.mov",
     "source_bitrate_bps": 10658942,
     "reuses": "Re-edit of your Loosey Goosey par 4 (\"triple dipper\", green polo), posted on @mackthegolfer Oct 10. Opens on you talking (\"hey man uh you me par\"), 173s cut to 121s: every shot kept (tee shot, the one into tall grass, re-drop, bunker, chip, lag, every putt), swearing kept; cut the drink, the 'tight shot' jokes, walking and bunker back-and-forth. 9 punch-ins.",
     "cover_note": "tee-shot tracer, no words",
     "approval": {
      "review_doc": "2026-10-16_B_am",
-     "status": "waiting"
+     "status": "waiting (round 2)"
     },
     "segs": "trials/026_triple-dipper-par-4_b_segs.json",
-    "opening": "talk-first (first spoken line after where the wipe is)"
+    "opening": "talk-first (first spoken line after where the wipe is)",
+    "rounds": [
+     "round 2: full \"bit by a snake\", full ending, cover = shocked hand-over-mouth after missed putt; caption \"I want my baby back\"; MAXRATE 6M"
+    ]
    }
   }
  },

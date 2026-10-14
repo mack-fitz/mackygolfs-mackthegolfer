@@ -67,5 +67,7 @@ Mack: "Cut out the that's what I get for joining a male dominated field at the e
 - Video: `compilations/comp3_excuses.mp4` (replaced) — 31.6 s, one encode from the true originals via `tools/render_comp.py`. Caption and cover options unchanged.
 
 
-## Round 3 notes IN PROGRESS (Oct 14, 17:30– UTC, :17 review-check run) — another run: skip this one
+## Round 4 (Oct 14) — Mack's round-3 notes applied
 Mack (17:24Z): "Cut the first clip after the word cactus. Don’t need to see the shot or thing about the sun. Clip 2 child target. Clip 3 altitude. Cut the grip because dumping clip. End on the bathrooms."
+- Cactus bit ends right after 'cactus' (7 30 44 84.60–90.05; swing + sun dropped). Order: cactus → child target (copy_2CC073A6 18.25–20.78, true original from clips@f36a504, sha256 OK) → altitude → neon yellow ball → bathrooms. Grip/dumping (12 00 30) cut. Neon ball not mentioned by Mack, kept as clip 4 (flagged on the page).
+- Video: `compilations/comp3_excuses.mp4` (replaced) — 21.7 s, one encode via `tools/render_comp.py`, bits in `comp3_r4_bits.json`. Caption and covers unchanged.
