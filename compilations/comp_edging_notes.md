@@ -45,4 +45,7 @@ Length note: 47.5 s, a little over the 45 s aim — six bits was the floor and n
 - Used elsewhere, skipped: 7 19 40 "break in break in" (comp4), 9 02 57 AM (3) driver putt (comp4), 12 05 56 galaxy putt (comp2), 12 14 03 8-footer (it went in).
 
 
-## Round notes IN PROGRESS (Oct 14, 17:02–, still working at 17:31 UTC, :47 review-check run) — another run: skip this one
+## Round 2 (Oct 14) — ON HOLD
+Mack: "Multiple balls went in, some weren't that close. Only use clips where the ball stops within like 2 inches of going in"
+- Checked every putt in the 23 Golf Captions originals (+ clips queue putts) with 2–4 fps sheets and zooms on the cup. Clearly within ~2 in and not dropping: 12 03 20 lip-out (155.45–161.92) and 7 13 58 blue-ball lag (her line "lagged right on up to the edge of the hole", ~56–68). Borderline/no: 7 38 06 low-cam (stops a few inches past), 9 02 57 (1) short putt (~5 in), 7 34 47 (~6 in), 12 17 30 "best lag of your life" (~3 ft), 12 11 12 / 7 16 02 lags (1–2 ft taps), 004 four-putt (rolls past). Bits 2 and 6 of round 1 ended with the ball going in.
+- Review doc set decision/status "on_hold" (hidden from the page). Rebuild when new footage gives 4+ qualifying putts.
