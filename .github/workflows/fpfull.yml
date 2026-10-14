@@ -187,6 +187,7 @@ jobs:
           merge-multiple: true
       - name: Merge + commit
         run: |
+          pip install -q numpy
           git config user.name "github-actions"
           git config user.email "github-actions@users.noreply.github.com"
           python3 tools/full_count.py merge /tmp/pairs /tmp/full_pairs.json
