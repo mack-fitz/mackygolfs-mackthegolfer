@@ -9,3 +9,6 @@
 - Covers: opt1 address, opt2 swing with tracer, opt3 her walking up for "maybe we'll be on in 4".
 - Checked: 3 fps sheet of the export + first/last frames; line legible and spelled right.
 - Not used: a "hitting it pure" cut from 12 00 30 (multi-clip) — dropped per her one-clip note.
+
+## Round 2 (Oct 14) — Mack: "Try different text. That doesn't make sense"
+- Same one clip (7 16 02 AM.mov 94.75–110.05), new line: "me when there's finally / nothing in my way" (she says "no trees in the way this time… the green is right in front of us" → comes up way short). y 205–360, Inter SemiBold 62, soft shadow, clear of her head through the backswing. File `shorties/safe-line_r2.mp4`, 15.30 s, single crf-17 export. Covers r2_opt1–3 (address, tracer, "maybe we'll be on in 4").

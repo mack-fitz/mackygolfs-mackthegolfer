@@ -9,3 +9,10 @@
 - Checked: frame-by-frame sheet around the miss (frames 135–250) + first/last frames (opens on the address, ends on the putter pickup, no flash of another scene); line legible on sky/cloud backgrounds, spelling checked.
 - Caption: "the green was lying to me"
 - Covers (frames of the export, line included): opt1 address on the long putt; opt2 address from behind the pin; opt3 ball sliding past the hole.
+
+## Round 2 (Oct 14) — Mack: "I want these to be like one single shot doesn't make sense like this"
+- Re-cut as ONE clip with ONE shot: `shorties/read-the-putt_r2.mp4`, 10.60 s, single crf-17 export.
+- Source: `Video Oct 12 2026, 7 13 58 AM.mov` (blue-ball round; .partNN rejoined, sha256 OK, 10.3 Mbps). Window 76.00–86.60 inside one clip (her cut at 75.83; ends before she picks the phone up at ~86.7). "alright let's just… let's just tap this in and call it a day right / don't you think we should" → tap-in putt → stops on the lip.
+- Already posted (>= 15 s in one post by Mack): @mackthegolfer 2026-10-08 "that's why she's blue boys" — https://www.instagram.com/reel/DeQJNjZtEN_/ (76.0 s, posted_index.json). Her own post.
+- Not in any compilation/shorty (comp_edging uses 62.4–75.5 of this file — the lag putt right before, not this tap-in).
+- Line kept: "me after reading this putt / from 4 different angles" (y 290–460). Covers r2_opt1–3 (address, over the ball, after the lip).

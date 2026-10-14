@@ -2,18 +2,41 @@ name: fetch-inbox
 # Two ways in:
 #  - inbox/want.txt: one Dropbox file name per line. Downloads the shared folder (link stored in
 #    the DROPBOX_FOLDER_URL secret (Dropbox /Golf Captions)) and keeps only those files. Used by the background task.
-#  - inbox/links.txt: name|url lines (temporary links). Used from chat.
+#  - inbox/links.txt: name|url lines (temporary Dropbox download_link URLs, any folder; they expire in
+#    <= 15 min, so they are downloaded BEFORE the checkout, which takes minutes on this big repo).
+# Byte-for-byte (never re-encoded). Files over 95 MB are split into <name>.partNN (+ <name>.sha256).
 on:
   push:
     paths: ['inbox/links.txt', 'inbox/want.txt']
   workflow_dispatch:
 permissions:
   contents: write
+concurrency:
+  group: fetch-inbox
+  cancel-in-progress: false
 jobs:
   fetch:
     runs-on: ubuntu-latest
     steps:
+      - name: Download temporary links first (they expire)
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          mkdir -p /tmp/dl /tmp/req
+          curl -sSL --fail -H "Authorization: Bearer $GH_TOKEN" -H "Accept: application/vnd.github.raw" \
+            "https://api.github.com/repos/${{ github.repository }}/contents/inbox/links.txt?ref=${{ github.sha }}" \
+            -o /tmp/req/links.txt || exit 0
+          while IFS='|' read -r name url; do
+            [ -z "$name" ] && continue
+            curl -sSL --fail --retry 3 -o "/tmp/dl/$name" "$url" || echo "FAILED $name" >> /tmp/req/failed.txt
+          done < /tmp/req/links.txt
+          ls -la /tmp/dl
+      # Sparse: only inbox/ (the full tree is ~10 GB of videos).
       - uses: actions/checkout@v4
+        with:
+          sparse-checkout: |
+            /inbox/
+          sparse-checkout-cone-mode: false
       - name: Download
         env:
           FOLDER_URL: ${{ secrets.DROPBOX_FOLDER_URL }}
@@ -36,17 +59,14 @@ jobs:
             fi
           fi
           rm -f inbox/want.txt
-          if [ -s inbox/links.txt ]; then
-            while IFS='|' read -r name url; do
-              [ -z "$name" ] && continue
-              curl -sSL --fail --retry 3 -o "inbox/videos/$name" "$url" || echo "FAILED $name" >> inbox/failed.txt
-            done < inbox/links.txt
-          fi
+          [ -f /tmp/req/failed.txt ] && cat /tmp/req/failed.txt >> inbox/failed.txt
+          find /tmp/dl -maxdepth 1 -type f -exec mv {} inbox/videos/ \;
           rm -f inbox/links.txt
           # Quality rule (Oct 13): never re-encode here. Files over 95 MB are split byte-for-byte
           # into <name>.part00, .part01 ... (rejoin with cat; the sha256 is in <name>.sha256).
           for f in inbox/videos/*; do
             [ -f "$f" ] || continue
+            case "$f" in *.part[0-9][0-9]|*.sha256) continue;; esac
             size=$(stat -c %s "$f")
             if [ "$size" -gt 95000000 ]; then
               sha256sum "$f" | cut -d' ' -f1 > "$f.sha256"
@@ -61,4 +81,8 @@ jobs:
           git config user.email "github-actions@users.noreply.github.com"
           git add -A inbox
           git commit -m "Fetch inbox videos" || exit 0
-          git push
+          for i in 1 2 3 4 5 6; do
+            git push && exit 0
+            sleep $((i * 5)); git pull -q --rebase origin main
+          done
+          exit 1
