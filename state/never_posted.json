@@ -1,0 +1,25 @@
+{
+ "updated": "2026-10-14T19:39Z",
+ "from": "state/posted_index.json (fingerprint-checked against every post on @mackygolfs, @mackthegolfer, @moremackygolfs)",
+ "videos": [
+  {
+   "name": "Video Oct 12 2026, 7 17 58 AM.mov",
+   "dropbox_id": "id:etyjxrk_8sAAAAAAAAAE6A",
+   "duration": 111.8,
+   "lined_up": "2026-10-15 18:52 MT @mackygolfs (022 lock-it-in 31s cut, waiting on Mack; was mislabeled a re-edit)"
+  },
+  {
+   "name": "Video Oct 12 2026, 7 26 20 AM.mov",
+   "dropbox_id": "id:etyjxrk_8sAAAAAAAAAE7Q",
+   "duration": 148.87,
+   "lined_up": "2026-10-16 18:44 MT @mackygolfs (009 six months original, approved + scheduled)"
+  },
+  {
+   "name": "Video Oct 12 2026, 7 30 44 AM.mov",
+   "dropbox_id": "id:etyjxrk_8sAAAAAAAAAE7w",
+   "duration": 175.3,
+   "lined_up": "2026-10-15 07:42 MT @mackygolfs (011 cactus original, approved + scheduled)"
+  }
+ ],
+ "note": "Never-posted status comes ONLY from this file (PLAYBOOK DUPLICATE CHECK V2). 'lined_up' = already on the review page / scheduled; when it posts, the next refresh moves it out (it will match its own post)."
+}

@@ -230,3 +230,33 @@ Why: compilations avoid the duplicate flag that single re-posts get. Mack wants 
 - Usual compilation rules: her talking, never cut a shot or swearing, no shirt wipes, no added text, true originals, single high-quality export.
 - BASE CAMP — COMPILATIONS (Mack, Oct 13): every compilation that posts or gets scheduled must appear in Base Camp's schedule on its account's doc, with where = 'trial reel (compilation "<title>", posted)' (or 'scheduled'), time in Mountain, and its caption. Do this in the same run that posts it.
 - NEW-VIDEO FOLDER (Mack, Oct 14): as Mack gets new videos back from the tracer, she'll put them in a NEW SUBFOLDER inside the trial reels Dropbox folder (/Golf Captions). Anything in a subfolder she adds = guaranteed never posted — use those first for "new" slots, no guessing needed (still log them in state/never_posted.json; once used, mark used). Check for new subfolders every run. Until then, never-posted status comes from the fingerprint check (DUPLICATE CHECK V2). Goal she's working toward: ~28 brand-new videos a week so BOTH @mackygolfs and @mackthegolfer get only brand-new videos (2/day each, never the same video on both) — but B stays re-edits-only until she says to switch.
+
+## DUPLICATE CHECK V2 (Oct 14) — overrides "Duplicate check" above and any length/caption-based check
+Why: the Oct 14 @mackygolfs reel "please send broomstick putter recs" (010) was called "never posted" because the
+old check matched mostly on video length. It was the same footage @mackthegolfer posted Oct 13 (3-day rule broken).
+- **Never-posted status comes ONLY from `state/never_posted.json`.** That file is built by fingerprint-matching every
+  Golf Captions source against EVERY post on all three IG accounts (@mackygolfs 6acce837f3bd55021dad245f,
+  @mackthegolfer 6accea22c485191e985aa1cb, @moremackygolfs 6acc2885bac230e9d1133105). A source not in that file is
+  already posted, full stop. (Mack's new-video subfolders in /Golf Captions are guaranteed never posted: add their
+  files to `state/fp/sources_meta.json` so they get fingerprinted and land in never_posted.json; once one posts, the
+  next refresh drops it because it matches its own post.)
+- **Never judge by length or caption.** Not for "never posted", not for "already on this account", not for the 3-day rule.
+- **Fingerprint** = chromaprint audio (fpcalc -raw) + perceptual hash of a frame every 2 s (`tools/fingerprint.py`).
+  Match rule (`tools/match_fp.py`): ALREADY POSTED if one aligned audio stretch is > 5 s, or aligned >= 3 s stretches add
+  up to >= 12 s (re-edits), or >= 8 s of changing frames line up. Calibrated Oct 14: unrelated videos never pass.
+- **How the index is built** (`tools/posted_index.py`, header has the exact steps): Zernio analytics_get_analytics per
+  account, source "all", limit 100, every page, 366-day windows back to the first post -> `posted_index.py want` writes
+  `fp/want_posts.tsv` (fresh mediaItems video URL, else yt-dlp on the permalink, else the thumbnail; IG CDN URLs expire,
+  so fetch them from Zernio right before pushing) and `fp/want_sources.txt` -> push -> the **fingerprint** workflow
+  (`.github/workflows/fingerprint.yml`) downloads, fingerprints and commits ONLY the small JSON under `state/fp/`
+  ("Fingerprints [skip ci]"; never commit IG videos) -> pull -> `posted_index.py build` -> `state/posted_index.json` +
+  `state/never_posted.json`. Posts that went out but are gone from IG go in `state/fp/manual_posts.json`.
+- **The morning trial run refreshes the index if `state/posted_index.json` "updated" is over 24 h old, BEFORE picking any
+  video** (only new posts and new sources get fingerprinted, so it's quick). If the refresh fails, don't label anything
+  new that day: use re-edits/approved compilations and tell Mack why.
+- **The A/B 3-day same-footage rule is checked against fingerprints too.** Before a reel goes on the review page,
+  fingerprint the rendered file (`fp/want_repo.txt` -> `state/fp/repo/`) and check it against (a) `posted_index.json`
+  posts on the other account in the last 3 days and (b) everything scheduled or waiting on the review page for the
+  other account within 3 days of its slot (`python3 tools/match_fp.py pair a.json b.json`). Any match = pick other footage.
+- **Review page card for A's new video** starts its `reuses` line with: "NEW — never posted (fingerprint checked)".
+  Anything not in never_posted.json is described as a re-edit with where/when it was posted (from posted_index.json).

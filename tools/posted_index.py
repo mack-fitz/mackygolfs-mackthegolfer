@@ -76,6 +76,8 @@ def build(posts_path):
         rec["sources"] = []
         out_posts.append(rec)
     by_key = {key(p): r for p, r in zip(sorted(posts, key=lambda x: x["published"]), out_posts)}
+    mp_path = os.path.join(FP, "manual_posts.json")
+    manual = load(mp_path)["posts"] if os.path.exists(mp_path) else []
     out_sources = []
     for name, s in sorted(sources.items()):
         matches = []
@@ -83,12 +85,19 @@ def build(posts_path):
             r = M.overlap(d, s)
             if M.is_match(r):
                 pr = by_key[k]
-                how = "thumbnail" if r["thumb_dist"] is not None else ("audio+frames" if r["audio_s"] > M.THRESH_S and r["frames_s"] >= M.FRAME_THRESH_S else ("audio" if r["audio_s"] > M.THRESH_S else "frames"))
+                aud = r["audio_s"] > M.THRESH_S or r.get("audio_total_s", 0) >= M.TOTAL_THRESH_S
+                fr = r["frames_s"] >= M.FRAME_THRESH_S
+                how = "thumbnail" if r["thumb_dist"] is not None else ("audio+frames" if aud and fr else ("audio" if aud else "frames"))
                 matches.append({"account": pr["account"], "platformPostUrl": pr["platformPostUrl"],
                                 "date_mt": pr["date_mt"], "caption": (pr["caption"] or "")[:120],
-                                "audio_overlap_s": r["audio_s"], "frame_overlap_s": r["frames_s"],
+                                "audio_overlap_s": r["audio_s"], "audio_total_s": r.get("audio_total_s"), "frame_overlap_s": r["frames_s"],
                                 "thumb_dist": r["thumb_dist"], "how": how})
                 pr["sources"].append(name)
+        # posts no longer on Instagram (deleted) but known to have gone out: state/fp/manual_posts.json
+        for mp in manual:
+            if mp["source"] == name:
+                matches.append({"account": mp["account"], "platformPostUrl": None, "date_mt": mp["date_mt"],
+                                "caption": mp.get("caption", ""), "how": "manual", "note": mp.get("note", "")})
         matches.sort(key=lambda m: m["date_mt"])
         out_sources.append({"name": name, "dropbox_id": meta[name], "duration": s.get("duration"),
                             "status": "ALREADY POSTED" if matches else "never posted",
@@ -96,7 +105,7 @@ def build(posts_path):
     now = datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%dT%H:%MZ")
     n_fp = sum(1 for r in out_posts if r["fingerprint"])
     idx = {"updated": now,
-           "rule": "PLAYBOOK DUPLICATE CHECK V2: a source is ALREADY POSTED if its audio fingerprint overlaps a posted reel for > 5 s or its 2-s frame hashes line up for >= 8 s (or, for posts where only the cover image could be fetched, the cover matches a source frame). Never judge by length or caption.",
+           "rule": "PLAYBOOK DUPLICATE CHECK V2: a source is ALREADY POSTED if its audio fingerprint lines up with a posted reel for > 5 s in one stretch (or >= 12 s across several >= 3 s stretches, for re-edits) or its 2-s frame hashes line up for >= 8 s of changing picture (or, for posts where only the cover image could be fetched, the cover matches a source frame). Never judge by length or caption.",
            "accounts": ACCOUNTS,
            "coverage": {"posts": len(out_posts), "fingerprinted": n_fp,
                         "video_fp": sum(1 for r in out_posts if r["fp_kind"] == "video"),
@@ -104,13 +113,18 @@ def build(posts_path):
                         "missing": [r["platformPostUrl"] for r in out_posts if not r["fingerprint"]]},
            "sources": out_sources, "posts": out_posts}
     json.dump(idx, open(os.path.join(ROOT, "state", "posted_index.json"), "w"), indent=1, ensure_ascii=False)
+    # keep hand-kept fields (lined_up / used) from the previous never_posted.json
+    np_path = os.path.join(ROOT, "state", "never_posted.json")
+    prev = {v["name"]: v for v in load(np_path).get("videos", [])} if os.path.exists(np_path) else {}
+    keep = lambda n: {k: v for k, v in prev.get(n, {}).items() if k in ("lined_up", "used", "subfolder")}
     never = {"updated": now, "from": "state/posted_index.json (fingerprint-checked against every post on @mackygolfs, @mackthegolfer, @moremackygolfs)",
-             "videos": [{"name": s["name"], "dropbox_id": s["dropbox_id"], "duration": s["duration"]}
+             "note": "Never-posted status comes ONLY from this file (PLAYBOOK DUPLICATE CHECK V2). 'lined_up' = already on the review page / scheduled; once it posts, the next refresh drops it (it matches its own post).",
+             "videos": [dict({"name": s["name"], "dropbox_id": s["dropbox_id"], "duration": s["duration"]}, **keep(s["name"]))
                         for s in out_sources if not s["matches"]]}
     json.dump(never, open(os.path.join(ROOT, "state", "never_posted.json"), "w"), indent=1, ensure_ascii=False)
     print(f"posts {len(out_posts)} (fp {n_fp}); sources {len(out_sources)}; never posted {len(never['videos'])}")
     for s in out_sources:
-        print(f"  {s['status']:15} {s['name']}  " + "; ".join(f"{m['account']} {m['date_mt'][:10]} ({m['how']} {m['audio_overlap_s']}/{m['frame_overlap_s']})" for m in s["matches"][:4]))
+        print(f"  {s['status']:15} {s['name']}  " + "; ".join(f"{m['account']} {m['date_mt'][:10]} ({m['how']} {m.get('audio_overlap_s')}/{m.get('audio_total_s')}/{m.get('frame_overlap_s')})" for m in s["matches"][:4]))
 
 def check(fp_path):
     d = load(fp_path)

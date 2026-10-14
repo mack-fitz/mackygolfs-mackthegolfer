@@ -1,0 +1,6 @@
+{"note": "Posts that went out but are no longer in Zernio's Instagram list (deleted/removed), so they have no fingerprint. Added by hand; posted_index.py counts them as matches.",
+ "posts": [
+  {"source": "Video Oct 11 2026, 9 02 57 AM (3).mp4", "account": "mackthegolfer", "date_mt": "2026-10-13 13:04 MT",
+   "caption": "driver is my putter now", "file": "trials/010_driver-putter_b.mp4", "zernio": "6acd9542a6c3f10344d8083e",
+   "note": "Mack (Oct 14): @mackthegolfer posted this 010 B edit Oct 13; the Zernio post is gone and it is not in the IG list any more. Same footage @mackygolfs posted Oct 14 7:36am (3-day rule broken)."}
+ ]}

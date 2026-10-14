@@ -286,18 +286,19 @@
     "zernio": "6acd9542a6c3f10344d8083e",
     "cover": "trials/010_driver-putter_b_cover.jpg (fist pump at the flag @94.55s, no text)",
     "dup_check": "clear: 99.5s; @mackthegolfer 97s (no kids harmed, green shirt) and @mackygolfs 103/106s (children, green/grey) are different reels; pulled from @moremackygolfs before posting (never posted anywhere)",
-    "diff_check": "99.5s -> 67.7s (32% cut); teaser cold open, cut texas wedge/tee-shot setup talk, profanity and rim job line; 4 punch-ins alternating; ends on but that long putt incredible instead of bring the driver out on the green; different cover than @moremackygolfs (wrong clubs text)"
+    "diff_check": "99.5s -> 67.7s (32% cut); teaser cold open, cut texas wedge/tee-shot setup talk, profanity and rim job line; 4 punch-ins alternating; ends on but that long putt incredible instead of bring the driver out on the green; different cover than @moremackygolfs (wrong clubs text)",
+    "posted": "2026-10-13 (per Mack; Zernio post 6acd9542 gone, not in the IG list any more; logged in state/fp/manual_posts.json)"
    },
    "A": {
     "file": "trials/010_driver-putter_a.mp4",
     "version": "original",
-    "scheduled": "2026-10-14 18:45 MT (approved round 2, scheduled)",
+    "scheduled": "2026-10-14 07:36 MT (posted)",
     "caption": "please send broomstick putter recs",
     "zernio": "6acdc2818bbebee1aa7901e1",
     "cover": "trials/010_driver-putter_a_cover.jpg (Oct 13 plain shirt-wipe @0.3s)",
     "cover_frame": "shirt wipe @0.3s",
     "cover_words": "",
-    "dup_check": "clear: 99.5s; @mackygolfs 103s/106s are children-themed green/grey reels; never posted anywhere",
+    "dup_check": "WRONG (old length-based check). Fingerprint check Oct 14: same footage as the @mackthegolfer 010 B edit posted Oct 13 (Mack) -> broke the 3-day rule; Mack says it had been posted before. See state/posted_index.json.",
     "previous_zernio": "6acd960bc6f875a29d56fd34 (was Oct 14 13:27 midday, deleted)",
     "cover_style": "none",
     "length_test": "long",
@@ -306,7 +307,8 @@
     "approval": {
      "review_doc": "2026-10-14_A_pm",
      "status": "approved round 2 -> scheduled"
-    }
+    },
+    "posted": "2026-10-14 07:36 MT (published; IG https://www.instagram.com/reel/Deegb6mm5ok/)"
    }
   },
   "id:etyjxrk_8sAAAAAAAAAE6w": {
@@ -408,7 +410,8 @@
     "rounds": [
      "round 2 (Mack notes Oct 14): tee-box line cut, full lag master, full ending, cover orange pill \"Macky vs. A Par 3\""
     ]
-   }
+   },
+   "fingerprint_check": "Oct 14: Video Oct 12 2026, 7 17 58 AM.mov is NEVER POSTED (audio/frames match nothing on the 3 IG accounts; the \"it's a Tuesday\" B reel of Oct 3/4 is a different video). The 022 A cut (2026-10-15 18:52, waiting on Mack) was labeled a re-edit; relabeled on the review page."
   },
   "id:etyjxrk_8sAAAAAAAAAE5g": {
    "name": "Video Oct 12 2026, 7 19 40 AM.mov",
@@ -682,9 +685,13 @@
   "why": "Oct 15 + Oct 16 prepared (8 drafts awaiting Mack's approval on the review page). Oct 16 B has its short in the evening again (no short source clears the 3-day rule for the morning)."
  },
  "golf_captions_status": {
-  "never_posted_left_for_A": [],
+  "never_posted_left_for_A": [
+   "Video Oct 12 2026, 7 17 58 AM.mov",
+   "Video Oct 12 2026, 7 26 20 AM.mov",
+   "Video Oct 12 2026, 7 30 44 AM.mov"
+  ],
   "never_posted_left_for_B": [],
-  "note": "Oct 12 run: all 22 Golf Captions files checked; after Oct 15 the only usable footage is reels already posted once (need re-edits per duplicate rules) or new uploads | Oct 13 prep-ahead: 7 30 44 (cactus) -> A Oct 15, 7 26 20 (six months) -> A Oct 16; nothing never-posted left after that."
+  "note": "Oct 12 run: all 22 Golf Captions files checked; after Oct 15 the only usable footage is reels already posted once (need re-edits per duplicate rules) or new uploads | Oct 13 prep-ahead: 7 30 44 (cactus) -> A Oct 15, 7 26 20 (six months) -> A Oct 16; nothing never-posted left after that. | Oct 14 DUPLICATE CHECK V2: never-posted status now comes ONLY from state/never_posted.json (fingerprints). 3 left, all lined up: 7 30 44 cactus (A Oct 15 am), 7 17 58 lock-it-in (A Oct 15 pm cut, waiting), 7 26 20 six months (A Oct 16 pm). None after Oct 16."
  },
  "approval": {
   "page": "https://claude.ai/artifact/KFJoqNkDr6kpxYDkpniAZ7",
@@ -719,6 +726,11 @@
     "at": "2026-10-13T19:50Z",
     "item": "comp2",
     "action": "notes applied -> round 2 on review page (fixed 'pretty close' cut; new delusional bits: galaxy putter, wedge 'felt good'); 43.4 s; covers opt4/opt5 added"
+   },
+   {
+    "at": "2026-10-14T19:45Z",
+    "item": "duplicate check v2",
+    "action": "fingerprinted all 284 IG reels on A, B and @moremackygolfs + 22 Golf Captions sources; 010 A (posted 07:36) was a miss (same footage as B Oct 13); queue clean otherwise: nothing to unschedule; 2026-10-15_A_pm relabeled (footage never posted); new-video cards marked 'NEW — never posted (fingerprint checked)'"
    }
   ]
  }
