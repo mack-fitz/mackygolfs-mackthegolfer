@@ -1,5 +1,5 @@
 # Review-check claims (another run: skip anything listed here as IN PROGRESS)
-- Oct 14 21:40 UTC (:17 review-check run) IN PROGRESS: comp3 post now on @mackthegolfer; comp2 r5 (add a 3rd bit). Do not touch those.
+- Oct 14 22:00 UTC (:17 review-check run) DONE: comp3 published on @mackthegolfer trial MANUAL (Zernio 6acff60cf6788c059acd4516, 21:37Z, cover r2opt3), Base Camp synced; comp2 r5 (3rd bit Bomb City, 40.8 s) back on the review page. Nothing in progress.
 - Oct 14 21:15 UTC (shorty run) DONE: shorty notes applied — easy-up-and-down r3 (bunker clip, piped-drive line), safe-line r2 (new line), read-the-putt r2 (one clip, one shot); new shorty_easy-up-and-down-lag. Nothing in progress.
 - Oct 14 21:12 UTC (:17 review-check run) DONE: comp7 r2 — rebuilt from scratch (4 new bits, 4 new covers), doc updated to round 2 on the review page. comp7 needs nothing more until Mack reviews it; the :47 run can drop its comp7 claim.
 - Oct 14 21:30 UTC (:47 review-check run) DONE: 2026-10-15_A_pm cover 'Macky vs. a Par 4' (round 2; Zernio draft platform time fixed to Oct 16 00:52Z), 2026-10-15_B_am 023 r4 (85s) back on the review page; comp7 left to the :17 run's r2. Nothing in progress.

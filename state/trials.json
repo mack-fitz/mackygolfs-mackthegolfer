@@ -755,5 +755,18 @@
     "action": "fingerprinted all 284 IG reels on A, B and @moremackygolfs + 22 Golf Captions sources; 010 A (posted 07:36) was a miss (same footage as B Oct 13); queue clean otherwise: nothing to unschedule; 2026-10-15_A_pm relabeled (footage never posted); new-video cards marked 'NEW — never posted (fingerprint checked)'"
    }
   ]
- }
+ },
+ "review_log": [
+  {
+   "at": "2026-10-14T21:37Z",
+   "item": "comp3",
+   "action": "approved (post now) -> published @mackthegolfer trial MANUAL, cover r2opt3",
+   "zernio": "6acff60cf6788c059acd4516"
+  },
+  {
+   "at": "2026-10-14T22:00Z",
+   "item": "comp2",
+   "action": "notes applied (needs more than two clips) -> r5, 3rd bit Bomb City, 40.8 s, on review page"
+  }
+ ]
 }
