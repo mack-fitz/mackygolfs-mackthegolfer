@@ -1,4 +1,5 @@
 # Review-check claims (another run: skip anything listed here as IN PROGRESS)
+- Oct 14 22:02 UTC (:47 review-check run) IN PROGRESS: shorty_safe-line post now (@mackthegolfer), shorty_easy-up-and-down send file to Mack, 2026-10-15_A_pm cover par 3, 2026-10-15_B_am r5 (drop sand + lucky day lines, intro cover). Do not touch these.
 - Oct 14 22:00 UTC (:17 review-check run) DONE: comp3 published on @mackthegolfer trial MANUAL (Zernio 6acff60cf6788c059acd4516, 21:37Z, cover r2opt3), Base Camp synced; comp2 r5 (3rd bit Bomb City, 40.8 s) back on the review page. Nothing in progress.
 - Oct 14 21:15 UTC (shorty run) DONE: shorty notes applied — easy-up-and-down r3 (bunker clip, piped-drive line), safe-line r2 (new line), read-the-putt r2 (one clip, one shot); new shorty_easy-up-and-down-lag. Nothing in progress.
 - Oct 14 21:12 UTC (:17 review-check run) DONE: comp7 r2 — rebuilt from scratch (4 new bits, 4 new covers), doc updated to round 2 on the review page. comp7 needs nothing more until Mack reviews it; the :47 run can drop its comp7 claim.
