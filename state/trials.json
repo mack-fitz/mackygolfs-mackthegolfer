@@ -424,11 +424,11 @@
     "source_bitrate_bps": 8182422,
     "encode": "one crf 17 slow encode, MAXRATE 6M (GitHub 100 MB limit)",
     "cover_frame": "shirt wipe @0.23s",
-    "cover_words": "Macky vs. a Par 4",
+    "cover_words": "Macky vs. a Par 3",
     "cover_style": "pill (red)",
     "approval": {
      "review_doc": "2026-10-15_A_pm",
-     "status": "waiting (round 2, cover per her note)"
+     "status": "waiting (round 3, cover per her note)"
     },
     "spacing": "3 days after the 022 cut (Oct 15 6:52pm)"
    }
@@ -621,21 +621,22 @@
     "zernio": "6ace7f9ee1038e35e001b106",
     "media_pinned": "8331146",
     "length_test": "long",
-    "duration": 85.3,
+    "duration": 78.1,
     "source": "/Golf Captions/Video Oct 12 2026, 12 22 39 AM.mov",
     "source_bitrate_bps": 9871600,
     "reuses": "Re-edit of your Lucy Goosey par 5 (green polo), posted on @mackthegolfer Oct 10. Opens on you talking (\"hey I'm literally begging you\"), 161s cut to 111s: every shot kept (tee balls, the tree, both bunker shots, the putt), swearing kept; cut the marshal small talk, the 'tight shot' asides and waiting. 10 punch-ins. Ends on \"LGB loosey goosey baby\" after the marshal line instead of on the marshal line.",
-    "cover_note": "tee-shot tracer, no words",
+    "cover_note": "intro frame, her own caption 'come play this par 5 with me' (3.85s), no added words",
     "approval": {
      "review_doc": "2026-10-15_B_am",
-     "status": "waiting (round 4)"
+     "status": "waiting (round 5)"
     },
     "segs": "trials/023_lucy-goosey-par-5_b_segs.json",
     "opening": "talk-first (first spoken line after where the wipe is)",
     "rounds": [
      "round 2: opening talk -> \"about to get a lesson\" -> marshal Lucy Goosey -> rest; caption \"they call me Goosey, Lucy Goosey\"; MAXRATE 6M to stay under 100 MB",
      "round 3 (Mack notes Oct 14 19:52Z): original beginning order restored (incl. marshals-coming + about-to-get-a-lesson), marshal convo only up to both Lucy Goosey lines (80.64-83.49; Ben Hogan part cut), then the next shot from \"alright so I just gotta be Lucy Goosey with it\" (92.0) to the very end, nothing she says cut, original order; MAXRATE 5M",
-     "round 4 (Mack notes Oct 14 20:46Z): intro (1.45-4.37) -> 'oh the marshals coming up on me / I bet I'm about to get a lesson' (70.45) -> marshal convo through both Lucy Goosey lines (83.49) -> 92.0 to the end uncut; tee ball/tree/bunker out per her note; MAXRATE 6M"
+     "round 4 (Mack notes Oct 14 20:46Z): intro (1.45-4.37) -> 'oh the marshals coming up on me / I bet I'm about to get a lesson' (70.45) -> marshal convo through both Lucy Goosey lines (83.49) -> 92.0 to the end uncut; tee ball/tree/bunker out per her note; MAXRATE 6M",
+     "round 5 (Mack notes Oct 14 21:44Z): cut 'also you might have noticed I didn't actually land in the sand, so today's my lucky day. Today is my lucky day' (94.78-101.98); keeps 'loosey goosey baby, LGB...'; cover = intro frame 'come play this par 5 with me'; 78s; MAXRATE 6M"
     ]
    }
   },
@@ -801,6 +802,22 @@
    "at": "2026-10-14T22:00Z",
    "item": "comp2",
    "action": "notes applied (needs more than two clips) -> r5, 3rd bit Bomb City, 40.8 s, on review page"
+  },
+  {
+   "at": "2026-10-14T22:07Z",
+   "item": "shorty_safe-line",
+   "action": "approved (post now) -> published @mackthegolfer trial MANUAL, cover opt1",
+   "zernio": "6acffd21293212e27c278aa9"
+  },
+  {
+   "at": "2026-10-14T22:20Z",
+   "item": "2026-10-15_A_pm",
+   "action": "notes applied -> r3 cover 'Macky vs. a Par 3' (red pill)"
+  },
+  {
+   "at": "2026-10-14T22:20Z",
+   "item": "2026-10-15_B_am",
+   "action": "notes applied -> r5 sand/lucky-day lines cut, intro cover; 78 s"
   }
  ]
 }
