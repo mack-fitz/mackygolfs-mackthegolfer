@@ -26,12 +26,13 @@ jobs:
       - uses: actions/checkout@v4
       - name: Tools
         run: |
+          mkdir -p /tmp/inputs && cp fp/want_* /tmp/inputs/ 2>/dev/null || true
           sudo apt-get update -qq && sudo apt-get install -y -qq libchromaprint-tools ffmpeg >/dev/null
           pip install -q imagehash pillow yt-dlp
       - name: Posted reels
         run: |
           mkdir -p state/fp/posts /tmp/w
-          log=state/fp/last_posts_run.tsv; : > $log
+          log=state/fp/last_posts_run.tsv; : > $log  # overwritten each run
           [ -s fp/want_posts.tsv ] || exit 0
           while IFS=$'\t' read -r key link vurl turl; do
             [ -z "$key" ] && continue
@@ -78,7 +79,19 @@ jobs:
         run: |
           git config user.name "github-actions"
           git config user.email "github-actions@users.noreply.github.com"
-          git rm -q --ignore-unmatch fp/want_posts.tsv fp/want_sources.txt fp/want_repo.txt
-          git add state/fp
-          git commit -m "Fingerprints" || exit 0
-          for i in 1 2 3 4 5; do git pull -q --rebase && git push && break; sleep 5; done
+          # Other runs push to main all the time: rebuild the commit on the latest main instead of
+          # rebasing (a rebase conflict once threw away a whole run's fingerprints).
+          rm -rf /tmp/fpout && cp -r state/fp /tmp/fpout
+          for i in 1 2 3 4 5 6; do
+            git fetch -q origin main && git reset -q --hard origin/main
+            mkdir -p state/fp && cp -r /tmp/fpout/. state/fp/
+            for f in fp/want_posts.tsv fp/want_sources.txt fp/want_repo.txt; do
+              # remove only the inputs this run processed (a newer request stays for its own run)
+              [ -f "$f" ] && cmp -s "$f" "/tmp/inputs/$(basename $f)" && git rm -q "$f"
+            done
+            git add state/fp
+            git commit -q -m "Fingerprints [skip ci]" || exit 0
+            git push -q origin HEAD:main && exit 0
+            sleep $((i * 7))
+          done
+          exit 1

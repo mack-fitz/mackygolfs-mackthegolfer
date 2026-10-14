@@ -9,7 +9,8 @@ overlap(a, b) returns {"audio_s", "audio_off_s", "frames_s", "frames_off_s", "th
   frames_s  longest run of 2-s frames whose phash is within FRAME_MAX of the other video's
             frame at one consistent time offset (+-1 s).
   thumb_dist  for thumbnail-only fingerprints: best phash distance to any frame of the other.
-A source counts as ALREADY POSTED when audio_s > 5 or frames_s > 5 (see PLAYBOOK).
+A source counts as ALREADY POSTED when audio_s > 5 or frames_s >= 8 (see PLAYBOOK).
+Calibration (22 Golf Captions sources, all pairs): unrelated videos max 3.6 s audio, 6 s frames.
 """
 import json, sys
 import numpy as np
@@ -19,6 +20,8 @@ AUD_BER = 10      # mean differing bits (of 32) allowed per item, smoothed
 AUD_WIN = 8
 FRAME_MAX = 8     # phash hamming (of 64)
 THRESH_S = 5.0
+FRAME_THRESH_S = 8.0   # 4 consecutive 2-s frames; 3 frames (6 s) false-matched two different
+                       # green-polo reels from the same day in calibration
 
 _POP = np.array([bin(i).count("1") for i in range(256)], dtype=np.uint8)
 
@@ -111,7 +114,7 @@ def overlap(a, b):
 def is_match(r, thumb_max=4):
     if r.get("thumb_dist") is not None:
         return r["thumb_dist"] <= thumb_max
-    return r["audio_s"] > THRESH_S or r["frames_s"] > THRESH_S
+    return r["audio_s"] > THRESH_S or r["frames_s"] >= FRAME_THRESH_S
 
 if __name__ == "__main__":
     if sys.argv[1] == "pair":
