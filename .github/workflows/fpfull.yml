@@ -122,6 +122,7 @@ jobs:
         with:
           sparse-checkout: |
             /fp/
+            /tools/
           sparse-checkout-cone-mode: false
       - name: Collect + commit to scratch branch
         env:
@@ -133,13 +134,15 @@ jobs:
             [ -d "/tmp/dl_$id" ] && for d in /tmp/dl_$id/*/; do cp -r "$d". /tmp/sheets/; done
           done
           if [ -s fp/full/post_urls.tsv ]; then
-            sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg >/dev/null
+            sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg libchromaprint-tools >/dev/null
+            pip install -q imagehash pillow numpy
             while IFS=$'\t' read -r key url; do
               [ -z "$key" ] && continue
               curl -sSL --fail -A "Mozilla/5.0" -o /tmp/p.mp4 "$url" </dev/null || { echo "FAILED $key"; continue; }
               d=$(ffprobe -v error -show_entries format=duration -of default=nw=1:nk=1 /tmp/p.mp4 </dev/null)
               ffmpeg -nostdin -v error -i /tmp/p.mp4 -vf "fps=8/${d:-60},scale=240:-2,tile=8x1" -frames:v 1 -q:v 5 "/tmp/sheets/posts/$key.jpg" </dev/null || true
               echo "$key $d" >> /tmp/sheets/posts/durations.txt
+              python3 tools/fingerprint.py video /tmp/p.mp4 "/tmp/sheets/posts/$key.json" "key=$key" </dev/null || true
               rm -f /tmp/p.mp4
             done < fp/full/post_urls.tsv
           fi
