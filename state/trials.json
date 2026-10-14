@@ -694,6 +694,40 @@
      "round 2: full \"bit by a snake\", full ending, cover = shocked hand-over-mouth after missed putt; caption \"I want my baby back\"; MAXRATE 6M"
     ]
    }
+  },
+  "id:etyjxrk_8sAAAAAAAAAEqQ": {
+   "name": "/golfclips/IMG_6391.MP4",
+   "slug": "029_worst-hole-par-5",
+   "B_reedit_2026-10-16": {
+    "file": "trials/029_worst-hole-par-5_b.mp4",
+    "cover": "trials/029_worst-hole-par-5_b_cover.jpg",
+    "version": "re-edit of already-posted footage",
+    "planned": "2026-10-16 08:20 MT (Zernio DRAFT until Mack approves)",
+    "caption": "lost count on this par 5",
+    "zernio": "6ad0002bf9853adf5e532de2",
+    "media_pinned": "875b882",
+    "length_test": "long",
+    "duration": 67.9,
+    "source": "/golfclips/IMG_6391.MP4",
+    "source_bitrate_bps": 8767098,
+    "reuses_post": {
+     "account": "mackygolfs",
+     "date_mt": "2026-09-17 19:48 MT",
+     "caption": "possibly the worst hole I've ever played????",
+     "platformPostUrl": "https://www.instagram.com/reel/DdaPR3bxbpH/",
+     "overlap_s": 87.5
+    },
+    "dup_check": "render fingerprint: matches only Mack's @mackygolfs Sep 17/18 posts (+5.6s/7.2s bits in B compilations Oct 13); no @mackygolfs post or A card within 3 days",
+    "approval": {
+     "review_doc": "2026-10-16_B_am",
+     "status": "waiting (round 1)"
+    },
+    "segs": "trials/029_worst-hole-par-5_b_segs.json",
+    "opening": "talk-first (\"well would you look at the time\", after the wipe)",
+    "cut_pct": 24.8,
+    "punch_ins": 7,
+    "transcript": "state/transcripts/golfclips_IMG_6391.MP4.json"
+   }
   }
  },
  "unfilled": {
