@@ -1,34 +1,16 @@
 {
  "updated": "2026-10-14T21:46Z",
- "scope": "ALL Dropbox source folders: /Golf tracer, /batch Oct 10th, /batch oct 3rd, /1st batch of 5, /Final Batch Sept 25th, /Golf, /golfclips, /Golf Captions (tools/full_count.py; copies collapsed by fingerprint)",
+ "scope": "Mack (Oct 14): source folders are ONLY /Golf Captions and /golfclips (copies collapsed by fingerprint). Other Dropbox folders are not sources.",
  "from": "state/fp/full_pairs.json + state/posted_index.json (fingerprint-checked against every post on @mackygolfs, @mackthegolfer, @moremackygolfs) + state/fp/manual_posts.json",
  "note": "Never-posted status comes ONLY from this file (PLAYBOOK DUPLICATE CHECK V2 + DUP CHECK FIX: posted = >= 15 s of it in ONE post, or >= 80% of a short clip; compilation bits don't count). One entry per unique video; 'files' lists every Dropbox copy (tracer output / captioned / raw). 'lined_up' = on the review page or scheduled; once it posts, the next refresh drops it.",
  "summary": {
-  "unique_videos": 88,
-  "already_posted": 63,
-  "never_posted": 25,
+  "unique_videos": 32,
+  "already_posted": 29,
+  "never_posted": 3,
   "never_posted_lined_up": 3,
-  "never_posted_not_lined_up": 22,
-  "files_checked": 186,
-  "full_rounds_skipped": 3
+  "never_posted_not_lined_up": 0,
+  "files_checked": 37
  },
- "full_rounds_not_counted": [
-  {
-   "path": "/Golf tracer/break 50 with 7i.mov",
-   "id": "id:etyjxrk_8sAAAAAAAAAEcw",
-   "size_gb": 3.33
-  },
-  {
-   "path": "/Golf tracer/popstroke.mov",
-   "id": "id:etyjxrk_8sAAAAAAAAAEcg",
-   "size_gb": 2.72
-  },
-  {
-   "path": "/Golf tracer/worst course in orlando d1.mov",
-   "id": "id:etyjxrk_8sAAAAAAAAAEbw",
-   "size_gb": 3.3
-  }
- ],
  "videos": [
   {
    "name": "Video Oct 12 2026, 7 17 58 AM.mov",
@@ -39,29 +21,13 @@
    "trip": "Amarillo / Bomb City (white shirt, camo hat)",
    "files": [
     {
-     "path": "/batch Oct 10th/Video Sep 30 2026, 11 05 54 PM.mp4",
-     "id": "id:4YNmOZ1SMOYAAAAAAAEE9w",
-     "duration": 111.77
-    },
-    {
-     "path": "/Golf/Video Oct 05 2026, 8 04 13 AM (4).mp4",
-     "id": "id:etyjxrk_8sAAAAAAAAAERw",
-     "duration": 111.77
-    },
-    {
-     "path": "/Golf/Video Oct 11 2026, 9 02 57 AM (10).mp4",
-     "id": "id:etyjxrk_8sAAAAAAAAAEhw",
-     "duration": 111.77
-    },
-    {
      "path": "/Golf Captions/Video Oct 12 2026, 7 17 58 AM.mov",
      "id": "id:etyjxrk_8sAAAAAAAAAE6A",
      "duration": 111.8
     }
    ],
-   "group_size": 4,
+   "group_size": 1,
    "fingerprints": [
-    "state/fp/sources/Golf/Video Oct 11 2026, 9 02 57 AM (10).mp4.json",
     "state/fp/sources/Video Oct 12 2026, 7 17 58 AM.mov.json"
    ],
    "short_overlaps": [],
@@ -76,29 +42,13 @@
    "trip": "Amarillo / Bomb City (white shirt, camo hat)",
    "files": [
     {
-     "path": "/batch Oct 10th/Video Sep 30 2026, 10 44 04 PM.mp4",
-     "id": "id:4YNmOZ1SMOYAAAAAAAEE9Q",
-     "duration": 148.83
-    },
-    {
-     "path": "/Golf/Video Oct 05 2026, 8 04 13 AM (2).mp4",
-     "id": "id:etyjxrk_8sAAAAAAAAAERQ",
-     "duration": 148.83
-    },
-    {
-     "path": "/Golf/Video Oct 11 2026, 9 02 57 AM (15).mp4",
-     "id": "id:etyjxrk_8sAAAAAAAAAEjA",
-     "duration": 148.83
-    },
-    {
      "path": "/Golf Captions/Video Oct 12 2026, 7 26 20 AM.mov",
      "id": "id:etyjxrk_8sAAAAAAAAAE7Q",
      "duration": 148.87
     }
    ],
-   "group_size": 4,
+   "group_size": 1,
    "fingerprints": [
-    "state/fp/sources/Golf/Video Oct 11 2026, 9 02 57 AM (15).mp4.json",
     "state/fp/sources/Video Oct 12 2026, 7 26 20 AM.mov.json"
    ],
    "short_overlaps": [
@@ -119,19 +69,13 @@
    "trip": "San Angelo (green pinstripe, cactus par 5)",
    "files": [
     {
-     "path": "/Golf/Video Oct 03 2026, 8 16 49 PM.mov",
-     "id": "id:etyjxrk_8sAAAAAAAAAEkg",
-     "duration": 175.27
-    },
-    {
      "path": "/Golf Captions/Video Oct 12 2026, 7 30 44 AM.mov",
      "id": "id:etyjxrk_8sAAAAAAAAAE7w",
      "duration": 175.3
     }
    ],
-   "group_size": 2,
+   "group_size": 1,
    "fingerprints": [
-    "state/fp/sources/Golf/Video Oct 03 2026, 8 16 49 PM.mov.json",
     "state/fp/sources/Video Oct 12 2026, 7 30 44 AM.mov.json"
    ],
    "short_overlaps": [
@@ -141,523 +85,6 @@
     "mackygolfs 2026-10-11 17:07 MT: 3.0 s"
    ],
    "lined_up": "2026-10-15 07:42 MT @mackygolfs (011 cactus original, approved + scheduled)"
-  },
-  {
-   "name": "worst course in orlando reel.mov",
-   "dropbox_id": "id:etyjxrk_8sAAAAAAAAAEdw",
-   "duration": 127.59,
-   "path": "/Golf tracer/worst course in orlando reel.mov",
-   "folder": "Golf tracer",
-   "trip": "Orlando (file name)",
-   "files": [
-    {
-     "path": "/Golf tracer/worst course in orlando reel.mov",
-     "id": "id:etyjxrk_8sAAAAAAAAAEdw",
-     "duration": 127.59
-    }
-   ],
-   "group_size": 1,
-   "fingerprints": [
-    "state/fp/sources/Golf tracer/worst course in orlando reel.mov.json"
-   ],
-   "short_overlaps": []
-  },
-  {
-   "name": "Video Oct 10 2026, 11 54 29 PM.mov",
-   "dropbox_id": "id:etyjxrk_8sAAAAAAAAAEdg",
-   "duration": 149.97,
-   "path": "/Golf tracer/Video Oct 10 2026, 11 54 29 PM.mov",
-   "folder": "Golf tracer",
-   "trip": "Orlando, FL (palm trees/Florida course; my read from the frames)",
-   "files": [
-    {
-     "path": "/Golf tracer/Video Oct 10 2026, 11 54 29 PM.mov",
-     "id": "id:etyjxrk_8sAAAAAAAAAEdg",
-     "duration": 149.97
-    }
-   ],
-   "group_size": 1,
-   "fingerprints": [
-    "state/fp/sources/Golf tracer/Video Oct 10 2026, 11 54 29 PM.mov.json"
-   ],
-   "short_overlaps": []
-  },
-  {
-   "name": "Video Oct 11 2026, 1 18 05 AM.mov",
-   "dropbox_id": "id:etyjxrk_8sAAAAAAAAAEeQ",
-   "duration": 157.67,
-   "path": "/Golf tracer/Video Oct 11 2026, 1 18 05 AM.mov",
-   "folder": "Golf tracer",
-   "trip": "Orlando, FL (palm trees/Florida course; my read from the frames)",
-   "files": [
-    {
-     "path": "/Golf tracer/Video Oct 11 2026, 1 18 05 AM.mov",
-     "id": "id:etyjxrk_8sAAAAAAAAAEeQ",
-     "duration": 157.67
-    }
-   ],
-   "group_size": 1,
-   "fingerprints": [
-    "state/fp/sources/Golf tracer/Video Oct 11 2026, 1 18 05 AM.mov.json"
-   ],
-   "short_overlaps": [
-    "mackthegolfer 2026-09-28 08:59 MT: 3.1 s",
-    "mackygolfs 2026-07-04 13:00 MT: 3.0 s"
-   ]
-  },
-  {
-   "name": "Video Oct 11 2026, 1 20 25 AM.mov",
-   "dropbox_id": "id:etyjxrk_8sAAAAAAAAAEeg",
-   "duration": 166.33,
-   "path": "/Golf tracer/Video Oct 11 2026, 1 20 25 AM.mov",
-   "folder": "Golf tracer",
-   "trip": "Orlando, FL (palm trees/Florida course; my read from the frames)",
-   "files": [
-    {
-     "path": "/Golf tracer/Video Oct 11 2026, 1 20 25 AM.mov",
-     "id": "id:etyjxrk_8sAAAAAAAAAEeg",
-     "duration": 166.33
-    }
-   ],
-   "group_size": 1,
-   "fingerprints": [
-    "state/fp/sources/Golf tracer/Video Oct 11 2026, 1 20 25 AM.mov.json"
-   ],
-   "short_overlaps": [
-    "mackthegolfer 2026-09-28 08:59 MT: 3.3 s",
-    "mackthegolfer 2026-10-07 07:46 MT: 3.8 s",
-    "mackthegolfer 2026-10-11 07:44 MT: 3.3 s",
-    "mackygolfs 2026-07-26 09:11 MT: 3.3 s",
-    "mackygolfs 2026-08-04 08:20 MT: 3.3 s"
-   ]
-  },
-  {
-   "name": "Video Oct 11 2026, 12 28 23 PM.mov",
-   "dropbox_id": "id:etyjxrk_8sAAAAAAAAAElQ",
-   "duration": 163.43,
-   "path": "/Golf tracer/Video Oct 11 2026, 12 28 23 PM.mov",
-   "folder": "Golf tracer",
-   "trip": "Orlando, FL (palm trees/Florida course; my read from the frames)",
-   "files": [
-    {
-     "path": "/Golf tracer/Video Oct 11 2026, 12 28 23 PM.mov",
-     "id": "id:etyjxrk_8sAAAAAAAAAElQ",
-     "duration": 163.43
-    }
-   ],
-   "group_size": 1,
-   "fingerprints": [
-    "state/fp/sources/Golf tracer/Video Oct 11 2026, 12 28 23 PM.mov.json"
-   ],
-   "short_overlaps": [
-    "mackthegolfer 2026-10-08 17:48 MT: 3.3 s",
-    "mackygolfs 2026-07-06 12:17 MT: 3.1 s"
-   ]
-  },
-  {
-   "name": "Video Oct 11 2026, 12 37 56 PM.mov",
-   "dropbox_id": "id:etyjxrk_8sAAAAAAAAAElA",
-   "duration": 109.25,
-   "path": "/Golf tracer/Video Oct 11 2026, 12 37 56 PM.mov",
-   "folder": "Golf tracer",
-   "trip": "Orlando, FL (palm trees/Florida course; my read from the frames)",
-   "files": [
-    {
-     "path": "/Golf tracer/Video Oct 11 2026, 12 37 56 PM.mov",
-     "id": "id:etyjxrk_8sAAAAAAAAAElA",
-     "duration": 109.25
-    }
-   ],
-   "group_size": 1,
-   "fingerprints": [
-    "state/fp/sources/Golf tracer/Video Oct 11 2026, 12 37 56 PM.mov.json"
-   ],
-   "short_overlaps": []
-  },
-  {
-   "name": "Video Oct 11 2026, 12 44 51 PM.mov",
-   "dropbox_id": "id:etyjxrk_8sAAAAAAAAAEkw",
-   "duration": 58.67,
-   "path": "/Golf tracer/Video Oct 11 2026, 12 44 51 PM.mov",
-   "folder": "Golf tracer",
-   "trip": "Orlando, FL (palm trees/Florida course; my read from the frames)",
-   "files": [
-    {
-     "path": "/Golf tracer/Video Oct 11 2026, 12 44 51 PM.mov",
-     "id": "id:etyjxrk_8sAAAAAAAAAEkw",
-     "duration": 58.67
-    }
-   ],
-   "group_size": 1,
-   "fingerprints": [
-    "state/fp/sources/Golf tracer/Video Oct 11 2026, 12 44 51 PM.mov.json"
-   ],
-   "short_overlaps": [
-    "mackthegolfer 2026-09-28 08:59 MT: 3.0 s"
-   ]
-  },
-  {
-   "name": "Video Oct 12 2026, 1 01 33 PM.mov",
-   "dropbox_id": "id:etyjxrk_8sAAAAAAAAAE9w",
-   "duration": 110.27,
-   "path": "/Golf tracer/Video Oct 12 2026, 1 01 33 PM.mov",
-   "folder": "Golf tracer",
-   "trip": "Orlando, FL (palm trees/Florida course; my read from the frames)",
-   "files": [
-    {
-     "path": "/Golf tracer/Video Oct 12 2026, 1 01 33 PM.mov",
-     "id": "id:etyjxrk_8sAAAAAAAAAE9w",
-     "duration": 110.27
-    }
-   ],
-   "group_size": 1,
-   "fingerprints": [
-    "state/fp/sources/Golf tracer/Video Oct 12 2026, 1 01 33 PM.mov.json"
-   ],
-   "short_overlaps": [
-    "mackthegolfer 2026-07-30 09:06 MT: 3.1 s",
-    "mackygolfs 2026-08-25 06:25 MT: 3.1 s"
-   ]
-  },
-  {
-   "name": "Video Oct 12 2026, 10 27 36 AM (1).mov",
-   "dropbox_id": "id:etyjxrk_8sAAAAAAAAAE8g",
-   "duration": 172.13,
-   "path": "/Golf tracer/Video Oct 12 2026, 10 27 36 AM (1).mov",
-   "folder": "Golf tracer",
-   "trip": "Orlando, FL (palm trees/Florida course; my read from the frames)",
-   "files": [
-    {
-     "path": "/Golf tracer/Video Oct 12 2026, 10 27 36 AM (1).mov",
-     "id": "id:etyjxrk_8sAAAAAAAAAE8g",
-     "duration": 172.13
-    },
-    {
-     "path": "/Golf tracer/Video Oct 12 2026, 10 27 36 AM.mov",
-     "id": "id:etyjxrk_8sAAAAAAAAAE8Q",
-     "duration": 172.13
-    }
-   ],
-   "group_size": 2,
-   "fingerprints": [
-    "state/fp/sources/Golf tracer/Video Oct 12 2026, 10 27 36 AM (1).mov.json"
-   ],
-   "short_overlaps": []
-  },
-  {
-   "name": "Video Oct 12 2026, 10 29 42 AM.mov",
-   "dropbox_id": "id:etyjxrk_8sAAAAAAAAAE8A",
-   "duration": 119.57,
-   "path": "/Golf tracer/Video Oct 12 2026, 10 29 42 AM.mov",
-   "folder": "Golf tracer",
-   "trip": "Orlando, FL (palm trees/Florida course; my read from the frames)",
-   "files": [
-    {
-     "path": "/Golf tracer/Video Oct 12 2026, 10 29 42 AM.mov",
-     "id": "id:etyjxrk_8sAAAAAAAAAE8A",
-     "duration": 119.57
-    }
-   ],
-   "group_size": 1,
-   "fingerprints": [
-    "state/fp/sources/Golf tracer/Video Oct 12 2026, 10 29 42 AM.mov.json"
-   ],
-   "short_overlaps": []
-  },
-  {
-   "name": "Video Oct 12 2026, 10 32 08 AM.mov",
-   "dropbox_id": "id:etyjxrk_8sAAAAAAAAAE9Q",
-   "duration": 161.82,
-   "path": "/Golf tracer/Video Oct 12 2026, 10 32 08 AM.mov",
-   "folder": "Golf tracer",
-   "trip": "Orlando, FL (palm trees/Florida course; my read from the frames)",
-   "files": [
-    {
-     "path": "/Golf tracer/Video Oct 12 2026, 10 32 08 AM.mov",
-     "id": "id:etyjxrk_8sAAAAAAAAAE9Q",
-     "duration": 161.82
-    }
-   ],
-   "group_size": 1,
-   "fingerprints": [
-    "state/fp/sources/Golf tracer/Video Oct 12 2026, 10 32 08 AM.mov.json"
-   ],
-   "short_overlaps": []
-  },
-  {
-   "name": "Video Oct 12 2026, 10 47 26 AM.mov",
-   "dropbox_id": "id:etyjxrk_8sAAAAAAAAAE8w",
-   "duration": 137.37,
-   "path": "/Golf tracer/Video Oct 12 2026, 10 47 26 AM.mov",
-   "folder": "Golf tracer",
-   "trip": "Orlando, FL (palm trees/Florida course; my read from the frames)",
-   "files": [
-    {
-     "path": "/Golf tracer/Video Oct 12 2026, 10 47 26 AM.mov",
-     "id": "id:etyjxrk_8sAAAAAAAAAE8w",
-     "duration": 137.37
-    }
-   ],
-   "group_size": 1,
-   "fingerprints": [
-    "state/fp/sources/Golf tracer/Video Oct 12 2026, 10 47 26 AM.mov.json"
-   ],
-   "short_overlaps": []
-  },
-  {
-   "name": "Video Oct 12 2026, 10 57 38 AM.mov",
-   "dropbox_id": "id:etyjxrk_8sAAAAAAAAAE9A",
-   "duration": 136.1,
-   "path": "/Golf tracer/Video Oct 12 2026, 10 57 38 AM.mov",
-   "folder": "Golf tracer",
-   "trip": "Orlando, FL (palm trees/Florida course; my read from the frames)",
-   "files": [
-    {
-     "path": "/Golf tracer/Video Oct 12 2026, 10 57 38 AM.mov",
-     "id": "id:etyjxrk_8sAAAAAAAAAE9A",
-     "duration": 136.1
-    }
-   ],
-   "group_size": 1,
-   "fingerprints": [
-    "state/fp/sources/Golf tracer/Video Oct 12 2026, 10 57 38 AM.mov.json"
-   ],
-   "short_overlaps": [
-    "mackthegolfer 2026-10-11 17:38 MT: 3.1 s",
-    "mackygolfs 2026-07-27 16:18 MT: 3.2 s",
-    "mackygolfs 2026-08-03 09:05 MT: 3.2 s"
-   ]
-  },
-  {
-   "name": "Video Oct 12 2026, 11 22 45 AM.mov",
-   "dropbox_id": "id:etyjxrk_8sAAAAAAAAAE9g",
-   "duration": 161.94,
-   "path": "/Golf tracer/Video Oct 12 2026, 11 22 45 AM.mov",
-   "folder": "Golf tracer",
-   "trip": "Orlando, FL (palm trees/Florida course; my read from the frames)",
-   "files": [
-    {
-     "path": "/Golf tracer/Video Oct 12 2026, 11 22 45 AM.mov",
-     "id": "id:etyjxrk_8sAAAAAAAAAE9g",
-     "duration": 161.94
-    }
-   ],
-   "group_size": 1,
-   "fingerprints": [
-    "state/fp/sources/Golf tracer/Video Oct 12 2026, 11 22 45 AM.mov.json"
-   ],
-   "short_overlaps": []
-  },
-  {
-   "name": "Video Oct 12 2026, 12 05 21 PM.mov",
-   "dropbox_id": "id:etyjxrk_8sAAAAAAAAAE-A",
-   "duration": 145.08,
-   "path": "/Golf tracer/Video Oct 12 2026, 12 05 21 PM.mov",
-   "folder": "Golf tracer",
-   "trip": "Orlando, FL (palm trees/Florida course; my read from the frames)",
-   "files": [
-    {
-     "path": "/Golf tracer/Video Oct 12 2026, 12 05 21 PM.mov",
-     "id": "id:etyjxrk_8sAAAAAAAAAE-A",
-     "duration": 145.08
-    }
-   ],
-   "group_size": 1,
-   "fingerprints": [
-    "state/fp/sources/Golf tracer/Video Oct 12 2026, 12 05 21 PM.mov.json"
-   ],
-   "short_overlaps": [
-    "mackthegolfer 2026-10-12 09:02 MT: 3.0 s"
-   ]
-  },
-  {
-   "name": "Video Oct 12 2026, 12 43 17 PM.mov",
-   "dropbox_id": "id:etyjxrk_8sAAAAAAAAAE-Q",
-   "duration": 177.75,
-   "path": "/Golf tracer/Video Oct 12 2026, 12 43 17 PM.mov",
-   "folder": "Golf tracer",
-   "trip": "Orlando, FL (palm trees/Florida course; my read from the frames)",
-   "files": [
-    {
-     "path": "/Golf tracer/Video Oct 12 2026, 12 43 17 PM.mov",
-     "id": "id:etyjxrk_8sAAAAAAAAAE-Q",
-     "duration": 177.75
-    }
-   ],
-   "group_size": 1,
-   "fingerprints": [
-    "state/fp/sources/Golf tracer/Video Oct 12 2026, 12 43 17 PM.mov.json"
-   ],
-   "short_overlaps": []
-  },
-  {
-   "name": "Video Sep 20 2026, 10 03 30 PM.mp4",
-   "dropbox_id": "id:4YNmOZ1SMOYAAAAAAAEEwQ",
-   "duration": 26.7,
-   "path": "/Final Batch Sept 25th/Video Sep 20 2026, 10 03 30 PM.mp4",
-   "folder": "Final Batch Sept 25th",
-   "trip": "Sep 20 round, mountain course (looks like Colorado; not 100% sure)",
-   "files": [
-    {
-     "path": "/Final Batch Sept 25th/Video Sep 20 2026, 10 03 30 PM.mp4",
-     "id": "id:4YNmOZ1SMOYAAAAAAAEEwQ",
-     "duration": 26.7
-    }
-   ],
-   "group_size": 1,
-   "fingerprints": [
-    "state/fp/sources/Final Batch Sept 25th/Video Sep 20 2026, 10 03 30 PM.mp4.json"
-   ],
-   "short_overlaps": [
-    "mackygolfs 2026-07-24 21:08 MT: 3.0 s",
-    "mackygolfs 2026-10-01 08:49 MT: 3.3 s",
-    "mackygolfs 2026-10-08 14:02 MT: 3.3 s",
-    "mackygolfs 2026-10-12 09:01 MT: 3.3 s"
-   ]
-  },
-  {
-   "name": "Video Sep 20 2026, 9 36 47 PM.mp4",
-   "dropbox_id": "id:4YNmOZ1SMOYAAAAAAAEEwA",
-   "duration": 35.3,
-   "path": "/Final Batch Sept 25th/Video Sep 20 2026, 9 36 47 PM.mp4",
-   "folder": "Final Batch Sept 25th",
-   "trip": "Sep 20 round, mountain course (looks like Colorado; not 100% sure)",
-   "files": [
-    {
-     "path": "/Final Batch Sept 25th/Video Sep 20 2026, 9 36 47 PM.mp4",
-     "id": "id:4YNmOZ1SMOYAAAAAAAEEwA",
-     "duration": 35.3
-    },
-    {
-     "path": "/Golf/Video Sep 29 2026, 10 37 44 PM.mov",
-     "id": "id:etyjxrk_8sAAAAAAAAAEFw",
-     "duration": 25.17
-    },
-    {
-     "path": "/Golf/Video Sep 29 2026, 10 39 17 PM.mov",
-     "id": "id:etyjxrk_8sAAAAAAAAAEGA",
-     "duration": 24.6
-    }
-   ],
-   "group_size": 3,
-   "fingerprints": [
-    "state/fp/sources/Final Batch Sept 25th/Video Sep 20 2026, 9 36 47 PM.mp4.json",
-    "state/fp/sources/Golf/Video Sep 29 2026, 10 37 44 PM.mov.json",
-    "state/fp/sources/Golf/Video Sep 29 2026, 10 39 17 PM.mov.json"
-   ],
-   "short_overlaps": [
-    "mackthegolfer 2026-07-30 09:06 MT: 3.0 s",
-    "mackthegolfer 2026-09-28 08:59 MT: 3.2 s",
-    "mackthegolfer 2026-09-29 13:30 MT: 3.2 s",
-    "mackthegolfer 2026-10-05 17:07 MT: 3.1 s",
-    "mackygolfs 2026-08-25 06:25 MT: 3.0 s"
-   ]
-  },
-  {
-   "name": "Video Sep 20 2026, 9 39 07 PM.mp4",
-   "dropbox_id": "id:4YNmOZ1SMOYAAAAAAAEEvQ",
-   "duration": 27.47,
-   "path": "/Final Batch Sept 25th/Video Sep 20 2026, 9 39 07 PM.mp4",
-   "folder": "Final Batch Sept 25th",
-   "trip": "Sep 20 round, mountain course (looks like Colorado; not 100% sure)",
-   "files": [
-    {
-     "path": "/Final Batch Sept 25th/Video Sep 20 2026, 9 39 07 PM.mp4",
-     "id": "id:4YNmOZ1SMOYAAAAAAAEEvQ",
-     "duration": 24.77
-    },
-    {
-     "path": "/Golf/Video Sep 29 2026, 10 41 10 PM.mov",
-     "id": "id:etyjxrk_8sAAAAAAAAAEGQ",
-     "duration": 25.57
-    },
-    {
-     "path": "/Golf/Video Sep 29 2026, 10 42 12 PM.mov",
-     "id": "id:etyjxrk_8sAAAAAAAAAEGg",
-     "duration": 27.47
-    }
-   ],
-   "group_size": 3,
-   "fingerprints": [
-    "state/fp/sources/Final Batch Sept 25th/Video Sep 20 2026, 9 39 07 PM.mp4.json",
-    "state/fp/sources/Golf/Video Sep 29 2026, 10 41 10 PM.mov.json",
-    "state/fp/sources/Golf/Video Sep 29 2026, 10 42 12 PM.mov.json"
-   ],
-   "short_overlaps": [
-    "mackygolfs 2026-10-09 08:25 MT: 3.0 s"
-   ]
-  },
-  {
-   "name": "Video Sep 20 2026, 9 54 17 PM.mp4",
-   "dropbox_id": "id:4YNmOZ1SMOYAAAAAAAEEwg",
-   "duration": 16.67,
-   "path": "/Final Batch Sept 25th/Video Sep 20 2026, 9 54 17 PM.mp4",
-   "folder": "Final Batch Sept 25th",
-   "trip": "Sep 20 round, mountain course (looks like Colorado; not 100% sure)",
-   "files": [
-    {
-     "path": "/Final Batch Sept 25th/Video Sep 20 2026, 9 54 17 PM.mp4",
-     "id": "id:4YNmOZ1SMOYAAAAAAAEEwg",
-     "duration": 16.67
-    }
-   ],
-   "group_size": 1,
-   "fingerprints": [
-    "state/fp/sources/Final Batch Sept 25th/Video Sep 20 2026, 9 54 17 PM.mp4.json"
-   ],
-   "short_overlaps": []
-  },
-  {
-   "name": "Video Sep 28 2026, 8 39 29 AM.mov",
-   "dropbox_id": "id:etyjxrk_8sAAAAAAAAAEBw",
-   "duration": 31.77,
-   "path": "/Golf/Video Sep 28 2026, 8 39 29 AM.mov",
-   "folder": "Golf",
-   "trip": "Sep 28 round, mountain course (green alien-print shirt; looks like Colorado; not 100% sure)",
-   "files": [
-    {
-     "path": "/Golf/Video Sep 28 2026, 8 39 29 AM.mov",
-     "id": "id:etyjxrk_8sAAAAAAAAAEBw",
-     "duration": 31.77
-    }
-   ],
-   "group_size": 1,
-   "fingerprints": [
-    "state/fp/sources/Golf/Video Sep 28 2026, 8 39 29 AM.mov.json"
-   ],
-   "short_overlaps": [
-    "mackthegolfer 2026-09-28 08:59 MT: 10.2 s",
-    "mackthegolfer 2026-10-05 17:07 MT: 6.9 s",
-    "mackthegolfer 2026-10-07 07:46 MT: 3.1 s",
-    "mackygolfs 2026-07-18 09:07 MT: 6.2 s",
-    "mackygolfs 2026-07-26 09:06 MT: 8.0 s"
-   ]
-  },
-  {
-   "name": "Video Sep 28 2026, 8 58 32 AM.mov",
-   "dropbox_id": "id:etyjxrk_8sAAAAAAAAAEBQ",
-   "duration": 18.7,
-   "path": "/Golf/Video Sep 28 2026, 8 58 32 AM.mov",
-   "folder": "Golf",
-   "trip": "Sep 28 round, mountain course (green alien-print shirt; looks like Colorado; not 100% sure)",
-   "files": [
-    {
-     "path": "/Golf/Video Sep 28 2026, 8 58 32 AM.mov",
-     "id": "id:etyjxrk_8sAAAAAAAAAEBQ",
-     "duration": 18.7
-    }
-   ],
-   "group_size": 1,
-   "fingerprints": [
-    "state/fp/sources/Golf/Video Sep 28 2026, 8 58 32 AM.mov.json"
-   ],
-   "short_overlaps": [
-    "mackthegolfer 2026-10-05 17:07 MT: 3.1 s",
-    "mackthegolfer 2026-10-11 07:44 MT: 4.1 s",
-    "mackygolfs 2026-08-28 08:49 MT: 3.0 s",
-    "mackygolfs 2026-10-02 09:44 MT: 6.6 s",
-    "mackygolfs 2026-10-06 07:15 MT: 3.0 s"
-   ]
   }
  ]
 }
