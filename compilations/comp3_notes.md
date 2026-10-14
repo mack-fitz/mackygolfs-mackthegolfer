@@ -61,4 +61,7 @@ Mack: "First clip and cactus clip were good. Cut the altitude clip off at Texas.
 Covers (round 2): `comp3_excuses_r2_cover_opt1.jpg` grimace on "f*cking dumping" red · `_opt2` neon yellow ball purple · `_opt3` golf-cart altitude face orange · `_opt4` wince blue.
 
 
-## Round x notes IN PROGRESS (Oct 14, 17:02 UTC, :47 review-check run) — another run: skip this one
+## Round 3 (Oct 14) — Mack's note applied
+Mack: "Cut out the that's what I get for joining a male dominated field at the end of"
+- Last bit now ends on "...it's the lack of bathrooms" (her own scene cut at 140.50 s, before "but I guess that's what I get for joining a male dominated field"). Everything else unchanged (bits in `comp3_r3_bits.json`).
+- Video: `compilations/comp3_excuses.mp4` (replaced) — 31.6 s, one encode from the true originals via `tools/render_comp.py`. Caption and cover options unchanged.
