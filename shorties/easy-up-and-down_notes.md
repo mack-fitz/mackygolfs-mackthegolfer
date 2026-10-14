@@ -9,3 +9,11 @@
 - Checked: 3 fps sheet of the export + first/last frames (opens on the address before the strike, ends on the ball past the hole, no flash of the next scene); line legible on every background, spelling checked.
 - Caption: "short game is a myth"
 - Covers (frames of the export, line included): opt1 address over the chip; opt2 putter in the bunker; opt3 ball rolled past the hole.
+
+## Round 2 (Oct 14) — Mack: "This was supposed to be one clip"
+- Re-cut as ONE continuous clip (no cuts inside, her camera never changes): `shorties/easy-up-and-down_r2.mp4`, 10.63 s, 1080x1920 30 fps, crf 17 slow single encode, AAC 192k 48 kHz.
+- New footage (the 7 34 47 round only had 2–5 s clips, so no single clip there could carry it): `Video Oct 12 2026, 12 00 30 AM.mov` (blue striped polo, rainy day; untouched phone file, H.264 7.2 Mbps native), 23.633–34.267 s = exactly one of her clips, from its first frame to just before her "I'm sorry you had to see that" caption appears (no talking inside).
+- Moment: wide shot, she's in a greenside bunker and swings three times (tracers) before it finally comes out. Line kept: "me after saying / “easy up and down”" (white Inter SemiBold, stronger soft shadow so it reads on the bright clouds; y 400–560, inside IG safe area + grid crop).
+- Already posted (>= 15 s in one post by Mack): @mackygolfs 2026-07-26 "we’ve got a DUMPER boys" (39.7 s of this source; posted_index.json). Moment not in any compilation (comp3 uses 15.1–20.7 and 40.8–48.2 of this file; wipe comps 0–1.2).
+- Covers r2: opt1 address in the bunker, opt2 tracer on the 2nd try, opt3 the ball finally leaving.
+- Checked: 3 fps sheet of the export + first/last frames; line spelled right and legible.
