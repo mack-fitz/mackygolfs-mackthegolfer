@@ -13,8 +13,11 @@ on:
   workflow_dispatch:
     inputs:
       mode:
-        description: "match"
+        description: "match | sheets"
         default: "match"
+      run_ids:
+        description: "sheets: comma-separated fpfull run ids whose sheets-* artifacts to collect"
+        default: ""
 permissions:
   contents: write
 jobs:
@@ -108,8 +111,45 @@ jobs:
             sleep $((i * 7))
           done
           exit 1
+  sheets:
+    # Spot checks: contact sheets (small JPEGs, 8 frames per video) go to the scratch branch
+    # "scratch/sheets" (force-pushed, never main; delete it when done). Optional fp/full/post_urls.tsv
+    # (key<TAB>fresh video URL) adds contact sheets of posted reels.
+    if: github.event_name == 'workflow_dispatch' && inputs.mode == 'sheets'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: |
+            /fp/
+          sparse-checkout-cone-mode: false
+      - name: Collect + commit to scratch branch
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          mkdir -p /tmp/sheets/posts
+          for id in $(echo "${{ inputs.run_ids }}" | tr ',' ' '); do
+            gh run download "$id" -R "${{ github.repository }}" -p 'sheets-*' -D "/tmp/dl_$id" || true
+            [ -d "/tmp/dl_$id" ] && for d in /tmp/dl_$id/*/; do cp -r "$d". /tmp/sheets/; done
+          done
+          if [ -s fp/full/post_urls.tsv ]; then
+            sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg >/dev/null
+            while IFS=$'\t' read -r key url; do
+              [ -z "$key" ] && continue
+              curl -sSL --fail -A "Mozilla/5.0" -o /tmp/p.mp4 "$url" </dev/null || { echo "FAILED $key"; continue; }
+              d=$(ffprobe -v error -show_entries format=duration -of default=nw=1:nk=1 /tmp/p.mp4 </dev/null)
+              ffmpeg -nostdin -v error -i /tmp/p.mp4 -vf "fps=8/${d:-60},scale=240:-2,tile=8x1" -frames:v 1 -q:v 5 "/tmp/sheets/posts/$key.jpg" </dev/null || true
+              echo "$key $d" >> /tmp/sheets/posts/durations.txt
+              rm -f /tmp/p.mp4
+            done < fp/full/post_urls.tsv
+          fi
+          find /tmp/sheets -type f | wc -l; du -sh /tmp/sheets
+          cd /tmp/sheets && git init -q && git checkout -q -b scratch/sheets
+          git config user.name "github-actions"; git config user.email "github-actions@users.noreply.github.com"
+          git add -A && git commit -qm "contact sheets for spot checks (scratch, delete after)"
+          git push -q -f "https://x-access-token:${GH_TOKEN}@github.com/${{ github.repository }}.git" scratch/sheets
   match:
-    if: github.event_name == 'workflow_dispatch'
+    if: github.event_name == 'workflow_dispatch' && inputs.mode != 'sheets'
     runs-on: ubuntu-latest
     timeout-minutes: 120
     strategy:
@@ -130,7 +170,7 @@ jobs:
           name: pairs-${{ matrix.shard }}
           path: /tmp/pairs_${{ matrix.shard }}.json
   match_commit:
-    if: github.event_name == 'workflow_dispatch' && always()
+    if: github.event_name == 'workflow_dispatch' && inputs.mode != 'sheets' && always()
     needs: match
     runs-on: ubuntu-latest
     steps:
