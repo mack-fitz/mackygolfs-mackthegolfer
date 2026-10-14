@@ -40,13 +40,14 @@ jobs:
             [ -z "$p" ] && continue
             src="$p"
             if [ ! -f "$src" ]; then cat "$p".part* > /tmp/tx/src.bin && src=/tmp/tx/src.bin; fi
-            ffmpeg -nostdin -v error -y -i "$src" -ac 1 -ar 16000 /tmp/tx/a.wav
+            ffmpeg -nostdin -v error -y -i "$src" -ac 1 -ar 16000 -f s16le /tmp/tx/a.raw
             python3 - "$p" <<'PY'
           import json, os, sys
+          import numpy as np
           from faster_whisper import WhisperModel
           p = sys.argv[1]
           m = WhisperModel("small.en", device="cpu", compute_type="int8")
-          segs, info = m.transcribe("/tmp/tx/a.wav", word_timestamps=True, vad_filter=False, beam_size=5)
+          segs, info = m.transcribe(np.fromfile("/tmp/tx/a.raw", dtype=np.int16).astype(np.float32) / 32768.0, word_timestamps=True, vad_filter=False, beam_size=5)
           out = {"source": p, "duration": info.duration, "segments": []}
           for s in segs:
               out["segments"].append({"start": round(s.start, 2), "end": round(s.end, 2), "text": s.text.strip(),
@@ -55,7 +56,7 @@ jobs:
           json.dump(out, open(f"state/transcripts/{name}.json", "w"), indent=0, ensure_ascii=False)
           print(name, len(out["segments"]), "segments")
           PY
-            rm -f /tmp/tx/src.bin /tmp/tx/a.wav
+            rm -f /tmp/tx/src.bin /tmp/tx/a.raw
           done < fp/want_transcribe.txt
       - name: Commit
         run: |
