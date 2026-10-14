@@ -63,3 +63,10 @@ confidence is free
 - Outfits: green → white/camo → green (no same shirt back to back). No shirt wipes, no added text, swearing kept, every shot whole.
 - Covers ("what it's like / being delusional", one rounded box mid-frame): r3opt1 hole-in-one claim w/ glove (comp @0.6, blue), r3opt2 "lag master took the day off" (comp @20.3, red), r3opt3 "wasn't an ace" in the cart (comp @13.0, purple), opt4 galaxy face (kept).
 - Spacing: footage last posted on B Oct 12 (hole-in-one, galaxy); lag-masta footage never posted on B. comp3 (B) uses a different 12 14 03 bit (neon ball, 50–55 s).
+
+
+## Round 4 (Oct 14) — Mack: "Cut out wasn't an ace. You cut off 'problem' after it won't be a problem. Whole last clip actually doesn't make sense because I do good."
+- Bit 1 now ends on "and about 40 yards past it" (12 14 03 out at 45.38, her scene cut to the cart is 45.40; "all right wasn't an ace" gone).
+- Galaxy-putter bit (12 05 56) dropped entirely per her last line (so the "problem" cut no longer applies).
+- `comp2_delusional.mp4` re-cut: 21.0 s, 2 bits, one encode from the true originals (`tools/render_comp.py`, bits in `comp2_r4_bits.json`). Under the usual 30 s: flagged on the page, swaps listed above if she wants a third bit.
+- Covers: r3opt3 (cart "wasn't an ace") and opt4 (galaxy face) removed (their frames are cut); new r4opt5 = "lag MASTA at work" frame, purple pill.

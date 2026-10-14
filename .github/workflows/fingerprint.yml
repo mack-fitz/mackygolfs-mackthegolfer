@@ -9,9 +9,13 @@ name: fingerprint
 #                        secret). -> state/fp/sources/<name>.json (with dense 0.5 s frames)
 #  - fp/want_repo.txt    repo paths to fingerprint (e.g. trials/010_driver-putter_a.mp4)
 #                        -> state/fp/repo/<basename>.json
+#  - fp/want_links.tsv   Dropbox files OUTSIDE /Golf Captions: name<TAB>temporary download_link URL
+#                        (Dropbox MCP download_link, 900 s; ~20 per push, one push at a time: links
+#                        expire, so they are all downloaded first, in parallel). name may hold a folder
+#                        ("Golf tracer/Video ....mov") -> state/fp/sources/<name>.json (dense frames)
 on:
   push:
-    paths: ['fp/want_posts.tsv', 'fp/want_sources.txt', 'fp/want_repo.txt']
+    paths: ['fp/want_posts.tsv', 'fp/want_sources.txt', 'fp/want_repo.txt', 'fp/want_links.tsv']
   workflow_dispatch:
 permissions:
   contents: write
@@ -23,7 +27,33 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 120
     steps:
+      # Before checkout (the repo is big; checkout takes minutes and the links expire in 15).
+      - name: Download Dropbox links first (they expire)
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          mkdir -p /tmp/links
+          curl -sSL --fail -H "Authorization: Bearer $GH_TOKEN" -H "Accept: application/vnd.github.raw" \
+            "https://api.github.com/repos/${{ github.repository }}/contents/fp/want_links.tsv?ref=${{ github.sha }}" \
+            -o /tmp/links/want_links.tsv || exit 0
+          [ -s /tmp/links/want_links.tsv ] || exit 0
+          i=0
+          while IFS=$'\t' read -r name url; do
+            [ -z "$name" ] && continue
+            i=$((i+1)); printf '%s\t%s\t%s\n' "$i" "$name" "$url"
+          done < /tmp/links/want_links.tsv > /tmp/links/index.tsv
+          cut -f1,3 /tmp/links/index.tsv | xargs -P 6 -L 1 sh -c 'curl -sSL --fail --retry 2 -o "/tmp/links/$0.bin" "$1" || echo "FAILED $0"'
+          ls -la /tmp/links | head -60; df -h /tmp | tail -1
+      # Sparse checkout: the full tree is ~10 GB of videos and took 20+ min. Only the tools, the
+      # state and the request files are needed (want_repo.txt paths are added in "Repo files").
       - uses: actions/checkout@v4
+        with:
+          sparse-checkout: |
+            /tools/
+            /state/
+            /fp/
+            /.github/
+          sparse-checkout-cone-mode: false
       - name: Tools
         run: |
           mkdir -p /tmp/inputs && cp fp/want_* /tmp/inputs/ 2>/dev/null || true
@@ -67,10 +97,22 @@ jobs:
               python3 tools/fingerprint.py video "$f" "state/fp/sources/$name.json" --dense "name=$name" "bytes=$(stat -c %s "$f")"
             fi
           done
+      - name: Dropbox links (sources outside /Golf Captions)
+        run: |
+          [ -s /tmp/links/index.tsv ] || exit 0
+          mkdir -p state/fp/sources
+          while IFS=$'\t' read -r i name url; do
+            f="/tmp/links/$i.bin"
+            if [ ! -s "$f" ]; then echo "MISSING $name"; continue; fi
+            mkdir -p "state/fp/sources/$(dirname "$name")"
+            python3 tools/fingerprint.py video "$f" "state/fp/sources/$name.json" --dense "name=$name" "bytes=$(stat -c %s "$f")" </dev/null || echo "FP FAILED $name"
+            rm -f "$f"
+          done < /tmp/links/index.tsv
       - name: Repo files
         run: |
           mkdir -p state/fp/repo
           [ -s fp/want_repo.txt ] || exit 0
+          while IFS= read -r p; do [ -n "$p" ] && git sparse-checkout add "/$p"; done < fp/want_repo.txt
           while IFS= read -r p; do
             [ -f "$p" ] || continue
             python3 tools/fingerprint.py video "$p" "state/fp/repo/$(basename "$p").json" "path=$p"
@@ -85,7 +127,7 @@ jobs:
           for i in 1 2 3 4 5 6; do
             git fetch -q origin main && git reset -q --hard origin/main
             mkdir -p state/fp && cp -r /tmp/fpout/. state/fp/
-            for f in fp/want_posts.tsv fp/want_sources.txt fp/want_repo.txt; do
+            for f in fp/want_posts.tsv fp/want_sources.txt fp/want_repo.txt fp/want_links.tsv; do
               # remove only the inputs this run processed (a newer request stays for its own run)
               [ -f "$f" ] && cmp -s "$f" "/tmp/inputs/$(basename $f)" && git rm -q "$f"
             done
