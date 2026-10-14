@@ -50,3 +50,6 @@ confidence is free
 - Outfits alternate (green polo / orange checker / green polo). No shirt wipes, no added text, swearing kept, every shot whole.
 - Covers: opt2 (her pick, pitching-wedge frame, blue) still valid; new opt4 = galaxy-putter face (12 05 56 @105.0), orange #F7931E; opt5 = "half of golf is the stroke feeling good" smile (12 03 20 @122.6), red #E8101A. Same title box as before.
 - Spacing note: bit 2 is the putter/driver footage that posts on @mackygolfs Oct 14 6:45pm (010 A). Post comp2 on @mackthegolfer Oct 17 or later (3-day rule).
+
+
+## Round x notes IN PROGRESS (Oct 14, 17:02 UTC, :47 review-check run) — another run: skip this one

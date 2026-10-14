@@ -59,3 +59,6 @@ Mack: "First clip and cactus clip were good. Cut the altitude clip off at Texas.
 | 6 | 26.20–33.70 | Video Oct 12 2026, 7 30 44 AM.mov | 135.160–140.500 + 140.500–142.580 (punch-in) | "so I really have to pee, and that's one of my issues with the sport of golf, it's the lack of bathrooms, but I guess that's what I get for joining a male dominated field" |
 
 Covers (round 2): `comp3_excuses_r2_cover_opt1.jpg` grimace on "f*cking dumping" red · `_opt2` neon yellow ball purple · `_opt3` golf-cart altitude face orange · `_opt4` wince blue.
+
+
+## Round x notes IN PROGRESS (Oct 14, 17:02 UTC, :47 review-check run) — another run: skip this one

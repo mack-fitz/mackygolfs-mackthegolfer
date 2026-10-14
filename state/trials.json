@@ -191,8 +191,10 @@
     "cover_note": "shirt-wipe frame, red \"Macky vs. a Cactus\" pill",
     "approval": {
      "review_doc": "2026-10-15_A_am",
-     "status": "waiting"
-    }
+     "status": "approved",
+     "decided_at": "2026-10-14T16:56:17Z"
+    },
+    "scheduled": "2026-10-15 07:42 MT (approved, Zernio scheduled)"
    },
    "A_previous": {
     "file": "trials/011_cactus-par-5_a.mp4",

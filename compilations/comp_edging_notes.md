@@ -43,3 +43,6 @@ Length note: 47.5 s, a little over the 45 s aim — six bits was the floor and n
 - Video Oct 11 2026, 9 02 57 AM (2).mp4 29.5–40 lag "get up there get up there" → stops short → crouch → "let's try this again"
 - Video Oct 12 2026, 7 13 58 AM.mov 76–92 the blue-ball tap-in ("let's just tap this in and call it a day boys", "tweener between the legs")
 - Used elsewhere, skipped: 7 19 40 "break in break in" (comp4), 9 02 57 AM (3) driver putt (comp4), 12 05 56 galaxy putt (comp2), 12 14 03 8-footer (it went in).
+
+
+## Round x notes IN PROGRESS (Oct 14, 17:02 UTC, :47 review-check run) — another run: skip this one
