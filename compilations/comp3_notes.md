@@ -65,3 +65,7 @@ Covers (round 2): `comp3_excuses_r2_cover_opt1.jpg` grimace on "f*cking dumping"
 Mack: "Cut out the that's what I get for joining a male dominated field at the end of"
 - Last bit now ends on "...it's the lack of bathrooms" (her own scene cut at 140.50 s, before "but I guess that's what I get for joining a male dominated field"). Everything else unchanged (bits in `comp3_r3_bits.json`).
 - Video: `compilations/comp3_excuses.mp4` (replaced) — 31.6 s, one encode from the true originals via `tools/render_comp.py`. Caption and cover options unchanged.
+
+
+## Round 3 notes IN PROGRESS (Oct 14, 17:30– UTC, :17 review-check run) — another run: skip this one
+Mack (17:24Z): "Cut the first clip after the word cactus. Don’t need to see the shot or thing about the sun. Clip 2 child target. Clip 3 altitude. Cut the grip because dumping clip. End on the bathrooms."
