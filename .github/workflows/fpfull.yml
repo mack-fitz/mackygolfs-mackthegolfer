@@ -1,0 +1,161 @@
+name: fpfull
+# Full never-posted count (PLAYBOOK "Source folders for new videos"). Fingerprints Dropbox files from
+# ALL source folders, in parallel, without touching the shared "fingerprint" workflow's queue.
+#  - push fp/full/links_N.tsv (N = 1..8): name<TAB>Dropbox temporary download_link (single-use, 900 s).
+#    name = "<Dropbox folder>/<file name>" -> state/fp/sources/<name>.json (same format as
+#    tools/fingerprint.py --dense). Every batch file in the pushed commit runs as its own job, at once.
+#    Contact sheets (8 frames, small JPEGs) go to the run's "sheets" artifact, never into the repo.
+#  - workflow_dispatch mode=match: runs tools/full_count.py match in 8 shards and commits
+#    state/fp/full_pairs.json (overlap seconds for every source x post and source x source pair).
+on:
+  push:
+    paths: ['fp/full/links_*.tsv']
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "match"
+        default: "match"
+permissions:
+  contents: write
+jobs:
+  fp:
+    if: github.event_name == 'push'
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    strategy:
+      fail-fast: false
+      matrix:
+        batch: [1, 2, 3, 4, 5, 6, 7, 8]
+    steps:
+      - name: Download this batch's Dropbox links first (they expire)
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          mkdir -p /tmp/links
+          curl -sSL --fail -H "Authorization: Bearer $GH_TOKEN" -H "Accept: application/vnd.github.raw" \
+            "https://api.github.com/repos/${{ github.repository }}/contents/fp/full/links_${{ matrix.batch }}.tsv?ref=${{ github.sha }}" \
+            -o /tmp/links/want.tsv || { echo "no batch ${{ matrix.batch }}"; exit 0; }
+          i=0
+          while IFS=$'\t' read -r name url; do
+            [ -z "$name" ] && continue
+            i=$((i+1)); printf '%s\t%s\t%s\n' "$i" "$name" "$url"
+          done < /tmp/links/want.tsv > /tmp/links/index.tsv
+          cut -f1,3 /tmp/links/index.tsv | xargs -P 8 -L 1 sh -c 'curl -sSL --fail --retry 2 -o "/tmp/links/$0.bin" "$1" || echo "FAILED $0"'
+          ls -la /tmp/links; df -h /tmp | tail -1
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: |
+            /tools/
+          sparse-checkout-cone-mode: false
+      - name: Fingerprint
+        run: |
+          [ -s /tmp/links/index.tsv ] || exit 0
+          sudo apt-get update -qq && sudo apt-get install -y -qq libchromaprint-tools ffmpeg >/dev/null
+          pip install -q imagehash pillow
+          mkdir -p /tmp/out /tmp/sheets
+          fp_one() {
+            i="$1"; name="$2"; f="/tmp/links/$i.bin"
+            if [ ! -s "$f" ]; then echo "MISSING $name"; return; fi
+            mkdir -p "/tmp/out/$(dirname "$name")" "/tmp/sheets/$(dirname "$name")"
+            python3 tools/fingerprint.py video "$f" "/tmp/out/$name.json" --dense "name=$name" "bytes=$(stat -c %s "$f")" </dev/null || echo "FP FAILED $name"
+            d=$(ffprobe -v error -show_entries format=duration -of default=nw=1:nk=1 "$f" </dev/null)
+            ffmpeg -nostdin -v error -i "$f" -vf "fps=8/${d:-60},scale=240:-2,tile=8x1" -frames:v 1 -q:v 5 "/tmp/sheets/$name.jpg" </dev/null || true
+            rm -f "$f"
+          }
+          export -f fp_one
+          while IFS=$'\t' read -r i name url; do echo "$i"; echo "$name"; done < /tmp/links/index.tsv | \
+            xargs -d '\n' -n 2 -P 4 bash -c 'fp_one "$0" "$1"'
+          find /tmp/out -name '*.json' | wc -l
+      - uses: actions/upload-artifact@v4
+        with:
+          name: fp-${{ matrix.batch }}
+          path: /tmp/out
+          if-no-files-found: ignore
+      - uses: actions/upload-artifact@v4
+        with:
+          name: sheets-${{ matrix.batch }}
+          path: /tmp/sheets
+          if-no-files-found: ignore
+  commit:
+    if: github.event_name == 'push' && always()
+    needs: fp
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: |
+            /state/fp/
+            /fp/
+          sparse-checkout-cone-mode: false
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: fp-*
+          path: /tmp/fpout
+          merge-multiple: true
+      - name: Commit (fingerprint JSON only)
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@users.noreply.github.com"
+          [ -d /tmp/fpout ] || { echo "nothing"; exit 0; }
+          find /tmp/fpout -name '*.json' | wc -l
+          for i in 1 2 3 4 5 6; do
+            git fetch -q origin main && git reset -q --hard origin/main
+            mkdir -p state/fp/sources && cp -r /tmp/fpout/. state/fp/sources/
+            git rm -q --ignore-unmatch fp/full/links_*.tsv
+            git add state/fp/sources
+            git commit -q -m "Fingerprints (all source folders) [skip ci]" || exit 0
+            git push -q origin HEAD:main && exit 0
+            sleep $((i * 7))
+          done
+          exit 1
+  match:
+    if: github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    strategy:
+      fail-fast: false
+      matrix:
+        shard: [0, 1, 2, 3, 4, 5, 6, 7]
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: |
+            /tools/
+            /state/
+          sparse-checkout-cone-mode: false
+      - run: pip install -q numpy
+      - run: python3 tools/full_count.py match ${{ matrix.shard }} 8 /tmp/pairs_${{ matrix.shard }}.json
+      - uses: actions/upload-artifact@v4
+        with:
+          name: pairs-${{ matrix.shard }}
+          path: /tmp/pairs_${{ matrix.shard }}.json
+  match_commit:
+    if: github.event_name == 'workflow_dispatch' && always()
+    needs: match
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: |
+            /tools/
+            /state/fp/
+          sparse-checkout-cone-mode: false
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: pairs-*
+          path: /tmp/pairs
+          merge-multiple: true
+      - name: Merge + commit
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@users.noreply.github.com"
+          python3 tools/full_count.py merge /tmp/pairs /tmp/full_pairs.json
+          for i in 1 2 3 4 5 6; do
+            git fetch -q origin main && git reset -q --hard origin/main
+            cp /tmp/full_pairs.json state/fp/full_pairs.json
+            git add state/fp/full_pairs.json
+            git commit -q -m "Full count: fingerprint overlaps [skip ci]" || exit 0
+            git push -q origin HEAD:main && exit 0
+            sleep $((i * 7))
+          done
+          exit 1
