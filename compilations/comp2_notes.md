@@ -52,4 +52,4 @@ confidence is free
 - Spacing note: bit 2 is the putter/driver footage that posts on @mackygolfs Oct 14 6:45pm (010 A). Post comp2 on @mackthegolfer Oct 17 or later (3-day rule).
 
 
-## Round x notes IN PROGRESS (Oct 14, 17:02 UTC, :47 review-check run) — another run: skip this one
+## Round notes IN PROGRESS (Oct 14, 17:02–, still working at 17:31 UTC, :47 review-check run) — another run: skip this one

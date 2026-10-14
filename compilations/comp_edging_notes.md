@@ -45,4 +45,4 @@ Length note: 47.5 s, a little over the 45 s aim — six bits was the floor and n
 - Used elsewhere, skipped: 7 19 40 "break in break in" (comp4), 9 02 57 AM (3) driver putt (comp4), 12 05 56 galaxy putt (comp2), 12 14 03 8-footer (it went in).
 
 
-## Round x notes IN PROGRESS (Oct 14, 17:02 UTC, :47 review-check run) — another run: skip this one
+## Round notes IN PROGRESS (Oct 14, 17:02–, still working at 17:31 UTC, :47 review-check run) — another run: skip this one
