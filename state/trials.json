@@ -735,7 +735,7 @@
       "slug": "030_par-5-red-shirt",
       "A_new_2026-10-17": {
         "file": "trials/030_par-5-red-shirt_a.mp4",
-        "cover": "trials/030_par-5-red-shirt_a_cover.jpg",
+        "cover": "trials/030_par-5-red-shirt_a_r2_cover_opt2.jpg",
         "cover_options": [
           "trials/030_par-5-red-shirt_a_cover_opt1.jpg",
           "trials/030_par-5-red-shirt_a_cover_opt2.jpg",
@@ -755,10 +755,13 @@
         "cover_words": "orange \"Macky vs. a Par 5\" pill",
         "approval": {
           "review_doc": "2026-10-17_A_pm",
-          "status": "waiting (round 1)"
+          "status": "approved Oct 15, scheduled"
         },
         "batch": "red hawaiian shirt (Mack, Oct 14)",
-        "dup_check": "never_posted.json (fingerprint checked Oct 15); no other red-Hawaiian-shirt reel on that account the same or adjacent days"
+        "dup_check": "never_posted.json (fingerprint checked Oct 15); no other red-Hawaiian-shirt reel on that account the same or adjacent days",
+        "status": "scheduled",
+        "scheduled": "2026-10-17 18:46 MT",
+        "cover_pinned": "a919a4a"
       }
     },
     "id:etyjxrk_8sAAAAAAAAAE_Q": {
