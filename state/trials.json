@@ -616,7 +616,7 @@
         "file": "trials/023_lucy-goosey-par-5_b.mp4",
         "cover": "trials/023_lucy-goosey-par-5_b_cover.jpg",
         "version": "re-edit of already-posted footage",
-        "planned": "2026-10-15 08:27 MT (Zernio DRAFT until Mack approves)",
+        "planned": "2026-10-17 08:27 MT (SCHEDULED; moved from Thu, slot taken)",
         "caption": "they call me Goosey, Lucy Goosey",
         "zernio": "6ace7f9ee1038e35e001b106",
         "media_pinned": "8331146",
@@ -628,7 +628,7 @@
         "cover_note": "intro frame, her own caption 'come play this par 5 with me' (3.85s), no added words",
         "approval": {
           "review_doc": "2026-10-15_B_am",
-          "status": "waiting (round 5)"
+          "status": "approved r6, scheduled"
         },
         "segs": "trials/023_lucy-goosey-par-5_b_segs.json",
         "opening": "talk-first (first spoken line after where the wipe is)",
@@ -703,7 +703,7 @@
         "file": "trials/029_worst-hole-par-5_b.mp4",
         "cover": "trials/029_worst-hole-par-5_b_cover.jpg",
         "version": "re-edit of already-posted footage",
-        "planned": "2026-10-16 08:20 MT (Zernio DRAFT until Mack approves)",
+        "planned": "2026-10-16 08:20 MT (SCHEDULED)",
         "caption": "lost count on this par 5",
         "zernio": "6ad0002bf9853adf5e532de2",
         "media_pinned": "875b882",
@@ -721,7 +721,7 @@
         "dup_check": "render fingerprint: matches only Mack's @mackygolfs Sep 17/18 posts (+5.6s/7.2s bits in B compilations Oct 13); no @mackygolfs post or A card within 3 days",
         "approval": {
           "review_doc": "2026-10-16_B_am",
-          "status": "waiting (round 1)"
+          "status": "approved r2, scheduled"
         },
         "segs": "trials/029_worst-hole-par-5_b_segs.json",
         "opening": "talk-first (\"well would you look at the time\", after the wipe)",
