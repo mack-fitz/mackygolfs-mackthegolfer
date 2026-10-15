@@ -818,6 +818,15 @@
    "at": "2026-10-14T22:20Z",
    "item": "2026-10-15_B_am",
    "action": "notes applied -> r5 sand/lucky-day lines cut, intro cover; 78 s"
+  },
+  {
+   "at": "2026-10-15T04:05Z",
+   "run": ":17 review-check",
+   "done": [
+    "2026-10-15_A_pm (028 full) approved r3 -> Zernio 6acfe80cb278a89ea3578c8e scheduled Thu Oct 15 18:52 MT, trialParams MANUAL, cover 'Macky vs. a Par 3'",
+    "shorty_read-the-putt approved (next) -> Zernio 6ad04a0f62ec95b55521380f scheduled Thu Oct 15 08:27 MT on @mackthegolfer (B morning slot; 2026-10-15_B_am 023 not approved yet, needs the next open B slot once approved)",
+    "notes: 2026-10-15_B_am r6 cover = shirt-wipe frame + 'come play this par 5 with me' (Mack's note); 2026-10-16_B_am r2 cover = rock-on frame (11.6s); comp2 r6 (7 self-hype lines, no shots); comp7 r3 (11 lines, opens on galaxy); shorty_easy-up-and-down-lag r2 (new chip clip, 7 16 02 110.07-121.30)"
+   ]
   }
  ]
 }
