@@ -729,6 +729,196 @@
         "punch_ins": 7,
         "transcript": "state/transcripts/golfclips_IMG_6391.MP4.json"
       }
+    },
+    "id:etyjxrk_8sAAAAAAAAAE-w": {
+      "name": "Video Sep 21 2026, 7 28 37 PM.mov",
+      "slug": "030_par-5-red-shirt",
+      "A_new_2026-10-17": {
+        "file": "trials/030_par-5-red-shirt_a.mp4",
+        "cover": "trials/030_par-5-red-shirt_a_cover.jpg",
+        "cover_options": [
+          "trials/030_par-5-red-shirt_a_cover_opt1.jpg",
+          "trials/030_par-5-red-shirt_a_cover_opt2.jpg",
+          "trials/030_par-5-red-shirt_a_cover_opt3.jpg"
+        ],
+        "version": "original, untouched (remuxed .mov→.mp4, same HEVC video + audio streams, no re-encode)",
+        "planned": "2026-10-17 18:46 MT (Zernio DRAFT until Mack approves)",
+        "caption": "par 5 with me. don't be in that bunker",
+        "zernio": "6ad05e862ced7f681aed9a7a",
+        "media_pinned": "b83ee72",
+        "length_test": "short",
+        "duration": 29.0,
+        "source": "/Golf Captions/Video Sep 21 2026, 7 28 37 PM.mov",
+        "source_bitrate_bps": 11250000,
+        "reuses": "NEW — never posted (fingerprint checked). Red Hawaiian shirt par 5 (Sep 21, Colorado): its audio and frames match nothing on @mackygolfs, @mackthegolfer or @moremackygolfs. Your original file exactly as you made it (same video and audio, not re-encoded), shirt wipe first. Saturday's new video, red Hawaiian shirt batch 1 of 6.",
+        "cover_note": "shirt-wipe frame, orange \"Macky vs. a Par 5\" pill — 3 options below, tap one to pick",
+        "cover_words": "orange \"Macky vs. a Par 5\" pill",
+        "approval": {
+          "review_doc": "2026-10-17_A_pm",
+          "status": "waiting (round 1)"
+        },
+        "batch": "red hawaiian shirt (Mack, Oct 14)",
+        "dup_check": "never_posted.json (fingerprint checked Oct 15); no other red-Hawaiian-shirt reel on that account the same or adjacent days"
+      }
+    },
+    "id:etyjxrk_8sAAAAAAAAAE_Q": {
+      "name": "Video Sep 21 2026, 7 12 01 PM.mov",
+      "slug": "034_pond-par-3-red-shirt",
+      "B_new_2026-10-18": {
+        "file": "trials/034_pond-par-3-red-shirt_b.mp4",
+        "cover": "trials/034_pond-par-3-red-shirt_b_cover.jpg",
+        "cover_options": [
+          "trials/034_pond-par-3-red-shirt_b_cover_opt1.jpg",
+          "trials/034_pond-par-3-red-shirt_b_cover_opt2.jpg",
+          "trials/034_pond-par-3-red-shirt_b_cover_opt3.jpg"
+        ],
+        "version": "talk-first trim: starts on her intro line right after the wipe; wipe removed, nothing else cut (single crf-17 export)",
+        "planned": "2026-10-18 19:31 MT (Zernio DRAFT until Mack approves)",
+        "caption": "over the pond. not in it",
+        "zernio": "6ad05e97694b4089c8713977",
+        "media_pinned": "b83ee72",
+        "length_test": "short",
+        "duration": 20.0,
+        "source": "/Golf Captions/Video Sep 21 2026, 7 12 01 PM.mov",
+        "source_bitrate_bps": 11250000,
+        "reuses": "NEW — never posted (fingerprint checked). Red Hawaiian shirt par 3 over the pond (Sep 21, Colorado): matches nothing on your 3 accounts. Your call to put 2 of these on @mackthegolfer. Starts on you saying \"whoo, let's go play a par 3 together\" right after the wipe; the wipe (first 1.5 s) is the only thing removed, every shot and putt kept. Sunday evening, batch 2 of 6 (the morning slot is your approved triple-dipper re-edit).",
+        "cover_note": "talk frame (never the wipe), you smiling in the cart, no words — 3 options below, tap one to pick",
+        "cover_words": "",
+        "approval": {
+          "review_doc": "2026-10-18_B_pm",
+          "status": "waiting (round 1)"
+        },
+        "batch": "red hawaiian shirt (Mack, Oct 14)",
+        "dup_check": "never_posted.json (fingerprint checked Oct 15); no other red-Hawaiian-shirt reel on that account the same or adjacent days",
+        "segs": "trials/034_pond-par-3-red-shirt_b_segs.json",
+        "opening": "talk-first (intro line right after the wipe)"
+      }
+    },
+    "id:etyjxrk_8sAAAAAAAAAE_g": {
+      "name": "Video Sep 23 2026, 1 04 53 PM.mov",
+      "slug": "031_bunker-par-4-red-shirt",
+      "A_new_2026-10-19": {
+        "file": "trials/031_bunker-par-4-red-shirt_a.mp4",
+        "cover": "trials/031_bunker-par-4-red-shirt_a_cover.jpg",
+        "cover_options": [
+          "trials/031_bunker-par-4-red-shirt_a_cover_opt1.jpg",
+          "trials/031_bunker-par-4-red-shirt_a_cover_opt2.jpg",
+          "trials/031_bunker-par-4-red-shirt_a_cover_opt3.jpg"
+        ],
+        "version": "original, untouched (remuxed .mov→.mp4, same HEVC video + audio streams, no re-encode)",
+        "planned": "2026-10-19 18:49 MT (Zernio DRAFT until Mack approves)",
+        "caption": "the bunker was calling my name",
+        "zernio": "6ad05e8b694b4089c8713931",
+        "media_pinned": "b83ee72",
+        "length_test": "short",
+        "duration": 25.6,
+        "source": "/Golf Captions/Video Sep 23 2026, 1 04 53 PM.mov",
+        "source_bitrate_bps": 11250000,
+        "reuses": "NEW — never posted (fingerprint checked). Red Hawaiian shirt par 4 with the bunker shot (Sep 23, Colorado): matches nothing on your 3 accounts. Your original file exactly as you made it, shirt wipe first. Monday's new video, batch 3 of 6.",
+        "cover_note": "shirt-wipe frame, red \"Macky vs. a Bunker\" pill — 3 options below, tap one to pick",
+        "cover_words": "red \"Macky vs. a Bunker\" pill",
+        "approval": {
+          "review_doc": "2026-10-19_A_pm",
+          "status": "waiting (round 1)"
+        },
+        "batch": "red hawaiian shirt (Mack, Oct 14)",
+        "dup_check": "never_posted.json (fingerprint checked Oct 15); no other red-Hawaiian-shirt reel on that account the same or adjacent days"
+      }
+    },
+    "id:etyjxrk_8sAAAAAAAAAE-g": {
+      "name": "Video Sep 21 2026, 7 31 40 PM.mov",
+      "slug": "035_mountain-par-3-red-shirt",
+      "B_new_2026-10-20": {
+        "file": "trials/035_mountain-par-3-red-shirt_b.mp4",
+        "cover": "trials/035_mountain-par-3-red-shirt_b_cover.jpg",
+        "cover_options": [
+          "trials/035_mountain-par-3-red-shirt_b_cover_opt1.jpg",
+          "trials/035_mountain-par-3-red-shirt_b_cover_opt2.jpg",
+          "trials/035_mountain-par-3-red-shirt_b_cover_opt3.jpg"
+        ],
+        "version": "talk-first trim: starts on her intro line right after the wipe; wipe removed, nothing else cut (single crf-17 export)",
+        "planned": "2026-10-20 19:34 MT (Zernio DRAFT until Mack approves)",
+        "caption": "par 3 with a view",
+        "zernio": "6ad05e9b96179afd8c22f51c",
+        "media_pinned": "b83ee72",
+        "length_test": "short",
+        "duration": 19.2,
+        "source": "/Golf Captions/Video Sep 21 2026, 7 31 40 PM.mov",
+        "source_bitrate_bps": 11250000,
+        "reuses": "NEW — never posted (fingerprint checked). Red Hawaiian shirt par 3, cloudy with the mountains (Sep 21, Colorado): matches nothing on your 3 accounts. Your call to put 2 of these on @mackthegolfer. Starts on you saying \"should we play a par 3 together?\" right after the wipe; only the wipe (first 1.1 s) removed, every shot and putt kept. Tuesday evening, batch 4 of 6.",
+        "cover_note": "talk frame (never the wipe), you smiling in the cart, no words — 3 options below, tap one to pick",
+        "cover_words": "",
+        "approval": {
+          "review_doc": "2026-10-20_B_pm",
+          "status": "waiting (round 1)"
+        },
+        "batch": "red hawaiian shirt (Mack, Oct 14)",
+        "dup_check": "never_posted.json (fingerprint checked Oct 15); no other red-Hawaiian-shirt reel on that account the same or adjacent days",
+        "segs": "trials/035_mountain-par-3-red-shirt_b_segs.json",
+        "opening": "talk-first (intro line right after the wipe)"
+      }
+    },
+    "id:etyjxrk_8sAAAAAAAAAFAA": {
+      "name": "Video Sep 21 2026, 7 09 34 PM.mov",
+      "slug": "032_pine-par-4-red-shirt",
+      "A_new_2026-10-21": {
+        "file": "trials/032_pine-par-4-red-shirt_a.mp4",
+        "cover": "trials/032_pine-par-4-red-shirt_a_cover.jpg",
+        "cover_options": [
+          "trials/032_pine-par-4-red-shirt_a_cover_opt1.jpg",
+          "trials/032_pine-par-4-red-shirt_a_cover_opt2.jpg",
+          "trials/032_pine-par-4-red-shirt_a_cover_opt3.jpg"
+        ],
+        "version": "original, untouched (remuxed .mov→.mp4, same HEVC video + audio streams, no re-encode)",
+        "planned": "2026-10-21 18:44 MT (Zernio DRAFT until Mack approves)",
+        "caption": "who put a tree there",
+        "zernio": "6ad05e8f2ced7f681aed9a8d",
+        "media_pinned": "b83ee72",
+        "length_test": "short",
+        "duration": 20.1,
+        "source": "/Golf Captions/Video Sep 21 2026, 7 09 34 PM.mov",
+        "source_bitrate_bps": 11250000,
+        "reuses": "NEW — never posted (fingerprint checked). Red Hawaiian shirt par 4, approach from under the pine (Sep 21, Colorado): matches nothing on your 3 accounts. Your original file exactly as you made it, shirt wipe first. Wednesday's new video, batch 5 of 6.",
+        "cover_note": "shirt-wipe frame, purple \"Macky vs. a Pine Tree\" pill — 3 options below, tap one to pick",
+        "cover_words": "purple \"Macky vs. a Pine Tree\" pill",
+        "approval": {
+          "review_doc": "2026-10-21_A_pm",
+          "status": "waiting (round 1)"
+        },
+        "batch": "red hawaiian shirt (Mack, Oct 14)",
+        "dup_check": "never_posted.json (fingerprint checked Oct 15); no other red-Hawaiian-shirt reel on that account the same or adjacent days"
+      }
+    },
+    "id:etyjxrk_8sAAAAAAAAAE_A": {
+      "name": "Video Sep 23 2026, 1 07 33 PM.mov",
+      "slug": "033_tree-par-4-red-shirt",
+      "A_new_2026-10-23": {
+        "file": "trials/033_tree-par-4-red-shirt_a.mp4",
+        "cover": "trials/033_tree-par-4-red-shirt_a_cover.jpg",
+        "cover_options": [
+          "trials/033_tree-par-4-red-shirt_a_cover_opt1.jpg",
+          "trials/033_tree-par-4-red-shirt_a_cover_opt2.jpg",
+          "trials/033_tree-par-4-red-shirt_a_cover_opt3.jpg"
+        ],
+        "version": "original, untouched (remuxed .mov→.mp4, same HEVC video + audio streams, no re-encode)",
+        "planned": "2026-10-23 18:48 MT (Zernio DRAFT until Mack approves)",
+        "caption": "glad i got your attention",
+        "zernio": "6ad05e93694b4089c8713957",
+        "media_pinned": "b83ee72",
+        "length_test": "short",
+        "duration": 28.2,
+        "source": "/Golf Captions/Video Sep 23 2026, 1 07 33 PM.mov",
+        "source_bitrate_bps": 11250000,
+        "reuses": "NEW — never posted (fingerprint checked). Red Hawaiian shirt par 4, the shot by the tree (Sep 23, Colorado): never posted (its first ~4 s intro also opens your Sep 25 @mackygolfs \"once I learn how to putt\" reel, under 15 s so it still counts as new). Your original file exactly as you made it, shirt wipe first. Friday's new video, batch 6 of 6.",
+        "cover_note": "shirt-wipe frame, typewriter note: \"glad i got your attention\" — 3 options below, tap one to pick",
+        "cover_words": "typewriter note: \"glad i got your attention\"",
+        "approval": {
+          "review_doc": "2026-10-23_A_pm",
+          "status": "waiting (round 1)"
+        },
+        "batch": "red hawaiian shirt (Mack, Oct 14)",
+        "dup_check": "never_posted.json (fingerprint checked Oct 15); no other red-Hawaiian-shirt reel on that account the same or adjacent days"
+      }
     }
   },
   "unfilled": {
@@ -788,6 +978,11 @@
         "at": "2026-10-14T19:45Z",
         "item": "duplicate check v2",
         "action": "fingerprinted all 284 IG reels on A, B and @moremackygolfs + 22 Golf Captions sources; 010 A (posted 07:36) was a miss (same footage as B Oct 13); queue clean otherwise: nothing to unschedule; 2026-10-15_A_pm relabeled (footage never posted); new-video cards marked 'NEW — never posted (fingerprint checked)'"
+      },
+      {
+        "at": "2026-10-15T05:06Z",
+        "item": "2026-10-17_A_pm, 2026-10-18_B_pm, 2026-10-19_A_pm, 2026-10-20_B_pm, 2026-10-21_A_pm, 2026-10-23_A_pm",
+        "action": "red Hawaiian shirt batch (Mack Oct 14): 4 A originals + 2 B talk-first trims on the review page, round 1; Zernio drafts created; 3 cover options each (picker added to the page: chosen_cover)"
       }
     ]
   },
