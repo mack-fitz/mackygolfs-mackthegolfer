@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-14T19:39Z",
+ "updated": "2026-10-15T04:08Z",
  "rule": "PLAYBOOK DUPLICATE CHECK V2: a source is ALREADY POSTED if its audio fingerprint lines up with a posted reel for > 5 s in one stretch (or >= 12 s across several >= 3 s stretches, for re-edits) or its 2-s frame hashes line up for >= 8 s of changing picture (or, for posts where only the cover image could be fetched, the cover matches a source frame). Never judge by length or caption.",
  "accounts": {
   "mackygolfs": "6acce837f3bd55021dad245f",
@@ -7,9 +7,9 @@
   "moremackygolfs": "6acc2885bac230e9d1133105"
  },
  "coverage": {
-  "posts": 288,
-  "fingerprinted": 284,
-  "video_fp": 281,
+  "posts": 297,
+  "fingerprinted": 293,
+  "video_fp": 290,
   "thumbnail_only": 3,
   "missing": [
    "https://www.instagram.com/p/DZyE2hYESab/",
@@ -218,28 +218,6 @@
     },
     {
      "account": "mackygolfs",
-     "platformPostUrl": "https://www.instagram.com/reel/DbQrX5FxZsf/",
-     "date_mt": "2026-07-26 09:11 MT",
-     "caption": "def lots to improve on but I’m not mad at this!\n#golf",
-     "audio_overlap_s": 5.4,
-     "audio_total_s": 5.4,
-     "frame_overlap_s": 0.0,
-     "thumb_dist": null,
-     "how": "audio"
-    },
-    {
-     "account": "mackygolfs",
-     "platformPostUrl": "https://www.instagram.com/reel/DbnwrsTRKiI/",
-     "date_mt": "2026-08-04 08:20 MT",
-     "caption": "BACK ON THE ROAD TO BREAKING 100!!\nSeeing 9 holes all at once is there one consistent thing I’m doing wrong over and ove",
-     "audio_overlap_s": 5.4,
-     "audio_total_s": 5.4,
-     "frame_overlap_s": 0.0,
-     "thumb_dist": null,
-     "how": "audio"
-    },
-    {
-     "account": "mackygolfs",
      "platformPostUrl": "https://www.instagram.com/reel/DeW6yirRVE_/",
      "date_mt": "2026-10-11 08:56 MT",
      "caption": "absolutely brutal",
@@ -399,38 +377,35 @@
    "duration": 172.9,
    "status": "ALREADY POSTED",
    "first_posted": {
-    "account": "mackthegolfer",
-    "platformPostUrl": "https://www.instagram.com/reel/DeceNV6D3SR/",
-    "date_mt": "2026-10-13 12:39 MT",
-    "caption": "crazy this is what I do for fun",
-    "audio_overlap_s": 5.2,
-    "audio_total_s": 5.2,
-    "frame_overlap_s": 0.0,
+    "account": "mackygolfs",
+    "platformPostUrl": "https://www.instagram.com/reel/DefODPLhS7S/",
+    "date_mt": "2026-10-14 14:19 MT",
+    "caption": "You me par four? 👉👈",
+    "audio_overlap_s": 170.2,
+    "audio_total_s": 170.2,
+    "frame_overlap_s": 46.0,
     "thumb_dist": null,
-    "how": "audio"
+    "how": "audio+frames"
    },
    "matches": [
     {
-     "account": "mackthegolfer",
-     "platformPostUrl": "https://www.instagram.com/reel/DeceNV6D3SR/",
-     "date_mt": "2026-10-13 12:39 MT",
-     "caption": "crazy this is what I do for fun",
-     "audio_overlap_s": 5.2,
-     "audio_total_s": 5.2,
-     "frame_overlap_s": 0.0,
+     "account": "mackygolfs",
+     "platformPostUrl": "https://www.instagram.com/reel/DefODPLhS7S/",
+     "date_mt": "2026-10-14 14:19 MT",
+     "caption": "You me par four? 👉👈",
+     "audio_overlap_s": 170.2,
+     "audio_total_s": 170.2,
+     "frame_overlap_s": 46.0,
      "thumb_dist": null,
-     "how": "audio"
+     "how": "audio+frames"
     },
     {
-     "account": "mackthegolfer",
-     "platformPostUrl": "https://www.instagram.com/reel/DedTyD1uMwV/",
-     "date_mt": "2026-10-13 20:29 MT",
-     "caption": "but then you hit one pure 🥵🥵🥵",
-     "audio_overlap_s": 5.1,
-     "audio_total_s": 5.1,
-     "frame_overlap_s": 0.0,
-     "thumb_dist": null,
-     "how": "audio"
+     "account": "mackygolfs",
+     "platformPostUrl": null,
+     "date_mt": "2026-10-14 ~14:15 MT",
+     "caption": "(posted by Mack herself)",
+     "how": "manual",
+     "note": "Mack (Oct 14): she is posting the full original triple-dipper par 4 on @mackygolfs herself today. B re-edit 026 moved to Sun Oct 18 08:23 MT (4 days later, 3-day rule OK)."
     }
    ]
   },
@@ -472,28 +447,6 @@
      "frame_overlap_s": 34.0,
      "thumb_dist": null,
      "how": "audio+frames"
-    },
-    {
-     "account": "mackthegolfer",
-     "platformPostUrl": "https://www.instagram.com/reel/DeceNV6D3SR/",
-     "date_mt": "2026-10-13 12:39 MT",
-     "caption": "crazy this is what I do for fun",
-     "audio_overlap_s": 6.2,
-     "audio_total_s": 6.2,
-     "frame_overlap_s": 0.0,
-     "thumb_dist": null,
-     "how": "audio"
-    },
-    {
-     "account": "mackthegolfer",
-     "platformPostUrl": "https://www.instagram.com/reel/DedTyD1uMwV/",
-     "date_mt": "2026-10-13 20:29 MT",
-     "caption": "but then you hit one pure 🥵🥵🥵",
-     "audio_overlap_s": 6.7,
-     "audio_total_s": 6.7,
-     "frame_overlap_s": 0.0,
-     "thumb_dist": null,
-     "how": "audio"
     }
    ]
   },
@@ -524,6 +477,17 @@
      "frame_overlap_s": 18.0,
      "thumb_dist": null,
      "how": "audio+frames"
+    },
+    {
+     "account": "mackthegolfer",
+     "platformPostUrl": "https://www.instagram.com/reel/DefwcMDFEKg/",
+     "date_mt": "2026-10-14 19:17 MT",
+     "caption": "and that is why she’s blue boys",
+     "audio_overlap_s": 35.4,
+     "audio_total_s": 67.7,
+     "frame_overlap_s": 26.0,
+     "thumb_dist": null,
+     "how": "audio+frames"
     }
    ]
   },
@@ -552,6 +516,17 @@
      "audio_overlap_s": 136.4,
      "audio_total_s": 136.4,
      "frame_overlap_s": 50.0,
+     "thumb_dist": null,
+     "how": "audio+frames"
+    },
+    {
+     "account": "mackthegolfer",
+     "platformPostUrl": "https://www.instagram.com/reel/Defa6_nCOcy/",
+     "date_mt": "2026-10-14 16:08 MT",
+     "caption": "the green was right there",
+     "audio_overlap_s": 12.6,
+     "audio_total_s": 12.6,
+     "frame_overlap_s": 16.0,
      "thumb_dist": null,
      "how": "audio+frames"
     }
@@ -590,6 +565,17 @@
      "audio_overlap_s": 61.5,
      "audio_total_s": 67.3,
      "frame_overlap_s": 30.0,
+     "thumb_dist": null,
+     "how": "audio+frames"
+    },
+    {
+     "account": "mackygolfs",
+     "platformPostUrl": "https://www.instagram.com/reel/DeftB1IlUE5/",
+     "date_mt": "2026-10-14 18:47 MT",
+     "caption": "before you say this isn’t a bomb watch my other drives",
+     "audio_overlap_s": 18.6,
+     "audio_total_s": 48.5,
+     "frame_overlap_s": 8.0,
      "thumb_dist": null,
      "how": "audio+frames"
     }
@@ -815,6 +801,84 @@
      "how": "audio+frames"
     }
    ]
+  },
+  {
+   "name": "Video Sep 21 2026, 7 09 34 PM.mov",
+   "dropbox_id": "id:etyjxrk_8sAAAAAAAAAFAA",
+   "duration": 20.1,
+   "status": "never posted",
+   "first_posted": null,
+   "matches": []
+  },
+  {
+   "name": "Video Sep 21 2026, 7 12 01 PM.mov",
+   "dropbox_id": "id:etyjxrk_8sAAAAAAAAAE_Q",
+   "duration": 21.48,
+   "status": "never posted",
+   "first_posted": null,
+   "matches": []
+  },
+  {
+   "name": "Video Sep 21 2026, 7 24 34 PM.mov",
+   "dropbox_id": "id:etyjxrk_8sAAAAAAAAAE_w",
+   "duration": 28.67,
+   "status": "ALREADY POSTED",
+   "first_posted": {
+    "account": "mackygolfs",
+    "platformPostUrl": "https://www.instagram.com/reel/DdmFF-0hUDO/",
+    "date_mt": "2026-09-22 09:40 MT",
+    "caption": "what do you guys call a pent-bogey?\n#golf #golfgirl",
+    "audio_overlap_s": 26.0,
+    "audio_total_s": 26.0,
+    "frame_overlap_s": 26.0,
+    "thumb_dist": null,
+    "how": "audio+frames"
+   },
+   "matches": [
+    {
+     "account": "mackygolfs",
+     "platformPostUrl": "https://www.instagram.com/reel/DdmFF-0hUDO/",
+     "date_mt": "2026-09-22 09:40 MT",
+     "caption": "what do you guys call a pent-bogey?\n#golf #golfgirl",
+     "audio_overlap_s": 26.0,
+     "audio_total_s": 26.0,
+     "frame_overlap_s": 26.0,
+     "thumb_dist": null,
+     "how": "audio+frames"
+    }
+   ]
+  },
+  {
+   "name": "Video Sep 21 2026, 7 28 37 PM.mov",
+   "dropbox_id": "id:etyjxrk_8sAAAAAAAAAE-w",
+   "duration": 29.0,
+   "status": "never posted",
+   "first_posted": null,
+   "matches": []
+  },
+  {
+   "name": "Video Sep 21 2026, 7 31 40 PM.mov",
+   "dropbox_id": "id:etyjxrk_8sAAAAAAAAAE-g",
+   "duration": 20.34,
+   "status": "never posted",
+   "first_posted": null,
+   "matches": []
+  },
+  {
+   "name": "Video Sep 23 2026, 1 04 53 PM.mov",
+   "dropbox_id": "id:etyjxrk_8sAAAAAAAAAE_g",
+   "duration": 25.63,
+   "status": "never posted",
+   "first_posted": null,
+   "matches": []
+  },
+  {
+   "name": "Video Sep 23 2026, 1 07 33 PM.mov",
+   "dropbox_id": "id:etyjxrk_8sAAAAAAAAAE_A",
+   "duration": 28.23,
+   "status": "never posted",
+   "first_posted": null,
+   "matches": []
   }
  ],
  "posts": [
@@ -2359,9 +2423,7 @@
    "fingerprint": "state/fp/posts/mackygolfs_18105308827875216.json",
    "fp_kind": "video",
    "fp_from": "yt_dlp",
-   "sources": [
-    "Video Oct 12 2026, 12 00 30 AM.mov"
-   ]
+   "sources": []
   },
   {
    "account": "mackygolfs",
@@ -2616,9 +2678,7 @@
    "fingerprint": "state/fp/posts/mackygolfs_17989567494010366.json",
    "fp_kind": "video",
    "fp_from": "video_url",
-   "sources": [
-    "Video Oct 12 2026, 12 00 30 AM.mov"
-   ]
+   "sources": []
   },
   {
    "account": "mackygolfs",
@@ -3584,7 +3644,9 @@
    "fingerprint": "state/fp/posts/mackygolfs_18392976778204815.json",
    "fp_kind": "video",
    "fp_from": "yt_dlp",
-   "sources": []
+   "sources": [
+    "Video Sep 21 2026, 7 24 34 PM.mov"
+   ]
   },
   {
    "account": "mackygolfs",
@@ -5095,10 +5157,7 @@
    "fingerprint": "state/fp/posts/mackthegolfer_18128242021871930.json",
    "fp_kind": "video",
    "fp_from": "video_url",
-   "sources": [
-    "Video Oct 12 2026, 12 17 30 AM.mov",
-    "Video Oct 12 2026, 12 22 39 AM.mov"
-   ]
+   "sources": []
   },
   {
    "account": "mackygolfs",
@@ -5148,10 +5207,7 @@
    "fingerprint": "state/fp/posts/mackthegolfer_18128819173834617.json",
    "fp_kind": "video",
    "fp_from": "video_url",
-   "sources": [
-    "Video Oct 12 2026, 12 17 30 AM.mov",
-    "Video Oct 12 2026, 12 22 39 AM.mov"
-   ]
+   "sources": []
   },
   {
    "account": "mackygolfs",
@@ -5199,6 +5255,149 @@
    "late_post_id": "6acc7d5877bf0c5c34d4f1ed",
    "media_type": "video",
    "fingerprint": "state/fp/posts/moremackygolfs_17996140305046769.json",
+   "fp_kind": "video",
+   "fp_from": "video_url",
+   "sources": []
+  },
+  {
+   "account": "mackygolfs",
+   "platformPostUrl": "https://www.instagram.com/reel/Dee717XRKRR/",
+   "date": "2026-10-14T17:38:11.000Z",
+   "date_mt": "2026-10-14 11:38 MT",
+   "caption": "top 4",
+   "duration": 30,
+   "zernio_id": "6acfc482220cd359947875e1",
+   "late_post_id": null,
+   "media_type": "video",
+   "fingerprint": "state/fp/posts/mackygolfs_18033933476893318.json",
+   "fp_kind": "video",
+   "fp_from": "video_url",
+   "sources": []
+  },
+  {
+   "account": "moremackygolfs",
+   "platformPostUrl": "https://www.instagram.com/reel/DefDVCfFZae/",
+   "date": "2026-10-14T18:42:30.000Z",
+   "date_mt": "2026-10-14 12:42 MT",
+   "caption": "be honest. but nice",
+   "duration": 11,
+   "zernio_id": "6acfdc0fa387114985c0ef0d",
+   "late_post_id": "6acc6b2d760ad4c4c71297f7",
+   "media_type": "video",
+   "fingerprint": "state/fp/posts/moremackygolfs_17963122614203320.json",
+   "fp_kind": "video",
+   "fp_from": "video_url",
+   "sources": []
+  },
+  {
+   "account": "mackygolfs",
+   "platformPostUrl": "https://www.instagram.com/reel/DefODPLhS7S/",
+   "date": "2026-10-14T20:19:02.000Z",
+   "date_mt": "2026-10-14 14:19 MT",
+   "caption": "You me par four? 👉👈",
+   "duration": 172,
+   "zernio_id": "6acff79cdbeb5eb5573efd28",
+   "late_post_id": null,
+   "media_type": "video",
+   "fingerprint": "state/fp/posts/mackygolfs_18106008053528068.json",
+   "fp_kind": "video",
+   "fp_from": "video_url",
+   "sources": [
+    "Video Oct 12 2026, 12 17 30 AM.mov"
+   ]
+  },
+  {
+   "account": "mackthegolfer",
+   "platformPostUrl": "https://www.instagram.com/reel/DefXZOBjIoQ/",
+   "date": "2026-10-14T21:37:43.000Z",
+   "date_mt": "2026-10-14 15:37 MT",
+   "caption": "it's out of my control",
+   "duration": 22,
+   "zernio_id": "6ad005da9691e4f7b3ce5a5a",
+   "late_post_id": "6acff60cf6788c059acd4516",
+   "media_type": "video",
+   "fingerprint": "state/fp/posts/mackthegolfer_18139057297617561.json",
+   "fp_kind": "video",
+   "fp_from": "video_url",
+   "sources": []
+  },
+  {
+   "account": "mackthegolfer",
+   "platformPostUrl": "https://www.instagram.com/reel/Defa6_nCOcy/",
+   "date": "2026-10-14T22:08:36.000Z",
+   "date_mt": "2026-10-14 16:08 MT",
+   "caption": "the green was right there",
+   "duration": 15,
+   "zernio_id": "6ad005da9691e4f7b3ce5a59",
+   "late_post_id": "6acffd21293212e27c278aa9",
+   "media_type": "video",
+   "fingerprint": "state/fp/posts/mackthegolfer_18028588325855926.json",
+   "fp_kind": "video",
+   "fp_from": "video_url",
+   "sources": [
+    "Video Oct 12 2026, 7 16 02 AM.mov"
+   ]
+  },
+  {
+   "account": "moremackygolfs",
+   "platformPostUrl": "https://www.instagram.com/reel/DefqeeoCiJi/",
+   "date": "2026-10-15T00:24:58.000Z",
+   "date_mt": "2026-10-14 18:24 MT",
+   "caption": "who put those rocks there",
+   "duration": 73,
+   "zernio_id": "6ad03828dd8b364bd2e8f097",
+   "late_post_id": "6acc7d537e27b3dfe33585b9",
+   "media_type": "video",
+   "fingerprint": "state/fp/posts/moremackygolfs_18177159685444359.json",
+   "fp_kind": "video",
+   "fp_from": "video_url",
+   "sources": []
+  },
+  {
+   "account": "mackygolfs",
+   "platformPostUrl": "https://www.instagram.com/reel/DeftB1IlUE5/",
+   "date": "2026-10-15T00:47:30.000Z",
+   "date_mt": "2026-10-14 18:47 MT",
+   "caption": "before you say this isn’t a bomb watch my other drives",
+   "duration": 51,
+   "zernio_id": "6ad0382612c64f49cb50bba7",
+   "late_post_id": "6ace5b4b474ae2fdc610b1c0",
+   "media_type": "video",
+   "fingerprint": "state/fp/posts/mackygolfs_17907675198579246.json",
+   "fp_kind": "video",
+   "fp_from": "video_url",
+   "sources": [
+    "Video Oct 12 2026, 7 19 40 AM.mov"
+   ]
+  },
+  {
+   "account": "mackthegolfer",
+   "platformPostUrl": "https://www.instagram.com/reel/DefwcMDFEKg/",
+   "date": "2026-10-15T01:17:03.000Z",
+   "date_mt": "2026-10-14 19:17 MT",
+   "caption": "and that is why she’s blue boys",
+   "duration": 81,
+   "zernio_id": "6ad043e6964c95712c6d86f2",
+   "late_post_id": "6acdc607f81e5c13dbb77bf1",
+   "media_type": "video",
+   "fingerprint": "state/fp/posts/mackthegolfer_18373310611242981.json",
+   "fp_kind": "video",
+   "fp_from": "video_url",
+   "sources": [
+    "Video Oct 12 2026, 7 13 58 AM.mov"
+   ]
+  },
+  {
+   "account": "mackthegolfer",
+   "platformPostUrl": "https://www.instagram.com/reel/Def5WfYvwfV/",
+   "date": "2026-10-15T02:34:46.000Z",
+   "date_mt": "2026-10-14 20:34 MT",
+   "caption": "take as old as time",
+   "duration": null,
+   "zernio_id": "6ad043e6964c95712c6d86f1",
+   "late_post_id": null,
+   "media_type": "video",
+   "fingerprint": "state/fp/posts/mackthegolfer_18132712798664203.json",
    "fp_kind": "video",
    "fp_from": "video_url",
    "sources": []

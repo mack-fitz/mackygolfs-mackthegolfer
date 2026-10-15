@@ -1,16 +1,7 @@
 {
- "updated": "2026-10-14T21:46Z",
- "scope": "Mack (Oct 14): source folders are ONLY /Golf Captions and /golfclips (copies collapsed by fingerprint). Other Dropbox folders are not sources.",
+ "updated": "2026-10-15T04:08Z",
  "from": "state/fp/full_pairs.json + state/posted_index.json (fingerprint-checked against every post on @mackygolfs, @mackthegolfer, @moremackygolfs) + state/fp/manual_posts.json",
  "note": "Never-posted status comes ONLY from this file (PLAYBOOK DUPLICATE CHECK V2 + DUP CHECK FIX: posted = >= 15 s of it in ONE post, or >= 80% of a short clip; compilation bits don't count). One entry per unique video; 'files' lists every Dropbox copy (tracer output / captioned / raw). 'lined_up' = on the review page or scheduled; once it posts, the next refresh drops it.",
- "summary": {
-  "unique_videos": 32,
-  "already_posted": 29,
-  "never_posted": 3,
-  "never_posted_lined_up": 3,
-  "never_posted_not_lined_up": 0,
-  "files_checked": 37
- },
  "videos": [
   {
    "name": "Video Oct 12 2026, 7 17 58 AM.mov",
@@ -85,6 +76,166 @@
     "mackygolfs 2026-10-11 17:07 MT: 3.0 s"
    ],
    "lined_up": "2026-10-15 07:42 MT @mackygolfs (011 cactus original, approved + scheduled)"
+  },
+  {
+   "name": "Video Sep 21 2026, 7 09 34 PM.mov",
+   "dropbox_id": "id:etyjxrk_8sAAAAAAAAAFAA",
+   "duration": 20.1,
+   "path": "/Golf Captions/Video Sep 21 2026, 7 09 34 PM.mov",
+   "folder": "Golf Captions",
+   "trip": "Colorado round(s), Sep 21 + Sep 23 (red Hawaiian shirt, navy cap; mountains behind)",
+   "description": "Full par 4 in 20 s: shirt wipe in the cart + 'why don't you play a par 4 with me', then drive, approach from under a pine, chip, putts. Tracer.",
+   "talking": "intro line only",
+   "files": [
+    {
+     "path": "/Golf Captions/Video Sep 21 2026, 7 09 34 PM.mov",
+     "id": "id:etyjxrk_8sAAAAAAAAAFAA",
+     "duration": 20.1
+    }
+   ],
+   "group_size": 1,
+   "fingerprints": [
+    "state/fp/sources/Video Sep 21 2026, 7 09 34 PM.mov.json"
+   ],
+   "short_overlaps": [],
+   "uploaded": "2026-10-15 ~03:04 UTC",
+   "checked": "2026-10-15 (fingerprints + frames reviewed by eye; index refreshed with posts through 2026-10-15 02:34 UTC)"
+  },
+  {
+   "name": "Video Sep 21 2026, 7 12 01 PM.mov",
+   "dropbox_id": "id:etyjxrk_8sAAAAAAAAAE_Q",
+   "duration": 21.48,
+   "path": "/Golf Captions/Video Sep 21 2026, 7 12 01 PM.mov",
+   "folder": "Golf Captions",
+   "trip": "Colorado round(s), Sep 21 + Sep 23 (red Hawaiian shirt, navy cap; mountains behind)",
+   "description": "Full par 3 over the pond in 21 s: shirt wipe + 'let's go play a par 3 together', tee shot by the water, then putts to finish. Tracer.",
+   "talking": "intro line only",
+   "files": [
+    {
+     "path": "/Golf Captions/Video Sep 21 2026, 7 12 01 PM.mov",
+     "id": "id:etyjxrk_8sAAAAAAAAAE_Q",
+     "duration": 21.48
+    }
+   ],
+   "group_size": 1,
+   "fingerprints": [
+    "state/fp/sources/Video Sep 21 2026, 7 12 01 PM.mov.json"
+   ],
+   "short_overlaps": [],
+   "uploaded": "2026-10-15 ~03:04 UTC",
+   "checked": "2026-10-15 (fingerprints + frames reviewed by eye; index refreshed with posts through 2026-10-15 02:34 UTC)"
+  },
+  {
+   "name": "Video Sep 21 2026, 7 28 37 PM.mov",
+   "dropbox_id": "id:etyjxrk_8sAAAAAAAAAE-w",
+   "duration": 29.0,
+   "path": "/Golf Captions/Video Sep 21 2026, 7 28 37 PM.mov",
+   "folder": "Golf Captions",
+   "trip": "Colorado round(s), Sep 21 + Sep 23 (red Hawaiian shirt, navy cap; mountains behind)",
+   "description": "Full par 5 in 29 s: shirt wipe + 'should we play a par 5 together', drive, bunker shot, fairway shots, chip + putts; ends eating a hot dog in the cart. Tracer.",
+   "talking": "intro line + one aside ('don't be in that bunker')",
+   "files": [
+    {
+     "path": "/Golf Captions/Video Sep 21 2026, 7 28 37 PM.mov",
+     "id": "id:etyjxrk_8sAAAAAAAAAE-w",
+     "duration": 29.0
+    }
+   ],
+   "group_size": 1,
+   "fingerprints": [
+    "state/fp/sources/Video Sep 21 2026, 7 28 37 PM.mov.json"
+   ],
+   "short_overlaps": [
+    "3.1 s audio blip vs @mackygolfs 2026-10-12 'long journey to break 100' and 3.0 s vs @mackthegolfer 2026-09-28 'I hate these Malibu drinks' (no frames) — noise, not the same footage"
+   ],
+   "uploaded": "2026-10-15 ~03:04 UTC",
+   "checked": "2026-10-15 (fingerprints + frames reviewed by eye; index refreshed with posts through 2026-10-15 02:34 UTC)"
+  },
+  {
+   "name": "Video Sep 21 2026, 7 31 40 PM.mov",
+   "dropbox_id": "id:etyjxrk_8sAAAAAAAAAE-g",
+   "duration": 20.34,
+   "path": "/Golf Captions/Video Sep 21 2026, 7 31 40 PM.mov",
+   "folder": "Golf Captions",
+   "trip": "Colorado round(s), Sep 21 + Sep 23 (red Hawaiian shirt, navy cap; mountains behind)",
+   "description": "Full par 3 in 20 s under cloudy skies/mountains: shirt wipe + 'should we play a par 3 together', tee shot, chip, putts. Tracer.",
+   "talking": "intro line only",
+   "files": [
+    {
+     "path": "/Golf Captions/Video Sep 21 2026, 7 31 40 PM.mov",
+     "id": "id:etyjxrk_8sAAAAAAAAAE-g",
+     "duration": 20.34
+    }
+   ],
+   "group_size": 1,
+   "fingerprints": [
+    "state/fp/sources/Video Sep 21 2026, 7 31 40 PM.mov.json"
+   ],
+   "short_overlaps": [],
+   "uploaded": "2026-10-15 ~03:04 UTC",
+   "checked": "2026-10-15 (fingerprints + frames reviewed by eye; index refreshed with posts through 2026-10-15 02:34 UTC)"
+  },
+  {
+   "name": "Video Sep 23 2026, 1 04 53 PM.mov",
+   "dropbox_id": "id:etyjxrk_8sAAAAAAAAAE_g",
+   "duration": 25.63,
+   "path": "/Golf Captions/Video Sep 23 2026, 1 04 53 PM.mov",
+   "folder": "Golf Captions",
+   "trip": "Colorado round(s), Sep 21 + Sep 23 (red Hawaiian shirt, navy cap; mountains behind)",
+   "description": "Full par 4 in 26 s: shirt wipe + 'why don't you play a par 4 with me', drive, approach, bunker shot, putts. Tracer.",
+   "talking": "intro line only",
+   "files": [
+    {
+     "path": "/Golf Captions/Video Sep 23 2026, 1 04 53 PM.mov",
+     "id": "id:etyjxrk_8sAAAAAAAAAE_g",
+     "duration": 25.63
+    }
+   ],
+   "group_size": 1,
+   "fingerprints": [
+    "state/fp/sources/Video Sep 23 2026, 1 04 53 PM.mov.json"
+   ],
+   "short_overlaps": [
+    "shares ~3 s of the same intro line audio with Video Sep 21 2026, 7 09 34 PM.mov (rest is a different hole)"
+   ],
+   "uploaded": "2026-10-15 ~03:04 UTC",
+   "checked": "2026-10-15 (fingerprints + frames reviewed by eye; index refreshed with posts through 2026-10-15 02:34 UTC)"
+  },
+  {
+   "name": "Video Sep 23 2026, 1 07 33 PM.mov",
+   "dropbox_id": "id:etyjxrk_8sAAAAAAAAAE_A",
+   "duration": 28.23,
+   "path": "/Golf Captions/Video Sep 23 2026, 1 07 33 PM.mov",
+   "folder": "Golf Captions",
+   "trip": "Colorado round(s), Sep 21 + Sep 23 (red Hawaiian shirt, navy cap; mountains behind)",
+   "description": "Full par 4 in 28 s: shirt wipe + 'glad I got your attention, let's play a par 4', drive, shot next to a tree, approach, chip, putts. Tracer.",
+   "talking": "intro line only",
+   "files": [
+    {
+     "path": "/Golf Captions/Video Sep 23 2026, 1 07 33 PM.mov",
+     "id": "id:etyjxrk_8sAAAAAAAAAE_A",
+     "duration": 28.23
+    }
+   ],
+   "group_size": 1,
+   "fingerprints": [
+    "state/fp/sources/Video Sep 23 2026, 1 07 33 PM.mov.json"
+   ],
+   "short_overlaps": [
+    "first ~4 s (the shirt-wipe intro) are the same clip as the opening of @mackygolfs 2026-09-25 09:51 MT 'once I learn how to putt it's over' https://www.instagram.com/reel/Ddt0l5xR-bY/ (identical frames + 3.2 s audio); the rest of that post is a different hole (0 of the remaining frames match). < 15 s -> stays never posted"
+   ],
+   "uploaded": "2026-10-15 ~03:04 UTC",
+   "checked": "2026-10-15 (fingerprints + frames reviewed by eye; index refreshed with posts through 2026-10-15 02:34 UTC)"
   }
- ]
+ ],
+ "scope": "Mack (Oct 14): source folders are ONLY /Golf Captions and /golfclips (copies collapsed by fingerprint). Other Dropbox folders are not sources.",
+ "summary": {
+  "unique_videos": 39,
+  "already_posted": 30,
+  "never_posted": 9,
+  "never_posted_lined_up": 3,
+  "never_posted_not_lined_up": 6,
+  "files_checked": 44,
+  "oct15_upload": "Mack uploaded 7 videos to /Golf Captions Oct 15 (~03:04 UTC): 6 never posted, 1 already posted (Video Sep 21 2026, 7 24 34 PM.mov = @mackygolfs 2026-09-22 'what do you guys call a pent-bogey?' https://www.instagram.com/reel/DdmFF-0hUDO/, 26 s audio+frames). Waiting on Mack for how to distribute the 6 (nothing scheduled)."
+ }
 }
