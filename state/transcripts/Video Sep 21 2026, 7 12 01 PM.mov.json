@@ -1,0 +1,53 @@
+{
+"source": "inbox/videos/Video Sep 21 2026, 7 12 01 PM.mov",
+"duration": 21.477,
+"segments": [
+{
+"start": 1.58,
+"end": 3.84,
+"text": "Whoo, let's go play a par 3 together.",
+"words": [
+[
+1.58,
+1.98,
+" Whoo,"
+],
+[
+1.98,
+2.38,
+" let's"
+],
+[
+2.38,
+2.48,
+" go"
+],
+[
+2.48,
+2.66,
+" play"
+],
+[
+2.66,
+2.74,
+" a"
+],
+[
+2.74,
+2.84,
+" par"
+],
+[
+2.84,
+3.0,
+" 3"
+],
+[
+3.0,
+3.84,
+" together."
+]
+]
+}
+]
+}
