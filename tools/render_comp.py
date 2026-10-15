@@ -1,4 +1,5 @@
-# Compilation renderer (comp4+). usage: python3 render_comp.py bits.json out.mp4
+# Compilation renderer (comp4+). usage: python3 render_comp.py bits.json out.mp4 [overlay.png]
+# optional overlay.png (1080x1920 RGBA) is laid over the whole video in the same single encode (only when Mack asks for on-reel text).
 # bits.json: [{src, parts:[[in,out,zoom]], adj?: dB, pg?: [dB per part]}]; sources are read from <this script dir>/src/
 # (symlink/rejoin the true originals there). Per-bit gain to -18 LUFS, 20/30 ms fades at jumps, alimiter,
 # 2-pass linear loudnorm -16 LUFS; ONE libx264 crf 17 slow encode, 1080x1920 30 fps, AAC 192k.
@@ -6,6 +7,7 @@
 import json,sys,subprocess,re,os
 S=os.path.dirname(os.path.abspath(sys.argv[0]))
 bits=json.load(open(sys.argv[1])); out=sys.argv[2]; srcdir=S+'/src/'
+ovl=sys.argv[3] if len(sys.argv)>3 else None
 def loud(src,parts):
     # integrated loudness of a bit
     ins=[];fl=[]
@@ -48,6 +50,9 @@ if not j.strip().startswith("{\n") and "input_i" not in j: print(r[-2000:]); sys
 m=json.loads(j)
 ln=f"loudnorm=I=-16:TP=-1.5:LRA=11:measured_I={m['input_i']}:measured_TP={m['input_tp']}:measured_LRA={m['input_lra']}:measured_thresh={m['input_thresh']}:offset={m['target_offset']}:linear=true"
 fg=base+f';[ca1]{ln},aresample=48000[ca]'
-cmd=['ffmpeg','-nostdin','-v','error','-y']+ins+['-filter_complex',fg,'-map','[cv]','-map','[ca]','-c:v','libx264','-preset','slow','-crf','17','-profile:v','high','-pix_fmt','yuv420p','-r','30','-color_primaries','bt709','-color_trc','bt709','-colorspace','bt709','-c:a','aac','-b:a','192k','-ar','48000','-movflags','+faststart',out]
+extra=[]
+if ovl:
+    extra=['-loop','1','-i',ovl]; fg=fg.replace('[cv]','[cv0]',1)+f';[cv0][{len(ins)//6}:v]overlay=0:0:shortest=1,format=yuv420p[cv]'
+cmd=['ffmpeg','-nostdin','-v','error','-y']+ins+extra+['-filter_complex',fg,'-map','[cv]','-map','[ca]','-c:v','libx264','-preset','slow','-crf','17','-profile:v','high','-pix_fmt','yuv420p','-r','30','-color_primaries','bt709','-color_trc','bt709','-colorspace','bt709','-c:a','aac','-b:a','192k','-ar','48000','-movflags','+faststart',out]
 subprocess.run(cmd,check=True)
 print('done',m['input_i'])

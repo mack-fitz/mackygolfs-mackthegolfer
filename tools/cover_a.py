@@ -4,7 +4,8 @@ usage: cover_a.py video.mp4 t_seconds out.jpg STYLE "text" [color]
 STYLE: pill (Macky vs. ___ box; color orange|red|yellow|purple|blue),
        type (lowercase typewriter note on white), none (plain frame).
 Text sits mid-frame (~55-62% down), inside the center square so the grid crop keeps it."""
-import subprocess, sys, tempfile, textwrap
+import subprocess, sys, tempfile, textwrap, os
+YF = float(os.environ.get("COVER_Y", "0"))  # optional: center the text at this fraction of the height (keep it off her face)
 from PIL import Image, ImageDraw, ImageFont
 
 video, t, out, style = sys.argv[1:5]
@@ -20,7 +21,7 @@ if style == "pill":
     f = ImageFont.truetype("/usr/share/fonts/truetype/google-fonts/Poppins-Bold.ttf", int(W * 0.075))
     lines = textwrap.wrap(text, 20)
     lh = int(W * 0.095)
-    y = int(H * 0.57) - lh * len(lines) // 2
+    y = int(H * (YF or 0.57)) - lh * len(lines) // 2
     for ln in lines:
         bw = d.textlength(ln, font=f)
         x = (W - bw) / 2
@@ -29,11 +30,11 @@ if style == "pill":
         y += lh
 elif style == "type":
     f = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSansMono.ttf", int(W * 0.05))
-    lines = textwrap.wrap(text.lower(), 22)
+    lines = textwrap.wrap(text.lower(), int(os.environ.get("COVER_WRAP", "22")))
     lh = int(W * 0.068)
     tw = max(d.textlength(l, font=f) for l in lines)
     x0 = (W - tw) / 2
-    y0 = int(H * 0.58) - lh * len(lines) // 2
+    y0 = int(H * (YF or 0.58)) - lh * len(lines) // 2
     d.rectangle([x0 - 36, y0 - 26, x0 + tw + 36, y0 + lh * len(lines) + 18], fill="white")
     for i, l in enumerate(lines):
         d.text(((W - d.textlength(l, font=f)) / 2, y0 + i * lh), l, font=f, fill="black")
