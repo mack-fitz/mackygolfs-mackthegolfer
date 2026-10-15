@@ -1,0 +1,11 @@
+# Shorty: me when a group of guys is watching (FOR REVIEW, not posted)
+
+- File: `shorties/group-watching.mp4` — 12.48 s, ONE continuous clip, ONE shot, 1080x1920 30 fps, H.264 High crf 17 preset slow single encode, AAC 192k 48 kHz (30/40 ms fades), +faststart.
+- Source (TRUE original): `Video Oct 12 2026, 12 03 20 AM.mov` (San Angelo par 4, green polo, "Bad" hat; .part00–02 rejoined; H.264 10.8 Mbps). Window 64.55–77.03 s inside her single clip 55.13–77.07 (frame-diff checked 55–100 s; her next cut is at 77.07). Starts on a quiet gap before "I'm so nervous" (64.68), so the earlier "young boys are my least favorite type of voyeur" line (ends 64.42) is out.
+- Moment: in the greenside bunker → "I'm so nervous… I'm just gonna whack this out cause I don't know how to hit shots out of the bunker" → the bunker shot flies hard right (tracer) → she walks up to the camera: "well that landed on their tee box, so that sucks". Shot whole, her sound and captions untouched, nothing cut inside.
+- Already posted (HARD RULE, >= 15 s in ONE post by Mack herself): @mackygolfs 2026-10-12 18:52 MT "no disrespect to the san angels" — https://www.instagram.com/reel/DeakEGHEaxE/ (166 s audio overlap, state/posted_index.json; not one of our trial captions).
+- Not used in any posted/pending compilation or shorty: comp2 uses 21.0–29.4 + 50.0–55.0; comp7 uses 107.6–123.6; comp9/comp_edging 153.9–162.9; comp7 r2 (superseded) 84.7–102.5; comp6 (dropped) 44.5–55.1; wipes 0–1.3. B's planned "a double is basically par in texas" re-edit uses this source — don't post the same day.
+- Line (top third, y 264–417, x 125–955; inside IG safe area): "me when a group of guys / is watching" — Inter SemiBold 68, white, soft drop shadow. Fades out at 8.15–8.45 s, as she walks up to the camera, so it never covers her hat/face (it's on for the setup, the swing and the ball going right).
+- Checked: 10 fps sheet 5.8–8.2 s around the shot, 2 fps sheet of the whole export, 5 fps sheet across the fade, spelling.
+- Caption: "they were very impressed"
+- Covers: opt1 address + line (+ her "I'm so nervous okay"), opt2 takeaway + line, opt3 top of the swing with tracer + line, opt4 close-up "well that landed on their t box" (no line).
