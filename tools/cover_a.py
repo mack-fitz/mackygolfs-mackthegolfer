@@ -5,7 +5,8 @@ STYLE: pill (Macky vs. ___ box; color orange|red|yellow|purple|blue),
        type (lowercase typewriter note on white), none (plain frame).
 Text sits mid-frame (~55-62% down), inside the center square so the grid crop keeps it."""
 import subprocess, sys, tempfile, textwrap, os
-YF = float(os.environ.get("COVER_Y", "0"))  # optional: center the text at this fraction of the height (keep it off her face)
+YF = float(os.environ.get("COVER_Y", "0"))
+FS = float(os.environ.get("COVER_FS", "1"))  # optional font scale (long text in tight spots)  # optional: center the text at this fraction of the height (keep it off her face)
 from PIL import Image, ImageDraw, ImageFont
 
 video, t, out, style = sys.argv[1:5]
@@ -18,9 +19,9 @@ im = Image.open(tmp).convert("RGB")
 W, H = im.size
 d = ImageDraw.Draw(im)
 if style == "pill":
-    f = ImageFont.truetype("/usr/share/fonts/truetype/google-fonts/Poppins-Bold.ttf", int(W * 0.075))
-    lines = textwrap.wrap(text, 20)
-    lh = int(W * 0.095)
+    f = ImageFont.truetype("/usr/share/fonts/truetype/google-fonts/Poppins-Bold.ttf", int(W * 0.075 * FS))
+    lines = textwrap.wrap(text, int(os.environ.get("COVER_WRAP", "20")))
+    lh = int(W * 0.095 * FS)
     y = int(H * (YF or 0.57)) - lh * len(lines) // 2
     for ln in lines:
         bw = d.textlength(ln, font=f)
@@ -29,9 +30,9 @@ if style == "pill":
         d.text((x, y - 4), ln, font=f, fill="white")
         y += lh
 elif style == "type":
-    f = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSansMono.ttf", int(W * 0.05))
-    lines = textwrap.wrap(text.lower(), int(os.environ.get("COVER_WRAP", "22")))
-    lh = int(W * 0.068)
+    f = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSansMono.ttf", int(W * 0.05 * FS))
+    lines = textwrap.wrap(text if os.environ.get("COVER_KEEPCASE") else text.lower(), int(os.environ.get("COVER_WRAP", "22")))
+    lh = int(W * 0.068 * FS)
     tw = max(d.textlength(l, font=f) for l in lines)
     x0 = (W - tw) / 2
     y0 = int(H * (YF or 0.58)) - lh * len(lines) // 2
