@@ -7,3 +7,8 @@ Made per Mack's r2 note on shorty_easy-up-and-down ("do a different clip for the
 - Moment (orange checkered shirt): from the fringe for "a nice par tap in" → putt → "get up there get up there" → it dies and rolls all the way back to her, between her legs. Her talk kept (part of the punchline); her captions untouched. Not used in any compilation or shorty.
 - Line: "me after saying / “easy up and down”" (y 290–460, clear of her head). Checked frame by frame; spelling checked.
 - Caption: "she came back to me". Covers: opt1 address, opt2 watching it come back, opt3 ball back at her feet.
+
+## Round 2 (Oct 15 03:14Z) — Mack: "This is not an up and down thing. New clip"
+- New clip: `shorties/easy-up-and-down-chip.mp4` (11.3 s). Video Oct 12 2026, 7 16 02 AM.mov 110.07–121.30 (white shirt, camo hat): one chip from just off the green — "I'm actually gonna be pissed if we're not on in 4 to be honest" → chip (tracer) → her own cut to the selfie "so as it turns out, I'm pissed". One shot; the only cut inside is her own cut to that reaction (the result line). Line "me after saying / “easy up and down”" (y 200–370, clear of her head).
+- Already posted: @mackthegolfer Oct 11 "does anyone know the lag masta" https://www.instagram.com/reel/DeX0u_Ox_W3/ (136 s of this source). Not in any other shorty; comp2 r6 uses 122.07–124.25 of the same file (a different moment, 2 s).
+- Covers: opt1 talking at the ball, opt2 tracer, opt3 "as it turns out I'm pissed".

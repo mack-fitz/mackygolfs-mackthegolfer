@@ -77,3 +77,15 @@ confidence is free
 - Order changed so the two white-shirt/camo bits aren't back to back: lag MASTA (7 16 02) → hole in one (12 14 03) → Bomb City (7 19 40). Bits 1-2 unchanged from r4.
 - `comp2_delusional.mp4`: 40.8 s, one encode from the true originals (render_comp.py, comp2_r5_bits.json; sources sha256-checked). Covers unchanged (all three frames still in the video).
 - Bomb City footage was already posted on @mackthegolfer Oct 12 (this bit is < 15 s of new-to-comp use, inside a compilation).
+
+## Round 6 (Oct 15 03:22Z) — Mack: "Last clip makes no sense. Cut all the shots. Should just be back to back me saying delusional things. Include best putter in the galaxy. Any other time I refer to myself the best. I want like 7 clips. Change text to the shxt I say while still being a 27 handicap. Caption being a good golfer is all about mindset mindset"
+- Rebuilt: 7 lines back to back, NO shots (no swings/strokes on screen), cut at word gaps from the word-timestamped transcripts. `comp2_delusional_r6.mp4` (render_comp.py, comp2_r6_bits.json), ~30 s, one crf-17 encode from the true originals.
+  1. 12 05 56 (green) 101.9–109.3 "it's fortunate that I'm one of the best putters that this galaxy has ever seen, so it actually won't be a problem, but it is shocking" ("problem" whole)
+  2. 7 16 02 (white/camo) 122.07–124.25 "alright you're about to see the lag MASTA at work"
+  3. 12 14 03 (green) 2.35–4.32 "I'm getting a hole in one on this par 3"
+  4. Oct 11 9 02 57 (orange) 11.2–15.75 "legit look how perfect this shot was … I'm the king of the world!" (drive swing before it cut)
+  5. 12 14 03 (green) 84.6–89.65 "I am about to par the absolute living heck out of this, it's actually so crazy how par I'm about to get"
+  6. 7 19 40 (white/camo) 1.15–6.6 (video from 1.5, shirt wipe out) "do you know that they call Amarillo Bomb City? it's because of this drive"
+  7. 7 30 44 (green) 161.85–165.3 "that's all I live for, is being the best in the world"
+- Cover text "the shxt I say while still being a 27 handicap" (her wording), 3 options. Caption exactly as written.
+- 7 30 44 (cactus) is never-posted: its full original posts on @mackygolfs Oct 15 7:42am MT — comp2 must not post before that (FULL BEFORE CUT). Galaxy line is also in comp7 r3 (Mack asked for it in both).
