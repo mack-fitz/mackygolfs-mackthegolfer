@@ -1,0 +1,130 @@
+{
+"source": "inbox/videos/Video Oct 12 2026, 7 34 47 AM.mov",
+"duration": 35.1535625,
+"segments": [
+{
+"start": 1.22,
+"end": 5.66,
+"text": "I want to consistently be breaking a hundred. So what am I doing wrong? Please help me out",
+"words": [
+[
+1.22,
+1.66,
+" I"
+],
+[
+1.66,
+1.78,
+" want"
+],
+[
+1.78,
+1.9,
+" to"
+],
+[
+1.9,
+2.38,
+" consistently"
+],
+[
+2.38,
+2.62,
+" be"
+],
+[
+2.62,
+2.88,
+" breaking"
+],
+[
+2.88,
+3.02,
+" a"
+],
+[
+3.02,
+3.3,
+" hundred."
+],
+[
+3.54,
+3.66,
+" So"
+],
+[
+3.66,
+3.78,
+" what"
+],
+[
+3.78,
+3.86,
+" am"
+],
+[
+3.86,
+3.98,
+" I"
+],
+[
+3.98,
+4.12,
+" doing"
+],
+[
+4.12,
+4.42,
+" wrong?"
+],
+[
+4.66,
+4.84,
+" Please"
+],
+[
+4.84,
+5.06,
+" help"
+],
+[
+5.06,
+5.28,
+" me"
+],
+[
+5.28,
+5.66,
+" out"
+]
+]
+},
+{
+"start": 33.72,
+"end": 35.12,
+"text": "Please help me out",
+"words": [
+[
+33.72,
+35.12,
+" Please"
+],
+[
+35.12,
+35.12,
+" help"
+],
+[
+35.12,
+35.12,
+" me"
+],
+[
+35.12,
+35.12,
+" out"
+]
+]
+}
+]
+}
