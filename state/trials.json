@@ -802,14 +802,14 @@
       "slug": "031_bunker-par-4-red-shirt",
       "A_new_2026-10-19": {
         "file": "trials/031_bunker-par-4-red-shirt_a.mp4",
-        "cover": "trials/031_bunker-par-4-red-shirt_a_r3_cover_opt1.jpg",
+        "cover": "trials/031_bunker-par-4-red-shirt_a_r3_cover_opt3.jpg",
         "cover_options": [
           "trials/031_bunker-par-4-red-shirt_a_cover_opt1.jpg",
           "trials/031_bunker-par-4-red-shirt_a_cover_opt2.jpg",
           "trials/031_bunker-par-4-red-shirt_a_cover_opt3.jpg"
         ],
         "version": "original, untouched (remuxed .mov→.mp4, same HEVC video + audio streams, no re-encode)",
-        "planned": "2026-10-19 18:49 MT (Zernio DRAFT until Mack approves)",
+        "planned": "2026-10-19 18:49 MT (scheduled Oct 16 01:15Z after Mack approved, cover opt3)",
         "caption": "the bunker was calling my name",
         "zernio": "6ad05e8b694b4089c8713931",
         "media_pinned": "b83ee72",
@@ -822,10 +822,12 @@
         "cover_words": "red \"Macky vs. a Bunker\" pill",
         "approval": {
           "review_doc": "2026-10-19_A_pm",
-          "status": "waiting (round 3, notes applied Oct 15)"
+          "status": "approved + scheduled"
         },
         "batch": "red hawaiian shirt (Mack, Oct 14)",
-        "dup_check": "never_posted.json (fingerprint checked Oct 15); no other red-Hawaiian-shirt reel on that account the same or adjacent days"
+        "dup_check": "never_posted.json (fingerprint checked Oct 15); no other red-Hawaiian-shirt reel on that account the same or adjacent days",
+        "status": "scheduled",
+        "cover_pinned": "0702ecd"
       }
     },
     "id:etyjxrk_8sAAAAAAAAAE-g": {
@@ -833,15 +835,15 @@
       "slug": "035_mountain-par-3-red-shirt",
       "B_new_2026-10-20": {
         "file": "trials/035_mountain-par-3-red-shirt_b.mp4",
-        "cover": "trials/035_mountain-par-3-red-shirt_b_cover.jpg",
+        "cover": "trials/035_mountain-par-3-red-shirt_b_r3_cover_opt1.jpg",
         "cover_options": [
-          "trials/035_mountain-par-3-red-shirt_b_cover_opt1.jpg",
-          "trials/035_mountain-par-3-red-shirt_b_cover_opt2.jpg",
-          "trials/035_mountain-par-3-red-shirt_b_cover_opt3.jpg"
+          "trials/035_mountain-par-3-red-shirt_b_r3_cover_opt1.jpg",
+          "trials/035_mountain-par-3-red-shirt_b_r3_cover_opt2.jpg",
+          "trials/035_mountain-par-3-red-shirt_b_r3_cover_opt3.jpg"
         ],
         "version": "talk-first trim: starts on her intro line right after the wipe; wipe removed, nothing else cut (single crf-17 export)",
         "planned": "2026-10-20 19:34 MT (Zernio DRAFT until Mack approves)",
-        "caption": "par 3 with a view",
+        "caption": "👉👈",
         "zernio": "6ad05e9b96179afd8c22f51c",
         "media_pinned": "b83ee72",
         "length_test": "short",
@@ -849,16 +851,17 @@
         "source": "/Golf Captions/Video Sep 21 2026, 7 31 40 PM.mov",
         "source_bitrate_bps": 11250000,
         "reuses": "NEW — never posted (fingerprint checked). Red Hawaiian shirt par 3, cloudy with the mountains (Sep 21, Colorado): matches nothing on your 3 accounts. Your call to put 2 of these on @mackthegolfer. Starts on you saying \"should we play a par 3 together?\" right after the wipe; only the wipe (first 1.1 s) removed, every shot and putt kept. Tuesday evening, batch 4 of 6.",
-        "cover_note": "talk frame (never the wipe), you smiling in the cart, no words — 3 options below, tap one to pick",
+        "cover_note": "smiling frames: typewriter note on shirt x2 + no words (round 3, Mack note Oct 15)",
         "cover_words": "",
         "approval": {
           "review_doc": "2026-10-20_B_pm",
-          "status": "waiting (round 1)"
+          "status": "waiting (round 3, notes applied Oct 15)"
         },
         "batch": "red hawaiian shirt (Mack, Oct 14)",
         "dup_check": "never_posted.json (fingerprint checked Oct 15); no other red-Hawaiian-shirt reel on that account the same or adjacent days",
         "segs": "trials/035_mountain-par-3-red-shirt_b_segs.json",
-        "opening": "talk-first (intro line right after the wipe)"
+        "opening": "talk-first (intro line right after the wipe)",
+        "cover_pinned": "bcae89e"
       }
     },
     "id:etyjxrk_8sAAAAAAAAAFAA": {
@@ -866,14 +869,14 @@
       "slug": "032_pine-par-4-red-shirt",
       "A_new_2026-10-21": {
         "file": "trials/032_pine-par-4-red-shirt_a.mp4",
-        "cover": "trials/032_pine-par-4-red-shirt_a_r2_cover_opt1.jpg",
+        "cover": "trials/032_pine-par-4-red-shirt_a_r2_cover_opt2.jpg",
         "cover_options": [
           "trials/032_pine-par-4-red-shirt_a_cover_opt1.jpg",
           "trials/032_pine-par-4-red-shirt_a_cover_opt2.jpg",
           "trials/032_pine-par-4-red-shirt_a_cover_opt3.jpg"
         ],
         "version": "original, untouched (remuxed .mov→.mp4, same HEVC video + audio streams, no re-encode)",
-        "planned": "2026-10-21 18:44 MT (Zernio DRAFT until Mack approves)",
+        "planned": "2026-10-21 18:44 MT (scheduled Oct 16 01:15Z after Mack approved, cover opt2)",
         "caption": "I was ROBBED",
         "zernio": "6ad05e8f2ced7f681aed9a8d",
         "media_pinned": "b83ee72",
@@ -886,10 +889,12 @@
         "cover_words": "purple \"Macky vs. a Pine Tree\" pill",
         "approval": {
           "review_doc": "2026-10-21_A_pm",
-          "status": "waiting (round 2, notes applied Oct 15)"
+          "status": "approved + scheduled"
         },
         "batch": "red hawaiian shirt (Mack, Oct 14)",
-        "dup_check": "never_posted.json (fingerprint checked Oct 15); no other red-Hawaiian-shirt reel on that account the same or adjacent days"
+        "dup_check": "never_posted.json (fingerprint checked Oct 15); no other red-Hawaiian-shirt reel on that account the same or adjacent days",
+        "status": "scheduled",
+        "cover_pinned": "0702ecd"
       }
     },
     "id:etyjxrk_8sAAAAAAAAAE_A": {
@@ -897,14 +902,14 @@
       "slug": "033_tree-par-4-red-shirt",
       "A_new_2026-10-23": {
         "file": "trials/033_tree-par-4-red-shirt_a.mp4",
-        "cover": "trials/033_tree-par-4-red-shirt_a_r2_cover_opt1.jpg",
+        "cover": "trials/033_tree-par-4-red-shirt_a_r2_cover_opt2.jpg",
         "cover_options": [
           "trials/033_tree-par-4-red-shirt_a_cover_opt1.jpg",
           "trials/033_tree-par-4-red-shirt_a_cover_opt2.jpg",
           "trials/033_tree-par-4-red-shirt_a_cover_opt3.jpg"
         ],
         "version": "original, untouched (remuxed .mov→.mp4, same HEVC video + audio streams, no re-encode)",
-        "planned": "2026-10-23 18:48 MT (Zernio DRAFT until Mack approves)",
+        "planned": "2026-10-23 18:48 MT (scheduled Oct 16 01:15Z after Mack approved, cover opt2)",
         "caption": "as is - I think it might be broken",
         "zernio": "6ad05e93694b4089c8713957",
         "media_pinned": "b83ee72",
@@ -917,10 +922,12 @@
         "cover_words": "typewriter note: \"glad i got your attention\"",
         "approval": {
           "review_doc": "2026-10-23_A_pm",
-          "status": "waiting (round 2, notes applied Oct 15)"
+          "status": "approved + scheduled"
         },
         "batch": "red hawaiian shirt (Mack, Oct 14)",
-        "dup_check": "never_posted.json (fingerprint checked Oct 15); no other red-Hawaiian-shirt reel on that account the same or adjacent days"
+        "dup_check": "never_posted.json (fingerprint checked Oct 15); no other red-Hawaiian-shirt reel on that account the same or adjacent days",
+        "status": "scheduled",
+        "cover_pinned": "0702ecd"
       }
     }
   },
