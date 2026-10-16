@@ -65,3 +65,7 @@ Rebuilt from scratch. Problem with r1: bits mixed themes (a "if I bog this" setu
 - `comp7_putting_r5.mp4` (29.9 s) from `comp7_r5_bits.json`, render_comp.py with the new optional overlay arg: `comp7_r5_overlay.png` = "the sh*t I be saying while / 4 putting every hole" (white Poppins Bold, black outline + soft shadow) at the top (y 130–280 of 1920) for the whole reel — Mack asked for on-reel text, so this is the exception to no-burned-in-text. Checked every 1.5 s: never over her face (only over the hat in close-ups). Still one crf-17 encode from the true originals.
 - Covers (r5): pill with the new text over her shirt, below her face: opt1 galaxy close-up orange (12 05 56 @104.6), opt2 expert read greener red (7 17 58 @74.3), opt3 lag master purple (7 17 58 @90.3).
 - Still can't post before the lock-it-in full (7 17 58) — that posted Thu Oct 15 6:52pm MT.
+
+## Round 6 (Oct 16) — Mack: "You can't put the text this high" (r5 title collided with Instagram's top bar / trial-reel label)
+- `comp7_putting_r6.mp4` (29.9 s): same bits as r5 (`comp7_r5_bits.json`), text moved to `comp7_r6_overlay.png` y 1150–1302 (lower-middle, above her own captions). Checked frames across all 7 bits incl. the final walk-up close-up: never over her face. One crf-17 encode from the true originals (sha256 verified).
+- Swapped into the Facebook Page post scheduled Oct 18 7:18pm MT. The @mackthegolfer trial already posted with r5 text.
