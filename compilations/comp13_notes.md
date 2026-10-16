@@ -43,3 +43,9 @@
 
 ## How bits were found
 Onset detector over every Golf Captions original (5 ms windows, >1.5 kHz, ≥18 dB jump) → 140 transients → 4-frame contact sheets around each → kept real contacts with no words within ~0.5 s (`tools/asmr/onsets.py`). Cup drops searched via transcripts ("get in", "tap", "boom", "finally got it in") + 10 fps strips at the cup.
+
+## Round 2 — Mack's note (Oct 16, 11:12am MT): "The sounds need to be way closer together. Like multiple sounds per second"
+- File: `compilations/comp13_asmr-golf_r2.mp4` — 22.1 s, **53 hits + the cup drop** (≈2.5 sounds per second, was 18 bits ≈0.8/s). Every hit is 0.40 s (12 frames): 0.13 s before contact, 0.27 s after, so contact sits at the same spot in every bit and the rhythm is steady. Cup drop at the end trimmed to 0.95 s (26.20–27.15). Single crf-17 export (`tools/asmr/render_r2.py`, order `tools/asmr/order_r2.py`, bits `compilations/comp13_r2_bits.json`).
+- Hits found by the onset detector over every Oct 11/12 Golf Captions original, each checked on a 3-frame contact sheet (real contact only), no transcript word within 0.08 s of the window, no scene cut inside (frame-diff), and no overlap with any other compilation/shorty window (all *_bits.json + shorty windows; read-the-putt overlap only on the cup drop, as in r1).
+- Same rules as r1: no talking, no music, per-hit gain so every hit is about equally loud, 80 Hz highpass, 6/20 ms fades; limiter lowered to 0.7 so the AAC export peaks at −0.8 dBFS (no clipping). "asmr but it's golf" for the first 2 s only. No same shirt/day back to back.
+- Covers unchanged (all four cover frames are still in the edit). Caption unchanged: "very peaceful sport".

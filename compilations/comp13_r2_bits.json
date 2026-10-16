@@ -1,0 +1,434 @@
+[
+ {
+  "src": "Video Oct 12 2026, 12 11 12 AM.mov",
+  "in": 20.1,
+  "out": 20.5,
+  "group": "G",
+  "type": "drive",
+  "contact": 20.23
+ },
+ {
+  "src": "Video Oct 12 2026, 7 13 58 AM.mov",
+  "in": 14.955,
+  "out": 15.355,
+  "group": "W",
+  "type": "drive",
+  "contact": 15.085
+ },
+ {
+  "src": "Video Oct 12 2026, 12 22 39 AM.mov",
+  "in": 64.285,
+  "out": 64.685,
+  "group": "G2",
+  "type": "iron",
+  "contact": 64.415
+ },
+ {
+  "src": "Video Oct 11 2026, 9 02 57 AM.mp4",
+  "in": 17.57,
+  "out": 17.97,
+  "group": "O",
+  "type": "iron",
+  "contact": 17.7
+ },
+ {
+  "src": "Video Oct 12 2026, 7 17 58 AM.mov",
+  "in": 82.855,
+  "out": 83.255,
+  "group": "W",
+  "type": "putt",
+  "contact": 82.985
+ },
+ {
+  "src": "Video Oct 12 2026, 12 03 20 AM.mov",
+  "in": 25.025,
+  "out": 25.425,
+  "group": "G",
+  "type": "drive",
+  "contact": 25.155
+ },
+ {
+  "src": "Video Oct 11 2026, 9 02 57 AM (1).mp4",
+  "in": 29.24,
+  "out": 29.64,
+  "group": "O",
+  "type": "drive",
+  "contact": 29.37
+ },
+ {
+  "src": "Video Oct 12 2026, 12 17 30 AM.mov",
+  "in": 103.68,
+  "out": 104.08,
+  "group": "G2",
+  "type": "bunker",
+  "contact": 103.81
+ },
+ {
+  "src": "Video Oct 11 2026, 9 02 57 AM (3).mp4",
+  "in": 58.37,
+  "out": 58.77,
+  "group": "O",
+  "type": "drive",
+  "contact": 58.5
+ },
+ {
+  "src": "Video Oct 12 2026, 7 13 58 AM.mov",
+  "in": 44.265,
+  "out": 44.665,
+  "group": "W",
+  "type": "iron",
+  "contact": 44.395
+ },
+ {
+  "src": "Video Oct 12 2026, 12 11 12 AM.mov",
+  "in": 105.835,
+  "out": 106.235,
+  "group": "G",
+  "type": "iron",
+  "contact": 105.965
+ },
+ {
+  "src": "Video Oct 12 2026, 12 22 39 AM.mov",
+  "in": 122.245,
+  "out": 122.645,
+  "group": "G2",
+  "type": "bunker",
+  "contact": 122.375
+ },
+ {
+  "src": "Video Oct 12 2026, 12 03 20 AM.mov",
+  "in": 109.245,
+  "out": 109.645,
+  "group": "G",
+  "type": "putt",
+  "contact": 109.375
+ },
+ {
+  "src": "Video Oct 12 2026, 7 26 20 AM.mov",
+  "in": 75.54,
+  "out": 75.94,
+  "group": "W",
+  "type": "drive",
+  "contact": 75.67
+ },
+ {
+  "src": "Video Oct 11 2026, 9 02 57 AM.mp4",
+  "in": 8.2,
+  "out": 8.6,
+  "group": "O",
+  "type": "drive",
+  "contact": 8.33
+ },
+ {
+  "src": "Video Oct 12 2026, 12 17 30 AM.mov",
+  "in": 121.79,
+  "out": 122.19,
+  "group": "G2",
+  "type": "chip",
+  "contact": 121.92
+ },
+ {
+  "src": "Video Oct 12 2026, 12 05 56 AM.mov",
+  "in": 79.27,
+  "out": 79.67,
+  "group": "G",
+  "type": "iron",
+  "contact": 79.4
+ },
+ {
+  "src": "Video Oct 11 2026, 9 02 57 AM (3).mp4",
+  "in": 29.035,
+  "out": 29.435,
+  "group": "O",
+  "type": "drive",
+  "contact": 29.165
+ },
+ {
+  "src": "Video Oct 12 2026, 7 19 40 AM.mov",
+  "in": 9.27,
+  "out": 9.67,
+  "group": "W",
+  "type": "drive",
+  "contact": 9.4
+ },
+ {
+  "src": "Video Oct 12 2026, 12 22 39 AM.mov",
+  "in": 43.435,
+  "out": 43.835,
+  "group": "G2",
+  "type": "iron",
+  "contact": 43.565
+ },
+ {
+  "src": "Video Oct 12 2026, 12 11 12 AM.mov",
+  "in": 31.22,
+  "out": 31.62,
+  "group": "G",
+  "type": "drive",
+  "contact": 31.35
+ },
+ {
+  "src": "Video Oct 12 2026, 7 34 47 AM.mov",
+  "in": 16.16,
+  "out": 16.56,
+  "group": "K",
+  "type": "iron",
+  "contact": 16.29
+ },
+ {
+  "src": "Video Oct 12 2026, 7 26 20 AM.mov",
+  "in": 18.125,
+  "out": 18.525,
+  "group": "W",
+  "type": "drive",
+  "contact": 18.255
+ },
+ {
+  "src": "Video Oct 12 2026, 12 17 30 AM.mov",
+  "in": 54.375,
+  "out": 54.775,
+  "group": "G2",
+  "type": "drive",
+  "contact": 54.505
+ },
+ {
+  "src": "Video Oct 11 2026, 9 02 57 AM (3).mp4",
+  "in": 73.115,
+  "out": 73.515,
+  "group": "O",
+  "type": "putt",
+  "contact": 73.245
+ },
+ {
+  "src": "Video Oct 12 2026, 12 14 03 AM.mov",
+  "in": 75.705,
+  "out": 76.105,
+  "group": "G",
+  "type": "chip",
+  "contact": 75.835
+ },
+ {
+  "src": "Video Oct 12 2026, 7 16 02 AM.mov",
+  "in": 131.195,
+  "out": 131.595,
+  "group": "W",
+  "type": "putt",
+  "contact": 131.325
+ },
+ {
+  "src": "Video Oct 12 2026, 7 34 47 AM.mov",
+  "in": 18.285,
+  "out": 18.685,
+  "group": "K",
+  "type": "bunker",
+  "contact": 18.415
+ },
+ {
+  "src": "Video Oct 12 2026, 12 17 30 AM.mov",
+  "in": 24.265,
+  "out": 24.665,
+  "group": "G2",
+  "type": "drive",
+  "contact": 24.395
+ },
+ {
+  "src": "Video Oct 11 2026, 9 02 57 AM (3).mp4",
+  "in": 51.01,
+  "out": 51.41,
+  "group": "O",
+  "type": "drive",
+  "contact": 51.14
+ },
+ {
+  "src": "Video Oct 12 2026, 7 30 44 AM.mov",
+  "in": 55.3,
+  "out": 55.7,
+  "group": "C",
+  "type": "iron",
+  "contact": 55.43
+ },
+ {
+  "src": "Video Oct 12 2026, 12 00 30 AM.mov",
+  "in": 8.33,
+  "out": 8.73,
+  "group": "BP",
+  "type": "drive",
+  "contact": 8.46
+ },
+ {
+  "src": "Video Oct 12 2026, 12 05 56 AM.mov",
+  "in": 47.445,
+  "out": 47.845,
+  "group": "G",
+  "type": "iron",
+  "contact": 47.575
+ },
+ {
+  "src": "Video Oct 12 2026, 7 33 50 AM.mov",
+  "in": 8.97,
+  "out": 9.37,
+  "group": "LB",
+  "type": "iron",
+  "contact": 9.1
+ },
+ {
+  "src": "Video Oct 12 2026, 12 22 39 AM.mov",
+  "in": 10.075,
+  "out": 10.475,
+  "group": "G2",
+  "type": "drive",
+  "contact": 10.205
+ },
+ {
+  "src": "Video Oct 12 2026, 7 35 57 AM.mov",
+  "in": 4.36,
+  "out": 4.76,
+  "group": "K",
+  "type": "drive",
+  "contact": 4.49
+ },
+ {
+  "src": "Video Oct 12 2026, 7 17 58 AM.mov",
+  "in": 60.935,
+  "out": 61.335,
+  "group": "W",
+  "type": "chip",
+  "contact": 61.065
+ },
+ {
+  "src": "Video Oct 11 2026, 9 02 57 AM (3).mp4",
+  "in": 41.615,
+  "out": 42.015,
+  "group": "O",
+  "type": "drive",
+  "contact": 41.745
+ },
+ {
+  "src": "Video Oct 12 2026, 12 17 30 AM.mov",
+  "in": 75.33,
+  "out": 75.73,
+  "group": "G2",
+  "type": "iron",
+  "contact": 75.46
+ },
+ {
+  "src": "Video Oct 12 2026, 7 30 44 AM.mov",
+  "in": 71.24,
+  "out": 71.64,
+  "group": "C",
+  "type": "iron",
+  "contact": 71.37
+ },
+ {
+  "src": "Video Oct 12 2026, 12 11 12 AM.mov",
+  "in": 135.335,
+  "out": 135.735,
+  "group": "G",
+  "type": "bunker",
+  "contact": 135.465
+ },
+ {
+  "src": "Video Oct 12 2026, 12 00 30 AM.mov",
+  "in": 21.655,
+  "out": 22.055,
+  "group": "BP",
+  "type": "iron",
+  "contact": 21.785
+ },
+ {
+  "src": "Video Oct 12 2026, 7 16 02 AM.mov",
+  "in": 89.725,
+  "out": 90.125,
+  "group": "W",
+  "type": "iron",
+  "contact": 89.855
+ },
+ {
+  "src": "Video Oct 11 2026, 9 02 57 AM (2).mp4",
+  "in": 31.085,
+  "out": 31.485,
+  "group": "O",
+  "type": "putt",
+  "contact": 31.215
+ },
+ {
+  "src": "Video Oct 12 2026, 7 33 50 AM.mov",
+  "in": 4.445,
+  "out": 4.845,
+  "group": "LB",
+  "type": "drive",
+  "contact": 4.575
+ },
+ {
+  "src": "Video Oct 12 2026, 7 35 57 AM.mov",
+  "in": 12.65,
+  "out": 13.05,
+  "group": "K",
+  "type": "putt",
+  "contact": 12.78
+ },
+ {
+  "src": "Video Oct 12 2026, 12 22 39 AM.mov",
+  "in": 27.59,
+  "out": 27.99,
+  "group": "G2",
+  "type": "iron",
+  "contact": 27.72
+ },
+ {
+  "src": "Video Oct 12 2026, 7 26 20 AM.mov",
+  "in": 107.375,
+  "out": 107.775,
+  "group": "W",
+  "type": "iron",
+  "contact": 107.505
+ },
+ {
+  "src": "Video Oct 12 2026, 7 30 44 AM.mov",
+  "in": 147.015,
+  "out": 147.415,
+  "group": "C",
+  "type": "putt",
+  "contact": 147.145
+ },
+ {
+  "src": "Video Oct 11 2026, 9 02 57 AM (1).mp4",
+  "in": 9.4,
+  "out": 9.8,
+  "group": "O",
+  "type": "drive",
+  "contact": 9.53
+ },
+ {
+  "src": "Video Oct 12 2026, 7 34 47 AM.mov",
+  "in": 10.925,
+  "out": 11.325,
+  "group": "K",
+  "type": "drive",
+  "contact": 11.055
+ },
+ {
+  "src": "Video Oct 12 2026, 12 00 30 AM.mov",
+  "in": 12.99,
+  "out": 13.39,
+  "group": "BP",
+  "type": "drive",
+  "contact": 13.12
+ },
+ {
+  "src": "Video Oct 12 2026, 12 05 56 AM.mov",
+  "in": 20.375,
+  "out": 20.775,
+  "group": "G",
+  "type": "iron",
+  "contact": 20.505
+ },
+ {
+  "src": "Video Oct 12 2026, 7 33 50 AM.mov",
+  "in": 26.2,
+  "out": 27.15,
+  "group": "LB",
+  "type": "cup drop",
+  "contact": 26.76
+ }
+]
