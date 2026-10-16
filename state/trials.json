@@ -835,14 +835,14 @@
       "slug": "035_mountain-par-3-red-shirt",
       "B_new_2026-10-20": {
         "file": "trials/035_mountain-par-3-red-shirt_b.mp4",
-        "cover": "trials/035_mountain-par-3-red-shirt_b_r3_cover_opt1.jpg",
+        "cover": "trials/035_mountain-par-3-red-shirt_b_r3_cover_opt2.jpg",
         "cover_options": [
           "trials/035_mountain-par-3-red-shirt_b_r3_cover_opt1.jpg",
           "trials/035_mountain-par-3-red-shirt_b_r3_cover_opt2.jpg",
           "trials/035_mountain-par-3-red-shirt_b_r3_cover_opt3.jpg"
         ],
         "version": "talk-first trim: starts on her intro line right after the wipe; wipe removed, nothing else cut (single crf-17 export)",
-        "planned": "2026-10-20 19:34 MT (Zernio DRAFT until Mack approves)",
+        "planned": "2026-10-20 19:34 MT (scheduled Oct 16 02:41Z after Mack approved, cover opt2)",
         "caption": "👉👈",
         "zernio": "6ad05e9b96179afd8c22f51c",
         "media_pinned": "b83ee72",
@@ -855,13 +855,14 @@
         "cover_words": "",
         "approval": {
           "review_doc": "2026-10-20_B_pm",
-          "status": "waiting (round 3, notes applied Oct 15)"
+          "status": "approved + scheduled"
         },
         "batch": "red hawaiian shirt (Mack, Oct 14)",
         "dup_check": "never_posted.json (fingerprint checked Oct 15); no other red-Hawaiian-shirt reel on that account the same or adjacent days",
         "segs": "trials/035_mountain-par-3-red-shirt_b_segs.json",
         "opening": "talk-first (intro line right after the wipe)",
-        "cover_pinned": "bcae89e"
+        "cover_pinned": "bcae89e",
+        "status": "scheduled"
       }
     },
     "id:etyjxrk_8sAAAAAAAAAFAA": {
