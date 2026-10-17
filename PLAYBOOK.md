@@ -164,8 +164,16 @@ Each day, of each account's 2 trial reels, one must be SHORTER and one LONGER, s
 - Alternate which slot (morning/evening) gets the short one day to day. Log `length_test: "short"|"long"` and the final duration on each entry in state/trials.json, and report short-vs-long views/skip rate in the daily message.
 - This is a deliberate test; it does not change the rule that videos are otherwise picked at random within each length range.
 
+## COVER TEXT NEVER OVER HER CHEST (Mack, Oct 17) — overrides every placement note below
+Mack, Oct 17: "You've been putting the text over my cleavage a lot." Her chest / cleavage / bra must stay visible on EVERY cover (A, B, compilations, shorties, and @moremackygolfs).
+- Put the words over the shirt-over-face / head area ABOVE the chest, or BELOW the chest (stomach/waist/lower frame), whichever is clear. Never across the chest.
+- The whole text block stays inside the centered 3:4 grid crop (the profile grid shows the middle 1080x1440 of a 1080x1920 cover = 12.5%–87.5% of the height) and below Instagram's top bar (block no higher than ~15%).
+- Find the chest per image by LOOKING at the frame: `tools/cover_a.py --guide video t guide.jpg` draws %-of-height lines and the grid crop. The chest moves from video to video; never reuse a y from another cover. cover_a.py has no default position: `COVER_Y` is required and checked (0.15–0.85, block inside the crop). If no clear spot exists on that frame, use a nearby frame.
+- Verify every new cover before it goes anywhere: view it at grid-thumbnail size (center 1080x1440 crop at ~240–360 px wide) AND full size, and confirm the chest is clear in both.
+- "Mid-frame (45–70% down)" in older notes below is replaced by this rule.
+
 ## Cover text style (Mack, Oct 13)
-Cover words copy Mack's own @mackygolfs grid (screenshot: covers/grid-reference.png — Read it before making covers). Three styles she uses, all placed mid-frame (roughly 45–70% down, over the middle of the shirt-wipe frame, inside the center square so the grid crop keeps it):
+Cover words copy Mack's own @mackygolfs grid (screenshot: covers/grid-reference.png — Read it before making covers). Three styles she uses, placed inside the center 3:4 grid crop and NEVER over her chest (see the Oct 17 rule above: over the shirt-over-face/head area or below the chest):
 1. **"Macky vs. ___" pill** (her main series): "Macky vs. a Par 4", "Macky vs. a 7 iron", "Macky vs. the LPGA", "macky vs. a chili cheese dawg", "Macky vs. Something that Should Have Stayed a Draft". Bold rounded sans (Poppins Bold/SemiBold is close), white text on a solid rounded-corner color box (orange #F7931E, red #E8101A, yellow #F5C518 with white text, purple #A21CAF, blue #1E90FF). Rotate colors; 1–2 lines.
 2. **Typewriter note**: lowercase monospace black text on a plain white rectangle, deadpan quote/thought, e.g. "i'm so wet :/", "does anyone on instagram know what lag means", "i was served dry burger". Use a monospace font (DejaVu Sans Mono or similar).
 3. **Big question**: heavy italic red text with white outline, right-aligned, stacked one word or two per line, e.g. "Is Macky about to be soaking wet?" Use sparingly.
@@ -202,7 +210,7 @@ Mostly use style 1, some style 2, rarely 3. Words fit the specific video (the ho
 ## COMPILATIONS (Mack, Oct 13) — make a bunch over the next week
 Why: compilations avoid the duplicate flag that single re-posts get. Mack wants many.
 - Format (proven by comp #1 "what it's like playing with me", which she loved): HER TALKING while playing; 2–7 s bits back to back; 30–45 s; open on the strongest bit; never cut a shot out of a setup→shot→result bit; never cut swearing; no shirt wipes (except the shirt-wipe compilation); no text burned in; even loudness; 1080x1920 30 fps crf 17. Method + sources: compilations/comp1_notes.md.
-- Cover: strong face/reaction frame + the title in her grid style (white bold Poppins on a rounded colored box, mid-frame; rotate colors). Always give 3+ cover options. Caption: short, lowercase, dry (her edit of comp1: "why do I like this sport").
+- Cover: strong face/reaction frame + the title in her grid style (white bold Poppins on a rounded colored box, inside the grid crop and never over her chest — Oct 17 rule; rotate colors). Always give 3+ cover options. Caption: short, lowercase, dry (her edit of comp1: "why do I like this sport").
 - Every compilation goes on the review page (https://claude.ai/artifact/KFJoqNkDr6kpxYDkpniAZ7, collection "compilations") for her notes/approval; notify her when one is up or when notes are applied. Nothing posts without approval. Default account: @mackthegolfer trial unless she says otherwise (the shirt-wipe one is for @mackygolfs).
 - Don't reuse the same bit in two compilations that would post within 2 weeks of each other.
 - Idea list (work down it; skip any already made; add new ones as you find patterns in the footage):
