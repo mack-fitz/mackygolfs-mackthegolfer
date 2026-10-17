@@ -9,3 +9,8 @@
 - Checked: 1 fps contact of the whole export, every 3rd frame 5.4–7.8 s (swing, contact, fade), last 15 frames (no flash of her next caption/clip), full-res crop of the line for spelling/legibility over the sky.
 - Caption: "if you tell me to hit behind the ball one more time"
 - Covers: opt1 looking at camera + line (2.0 s), opt2 backswing + line (5.85 s), opt3 impact + line (6.15 s), opt4 "I don't know six inches" with the ball barely moved (12.3 s, no line).
+
+## Round 2 (Oct 17) — Mack's new on-reel text rule ("The text is too big" / "also should be more legible"; text can't sit high)
+- File: `shorties/listening-to-the-comments_r2.mp4` — same window 116.20–129.80, same 408 frames (checked frame-for-frame against r1 outside the text), same audio fades; ONE crf-17 encode from the true original. Only the text changed.
+- Line "me listening to the comment section" (now one line): Inter Bold 46 px, white, 3 px black stroke (~85%) + soft drop shadow (`tools/ontext.py`). Lower band, ink y 1180–1231, x 130–949, above her own captions; fades 6.25–6.50 s as before. Not in the upper band because her cap is at y ~450–650 throughout. Never over her face (sheet every 0.3 s 0–6.6 s); legible over the sand.
+- Covers: `listening-to-the-comments_r2_cover_opt1–3.jpg` (same frames as r1: 2.0 / 5.87 / 6.17 s, new text); opt4 (no line) unchanged.
