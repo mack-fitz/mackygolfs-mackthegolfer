@@ -9,3 +9,8 @@
 - Checked: frame-by-frame (every 3rd frame) 0.5–4.7 s around the swing and result, 2 fps of the whole export, end frames (no caption flash of her next line), full-res crop of the line for spelling/legibility over the clouds.
 - Caption: "it worked though"
 - Covers: opt1 address + line, opt2 spin follow-through with tracer + line, opt3 top of the backswing + line, opt4 close-up laugh "I normally do not swing like that" (no line).
+
+## Round 2 (Oct 17) — Mack: "The text is too big" / "also should be more legible" (+ Oct 16: text can't sit that high)
+- File: `shorties/youtube-lessons_r2.mp4` — same window, same frames (checked frame-for-frame against r1 outside the text), same audio fades (input -ss 6.2003 lands on the same first frame as r1 — checked frame-for-frame against r1); ONE crf-17 encode from the true original (rejoined .partNN / repo file, sha256 OK). Only the text changed.
+- Line "me after 3 youtube lessons": Inter Bold 46 px, white, 3 px black stroke (~85%) + soft drop shadow (`tools/ontext.py`). Lower band, ink y 1180–1231, x 233–847, above her own captions; fades out 4.0–4.3 s as before. Not in the upper band because her head rises to y ~500 as she walks up after the swing while the line is on. Never over her face (contact sheet across the whole time it's on), legible over sand/grass at full res and at phone size (390 px wide).
+- Covers: `youtube-lessons_r2_cover_opt1–3.jpg` (same frames as r1 opt1–3: 0.1 / 2.2 / 1.2 s, new text); opt4 (no line) unchanged where it exists.

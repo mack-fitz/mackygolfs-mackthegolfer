@@ -49,3 +49,8 @@ Onset detector over every Golf Captions original (5 ms windows, >1.5 kHz, ≥18 
 - Hits found by the onset detector over every Oct 11/12 Golf Captions original, each checked on a 3-frame contact sheet (real contact only), no transcript word within 0.08 s of the window, no scene cut inside (frame-diff), and no overlap with any other compilation/shorty window (all *_bits.json + shorty windows; read-the-putt overlap only on the cup drop, as in r1).
 - Same rules as r1: no talking, no music, per-hit gain so every hit is about equally loud, 80 Hz highpass, 6/20 ms fades; limiter lowered to 0.7 so the AAC export peaks at −0.8 dBFS (no clipping). "asmr but it's golf" for the first 2 s only. No same shirt/day back to back.
 - Covers unchanged (all four cover frames are still in the edit). Caption unchanged: "very peaceful sport".
+
+## Round 3 (Oct 17) — Mack: "The text is too big" / "also should be more legible" (+ Oct 16: text can't sit that high)
+- File: `compilations/comp13_asmr-golf_r3.mp4` — same 54 hits + cup drop as r2 (bits from `comp13_r2_bits.json`, same per-hit gains/fades/limiter; identical frames to r2 outside the text), ONE crf-17 encode from the true originals (`tools/asmr/render_r3.py`).
+- "asmr but it's golf": Inter Bold 46 px, white, 3 px black stroke (~85%) + soft drop shadow (`tools/ontext.py`), lower band (compilation default), ink y 1180–1231, x 347–732; first 2.0 s, fades out 1.8–2.0 s. Checked every frame 0–2.1 s: over legs/grass, never her face; legible at full res and phone size.
+- Covers unchanged (cover pills at 7.95 / 20.7 / 18.65 / 11.55 s, after the line is gone; no on-reel line on them).

@@ -9,3 +9,8 @@
 - Checked: every 4th frame 4.3–10.3 s (swing, tracer, finish, turn, walk-up), first/last frames (no flash of her next clip), full-res crop of the line for spelling/legibility.
 - Caption: "if you say i should have taken the easy out we cant be friends"
 - Covers: opt1 address + line, opt2 tracer straight up + line, opt3 frozen finish + line, opt4 close-up "unfortunate position" (no line).
+
+## Round 2 (Oct 17) — Mack: "The text is too big" / "also should be more legible" (+ Oct 16: text can't sit that high)
+- File: `shorties/hero-shot_r2.mp4` — same window, same frames (checked frame-for-frame against r1 outside the text), same audio fades; ONE crf-17 encode from the true original (rejoined .partNN / repo file, sha256 OK). Only the text changed.
+- Line "me going for the hero shot": Inter Bold 46 px, white, 3 px black stroke (~85%) + soft drop shadow (`tools/ontext.py`). Lower band, ink y 1180–1231, x 242–838, above her own captions; fades out 9.55–9.85 s as before. Not in the upper band because her hat is at y ~450–640 at address and rises to ~260 in the follow-through, so the 400–700 band was never clear. Never over her face (contact sheet across the whole time it's on), legible over sand/grass at full res and at phone size (390 px wide).
+- Covers: `hero-shot_r2_cover_opt1–3.jpg` (same frames as r1 opt1–3: 1.0 / 5.9 / 7.6 s, new text); opt4 (no line) unchanged where it exists.

@@ -9,3 +9,8 @@
 - Checked: 10 fps sheet 5.8–8.2 s around the shot, 2 fps sheet of the whole export, 5 fps sheet across the fade, spelling.
 - Caption: "they were very impressed"
 - Covers: opt1 address + line (+ her "I'm so nervous okay"), opt2 takeaway + line, opt3 top of the swing with tracer + line, opt4 close-up "well that landed on their t box" (no line).
+
+## Round 2 (Oct 17) — Mack: "The text is too big" / "also should be more legible" (+ Oct 16: text can't sit that high)
+- File: `shorties/group-watching_r2.mp4` — same window, same frames (checked frame-for-frame against r1 outside the text), same audio fades (input -ss 64.5833 lands on the same first frame as r1 — checked frame-for-frame against r1); ONE crf-17 encode from the true original (rejoined .partNN / repo file, sha256 OK). Only the text changed.
+- Line "me when a group of guys is watching" (now one line): Inter Bold 46 px, white, 3 px black stroke (~85%) + soft drop shadow (`tools/ontext.py`). Lower band, ink y 1180–1231, x 120–959, above her own captions; fades out 8.15–8.45 s as before. Not in the upper band because her hat is at y ~470–650 the whole setup. Never over her face (contact sheet across the whole time it's on), legible over sand/grass at full res and at phone size (390 px wide).
+- Covers: `group-watching_r2_cover_opt1–3.jpg` (same frames as r1 opt1–3: 1.0 / 5.0 / 6.0 s, new text); opt4 (no line) unchanged where it exists.

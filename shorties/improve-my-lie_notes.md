@@ -9,3 +9,8 @@
 - Checked: 1 fps contact of the whole export + full-res top crops, 15 fps around the stick poke (export 7.3–9.7 s), end frames (no caption flash of her next line), full-res crop of the line for spelling/legibility.
 - Caption: "if you say that's a penalty stroke we cant be friends"
 - Covers: opt1 address + line (3.6 s), opt2 reaching for the stick + line (8.1 s), opt3 "this is worse" + line (11.6 s).
+
+## Round 2 (Oct 17) — Mack: "The text is too big" / "also should be more legible" (+ Oct 16: text can't sit that high)
+- File: `shorties/improve-my-lie_r2.mp4` — same window, same frames (checked frame-for-frame against r1 outside the text), same audio fades (ss 64.70); ONE crf-17 encode from the true original (rejoined .partNN / repo file, sha256 OK). Only the text changed.
+- Line "me trying to improve my lie": Inter Bold 46 px, white, 3 px black stroke (~85%) + soft drop shadow (`tools/ontext.py`). Lower band, ink y 1180–1231, x 234–846, above her own captions; on for the whole 13 s as before. Not in the upper band because her hat is at y ~470 at center frame the whole clip. Never over her face (contact sheet across the whole time it's on), legible over sand/grass at full res and at phone size (390 px wide).
+- Covers: `improve-my-lie_r2_cover_opt1–3.jpg` (same frames as r1 opt1–3: 3.6 / 8.1 / 11.6 s, new text); opt4 (no line) unchanged where it exists.
