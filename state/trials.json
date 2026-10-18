@@ -40,6 +40,29 @@
         "cover": "trials/003_new-shirt-four-putt_a_cover.jpg",
         "cover_frame": "shirt wipe @0.4s",
         "cover_words": "FOUR PUTT"
+      },
+      "B_candidate_2026-10-19": {
+        "file": "trials/042_new-shirt-four-putt_b.mp4",
+        "version": "clean talk-first re-edit (wipe removed, 28% cut, 4 punch-ins)",
+        "duration": 47.4,
+        "length_test": "short",
+        "planned": "2026-10-19 19:32 MT (review doc 2026-10-19_B_pm round 2; NOT scheduled, waiting on Mack)",
+        "caption": "dead center of the green and still 4 putted. please help",
+        "cover_options": [
+          "trials/042_new-shirt-four-putt_b_cover_opt1.jpg",
+          "trials/042_new-shirt-four-putt_b_cover_opt2.jpg",
+          "trials/042_new-shirt-four-putt_b_cover_opt3.jpg"
+        ],
+        "media_pinned": "9e5b6b3",
+        "media_url": "https://raw.githubusercontent.com/mack-fitz/mackygolfs-mackthegolfer/9e5b6b30d81ca51b5adc181edf906aba4669ad3b/trials/042_new-shirt-four-putt_b.mp4",
+        "segs": "trials/042_new-shirt-four-putt_b_segs.json",
+        "opening": "talk-first: 'Guess what? I got a new shirt' (src 1.32 s)",
+        "source": "/Golf Captions/Video Oct 11 2026, 9 02 57 AM (2).mp4",
+        "source_bitrate_bps": 8060897,
+        "proof_post": "@mackygolfs 2026-10-11 13:08 MT https://www.instagram.com/reel/DeXXLu2RKlt/ (Mack's own)",
+        "spacing_check": "A+B pool last use 2026-10-12 13:22 (7 d 6 h); nothing in pool within 7 d after. Cross-account: @moremackygolfs 2026-10-16, FB 2026-10-19 12:33.",
+        "why": "replaces 040 san-angelo-water (Mack: 'posted too recently'; source on A Oct 13). Short: no long already-posted source clears the 7-day rule for Mon evening on B.",
+        "status": "candidate"
       }
     },
     "id:etyjxrk_8sAAAAAAAAAE4Q": {
@@ -129,7 +152,29 @@
         "zernio": null,
         "status": "deleted Oct 12: same video as Macks own @mackthegolfer post (lag masta, Oct 11); never published"
       },
-      "slug": "007_found-the-trees"
+      "slug": "007_found-the-trees",
+      "A_candidate_2026-10-19": {
+        "file": "trials/041_cart-path-wipe_a.mp4",
+        "version": "re-edit, opens on the shirt wipe",
+        "duration": 109.0,
+        "length_test": "long",
+        "planned": "2026-10-19 07:40 MT (review doc 2026-10-19_A_am round 2; NOT scheduled, waiting on Mack)",
+        "caption": "had the whole fairway and found the cart path. please help",
+        "cover_options": [
+          "trials/041_cart-path-wipe_a_cover_opt1.jpg",
+          "trials/041_cart-path-wipe_a_cover_opt2.jpg",
+          "trials/041_cart-path-wipe_a_cover_opt3.jpg"
+        ],
+        "media_pinned": "9e5b6b3",
+        "media_url": "https://raw.githubusercontent.com/mack-fitz/mackygolfs-mackthegolfer/9e5b6b30d81ca51b5adc181edf906aba4669ad3b/trials/041_cart-path-wipe_a.mp4",
+        "segs": "trials/041_cart-path-wipe_a_segs.json",
+        "source": "/Golf Captions/Video Oct 12 2026, 7 16 02 AM.mov",
+        "source_bitrate_bps": 11186586,
+        "proof_post": "@mackthegolfer 2026-10-11 17:38 MT https://www.instagram.com/reel/DeX0u_Ox_W3/ (Mack's own, 136 s)",
+        "spacing_check": "A+B pool last use 2026-10-11 17:38 (8 d); nothing in pool within 7 d after. Cross-account: @moremackygolfs + X 2026-10-17.",
+        "why": "replaces 039 driver-putter (Mack: 'needs more spacing'; source on A Oct 14)",
+        "status": "candidate"
+      }
     },
     "id:etyjxrk_8sAAAAAAAAAE3g": {
       "name": "Video Oct 12 2026, 12 11 12 AM.mov",

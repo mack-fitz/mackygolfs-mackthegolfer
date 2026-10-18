@@ -1,6 +1,22 @@
 # Trial reels playbook — @mackygolfs (A) + @mackthegolfer (B), Instagram only
 
 Operating rules for the trial-reel accounts. The daily task reads this file first.
+
+## SAME-SOURCE SPACING (Mack, Oct 18) — HARD RULE, overrides the 3-day / 5-day RE-EDIT SPACING numbers below
+**Same-source spacing ≥7 days; @mackygolfs and @mackthegolfer count as one pool; TikTok, comps and shorties exempt.**
+- Any two posts on @mackygolfs or @mackthegolfer (counted together as ONE pool) that use footage from the same
+  original source video — original vs edit or edit vs edit, either account — must be at least 7 FULL days apart
+  (≥ 168 h). Example: an original on @mackygolfs Oct 20 means no edit of it on @mackthegolfer before Oct 27.
+- Count published posts (ours via Zernio AND Mack's own: posts_list_posts source "external" + fingerprints) and
+  everything scheduled or planned on the review page. Same source includes byte-identical twins and alt takes
+  (7 33 50 ≈ 7 38 06, 7 35 57 ≈ 7 37 01; golfclips 009/010/011 = Golf Captions 9 02 57 AM (2)/(3)/.mp4).
+- Exempt: TikTok, compilations, shorties (their < 15 s bits don't count either way).
+- Other accounts (@moremackygolfs, X, Facebook) keep their own per-account 7-day rule (clips repo PLAYBOOK);
+  overlaps between them and A/B are allowed but flagged in the summary.
+- Planning: before a reel goes on the review page, check its source against the pool for 7 days before AND after
+  its slot. When scheduling an approved reel, re-check; if it now breaks the rule, move it to the next same
+  time-of-day slot that clears (tell Mack), never swap in new content without her approval.
+- Variety: pick the least-recently-used eligible original (anywhere), not the same 5–6.
 Source videos: Dropbox `/Golf Captions` (captioned by Mack). Media is served to Zernio from
 https://raw.githubusercontent.com/mack-fitz/mackygolfs-mackthegolfer/main/... (URL-encode spaces).
 Tools: `tools/render.sh src segs.json "" "" out.mp4` (segments `[start,end,zoom]`, empty hooks =
