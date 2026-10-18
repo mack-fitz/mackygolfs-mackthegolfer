@@ -33,3 +33,9 @@
 - 12 14 03 68.5–81.4 "just gotta pop this up there, just an easy pop lock and drop" → chip → "the grass kind of pulled the brake on it" (13 s)
 - 7 26 20 41.0–53.4 practice swing "especially with the sound effects" → hits the tree
 - 9 02 57 AM (3) 45.2–48.9 "if I stop being an idiot I should be able to hit the G-spot here" (left out: innuendo on the clean account)
+
+## Round 3 (Oct 18, Mack's notes: "D c of the G should not be the first. The lag her up there and tap it in should be." + "Put bubble around the letters so it doesn't look like the captions")
+- Old bit 1 split at her own scene cut (src 26.63, silent): now opens on "so I'm just gonna try to lag her up there and get a nice par tap in" (9 02 57 AM (2) 26.63–30.39); "like I said, we're pretty DC of the G" (24.20–26.63) moved to 3rd, after the elephant drive.
+- Order: lag/par tap in (orange) → elephant drive (green polo) → DC of the G (orange) → pause at the top (green pinstripe) → bump and roll (orange). No two same-shirt bits back to back. 28.0 s. Bits: comp14_r3_bits.json.
+- On-screen line now sits in white rounded bubbles (one per line) with black Inter Bold 46 text + soft shadow (`tools/ontext_bubble.py`, bubble y 1160–1322), so it can't be mistaken for her own white-outlined captions. One encode: `render_comp.py comp14_r3_bits.json comp14_golf-lingo_r3.mp4 comp14_r3_overlay.png`.
+- Covers unchanged (opt2–4).
