@@ -46,7 +46,7 @@
     "version": "clean talk-first re-edit (wipe removed, 28% cut, 4 punch-ins)",
     "duration": 43.0,
     "length_test": "short",
-    "planned": "2026-10-19 19:32 MT (review doc 2026-10-19_B_pm round 3; NOT scheduled, waiting on Mack)",
+    "planned": "2026-10-19 19:32 MT (approved by Mack Oct 19, cover opt4)",
     "caption": "dead center of the green and still 4 putted. please help",
     "cover_options": [
      "trials/042_new-shirt-four-putt_b_cover_opt2.jpg",
@@ -62,7 +62,8 @@
     "proof_post": "@mackygolfs 2026-10-11 13:08 MT https://www.instagram.com/reel/DeXXLu2RKlt/ (Mack's own)",
     "spacing_check": "A+B pool last use 2026-10-12 13:22 (7 d 6 h); nothing in pool within 7 d after. Cross-account: @moremackygolfs 2026-10-16, FB 2026-10-19 12:33.",
     "why": "replaces 040 san-angelo-water (Mack: 'posted too recently'; source on A Oct 13). Short: no long already-posted source clears the 7-day rule for Mon evening on B.",
-    "status": "candidate"
+    "status": "scheduled",
+    "zernio": "6ad63fbfc9cdc76babf5f50f"
    }
   },
   "id:etyjxrk_8sAAAAAAAAAE4Q": {
@@ -974,6 +975,21 @@
     "dup_check": "never_posted.json (fingerprint checked Oct 15); no other red-Hawaiian-shirt reel on that account the same or adjacent days",
     "status": "scheduled",
     "cover_pinned": "0702ecd"
+   }
+  },
+  "043_king-of-the-world-wipe": {
+   "source": "/Golf Captions/Video Oct 11 2026, 9 02 57 AM.mp4",
+   "A": {
+    "file": "trials/043_king-of-the-world-wipe_a.mp4",
+    "version": "re-edit, shirt wipe open",
+    "duration": 34.6,
+    "length_test": "short",
+    "cover": "trials/043_king-of-the-world-wipe_a_cover_opt3.jpg",
+    "cover_words": "",
+    "caption": "the mosquitoes cost me par. back me up",
+    "scheduled": "2026-10-20 07:39 MT",
+    "zernio": "6ad640819720052ead0b3e0d",
+    "review_doc": "2026-10-20_A_am"
    }
   }
  },
