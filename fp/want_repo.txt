@@ -1,0 +1,11 @@
+trials/028_lock-it-in-par-3-full_a.mp4
+trials/030_par-5-red-shirt_a.mp4
+trials/031_bunker-par-4-red-shirt_a.mp4
+trials/032_pine-par-4-red-shirt_a.mp4
+trials/033_tree-par-4-red-shirt_a.mp4
+trials/034_pond-par-3-red-shirt_b.mp4
+trials/035_mountain-par-3-red-shirt_b.mp4
+trials/036_san-angelo-wipe-open_a.mp4
+trials/037_guess-my-score-wipe_a.mp4
+trials/038_handicap-par-5-wipe_a.mp4
+trials/042_new-shirt-four-putt_b_r3.mp4
