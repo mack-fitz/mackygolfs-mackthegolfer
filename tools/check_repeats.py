@@ -183,10 +183,20 @@ def external_uses(paths, since):
                     srcfp = {}
                     base = os.path.join(MG, "state", "fp", "sources")
                     for root, _, files in os.walk(base):
+                        rel = os.path.relpath(root, base)
+                        if rel not in (".", "golfclips"):
+                            continue  # only /Golf Captions (top level) + /golfclips; other folders are off-limits and
+                                      # their files share names with Golf Captions files (Oct 20 fix)
                         for f in files:
                             name = f[:-5]
-                            if name in cmap:
-                                srcfp[name] = json.load(open(os.path.join(root, f)))
+                            if rel == "golfclips":
+                                skey = "golfclips/" + name if "golfclips/" + name in cmap else name
+                                if skey == name and os.path.exists(os.path.join(base, f)):
+                                    continue  # same name as a Golf Captions file: never let it overwrite that one
+                            else:
+                                skey = name
+                            if skey in cmap:
+                                srcfp[skey] = json.load(open(os.path.join(root, f)))
                 pf = json.load(open(fpf))
                 hits = []
                 for name, sf in srcfp.items():
