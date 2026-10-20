@@ -356,3 +356,11 @@ Format (her reference: a guy lining up an iron, on-screen text "Me after decidin
    (posts_update_post with platforms[]); the top level alone leaves the platform at the old time.
 10. FILE SIZE: renders served from raw.githubusercontent must stay < 100 MiB: render with /home/claude/clips/tools/render.sh
    and VMAXRATE=10M VBUFSIZE=20M for long edits. Never `git stash -u` while a render is writing into the repo.
+11. DASHBOARDS MATCH ZERNIO (Mack, Oct 20): before ANY dashboard rebuild (clip dashboard Up next, Base Camp schedule,
+   trial dashboards), pull the live schedule from Zernio and update state/schedule.json first:
+     call posts_list_posts (from_date 2026-10-05, to_date 2026-12-31, limit 100, sort_by scheduled-asc, EVERY page) ->
+     cd /home/claude/clips && python3 tools/sync_schedule.py --zernio p1.txt p2.txt
+   then rebuild (python3 tools/upnext.py upnext.json refuses to run if the sync is older than 2 h). Base Camp rows come
+   from the same Zernio pull: drafts are shown as "DRAFT: awaiting Mack approval", never as scheduled. Never publish
+   dashboard rows from memory, from an old schedule.json, or from what you meant to schedule.
+   (mackygolfs-mackthegolfer tools/dash_trials.py upnext already reads Zernio directly; give it the same fresh pull.)
