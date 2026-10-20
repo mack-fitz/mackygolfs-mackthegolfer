@@ -1,0 +1,465 @@
+{
+ "removed": "2026-10-20 (Mack rule: @mackygolfs/@mackthegolfer use ONLY /Golf Captions; these led with /golfclips-only footage)",
+ "cards": {
+  "reels/2026-10-20_A_am": {
+   "account": "A",
+   "caption": "guess my score before i tee off. if you guess high we can't be friends",
+   "cover_asset": "07e725f0f53a3858d03f3837afbbff76",
+   "cover_file": "trials/048_guess-my-score-par-3-wipe_a_cover_opt1.jpg",
+   "cover_note": "shirt-wipe frame (face covered), words over the hat/sky, chest clear at grid and full size. Tap one.",
+   "cover_options": [
+    {
+     "asset": "07e725f0f53a3858d03f3837afbbff76",
+     "file": "trials/048_guess-my-score-par-3-wipe_a_cover_opt1.jpg",
+     "id": "opt1",
+     "label": "red 'Macky vs. a Par 3' pill over the hat/sky",
+     "url": "/_blob/07e725f0f53a3858d03f3837afbbff76"
+    },
+    {
+     "asset": "2d062ceb122f47e20beb8ea64e1215d6",
+     "file": "trials/048_guess-my-score-par-3-wipe_a_cover_opt2.jpg",
+     "id": "opt2",
+     "label": "typewriter 'guess my score before i hit' over the hat/sky",
+     "url": "/_blob/2d062ceb122f47e20beb8ea64e1215d6"
+    },
+    {
+     "asset": "9f5ed0421d114729b7e3a1f5d65b07b1",
+     "file": "trials/048_guess-my-score-par-3-wipe_a_cover_opt3.jpg",
+     "id": "opt3",
+     "label": "no words (cover-word test)",
+     "url": "/_blob/9f5ed0421d114729b7e3a1f5d65b07b1"
+    }
+   ],
+   "cover_url": "/_blob/07e725f0f53a3858d03f3837afbbff76",
+   "date": "2026-10-20",
+   "decided_at": "2026-10-20T07:36:50.319Z",
+   "decided_round": 1,
+   "decision": "changes",
+   "dup_check": "tools/check_repeats.py --candidates PASS (final rule: last on @mackygolfs/@mackthegolfer Oct 11; nothing this past week; slot 8+ days from any other version)",
+   "duration": 69.2,
+   "file": "trials/048_guess-my-score-par-3-wipe_a.mp4",
+   "handle": "@mackygolfs",
+   "history": [],
+   "kind": "re-edit",
+   "length": "long",
+   "length_test": "long",
+   "media_url": "https://raw.githubusercontent.com/mack-fitz/mackygolfs-mackthegolfer/0a6716793bbe2e319763d481e7e88bf0377989ae/trials/048_guess-my-score-par-3-wipe_a.mp4",
+   "notes": "why don't you cut out all of my speaking after the word cheating\nkeep not going to lie that was an absolutely perfect shot\nthen cut to me putting with the texas wedge - cut all of the talking between\nkeep me saying that's gonne be good. cut me saying i might have blocked...\njump to here we go boys and keep the rest of the video\n\ncaption what do you think i'm shooting???",
+   "opening": "shirt wipe (A rule), then 'alright I'm about to play a par 3'",
+   "prepared_at": "2026-10-20T00:25:00Z",
+   "reuses": "RE-EDIT of your green-striped-polo par 3 'what do you think I'm shooting' (/golfclips copy_0B6BFBE5, pines course). Your own posts: @mackygolfs Oct 3 'WHAT AM I SHOOTING BE RESPECTFUL' https://www.instagram.com/reel/DeCZ6bTxkd_/ and @mackthegolfer Sat Oct 11 'don't let the cover photo influence your guess' https://www.instagram.com/reel/DeWyBqMxUqB/ (8 days ago, the last time it was on either main account; nothing of it this past week). What's different: opens on your shirt wipe, the long waits over the chip and the putt trimmed (85 s -> 69 s), 7 punch-ins, every shot and the 'let's f*cking go' kept, ends on 'if any of you guessed higher than par you are my enemy'.",
+   "round": 1,
+   "slot": "am",
+   "status": "ready",
+   "time_ct": "08:39",
+   "time_mt": "07:39",
+   "video_asset": "ff5126ddb2879311966ab06dabb011c2",
+   "video_url": "/_blob/ff5126ddb2879311966ab06dabb011c2",
+   "zernio": "6ad6b49b6b297b4df95eb195"
+  },
+  "reels/2026-10-20_B_am": {
+   "account": "B",
+   "caption": "i want to be a better golfer. please help, what am i doing wrong",
+   "cover_asset": "da7904ea803b8f787159a1c512dfd00a",
+   "cover_file": "trials/050_help-my-swing-talk-first_b_cover_opt1.jpg",
+   "cover_note": "brand-safe, no wipe. Tap one.",
+   "cover_options": [
+    {
+     "asset": "da7904ea803b8f787159a1c512dfd00a",
+     "file": "trials/050_help-my-swing-talk-first_b_cover_opt1.jpg",
+     "id": "opt1",
+     "label": "blue 'Macky vs. a Par 4' pill over the sky, drive follow-through",
+     "url": "/_blob/da7904ea803b8f787159a1c512dfd00a"
+    },
+    {
+     "asset": "899e114557afa71b9cfd3d611a9cccd1",
+     "file": "trials/050_help-my-swing-talk-first_b_cover_opt2.jpg",
+     "id": "opt2",
+     "label": "typewriter 'please help me out. what am i doing wrong' over the cart roof",
+     "url": "/_blob/899e114557afa71b9cfd3d611a9cccd1"
+    },
+    {
+     "asset": "d76deec2fc03aeda6aa0d5e3350e4e7f",
+     "file": "trials/050_help-my-swing-talk-first_b_cover_opt3.jpg",
+     "id": "opt3",
+     "label": "no words, 'not mad at that bogey' smile",
+     "url": "/_blob/d76deec2fc03aeda6aa0d5e3350e4e7f"
+    }
+   ],
+   "cover_url": "/_blob/da7904ea803b8f787159a1c512dfd00a",
+   "date": "2026-10-20",
+   "decided_at": "2026-10-20T07:39:07.903Z",
+   "decided_round": 1,
+   "decision": "changes",
+   "dup_check": "tools/check_repeats.py --candidates PASS (final rule + past-week rule; last on main accounts Sep 6)",
+   "duration": 49.3,
+   "file": "trials/050_help-my-swing-talk-first_b.mp4",
+   "handle": "@mackthegolfer",
+   "history": [],
+   "kind": "re-edit",
+   "length": "long",
+   "length_test": "long",
+   "media_url": "https://raw.githubusercontent.com/mack-fitz/mackygolfs-mackthegolfer/b331ddf50c04fb007342a51685d12b8a328f6b8c/trials/050_help-my-swing-talk-first_b.mp4",
+   "notes": "you cut off me talking about aiming over the bunker into the fairway\n\ncaption this was a pretty good hole but how do i make it a pretty great hole?",
+   "opening": "talk-first: 'I wanna be a better golfer'",
+   "prepared_at": "2026-10-20T00:42:00Z",
+   "reuses": "RE-EDIT of your green-striped-polo par 4 'hey now that I have your attention... please help me out, what am I doing wrong' (/golfclips copy_A526847D). Your own post: @mackygolfs Sep 6 'any tips for this UP AND COMING golfer' (67 s, fingerprint-matched). Last time this footage was on @mackygolfs or @mackthegolfer: Sep 6 (43 days ago) - least-recently-used pick. What's different: no shirt wipe, opens on 'I wanna be a better golfer', the 9-iron setup talk and the recap cut (70 s -> 49 s), 6 punch-ins, every shot kept (drive, approach, bunker shot, chip, putt) and both swears kept, ends on 'I am not mad at that bogey'.",
+   "round": 1,
+   "slot": "am",
+   "status": "ready",
+   "time_ct": "09:24",
+   "time_mt": "08:24",
+   "video_asset": "34e8e25a3b384a825f519d5c44c580d0",
+   "video_url": "/_blob/34e8e25a3b384a825f519d5c44c580d0",
+   "zernio": "6ad6b8be527580f23afacd03"
+  },
+  "reels/2026-10-21_A_am": {
+   "account": "A",
+   "caption": "told everyone to watch my hole in one. please don't watch",
+   "chosen_cover": "opt2",
+   "cover_asset": "11858479515aab8fe4dad2cb92bc37d1",
+   "cover_file": "trials/045_hole-in-one-attempt-wipe_a_cover_opt1.jpg",
+   "cover_note": "shirt-wipe frame (face covered); words over the shirt/head or the stomach, chest clear at grid and full size. Tap one.",
+   "cover_options": [
+    {
+     "asset": "11858479515aab8fe4dad2cb92bc37d1",
+     "file": "trials/045_hole-in-one-attempt-wipe_a_cover_opt1.jpg",
+     "id": "opt1",
+     "label": "orange 'Macky vs. a Par 3' pill over the shirt/head",
+     "url": "/_blob/11858479515aab8fe4dad2cb92bc37d1"
+    },
+    {
+     "asset": "119ca0c5b3f291cdc05c1c6382fa6744",
+     "file": "trials/045_hole-in-one-attempt-wipe_a_cover_opt2.jpg",
+     "id": "opt2",
+     "label": "typewriter 'watch this hole in one' below the chest",
+     "url": "/_blob/119ca0c5b3f291cdc05c1c6382fa6744"
+    },
+    {
+     "asset": "d9af5bf315d9b2e33784f8cac03f0931",
+     "file": "trials/045_hole-in-one-attempt-wipe_a_cover_opt3.jpg",
+     "id": "opt3",
+     "label": "no words (cover-word test)",
+     "url": "/_blob/d9af5bf315d9b2e33784f8cac03f0931"
+    }
+   ],
+   "cover_url": "/_blob/11858479515aab8fe4dad2cb92bc37d1",
+   "date": "2026-10-21",
+   "decided_at": "2026-10-20T07:41:54.135Z",
+   "decided_round": 1,
+   "decision": "changes",
+   "dup_check": "7-day pool (A, B, @moremackygolfs, FB, X): last use Oct 14 09:23 MT; next use none. Exact-file check: new file.",
+   "duration": 34.3,
+   "file": "trials/045_hole-in-one-attempt-wipe_a.mp4",
+   "handle": "@mackygolfs",
+   "history": [],
+   "kind": "original (never posted by you)",
+   "length": "short",
+   "length_test": "short",
+   "media_url": "https://raw.githubusercontent.com/mack-fitz/mackygolfs-mackthegolfer/6263814c81150f01a26d05dae1198a00cd154b61/trials/045_hole-in-one-attempt-wipe_a.mp4",
+   "notes": "change caption to is today the day????\n\ncover text \"HOLE IN ONE??\"",
+   "opening": "shirt wipe (A rule), then 'watch this hole in one'",
+   "prepared_at": "2026-10-19T20:40:00Z",
+   "reuses": "LEAST-RECENTLY-USED pick (Oct 19 rotation rule). Your green-striped-polo pond par 3 'watch this hole in one' (/golfclips copy_99A28E54). Fingerprint check: none of YOUR posts contain it, so this is the untouched original, shirt wipe first. Last appearance of this footage anywhere: @moremackygolfs edit Wed Oct 14 9:23am ('basically a hole in one') + X/TikTok Oct 14 = 7 days + 8 min before this slot (moved from 7:39 to 9:31 so it clears the 7-day rule). Nothing else of it booked within 7 days on any account (7-day pool rule checked with tools/check_repeats.py).",
+   "round": 1,
+   "slot": "am",
+   "status": "ready",
+   "time_ct": "08:39",
+   "time_mt": "07:39",
+   "video_asset": "fca6552b0473aa360a8ee5d3ec2b5f1f",
+   "video_url": "/_blob/fca6552b0473aa360a8ee5d3ec2b5f1f",
+   "zernio": "6ad67e54c1220bde858068fc"
+  },
+  "reels/2026-10-21_B_am": {
+   "account": "B",
+   "caption": "par 5 with cliffs on one side and bunkers on the other. guess how that went",
+   "cover_asset": "e38177d7369986e1a6df4e2f7e92ed19",
+   "cover_file": "trials/051_cliff-par-5-talk-first_b_cover_opt1.jpg",
+   "cover_note": "brand-safe, no wipe. Tap one.",
+   "cover_options": [
+    {
+     "asset": "e38177d7369986e1a6df4e2f7e92ed19",
+     "file": "trials/051_cliff-par-5-talk-first_b_cover_opt1.jpg",
+     "id": "opt1",
+     "label": "orange 'Macky vs. a Par 5' pill over the sky, drive",
+     "url": "/_blob/e38177d7369986e1a6df4e2f7e92ed19"
+    },
+    {
+     "asset": "d3bec09414cba1be3ee1ef6958f70ba2",
+     "file": "trials/051_cliff-par-5-talk-first_b_cover_opt2.jpg",
+     "id": "opt2",
+     "label": "typewriter 'third time's a charm' over the sky, 'finally a great shot' grin",
+     "url": "/_blob/d3bec09414cba1be3ee1ef6958f70ba2"
+    },
+    {
+     "asset": "12312eb3ebd150399684685730e80b1e",
+     "file": "trials/051_cliff-par-5-talk-first_b_cover_opt3.jpg",
+     "id": "opt3",
+     "label": "no words, 'well deserved triple'",
+     "url": "/_blob/12312eb3ebd150399684685730e80b1e"
+    }
+   ],
+   "cover_url": "/_blob/e38177d7369986e1a6df4e2f7e92ed19",
+   "date": "2026-10-21",
+   "decided_at": "2026-10-20T07:43:15.552Z",
+   "decided_round": 1,
+   "decision": "changes",
+   "dup_check": "tools/check_repeats.py --candidates PASS (final rule + past-week rule; last on main accounts Aug 20)",
+   "duration": 56.3,
+   "file": "trials/051_cliff-par-5-talk-first_b.mp4",
+   "handle": "@mackthegolfer",
+   "history": [],
+   "kind": "re-edit",
+   "length": "long",
+   "length_test": "long",
+   "media_url": "https://raw.githubusercontent.com/mack-fitz/mackygolfs-mackthegolfer/7e78e2c15150fa146a9ac843250c179e9f1dd7a9/trials/051_cliff-par-5-talk-first_b.mp4",
+   "notes": "YOU CUT THE END OFF",
+   "opening": "talk-first: 'this might be crazy but should we play a par 5 together'",
+   "prepared_at": "2026-10-20T00:45:00Z",
+   "reuses": "RE-EDIT of your green-striped-polo par 5 with the cliffs ('should we play a par 5 together' ... 'very well deserved triple'; /golfclips copy_4E5F508B). Your own post: @mackygolfs Aug 20 'please don't think it's crazy we haven't played a...' https://www.instagram.com/reel/DcRDNfMRswq/ (73 s fingerprint match). Last time this footage was on @mackygolfs or @mackthegolfer: Aug 20 (two months ago) - least-recently-used pick. What's different: no shirt wipe, opens on 'should we play a par 5 together', the bunker-goal/cliff setup talk and the bunker selfie cut (76 s -> 56 s), 4 punch-ins, every shot kept (drive, all three tries over the bunker, approach, bunker shot, every putt), ends on 'very well deserved triple given the circumstances'.",
+   "round": 1,
+   "slot": "am",
+   "status": "ready",
+   "time_ct": "09:24",
+   "time_mt": "08:24",
+   "video_asset": "48be4be343d777c182cb15bc2ea1f011",
+   "video_url": "/_blob/48be4be343d777c182cb15bc2ea1f011",
+   "zernio": "6ad6b9555ac68c83bf22b991"
+  },
+  "reels/2026-10-21_B_pm": {
+   "account": "B",
+   "caption": "one swing. if you say that's not a good shot we can't be friends",
+   "cover_asset": "da75b0745d12e1f58f130a15745faa49",
+   "cover_file": "trials/046_one-swing-pond-par-3_b_cover_opt1.jpg",
+   "cover_note": "brand-safe, no wipe. Tap one.",
+   "cover_options": [
+    {
+     "asset": "da75b0745d12e1f58f130a15745faa49",
+     "file": "trials/046_one-swing-pond-par-3_b_cover_opt1.jpg",
+     "id": "opt1",
+     "label": "blue 'Macky vs. a Par 3' pill over the sky, follow-through",
+     "url": "/_blob/da75b0745d12e1f58f130a15745faa49"
+    },
+    {
+     "asset": "ff821cf2411942f19f97e666da5eb570",
+     "file": "trials/046_one-swing-pond-par-3_b_cover_opt2.jpg",
+     "id": "opt2",
+     "label": "typewriter 'one swing. that's all you get' on your reaction",
+     "url": "/_blob/ff821cf2411942f19f97e666da5eb570"
+    },
+    {
+     "asset": "793cb0ca63e687e117f933f5f82349d4",
+     "file": "trials/046_one-swing-pond-par-3_b_cover_opt3.jpg",
+     "id": "opt3",
+     "label": "no words, follow-through",
+     "url": "/_blob/793cb0ca63e687e117f933f5f82349d4"
+    }
+   ],
+   "cover_url": "/_blob/da75b0745d12e1f58f130a15745faa49",
+   "date": "2026-10-21",
+   "decided_at": "2026-10-20T07:43:44.652Z",
+   "decided_round": 1,
+   "decision": "changes",
+   "dup_check": "7-day pool: last use Oct 14 12:42 MT; nothing booked within 7 days.",
+   "duration": 9.7,
+   "file": "trials/046_one-swing-pond-par-3_b.mp4",
+   "handle": "@mackthegolfer",
+   "history": [],
+   "kind": "re-edit",
+   "length": "short",
+   "length_test": "short",
+   "media_url": "https://raw.githubusercontent.com/mack-fitz/mackygolfs-mackthegolfer/6263814c81150f01a26d05dae1198a00cd154b61/trials/046_one-swing-pond-par-3_b.mp4",
+   "notes": "DELETE THIS TRY AGAIN",
+   "opening": "talk-first (first line after the wipe)",
+   "prepared_at": "2026-10-19T20:40:00Z",
+   "reuses": "RE-EDIT of your green-striped-polo pond par 3, one swing (/golfclips copy_2A97DD30). Your own post: @mackygolfs Sun Sep 14 10:35am 'your turn!!!!!' https://www.instagram.com/reel/DdPANDgtbB-/ (also Aug 20 'HOLE IN ONE??' and Aug 30). Last appearance anywhere: @moremackygolfs Oct 14 12:42pm = 7 days before. What's different: no wipe, opens on your line, walk-up and waiting cut (15.3 s -> 9.7 s), 2 punch-ins, the whole swing and your reaction kept.",
+   "round": 1,
+   "slot": "pm",
+   "status": "ready",
+   "time_ct": "20:32",
+   "time_mt": "19:32",
+   "video_asset": "61c4cdcdafd36a342790a6d9ffec3cd1",
+   "video_url": "/_blob/61c4cdcdafd36a342790a6d9ffec3cd1",
+   "zernio": "6ad67e5b7bb2541b8aebf964"
+  },
+  "compilations/comp21": {
+   "about": "New idea: bunkers. 4 bits, every shot kept whole. 1) green striped polo, Colorado: \"hopefully I can get pretty close to the green on this one\" → approach → \"oh don't go in that sand motherfucker… yeah we're at the beach\" → close-up \"the lip's pretty small so I'm putting this bitch\" 2) pinstripe, San Angelo par 5: \"I don't know how to do these, but anytime I'm in a bunker I feel I need to bounce, so whatever that means\" → bunker shot → \"a lot of you tell me to hit behind the ball… I just did that, and it went… six inches. You can still see it, I don't even need to move the camera\" 3) red Hawaiian shirt: bunker shot out of the sand → next shot → \"don't be in our bunker\" 4) pinstripe, other San Angelo hole: \"it would have been funny if I said something about everything is bigger in Texas in regards to the bunker, but I forgot to make that joke. If you wouldn't mind going back in time and having a laugh, because that was pretty creative.\" Spacing: polo → pinstripe → red → pinstripe (other hole), never the same shirt twice in a row. Cuts only at pauses / your own scene cuts, swearing kept, no shirt wipes, no added text, even loudness (the red-shirt clip is a quiet one, so your line there is a touch softer). 52.6 s, one full-quality export from your originals. None of these bits are in a posted or upcoming comp or shorty (only the 0.4 s bunker 'thwack' in bit 2 is also one of the asmr comp's sounds). Alt caption: \"please help, i live at the beach now\".",
+   "account": "@mackthegolfer",
+   "caption": "if you say bunker shots are easy we can't be friends",
+   "chosen_cover": null,
+   "cover_options": [
+    {
+     "file": "compilations/comp21_the-beach_cover_opt1.jpg",
+     "id": "opt1",
+     "label": "close-up grin 'the lip's pretty small…', bunker behind her, orange pill",
+     "url": "/_blob/51e7f84393839074db352879b5b84940"
+    },
+    {
+     "file": "compilations/comp21_the-beach_cover_opt2.jpg",
+     "id": "opt2",
+     "label": "sand exploding off her bunker shot, blue pill",
+     "url": "/_blob/c3cbdb415c6874de8b8ed5100cb0257f"
+    },
+    {
+     "file": "compilations/comp21_the-beach_cover_opt3.jpg",
+     "id": "opt3",
+     "label": "red shirt in a huge bunker with the tracer, red pill",
+     "url": "/_blob/9a59b103b97787e341ce7f6c199a62b6"
+    },
+    {
+     "file": "compilations/comp21_the-beach_cover_opt4.jpg",
+     "id": "opt4",
+     "label": "typewriter 'oh don't go in that sand' over the beach-day approach",
+     "url": "/_blob/aafb237129d4f33b4a01084c0fd9f7f8"
+    }
+   ],
+   "cover_text": "Macky vs. the beach",
+   "cover_url": "/_blob/51e7f84393839074db352879b5b84940",
+   "decided_at": null,
+   "decided_round": null,
+   "decision": null,
+   "duration": 52.6,
+   "file": "compilations/comp21_the-beach.mp4",
+   "history": [],
+   "media_url": "https://raw.githubusercontent.com/mack-fitz/mackygolfs-mackthegolfer/47fe327580bc6be9d6b2188ed43a40073756d479/compilations/comp21_the-beach.mp4",
+   "notes": "",
+   "order": 36,
+   "post_account": "@mackthegolfer",
+   "post_when": "next",
+   "posted": false,
+   "prepared_at": "2026-10-19T19:50:00Z",
+   "round": 1,
+   "status": "ready",
+   "title": "Macky vs. the beach",
+   "video_asset": "aabd5d010fc3ab103dbbc43f8364e10f",
+   "video_url": "/_blob/aabd5d010fc3ab103dbbc43f8364e10f"
+  }
+ },
+ "removed_30day": {
+  "reels/2026-10-20_A_pm": {
+   "why": "Mack Oct 20: 30-day rule. Source Golf Captions 9 02 57 AM.mp4 posted on @mackthegolfer Sun Oct 11 10:17 MT (Mack own post DeXD-zxxamu); clears Nov 10. Zernio draft 6ad640819720052ead0b3e0d deleted.",
+   "card": {
+    "account": "A",
+    "build_note": "Rendered full quality (crf 17, 44 MB, 34.6 s), pushed 0ab0314, scheduled Oct 19 16:08Z for Tue 7:39am MT (Zernio 6ad640819720052ead0b3e0d, trialParams MANUAL, cover opt3).",
+    "caption": "the mosquitoes cost me par. back me up",
+    "chosen_cover": "opt3",
+    "cover_asset": "bbe0a7b7fe880f6224aab232377cb06c",
+    "cover_file": "trials/043_king-of-the-world-wipe_a_cover_opt1.jpg",
+    "cover_note": "shirt-wipe frame (face covered), words above her chest over the cart roof, chest clear at grid size and full size. Tap one.",
+    "cover_options": [
+     {
+      "asset": "bbe0a7b7fe880f6224aab232377cb06c",
+      "file": "trials/043_king-of-the-world-wipe_a_cover_opt1.jpg",
+      "id": "opt1",
+      "label": "blue \"Macky vs. a Par 4\" pill over the shirt/head",
+      "url": "/_blob/bbe0a7b7fe880f6224aab232377cb06c"
+     },
+     {
+      "asset": "1fe68daebfe2110c342b147973dc8179",
+      "file": "trials/043_king-of-the-world-wipe_a_cover_opt2.jpg",
+      "id": "opt2",
+      "label": "typewriter \"the mosquitoes were winning\" over the shirt/head",
+      "url": "/_blob/1fe68daebfe2110c342b147973dc8179"
+     },
+     {
+      "asset": "8f8b26a137147da370fc1b2f26c24ff2",
+      "file": "trials/043_king-of-the-world-wipe_a_cover_opt3.jpg",
+      "id": "opt3",
+      "label": "no words (cover-word test)",
+      "url": "/_blob/8f8b26a137147da370fc1b2f26c24ff2"
+     }
+    ],
+    "cover_recipe": "frame 0.4 s of the edit (shirt over face): COVER_Y=0.22 tools/cover_a.py <file> 0.4 out pill 'Macky vs. a Par 4' blue; COVER_Y=0.22 ... type 'the mosquitoes were winning'; none",
+    "cover_url": "/_blob/bbe0a7b7fe880f6224aab232377cb06c",
+    "date": "2026-10-20",
+    "decided_at": "2026-10-20T07:40:31.484Z",
+    "decided_round": 2,
+    "decision": "approved",
+    "dup_check": "7-day same-source rule: A+B pool last use Oct 11 10:17 MT (your @mackthegolfer post); nothing booked on A/B within 7 days after. Other accounts: @moremackygolfs Oct 13, FB Oct 15 (flag only). posted_index last refreshed Oct 15 (refresh blocked this run: no push).",
+    "duration": 34.6,
+    "file": "trials/043_king-of-the-world-wipe_a.mp4",
+    "handle": "@mackygolfs",
+    "history": [
+     {
+      "decision": "approved",
+      "fix": "Pulled from Tue Oct 20 7:39am (Zernio back to draft): its footage (orange-checker king-of-the-world par 4) ran as the full original on Facebook Thu Oct 15, under 7 days earlier. Same cut, now planned for Fri Oct 23 7:39am, which passes tools/check_repeats.py. Approve again for the new date.",
+      "notes": "",
+      "round": 1
+     }
+    ],
+    "kind": "re-edit",
+    "length": "short",
+    "length_test": "short",
+    "media_url": "https://raw.githubusercontent.com/mack-fitz/mackygolfs-mackthegolfer/0ab0314caf2e40cafa31cb38c936b2bddcc7f9ff/trials/043_king-of-the-world-wipe_a.mp4",
+    "notes": "",
+    "opening": "shirt wipe (A rule), then 'glad I got your attention'",
+    "prepared_at": "2026-10-19T11:15:00Z",
+    "render": "tools/render.sh src segs \"\" \"\" trials/043_king-of-the-world-wipe_a.mp4 (single crf-17 export, 44 MB)",
+    "reuses": "RE-EDIT of your orange-checker par 4 (\"glad I got your attention, my name is Mack\" / \"I'm the king of the world\") = your own @mackygolfs post Wed Sep 9 10:25am MT \"pleasure to meet you 🤝 my name's Mack…\" https://www.instagram.com/reel/DdEr6ajNC0R/ (37 s fingerprint-matched); also your @mackthegolfer post Oct 11 \"one of my better holes ngl\" https://www.instagram.com/reel/DeXD-zxxamu/. Spacing: last on @mackygolfs/@mackthegolfer Oct 11 = 9 days before, nothing else of it booked on A/B (7-day rule ok). Heads up: @moremackygolfs posted a cut Oct 13 (\"king of the world for 1 second\", 7 days) and Facebook Oct 15 (5 days) - different accounts, allowed. What's different: opens on your shirt wipe, then walking/waiting trimmed (5 s cut), 5 punch-ins (\"should be incredible\", king of the world, mosquitoes, last putt); every shot kept (drive, the shot off the dirt, approach, both putts); ends right as the last putt drops. 34.6 s vs 39.7 s. No never-posted video is left for A's new slot (all 9 are posted or booked through Fri Oct 23), so both A slots are re-edits until you upload new ones.",
+    "round": 2,
+    "scheduled_for": "2026-10-20T07:39:00-06:00",
+    "segs": [
+     [
+      0,
+      6.81,
+      0
+     ],
+     [
+      6.81,
+      9.23,
+      0
+     ],
+     [
+      9.44,
+      10.97,
+      1
+     ],
+     [
+      10.97,
+      13.59,
+      0
+     ],
+     [
+      13.59,
+      15.93,
+      1
+     ],
+     [
+      16.09,
+      20.11,
+      0
+     ],
+     [
+      21.21,
+      23.83,
+      1
+     ],
+     [
+      23.83,
+      32.65,
+      0
+     ],
+     [
+      33.55,
+      35.83,
+      0
+     ],
+     [
+      35.83,
+      36.85,
+      1
+     ]
+    ],
+    "slot": "pm",
+    "source": "/Golf Captions/Video Oct 11 2026, 9 02 57 AM.mp4 (inbox/videos, 35,835,127 bytes = Dropbox original, 7.0 Mbps; same as golfclips 011)",
+    "spacing_note": "Oct 19 final rule: passes (last on A/B Oct 11, Mack's own @mackthegolfer). Planned Tue Oct 20 6:46pm; approve again.",
+    "status": "ready",
+    "time_ct": "19:46",
+    "time_mt": "18:46",
+    "video_asset": "48c8f856460d807582a2d10299bd6ee1",
+    "video_url": "/_blob/48c8f856460d807582a2d10299bd6ee1",
+    "zernio": "6ad640819720052ead0b3e0d"
+   }
+  }
+ }
+}

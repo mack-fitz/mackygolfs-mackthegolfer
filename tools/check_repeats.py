@@ -2,28 +2,30 @@
 """Pre-scheduling repeat guard (Mack, Oct 19). RUN BEFORE SCHEDULING, MOVING OR SWAPPING ANY POST.
 Exit code 0 = clean, 1 = violations (do not schedule), 2 = could not verify (unknown media etc.).
 
-RULES CHECKED (Mack's FINAL rule, Oct 19 evening — replaces every earlier version)
- R2 MAIN-ACCOUNT POOL, 7 DAYS: the pool is Instagram @mackygolfs + @mackthegolfer ONLY. A reel — any version of it
-    (original, re-edit, Mack's own post) — must not post on either account within 7 days (168 h) of any version of
+RULES CHECKED (Mack, Oct 20: window is 30 DAYS — replaces the Oct 19 7-day version; --window-days / REPEAT_WINDOW_DAYS)
+ R2 MAIN-ACCOUNT POOL, 30 DAYS: the pool is Instagram @mackygolfs + @mackthegolfer ONLY. A reel — any version of it
+    (original, re-edit, Mack's own post) — must not post on either account within 30 days (before or after) of any version of
     it posting on either of them. Same source = same Dropbox video (/Golf Captions + /golfclips; twins and alt takes
     merged). Compilations and shorties are EXEMPT. TikTok, @moremackygolfs, X and Facebook do NOT count toward the pool
     and are not restricted by it.
- R3 NOT POSTED THIS PAST WEEK (Mack, Oct 19 night): a reel is only eligible for the review page or the schedule if NO
-    version of it (shorties/comps exempt) posted on @mackygolfs or @mackthegolfer since 00:00 MT seven calendar days
-    before TODAY (today Oct 19 -> nothing since Oct 12 00:00 MT) — "posted within the past week as of today" is a repeat
-    even if the slot itself lands 7 days later. Prefer clips last used on A/B 14+ days ago (tools/inventory.py --free).
+ R3 NOT POSTED IN THE PAST 30 DAYS (Mack, Oct 20): a reel is only eligible for the review page or the schedule if NO
+    version of it (shorties/comps exempt) posted on @mackygolfs or @mackthegolfer since 00:00 MT 30 calendar days
+    before TODAY (today Oct 20 -> nothing since Sep 20 00:00 MT), even if the slot itself lands later.
+    Least-recently-used first (tools/inventory.py --free).
+ R4 (HARD RULE 12, Mack Oct 20): @mackygolfs/@mackthegolfer use ONLY /Golf Captions; /golfclips-only footage fails.
  R1 EXACT DUPLICATE, PER ACCOUNT: the same media file (same bytes, any commit/caption) never posts twice on the same
     account (any account, incl. @moremackygolfs, FB, X). Different accounts are not an R1 problem.
- Mack's own posts (not made through Zernio) count for R2: they are fingerprinted (state/fp/posts in the
- mackygolfs-mackthegolfer repo) and matched against every source fingerprint.
+ Mack's own posts (not made through Zernio) count for R2/R3: they come from the analytics pull (fingerprinted
+ against every source) AND from mackygolfs-mackthegolfer state/posted_index.json (older posts the analytics pull no
+ longer returns). Keep posted_index.json current (posted_index.py build) or the 30-day look-back has holes.
 
-INPUT: raw saved outputs of Zernio `posts_list_posts` (call_tool; from_date ~14 days back, to_date ~21
+INPUT: raw saved outputs of Zernio `posts_list_posts` (call_tool; from_date >= 60 days back, to_date ~45
 days ahead, limit 100, every page) and `analytics_get_analytics` per IG account (Mack's own posts):
     python3 tools/check_repeats.py --zernio p1.txt p2.txt --analytics an_*.txt [--plan plan.json]
-                                   [--days 14] [--all] [--json out.json]
+                                   [--days 60] [--window-days 30] [--all] [--json out.json]
  --candidates FILE: REVIEW-PAGE GATE. JSON list of {"label", "account", "media": "repo:path", "time"?}.
          Each candidate is checked against every pool post (published, scheduled, Mack's own) within
-         7 days either side of its time (no time = it could post tomorrow morning). Prints PASS/FAIL per
+         30 days either side of its time (no time = it could post tomorrow morning). Prints PASS/FAIL per
          candidate and, for a FAIL, the earliest date it clears. NOTHING goes on the Trial Reels Review
          page (and no draft is created) unless its candidate check PASSES. Exit 1 if any FAIL.
  --plan: extra planned posts not yet in Zernio, JSON list of
@@ -43,7 +45,9 @@ _UP = os.path.dirname(_HERE)
 CLIPS = os.environ.get("CLIPS_REPO") or (_HERE if os.path.basename(_HERE) == "clips" else os.path.join(_UP, "clips"))
 MG = os.environ.get("MG_REPO") or (_HERE if os.path.basename(_HERE) == "mackygolfs-mackthegolfer" else os.path.join(_UP, "mackygolfs-mackthegolfer"))
 REPOS = {"clips": CLIPS, "mackygolfs-mackthegolfer": MG}
-WEEK = dt.timedelta(hours=168)
+WINDOW_DAYS = int(os.environ.get("REPEAT_WINDOW_DAYS", "30"))  # Mack, Oct 20: 30 days (was 7). --window-days overrides.
+WINDOW = dt.timedelta(days=WINDOW_DAYS)
+WEEK = WINDOW  # old name kept so callers (inventory.py --free) use the same window
 ACCOUNTS = {  # zernio account id -> pool key
     "6acce837f3bd55021dad245f": "ig:mackygolfs", "6accea22c485191e985aa1cb": "ig:mackthegolfer",
     "6acc2885bac230e9d1133105": "ig:moremackygolfs", "6ad052a5a442d9968f306c31": "fb:macky.golfs",
@@ -205,6 +209,40 @@ def external_uses(paths, since):
     return uses, missing
 
 
+def index_uses(since, have_urls):
+    """Mack's own older posts on the main accounts from mackygolfs-mackthegolfer state/posted_index.json
+    (fingerprint matches; covers posts the analytics pull no longer returns). A post matching > 2 sources = comp."""
+    p = os.path.join(MG, "state", "posted_index.json")
+    if not os.path.exists(p):
+        return []
+    sys.path.insert(0, os.path.join(CLIPS, "tools"))
+    from build_media_map import canon_map
+    cmap = canon_map()
+    posts = {}
+    for s in json.load(open(p)).get("sources", []):
+        sid = cmap.get(s["name"])
+        if not sid:
+            continue
+        for m in s.get("matches", []):
+            key = "ig:" + m["account"]
+            if key not in POOL or m.get("platformPostUrl") in have_urls:
+                continue
+            raw = m["date_mt"].replace("~", "").replace(" MT", "").strip()
+            try:
+                t = dt.datetime.strptime(raw[:16], "%Y-%m-%d %H:%M")
+            except ValueError:
+                t = dt.datetime.strptime(raw[:10], "%Y-%m-%d").replace(hour=12)
+            t = (t + dt.timedelta(hours=6 if t < dt.datetime(2026, 11, 1, 2) else 7)).replace(tzinfo=dt.timezone.utc)
+            if t < since:
+                continue
+            e = posts.setdefault(m["platformPostUrl"], {"account": key, "t": t, "caption": m.get("caption"), "sources": []})
+            if sid not in e["sources"]:
+                e["sources"].append(sid)
+    return [Use(account=e["account"], t=e["t"], status="published", post_id=url, caption=e["caption"], media=None, url=url,
+                blob=None, external=True, sources=e["sources"], main=e["sources"][0],
+                kind="comp" if len(e["sources"]) > 2 else "original") for url, e in posts.items()]
+
+
 def plan_uses(path, mmap):
     out, unknown = [], []
     for e in json.load(open(path)):
@@ -226,10 +264,10 @@ def conflict(a, b):
 
 
 def week_start(now):
-    """00:00 Mountain, 7 calendar days before today (Mountain)"""
+    """00:00 Mountain, WINDOW_DAYS calendar days before today (Mountain)"""
     off = 6 if now < dt.datetime(2026, 11, 1, 8, tzinfo=dt.timezone.utc) else 7
     local = now - dt.timedelta(hours=off)
-    start_local = dt.datetime(local.year, local.month, local.day) - dt.timedelta(days=7)
+    start_local = dt.datetime(local.year, local.month, local.day) - dt.timedelta(days=WINDOW_DAYS)
     return (start_local + dt.timedelta(hours=off)).replace(tzinfo=dt.timezone.utc)
 
 
@@ -243,7 +281,7 @@ def recent_hits(u, uses, now):
             continue
         hit = conflict(u, o)
         if hit:
-            out.append(f"R3 {', '.join(sorted(hit))} posted this past week on {o.label()}")
+            out.append(f"R3 {', '.join(sorted(hit))} posted in the past {WINDOW_DAYS} days on {o.label()}")
     return out
 
 
@@ -281,11 +319,6 @@ def candidate_report(cands, uses, mmap, now):
             if bad or "/golfclips/" in c["media"] or ":golfclips/" in c["media"]:
                 reasons.append("CLIP-PAGES ONLY: /golfclips footage never goes on @mackygolfs/@mackthegolfer (HARD RULE 12) "
                                + ", ".join(bad))
-                block_until = dt.datetime.max.replace(tzinfo=dt.timezone.utc)
-        if u.account in POOL:
-            gc = golfclips_sources(u.sources)
-            if gc:
-                reasons.append("R4 /golfclips footage is never allowed on @mackygolfs/@mackthegolfer: " + ", ".join(gc))
                 block_until = dt.datetime.max.replace(tzinfo=dt.timezone.utc)
         for o in uses:
             if o.status == "draft" or o.post_id == c["label"]:
@@ -332,35 +365,41 @@ def check(uses, now, show_all=False):
             if a.account in POOL and b.account in POOL and b.t - a.t < WEEK:
                 hit = conflict(a, b)
                 if hit:
-                    v.append(("R2 same reel on @mackygolfs/@mackthegolfer < 7 days", a, b, ", ".join(sorted(hit))))
+                    v.append((f"R2 same reel on @mackygolfs/@mackthegolfer < {WINDOW_DAYS} days", a, b, ", ".join(sorted(hit))))
     for a in uses:
         if a.account in POOL and a.status != "published" and a.t > now:
             gc = golfclips_sources(a.sources)
             if gc:
-                v.append(("R4 /golfclips footage on @mackygolfs/@mackthegolfer (only /Golf Captions allowed)", a, a, ", ".join(gc)))
+                v.append(("R4 (HARD RULE 12) /golfclips footage on a pending @mackygolfs/@mackthegolfer post (only /Golf Captions allowed)", a, a, ", ".join(gc)))
         if a.status in ("scheduled", "pending", "planned") and a.t > now:
             for r in recent_hits(a, uses, now):
-                v.append(("R3 posted on @mackygolfs/@mackthegolfer this past week", a, a, r))
+                v.append((f"R3 posted on @mackygolfs/@mackthegolfer in the past {WINDOW_DAYS} days", a, a, r))
     return v
 
 
 def main():
+    global WINDOW_DAYS, WINDOW, WEEK
     ap = argparse.ArgumentParser()
     ap.add_argument("--zernio", nargs="+", required=True)
     ap.add_argument("--analytics", nargs="*", default=[])
     ap.add_argument("--plan")
     ap.add_argument("--candidates")
-    ap.add_argument("--days", type=int, default=14, help="look-back for published posts")
+    ap.add_argument("--days", type=int, default=0, help="look-back for published posts (default: 2 x window)")
+    ap.add_argument("--window-days", type=int, default=WINDOW_DAYS, help="pool repeat window in days (Mack: 30)")
     ap.add_argument("--all", action="store_true")
     ap.add_argument("--json")
     ap.add_argument("--now")
     a = ap.parse_args()
+    WINDOW_DAYS, WINDOW = a.window_days, dt.timedelta(days=a.window_days)
+    WEEK = WINDOW
+    a.days = a.days or 2 * WINDOW_DAYS
     now = parse_t(a.now) if a.now else dt.datetime.now(dt.timezone.utc)
     mmap = json.load(open(os.path.join(CLIPS, "state", "media_sources.json")))["media"]
     since = now - dt.timedelta(days=a.days)
     uses, unknown = zernio_uses(a.zernio, mmap)
     uses = [u for u in uses if u.t >= since]
     ext, missing = external_uses(a.analytics, since) if a.analytics else ([], [])
+    ext += index_uses(since, {u.url for u in ext} | {u.url for u in uses})
     uses += ext
     if a.plan:
         pu, pun = plan_uses(a.plan, mmap)
@@ -375,7 +414,9 @@ def main():
                 print("   - " + r)
             if not ok:
                 bad += 1
-                if until:
+                if until and until.year == dt.MAXYEAR:
+                    print("   never clears: /golfclips footage can't go on @mackygolfs/@mackthegolfer (use /Golf Captions)")
+                elif until:
                     print(f"   earliest clear: {mt(until)} (and re-check then)")
         sys.exit(1 if bad else 0)
     v = check(uses, now, a.all)

@@ -2,11 +2,11 @@
 
 Operating rules for the trial-reel accounts. The daily task reads this file first.
 
-## REPEAT RULE (Mack, Oct 19 FINAL) — HARD RULE. Full text: HARD RULES at the BOTTOM of this file (they win).
+## REPEAT RULE (Mack, Oct 20: 30 DAYS) — HARD RULE. Full text: HARD RULES at the BOTTOM of this file (they win).
 - Pool = Instagram @mackygolfs + @mackthegolfer ONLY. A reel (any version: original, re-edit, Mack's own post) may not post
-  on either account within 7 days of any version of it on either account, AND it is not eligible at all (review page or
-  schedule) if any version posted on those two accounts in the 7 calendar days before TODAY. Prefer clips last used there
-  14+ days ago. Shorties and comps are exempt. TikTok, @moremackygolfs, X and FB don't count and aren't restricted by it.
+  on either account within 30 days, before or after, of any version of it on either account, AND it is not eligible at all
+  (review page or schedule) if any version posted on those two accounts in the 30 calendar days before TODAY.
+  Least-recently-used first. Shorties and comps are exempt. Main accounts use ONLY /Golf Captions (HARD RULE 12). TikTok, @moremackygolfs, X and FB don't count and aren't restricted by it.
 - Exact-duplicate guard per account: the same file never posts twice on the same account.
 - Run `tools/check_repeats.py` before scheduling, moving, or putting anything on the review page.
 
@@ -140,13 +140,14 @@ Instagram buries reposts. Golf Captions overlaps heavily with what Mack has ALRE
 already on @mackthegolfer; "new shirt" and "absolutely brutal" were already on @mackygolfs).
 1. Pull the target account's full post history: analytics_get_analytics(profile_id, source "all",
    limit 100, paginate) -> each post's caption + videoDurationSeconds. Also pull the other
-   golf accounts (@moremackygolfs, the other trial account) for the last 7 days.
+   golf accounts (@moremackygolfs, the other trial account) for the last 30 days.
 2. A reel is a LIKELY DUPLICATE if its length is within 3 s of a post on that account AND the
    content matches (same course/outfit/story/line: read your contact sheet and Mack's caption
    on that post), or the caption plainly describes the same moment.
 3. Likely duplicate on the SAME account: never post it as-is, and don't post a light re-edit
    either. Use it only inside a genuinely new edit (see compilations below), or skip it.
-4. Same footage on any other account in the last 7 days: skip it for now.
+4. Same footage on any other account in the last 7 days: skip it for now. (For @mackygolfs/@mackthegolfer the
+   30-day pool rule in HARD RULES 1-2 applies and wins.)
 5. Log every check in state/trials.json (`dup_check`: matched post date + caption, or "clear").
 
 ## What to post (Mack's rules, Oct 12)
@@ -319,15 +320,19 @@ Format (her reference: a guy lining up an iron, on-screen text "Me after decidin
   * Check every one: contact sheet across the whole time the text is visible (guide line at y 400), full-res crop of the line over the brightest background (sky/clouds, sand, bright grass), and the frame downscaled to phone size (~390 px wide) — it must read easily at that size.
   * Oct 17 re-renders with this spec (all lower band, ink 1180–1231; her head sits in 400–700 at some point in every one): shorties/hero-shot_r2, improve-my-lie_r2, youtube-lessons_r2, group-watching_r2, listening-to-the-comments_r2, compilations/comp13_asmr-golf_r3 (tools/asmr/render_r3.py). Already-posted read-the-putt, comp7 and safe-line were left as they are.
 
-## HARD RULES (Mack, Oct 19 — FINAL version, replaces every earlier version) — these WIN over anything above
+## HARD RULES (Mack, Oct 19 — FINAL version; window changed to 30 DAYS Oct 20) — these WIN over anything above
 1. MAIN-ACCOUNT POOL. The pool is Instagram @mackygolfs + @mackthegolfer ONLY. A reel — ANY version of it (Mack's original,
-   any re-edit, Mack's own posts, fingerprint-matched) — must not post on either account within 7 days (168 h) of any
+   any re-edit, Mack's own posts, fingerprint-matched) — must not post on either account within 30 DAYS (before or after) of any
    version of it posting on either of them. Same reel = same source video in Dropbox /Golf Captions or /golfclips
    (byte-identical twins and alt takes of a hole count as one; mack-fitz/clips state/sources.json).
-2. NOT THIS PAST WEEK. A reel is only eligible for the review page OR the schedule if NO version of it posted on @mackygolfs
-   or @mackthegolfer in the 7 calendar days before TODAY (from 00:00 MT seven days ago) — even if its slot would land
-   exactly 7 days later. Mack: posted within the past week as of today = a repeat. Prefer clips last used on those two
-   accounts 14+ days ago, least-recently-used first, spread across trips/courses (no Texas-heavy rotation).
+2. NOT IN THE PAST 30 DAYS (Mack, Oct 20; was 7). A reel is only eligible for the review page OR the schedule if NO version
+   of it posted on @mackygolfs or @mackthegolfer in the 30 calendar days before TODAY (from 00:00 MT 30 days ago) — even
+   if its slot would land later. Least-recently-used first, spread across trips/courses (no Texas-heavy rotation).
+   check_repeats.py window = 30 days by default (--window-days / REPEAT_WINDOW_DAYS); its look-back is 2x the window and
+   includes Mack's own older posts from posted_index.json, so keep that index current.
+   CAPACITY: /Golf Captions has 27 unique videos, so at 30 days the two accounts together can sustain about 27 posts per
+   30 days = under 1 original/re-edit per day COMBINED (~6 a week). Fill the remaining slots with comps and shorties
+   (exempt) or leave them empty; never break the rule to fill a slot.
 3. EXEMPT: shorties and compilations (all of their bits). TikTok, @moremackygolfs, X and Facebook do NOT count toward the
    pool and are not restricted by it; they keep their own existing rules (FB 30-day no-repeat on FB, @moremackygolfs
    already-posted proof, TikTok gets every original) plus rule 4.
@@ -364,7 +369,8 @@ Format (her reference: a guy lining up an iron, on-screen text "Me after decidin
    from the same Zernio pull: drafts are shown as "DRAFT: awaiting Mack approval", never as scheduled. Never publish
    dashboard rows from memory, from an old schedule.json, or from what you meant to schedule.
    (mackygolfs-mackthegolfer tools/dash_trials.py upnext already reads Zernio directly; give it the same fresh pull.)
-12. /GOLFCLIPS = CLIP PAGES ONLY (Mack, Oct 20). Files added to /golfclips on Oct 20 (the 68-reel batch) are clip-pages only,
+12. @mackygolfs/@mackthegolfer use ONLY /Golf Captions. Never /golfclips. (Mack, Oct 20 - exact wording.)
+   /GOLFCLIPS = CLIP PAGES ONLY (Mack, Oct 20). Files added to /golfclips on Oct 20 (the 68-reel batch) are clip-pages only,
    never @mackygolfs/@mackthegolfer. Broader rule: NOTHING from Dropbox /golfclips, old or new, is ever used for @mackygolfs or
    @mackthegolfer (no rotation/inventory pool, no debut edits, no re-edits, no compilation/shorty bits, no Trial Reels Review
    cards). /golfclips feeds only @moremackygolfs, @mackygolfs X + TikTok and the macky.golfs Facebook Page. State:
