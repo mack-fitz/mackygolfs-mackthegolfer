@@ -30,6 +30,19 @@
   "Video Sep 21 2026, 7 28 37 PM.mov": "id:etyjxrk_8sAAAAAAAAAE-w",
   "Video Sep 21 2026, 7 31 40 PM.mov": "id:etyjxrk_8sAAAAAAAAAE-g",
   "Video Sep 23 2026, 1 04 53 PM.mov": "id:etyjxrk_8sAAAAAAAAAE_g",
-  "Video Sep 23 2026, 1 07 33 PM.mov": "id:etyjxrk_8sAAAAAAAAAE_A"
- }
+  "Video Sep 23 2026, 1 07 33 PM.mov": "id:etyjxrk_8sAAAAAAAAAE_A",
+  "golfclips/IMG_6394.MP4": "id:etyjxrk_8sAAAAAAAAAEqg",
+  "golfclips/copy_A526847D-927A-4E66-BA6A-83EF27833CEC.MOV": "id:etyjxrk_8sAAAAAAAAAEqA",
+  "golfclips/copy_99A28E54-DA4E-4AD6-956C-A4CC7A3C4FC1.MOV": "id:etyjxrk_8sAAAAAAAAAEpg",
+  "golfclips/copy_292850AB-28FF-4896-87F6-BAE3D3750515.MOV": "id:etyjxrk_8sAAAAAAAAAEpw",
+  "golfclips/0cef0458001241e4b2c974c97174e51f.MOV": "id:etyjxrk_8sAAAAAAAAAEnA",
+  "golfclips/copy_2A97DD30-DDC0-49D9-8870-4C269E760E1D.MOV": "id:etyjxrk_8sAAAAAAAAAEnw",
+  "golfclips/17ad39c4cb414ab3a7e6618492d7c7a3.MOV": "id:etyjxrk_8sAAAAAAAAAEnQ",
+  "golfclips/copy_4E5F508B-EA57-40DF-AC16-CF253290B923.MOV": "id:etyjxrk_8sAAAAAAAAAEpA",
+  "golfclips/copy_0B6BFBE5-2F81-487A-9544-B2C587E0EE74.MOV": "id:etyjxrk_8sAAAAAAAAAEoQ",
+  "golfclips/copy_2CC073A6-0417-450E-A364-BDCE638A2D66.MOV": "id:etyjxrk_8sAAAAAAAAAEog",
+  "golfclips/copy_6FFD8A7C-C1C6-458D-A2EE-21B81C660A11.MOV": "id:etyjxrk_8sAAAAAAAAAEpQ",
+  "golfclips/IMG_6391.MP4": "id:etyjxrk_8sAAAAAAAAAEqQ"
+ },
+ "note_golfclips": "Oct 19: /golfclips files added (byte-identical twins of Golf Captions files are left out; alt takes merged in mack-fitz/clips state/sources.json)"
 }
