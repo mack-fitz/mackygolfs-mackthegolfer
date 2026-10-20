@@ -8,6 +8,10 @@ RULES CHECKED (Mack's FINAL rule, Oct 19 evening — replaces every earlier vers
     it posting on either of them. Same source = same Dropbox video (/Golf Captions + /golfclips; twins and alt takes
     merged). Compilations and shorties are EXEMPT. TikTok, @moremackygolfs, X and Facebook do NOT count toward the pool
     and are not restricted by it.
+ R3 NOT POSTED THIS PAST WEEK (Mack, Oct 19 night): a reel is only eligible for the review page or the schedule if NO
+    version of it (shorties/comps exempt) posted on @mackygolfs or @mackthegolfer since 00:00 MT seven calendar days
+    before TODAY (today Oct 19 -> nothing since Oct 12 00:00 MT) — "posted within the past week as of today" is a repeat
+    even if the slot itself lands 7 days later. Prefer clips last used on A/B 14+ days ago (tools/inventory.py --free).
  R1 EXACT DUPLICATE, PER ACCOUNT: the same media file (same bytes, any commit/caption) never posts twice on the same
     account (any account, incl. @moremackygolfs, FB, X). Different accounts are not an R1 problem.
  Mack's own posts (not made through Zernio) count for R2: they are fingerprinted (state/fp/posts in the
@@ -221,6 +225,28 @@ def conflict(a, b):
     return hit or None
 
 
+def week_start(now):
+    """00:00 Mountain, 7 calendar days before today (Mountain)"""
+    off = 6 if now < dt.datetime(2026, 11, 1, 8, tzinfo=dt.timezone.utc) else 7
+    local = now - dt.timedelta(hours=off)
+    start_local = dt.datetime(local.year, local.month, local.day) - dt.timedelta(days=7)
+    return (start_local + dt.timedelta(hours=off)).replace(tzinfo=dt.timezone.utc)
+
+
+def recent_hits(u, uses, now):
+    """R3: versions of u's footage published on @mackygolfs/@mackthegolfer since week_start(now)"""
+    ws, out = week_start(now), []
+    if u.account not in POOL:
+        return out
+    for o in uses:
+        if o.post_id == u.post_id or o.status != "published" or o.account not in POOL or not (ws <= o.t <= now):
+            continue
+        hit = conflict(u, o)
+        if hit:
+            out.append(f"R3 {', '.join(sorted(hit))} posted this past week on {o.label()}")
+    return out
+
+
 def candidate_report(cands, uses, mmap, now):
     """review-page gate: returns list of (label, ok, reasons, earliest_clear)"""
     out = []
@@ -234,7 +260,7 @@ def candidate_report(cands, uses, mmap, now):
                 url=None, blob=None, external=False, sources=info["sources"], main=info["main"], kind=info["kind"])
         if c["media"].startswith("mackygolfs-mackthegolfer:"):
             _, u.blob = media_key("https://raw.githubusercontent.com/mack-fitz/mackygolfs-mackthegolfer/main/" + c["media"].split(":", 1)[1])
-        reasons, block_until = [], t
+        reasons, block_until = recent_hits(u, uses, now), t
         for o in uses:
             if o.status == "draft" or o.post_id == c["label"]:
                 continue
@@ -272,6 +298,10 @@ def check(uses, now, show_all=False):
                 hit = conflict(a, b)
                 if hit:
                     v.append(("R2 same reel on @mackygolfs/@mackthegolfer < 7 days", a, b, ", ".join(sorted(hit))))
+    for a in uses:
+        if a.status in ("scheduled", "pending", "planned") and a.t > now:
+            for r in recent_hits(a, uses, now):
+                v.append(("R3 posted on @mackygolfs/@mackthegolfer this past week", a, a, r))
     return v
 
 
