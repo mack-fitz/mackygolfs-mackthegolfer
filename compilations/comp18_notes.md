@@ -27,3 +27,20 @@
 - 12 11 12 ~75–81.4 shot → "oh I pulled that and it hit the tree, but that was going to be a perfect shot" (green; right before comp15's window)
 - 7 26 20 109.6–118.1 "well that wasn't great… putting for bogey… that one shot with four yards forward progression because of the tree"
 - 7 16 02 45–64 cart-path drop / "whole forest in my way… slot it through these trees" (white; long, no tree hit inside)
+
+## Round 2 (Oct 20) — Mack: "do a bunch of shots where the ball hits trees"
+- Rebuilt so EVERY bit is a ball going into a tree, back to back. Dropped the 12 03 20 "pop it over this tree" bit (it cleared the tree) and the practice-swing / sound-effects talk.
+- Searched every /Golf Captions transcript (tree / hit / branch / bounce / ricochet) and checked the frames: these 4 are every shot in her Golf Captions footage where the ball goes into a tree. (12 11 12 ~136 s "shout out to that rake" is the rake, not a tree; 7 16 02 ~89 s under the trees doesn't touch them.) /golfclips not used (HARD RULE 12).
+- Video: `compilations/comp18_trees_r2.mp4` — 39.2 s, 4 bits, ONE crf-17 encode with `tools/render_comp.py` + `COMP_FINAL_LIMIT=0.71` (bits in `comp18_r2_bits.json`). Sources rejoined from inbox .partNN, sha256 verified.
+- Cuts at word gaps (state/transcripts word timestamps) or her own scene cuts; every shot whole (address → swing → tracer → verdict); swearing kept ("god damn it"). No text, no wipes.
+- SPACING: pinstripe (San Angelo) → green polo (12 22 39) → white shirt/camo (Amarillo) → green polo (7 30 44, desert/cactus hole).
+
+| # | out (s) | source | src in–out (s) | what |
+|---|---|---|---|---|
+| 1 | 0.00–6.40 | Video Oct 12 2026, 12 11 12 AM.mov (pinstripe) | 75.10–81.50 | approach → tracer straight into the tree → "oh, I pulled that and it hit the tree. but that was going to be a perfect shot, so." |
+| 2 | 6.40–17.70 | Video Oct 12 2026, 12 22 39 AM.mov (green polo) | 59.10–70.40 | "alright, on the green. don't hit this tree above me, Mac" → chip into the tree → "well I hit the tree, don't tell me I'm in the sand" |
+| 3 | 17.70–28.85 | Video Oct 12 2026, 7 26 20 AM.mov (white/camo) | 36.50–42.55 + 48.30–53.40 | "anyway here we are, shot two. I'm a little worried about this tree, so I've got to try to keep it low" → (practice swing + sound-effects line cut) → shot → tracer into the tree → "god damn it. well, hit the tree" |
+| 4 | 28.85–39.15 | Video Oct 12 2026, 7 30 44 AM.mov (green, cactus hole) | 11.30–21.60 | drive → "I think that landed in the edge of the trees" → (her cut) in the cactus "seems it actually landed in the cactus" |
+
+- Reuse: bit 1 was a spare; bit 4 not in any other comp/shorty. comp20 r2 does not use 7 30 44.
+- Covers r2: opt1 @3.0 pinstripe + tracer into the tree, red pill (0.17–0.22); opt2 @13.5 green polo watching the tracer into the tree, blue pill low (0.77–0.82); opt3 @25.6 white shirt follow-through under the branches, purple pill (0.15–0.20); opt4 @36.0 "landed in the edge of the trees", orange pill in the sky (0.14–0.20).

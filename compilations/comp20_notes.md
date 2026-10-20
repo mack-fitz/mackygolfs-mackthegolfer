@@ -34,3 +34,20 @@
 - 12 17 30 70–84.4 re-hit → "at least that one I'm not getting bit by a snake"
 - 7 16 02 31.2–45 "still rolling… technically kind of in the fairway, kind of on the cart path, who really knows what that's called. Zoinks" (white/camo, same day as bit 4; comp6 dropped + fairway-to-hit dropped used parts)
 - 12 22 39 94.7–100 "also you might have noticed I didn't actually land in the sand, so today's my lucky day" (stop before 109.95 — comp1 posted)
+
+## Round 2 (Oct 20) — Mack: "do a bunch of clips back to back of me saying i have no idea where my ball is / can't find my ball etc"
+- Rebuilt as ONLY her lines about not knowing where the ball is / not finding it / not looking for it, back to back. Dropped the water drive ("right into the water") and the white-shirt "left of what I'm assuming is the green" bit (not about finding the ball), and the 12 17 30 swing (bit now starts on "that's in some tall grass").
+- Searched every /Golf Captions transcript (see / find / lost / where / searching / fetching / which one) — these 5 are her lines on it. /golfclips not used (HARD RULE 12).
+- Video: `compilations/comp20_where-did-it-go_r2.mp4` — 32.9 s, 5 bits, ONE crf-17 encode, `COMP_FINAL_LIMIT=0.71` (bits in `comp20_r2_bits.json`). Cuts in word gaps only. No text, no wipes, swearing kept ("holy shit" x2).
+- SPACING: pinstripe (12 11 12) → green polo (12 22 39, par 5 tee) → pinstripe (12 14 03, other hole) → dark tee (12 17 30) → green polo (12 22 39, cactus, later on the hole).
+
+| # | out (s) | source | src in–out (s) | what |
+|---|---|---|---|---|
+| 1 | 0.00–8.88 | Video Oct 12 2026, 12 11 12 AM.mov | 148.367–157.25 | "I don't see the ball. Oh, I do. Holy shit, I thought for a second there I raked her into the hole. Holy shit. But I do see it, it's on the other side of the green in the shade, so." |
+| 2 | 8.88–11.88 | Video Oct 12 2026, 12 22 39 AM.mov | 4.55–7.55 | "I already know I'm going to be pissed with this yellow ball, I'm not going to be able to find it." |
+| 3 | 11.88–17.43 | Video Oct 12 2026, 12 14 03 AM.mov | 56.40–61.95 | "I know it went into like one of these divots, but which one?" |
+| 4 | 17.43–26.68 | Video Oct 12 2026, 12 17 30 AM.mov | 59.60–68.85 | "That's in some tall grass. I'm not fetching that. I'm literally not a dog, but I'm just going to drop another one and try again. Who cares?" |
+| 5 | 26.68–32.78 | Video Oct 12 2026, 12 22 39 AM.mov | 47.50–53.60 | "You might be wondering why my ball turned pink, and that is because I'm surrounded by cactus and I don't feel like searching for the ball." |
+
+- Reuse: bit 2 + bit 5 were never in a comp (comp1 posted uses 12 22 39 33.10–39.30 + 109.95–111.80 only). Bits 1, 3, 4 = r1's.
+- Covers r2: opt1 + opt4 = r1's opt1/opt4 (same frames still in the cut); opt2 @19.5 "that's in some tall grass" blue pill in the sky (0.13–0.24); opt3 @30.0 "surrounded by cactus" purple pill at her waist (0.58–0.69, above her captions).
