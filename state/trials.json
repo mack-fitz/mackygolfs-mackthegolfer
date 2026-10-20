@@ -888,7 +888,7 @@
      "trials/035_mountain-par-3-red-shirt_b_r3_cover_opt3.jpg"
     ],
     "version": "talk-first trim: starts on her intro line right after the wipe; wipe removed, nothing else cut (single crf-17 export)",
-    "planned": "2026-10-20 19:34 MT (scheduled Oct 16 02:41Z after Mack approved, cover opt2)",
+    "planned": "2026-10-20 08:24 MT (moved from 2026-10-20 19:34 MT to the morning slot at Mack's request, Oct 20; was: 2026-10-20 19:34 MT (scheduled Oct 16 02:41Z after Mack approved, cover opt2))",
     "caption": "👉👈",
     "zernio": "6ad05e9b96179afd8c22f51c",
     "media_pinned": "b83ee72",
@@ -908,7 +908,8 @@
     "segs": "trials/035_mountain-par-3-red-shirt_b_segs.json",
     "opening": "talk-first (intro line right after the wipe)",
     "cover_pinned": "bcae89e",
-    "status": "scheduled"
+    "status": "scheduled",
+    "slot": "morning"
    }
   },
   "id:etyjxrk_8sAAAAAAAAAFAA": {
@@ -923,7 +924,7 @@
      "trials/032_pine-par-4-red-shirt_a_cover_opt3.jpg"
     ],
     "version": "original, untouched (remuxed .mov→.mp4, same HEVC video + audio streams, no re-encode)",
-    "planned": "2026-10-21 18:44 MT (scheduled Oct 16 01:15Z after Mack approved, cover opt2)",
+    "planned": "2026-10-21 07:39 MT (moved from 2026-10-21 18:44 MT to the morning slot at Mack's request, Oct 20; was: 2026-10-21 18:44 MT (scheduled Oct 16 01:15Z after Mack approved, cover opt2))",
     "caption": "I was ROBBED",
     "zernio": "6ad05e8f2ced7f681aed9a8d",
     "media_pinned": "b83ee72",
@@ -941,7 +942,8 @@
     "batch": "red hawaiian shirt (Mack, Oct 14)",
     "dup_check": "never_posted.json (fingerprint checked Oct 15); no other red-Hawaiian-shirt reel on that account the same or adjacent days",
     "status": "scheduled",
-    "cover_pinned": "0702ecd"
+    "cover_pinned": "0702ecd",
+    "slot": "morning"
    }
   },
   "id:etyjxrk_8sAAAAAAAAAE_A": {
@@ -956,7 +958,7 @@
      "trials/033_tree-par-4-red-shirt_a_cover_opt3.jpg"
     ],
     "version": "original, untouched (remuxed .mov→.mp4, same HEVC video + audio streams, no re-encode)",
-    "planned": "2026-10-23 18:48 MT (scheduled Oct 16 01:15Z after Mack approved, cover opt2)",
+    "planned": "2026-10-23 07:39 MT (moved from 2026-10-23 18:48 MT to the morning slot at Mack's request, Oct 20; was: 2026-10-23 18:48 MT (scheduled Oct 16 01:15Z after Mack approved, cover opt2))",
     "caption": "as is - I think it might be broken",
     "zernio": "6ad05e93694b4089c8713957",
     "media_pinned": "b83ee72",
@@ -974,7 +976,8 @@
     "batch": "red hawaiian shirt (Mack, Oct 14)",
     "dup_check": "never_posted.json (fingerprint checked Oct 15); no other red-Hawaiian-shirt reel on that account the same or adjacent days",
     "status": "scheduled",
-    "cover_pinned": "0702ecd"
+    "cover_pinned": "0702ecd",
+    "slot": "morning"
    }
   },
   "043_king-of-the-world-wipe": {
