@@ -1,0 +1,328 @@
+{
+ "note": "Prepared Oct 20 for The Reviewer (collection 'compilations'). NOT uploaded yet: the asset uploads + DB writes were waiting on Mack's approval prompt. Next run: upload each preview + covers from the scratch dir (or re-make them: 540-wide crf 26 preview, 720-wide covers), fill video_url/cover_url/cover_options[].url with the /_blob urls, then ArtifactData batch set. Nothing is scheduled in Zernio; proposed slots only.",
+ "reviewer": "https://claude.ai/artifact/KFJoqNkDr6kpxYDkpniAZ7",
+ "docs": {
+  "comp-validation": {
+   "title": "Macky vs. your approval (me begging you to tell me I'm good at golf)",
+   "type": "compilation",
+   "about": "NEW idea. Opens on your shirt wipe, then 3 more of you fishing for approval: \"I want to be a better golfer, please let me know what I'm doing wrong\" (cactus day) \u2192 \"six months\u2026 better or worse than an average six month old golfer?\" \u2192 \"I want to consistently be breaking 100\u2026 please help me out\" \u2192 the bogey putt: \"if I bog this hopefully you'll say I'm a good golfer\u2026 well, I didn't\u2026 surely that feels pretty good, right? you let me know\u2026 I almost missed that. But I didn't.\" Every shot whole, one full-quality export from your /Golf Captions originals. Not in any past comp or shorty. PROPOSED: @mackygolfs Wed Oct 21 6:45pm MT.",
+   "account": "@mackygolfs",
+   "post_account": "@mackygolfs",
+   "post_when": "next",
+   "proposed_slot": "Wed Oct 21, 6:45pm MT (7:45pm CT)",
+   "proposed_time_mt": "2026-10-21T18:45:00-06:00",
+   "caption": "be honest. but also be nice",
+   "cover_text": "Macky vs. your approval",
+   "duration": 46.6,
+   "file": "compilations/comp-validation_your-approval.mp4",
+   "media_url": "https://raw.githubusercontent.com/mack-fitz/mackygolfs-mackthegolfer/main/compilations/comp-validation_your-approval.mp4",
+   "cover_options": [
+    {
+     "id": "opt1",
+     "label": "shirt-wipe frame, red pill above her face",
+     "file": "compilations/comp-validation_your-approval_cover_opt1.jpg",
+     "url": "<upload>"
+    },
+    {
+     "id": "opt2",
+     "label": "big grin, typewriter \"please tell me i'm good at golf\"",
+     "file": "compilations/comp-validation_your-approval_cover_opt2.jpg",
+     "url": "<upload>"
+    },
+    {
+     "id": "opt3",
+     "label": "picking the ball out of the cup, purple pill",
+     "file": "compilations/comp-validation_your-approval_cover_opt3.jpg",
+     "url": "<upload>"
+    }
+   ],
+   "cover_url": "<upload opt1>",
+   "video_url": "<upload preview>",
+   "round": 1,
+   "decision": null,
+   "notes": "",
+   "status": "ready",
+   "posted": false,
+   "history": [],
+   "order": 40,
+   "prepared_at": "2026-10-20T17:30:00Z",
+   "batch": "Oct 20 new shorties + comps (Wed Oct 21 \u2013 Sun Oct 25)"
+  },
+  "shorty_chip-in-day": {
+   "title": "Shorty: me after deciding today is the day i finally chip one in",
+   "type": "shorty",
+   "about": "ONE clip, ONE shot: \"Let's get a birdie here. I've never actually chipped it in before, but today can really be the day\" \u2192 chip \u2192 \"Today might not ultimately be the day.\" Amarillo par 3 (7 17 58), which went out in full on @mackygolfs Oct 15 \"guess my score pls\". Not in any comp or shorty. PROPOSED: @mackygolfs Thu Oct 22 7:41am MT.",
+   "account": "@mackygolfs",
+   "post_account": "@mackygolfs",
+   "post_when": "next",
+   "proposed_slot": "Thu Oct 22, 7:41am MT (8:41am CT)",
+   "proposed_time_mt": "2026-10-22T07:41:00-06:00",
+   "caption": "one day it's going in. not today",
+   "cover_text": "me after deciding today is the day i finally chip one in",
+   "duration": 14.1,
+   "file": "shorties/chip-in-day.mp4",
+   "media_url": "https://raw.githubusercontent.com/mack-fitz/mackygolfs-mackthegolfer/main/shorties/chip-in-day.mp4",
+   "cover_options": [
+    {
+     "id": "opt1",
+     "label": "address",
+     "file": "shorties/chip-in-day_cover_opt1.jpg",
+     "url": "<upload>"
+    },
+    {
+     "id": "opt2",
+     "label": "chip in the air",
+     "file": "shorties/chip-in-day_cover_opt2.jpg",
+     "url": "<upload>"
+    },
+    {
+     "id": "opt3",
+     "label": "\"today might not ultimately be the day\"",
+     "file": "shorties/chip-in-day_cover_opt3.jpg",
+     "url": "<upload>"
+    }
+   ],
+   "cover_url": "<upload opt1>",
+   "video_url": "<upload preview>",
+   "round": 1,
+   "decision": null,
+   "notes": "",
+   "status": "ready",
+   "posted": false,
+   "history": [],
+   "order": 41,
+   "prepared_at": "2026-10-20T17:30:00Z",
+   "batch": "Oct 20 new shorties + comps (Wed Oct 21 \u2013 Sun Oct 25)"
+  },
+  "comp-jokes": {
+   "title": "me explaining my own jokes",
+   "type": "compilation",
+   "about": "NEW idea. Opens on your shirt wipe: \"let's be serious for a second\u2026 whack it straight into the hole, that way anybody who guesses above one looks like an absolute asshole. Yikes. Glad I got that out of me\" \u2192 drive \u2192 \"I'm about as straight as it gets. That was a joke, by the way\u2026 luckily I'm as tight as it gets. That one's not a joke\" \u2192 \"I forgot to make that joke\u2026 go back in time and have a laugh, because that was pretty creative.\" Every shot whole, swearing kept. PROPOSED: @mackygolfs Sat Oct 24 7:41am MT.",
+   "account": "@mackygolfs",
+   "post_account": "@mackygolfs",
+   "post_when": "next",
+   "proposed_slot": "Sat Oct 24, 7:41am MT (8:41am CT)",
+   "proposed_time_mt": "2026-10-24T07:41:00-06:00",
+   "caption": "if you didn't laugh we can't be friends",
+   "cover_text": "Macky vs. comedy",
+   "duration": 46.4,
+   "file": "compilations/comp-jokes_explained-jokes.mp4",
+   "media_url": "https://raw.githubusercontent.com/mack-fitz/mackygolfs-mackthegolfer/main/compilations/comp-jokes_explained-jokes.mp4",
+   "cover_options": [
+    {
+     "id": "opt1",
+     "label": "shirt-wipe frame, red pill over the cart roof",
+     "file": "compilations/comp-jokes_explained-jokes_cover_opt1.jpg",
+     "url": "<upload>"
+    },
+    {
+     "id": "opt2",
+     "label": "\"that was a joke by the way\", purple pill at your legs",
+     "file": "compilations/comp-jokes_explained-jokes_cover_opt2.jpg",
+     "url": "<upload>"
+    },
+    {
+     "id": "opt3",
+     "label": "cart close-up, typewriter \"me explaining my jokes so you get them\"",
+     "file": "compilations/comp-jokes_explained-jokes_cover_opt3.jpg",
+     "url": "<upload>"
+    }
+   ],
+   "cover_url": "<upload opt1>",
+   "video_url": "<upload preview>",
+   "round": 1,
+   "decision": null,
+   "notes": "",
+   "status": "ready",
+   "posted": false,
+   "history": [],
+   "order": 42,
+   "prepared_at": "2026-10-20T17:30:00Z",
+   "batch": "Oct 20 new shorties + comps (Wed Oct 21 \u2013 Sun Oct 25)"
+  },
+  "shorty_putter-tee-shot": {
+   "title": "Shorty: me teeing off with a putter to prove a point",
+   "type": "shorty",
+   "about": "ONE clip, ONE shot: reverse-round selfie \"hoping to have a pretty decent tee shot\u2026 we're kind of downhill, so I could get lucky\" \u2192 tee shot with the putter \u2192 \"That doesn't count, that doesn't count.\" From the reverse round you posted on @mackthegolfer Oct 13 (\"driver is my putter now\"). Not in any comp or shorty. PROPOSED: @mackygolfs Sun Oct 25 6:45pm MT.",
+   "account": "@mackygolfs",
+   "post_account": "@mackygolfs",
+   "post_when": "next",
+   "proposed_slot": "Sun Oct 25, 6:45pm MT (7:45pm CT)",
+   "proposed_time_mt": "2026-10-25T18:45:00-06:00",
+   "caption": "if you say that counts we can be friends",
+   "cover_text": "me teeing off with a putter to prove a point",
+   "duration": 10.9,
+   "file": "shorties/putter-tee-shot.mp4",
+   "media_url": "https://raw.githubusercontent.com/mack-fitz/mackygolfs-mackthegolfer/main/shorties/putter-tee-shot.mp4",
+   "cover_options": [
+    {
+     "id": "opt1",
+     "label": "address with the putter",
+     "file": "shorties/putter-tee-shot_cover_opt1.jpg",
+     "url": "<upload>"
+    },
+    {
+     "id": "opt2",
+     "label": "follow-through",
+     "file": "shorties/putter-tee-shot_cover_opt2.jpg",
+     "url": "<upload>"
+    },
+    {
+     "id": "opt3",
+     "label": "\"that doesn't count\"",
+     "file": "shorties/putter-tee-shot_cover_opt3.jpg",
+     "url": "<upload>"
+    }
+   ],
+   "cover_url": "<upload opt1>",
+   "video_url": "<upload preview>",
+   "round": 1,
+   "decision": null,
+   "notes": "",
+   "status": "ready",
+   "posted": false,
+   "history": [],
+   "order": 43,
+   "prepared_at": "2026-10-20T17:30:00Z",
+   "batch": "Oct 20 new shorties + comps (Wed Oct 21 \u2013 Sun Oct 25)"
+  },
+  "shorty_pured-it": {
+   "title": "Shorty: me after hitting the best shot of my life",
+   "type": "shorty",
+   "about": "ONE clip, ONE shot: \"I don't think I've got the power to get her there\" \u2192 approach with tracer \u2192 \"Holy shit, couldn't have been more perfect\u2026 Still not on the green, but I absolutely pured the hell out of that.\" Blue-ball par 4 (7 13 58), which you posted on @mackthegolfer Oct 8. Not in any posted comp or shorty. PROPOSED: @mackthegolfer Wed Oct 21 8:20am MT.",
+   "account": "@mackthegolfer",
+   "post_account": "@mackthegolfer",
+   "post_when": "next",
+   "proposed_slot": "Wed Oct 21, 8:20am MT (9:20am CT)",
+   "proposed_time_mt": "2026-10-21T08:20:00-06:00",
+   "caption": "if you say that's not on the green we can't be friends",
+   "cover_text": "me after hitting the best shot of my life",
+   "duration": 14.9,
+   "file": "shorties/pured-it.mp4",
+   "media_url": "https://raw.githubusercontent.com/mack-fitz/mackygolfs-mackthegolfer/main/shorties/pured-it.mp4",
+   "cover_options": [
+    {
+     "id": "opt1",
+     "label": "address",
+     "file": "shorties/pured-it_cover_opt1.jpg",
+     "url": "<upload>"
+    },
+    {
+     "id": "opt2",
+     "label": "tracer climbing",
+     "file": "shorties/pured-it_cover_opt2.jpg",
+     "url": "<upload>"
+    },
+    {
+     "id": "opt3",
+     "label": "hands on hips \"still not on the green\"",
+     "file": "shorties/pured-it_cover_opt3.jpg",
+     "url": "<upload>"
+    }
+   ],
+   "cover_url": "<upload opt1>",
+   "video_url": "<upload preview>",
+   "round": 1,
+   "decision": null,
+   "notes": "",
+   "status": "ready",
+   "posted": false,
+   "history": [],
+   "order": 44,
+   "prepared_at": "2026-10-20T17:30:00Z",
+   "batch": "Oct 20 new shorties + comps (Wed Oct 21 \u2013 Sun Oct 25)"
+  },
+  "comp-marshal": {
+   "title": "Macky vs. the marshal",
+   "type": "compilation",
+   "about": "NEW idea, one running story from the San Angelo round (so all one shirt on purpose): \"everybody tells me to turn my hat around and tuck my shirt in\u2026 that was a marshal and he didn't say shit to me, so you guys all need to shut up\" \u2192 the rig shot onto the green \u2192 \"I was feeling really frazzled by the marshal, but now I'm so freaking back\" \u2192 \"ooh the marshal's coming up on me, I bet I'm about to get a lesson\" \u2192 your Lucy Goosey / Ben Hogan chat with him \u2192 \"and I will unfuck that marshall.\" No wipe, every shot whole, swearing kept. PROPOSED: @mackthegolfer Thu Oct 22 7:30pm MT.",
+   "account": "@mackthegolfer",
+   "post_account": "@mackthegolfer",
+   "post_when": "next",
+   "proposed_slot": "Thu Oct 22, 7:30pm MT (8:30pm CT)",
+   "proposed_time_mt": "2026-10-22T19:30:00-06:00",
+   "caption": "if you think my hat is against dress code we can't be friends",
+   "cover_text": "Macky vs. the marshal",
+   "duration": 41.7,
+   "file": "compilations/comp-marshal_the-marshal.mp4",
+   "media_url": "https://raw.githubusercontent.com/mack-fitz/mackygolfs-mackthegolfer/main/compilations/comp-marshal_the-marshal.mp4",
+   "cover_options": [
+    {
+     "id": "opt1",
+     "label": "in the cart, orange pill above your cap",
+     "file": "compilations/comp-marshal_the-marshal_cover_opt1.jpg",
+     "url": "<upload>"
+    },
+    {
+     "id": "opt2",
+     "label": "chatting with him, blue pill at your waist",
+     "file": "compilations/comp-marshal_the-marshal_cover_opt2.jpg",
+     "url": "<upload>"
+    },
+    {
+     "id": "opt3",
+     "label": "\"I'm so freaking back baby\", typewriter",
+     "file": "compilations/comp-marshal_the-marshal_cover_opt3.jpg",
+     "url": "<upload>"
+    }
+   ],
+   "cover_url": "<upload opt1>",
+   "video_url": "<upload preview>",
+   "round": 1,
+   "decision": null,
+   "notes": "",
+   "status": "ready",
+   "posted": false,
+   "history": [],
+   "order": 45,
+   "prepared_at": "2026-10-20T17:30:00Z",
+   "batch": "Oct 20 new shorties + comps (Wed Oct 21 \u2013 Sun Oct 25)"
+  },
+  "shorty_after-the-bomb": {
+   "title": "Shorty: me after one good drive thinking i'm a pro now",
+   "type": "shorty",
+   "about": "ONE clip, ONE shot, right after your Bomb City drive: \"It's going to be so embarrassing if I follow that bomb up with a wet shot. Let's get on the green\" \u2192 approach with tracer \u2192 \"Absolutely perfect. A little short, but absolutely perfect.\" Amarillo par 4 (7 19 40), which you posted on @mackthegolfer Oct 7. Not in any posted comp or shorty. PROPOSED: @mackthegolfer Sat Oct 24 7:30pm MT.",
+   "account": "@mackthegolfer",
+   "post_account": "@mackthegolfer",
+   "post_when": "next",
+   "proposed_slot": "Sat Oct 24, 7:30pm MT (8:30pm CT)",
+   "proposed_time_mt": "2026-10-24T19:30:00-06:00",
+   "caption": "if you say that was short we can't be friends",
+   "cover_text": "me after one good drive thinking i'm a pro now",
+   "duration": 15.4,
+   "file": "shorties/after-the-bomb.mp4",
+   "media_url": "https://raw.githubusercontent.com/mack-fitz/mackygolfs-mackthegolfer/main/shorties/after-the-bomb.mp4",
+   "cover_options": [
+    {
+     "id": "opt1",
+     "label": "address with the pond behind",
+     "file": "shorties/after-the-bomb_cover_opt1.jpg",
+     "url": "<upload>"
+    },
+    {
+     "id": "opt2",
+     "label": "follow-through with tracer",
+     "file": "shorties/after-the-bomb_cover_opt2.jpg",
+     "url": "<upload>"
+    },
+    {
+     "id": "opt3",
+     "label": "tracer coming down",
+     "file": "shorties/after-the-bomb_cover_opt3.jpg",
+     "url": "<upload>"
+    }
+   ],
+   "cover_url": "<upload opt1>",
+   "video_url": "<upload preview>",
+   "round": 1,
+   "decision": null,
+   "notes": "",
+   "status": "ready",
+   "posted": false,
+   "history": [],
+   "order": 46,
+   "prepared_at": "2026-10-20T17:30:00Z",
+   "batch": "Oct 20 new shorties + comps (Wed Oct 21 \u2013 Sun Oct 25)"
+  }
+ }
+}

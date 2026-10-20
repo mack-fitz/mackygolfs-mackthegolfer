@@ -1,0 +1,11 @@
+# Shorty: me teeing off with a putter to prove a point (FOR REVIEW, not posted)
+
+- File: `shorties/putter-tee-shot.mp4` — 10.92 s, ONE continuous clip, ONE shot, 1080x1920 30 fps, H.264 High crf 17 slow, single encode straight from the original with the line in the same pass (`tools/render_shorty.py`), AAC 192k 48 kHz, 30/40 ms edge fades + linear loudnorm to −14 LUFS (−14.1 LUFS, peak −1.4 dBFS; the raw clip is very quiet, −25 LUFS).
+- Source (TRUE original): Dropbox /Golf Captions `Video Oct 11 2026, 9 02 57 AM (3).mp4` (reverse round, orange checker, Colorado; inbox/videos .part00–01 rejoined, sha256 OK). Window 16.56–27.48 s inside her single clip 13.07–30.87 (frame-diff checked). Starts in the gap after "…I love the Texas wedge" (16.06) so comp17's window (13.10–16.52, on hold) is not touched; ends after "that doesn't count, that doesn't count" (27.20), before her re-tee.
+- Moment: selfie with the putter "So I'm hoping to have a pretty decent tee shot. And then we're kind of downhill, so I could get lucky." → tee shot with the putter → "That doesn't count, that doesn't count." Shot whole, her sound and captions untouched, nothing cut inside.
+- Already posted (HARD RULE, >= 15 s in ONE post by Mack herself): @mackthegolfer 2026-10-13 13:04 MT "driver is my putter now" (Mack's own post; posted_index.json) and @mackygolfs 2026-10-14 07:38 MT "please send broomstick putter recs" https://www.instagram.com/reel/Deegb6mm5ok/ (53 s).
+- Reuse check: not in any comp or shorty (all bits/notes + Reviewer DB). Nearest: comp15 5.48–12.72 (cancelled), comp17 13.10–16.52 (on hold), comp2 30.75+.
+- Line (ON-REEL TEXT Oct 17 spec): "me teeing off with a putter / to prove a point" — Inter Bold 46, white, stroke + shadow, lower band ink y 1180–1288, x 243–836, above her own (big) captions at ~1450. Upper band not used: the selfie part has her face at y ~400–800.
+- Caption: **if you say that counts we can be friends**
+- Account: **@mackygolfs** (proposed). Single clip, no shirt wipe inside it.
+- Covers (line on every one; only wide frames so the line sits below her chest, never on it): opt1 address with the putter (6.6 s), opt2 the follow-through (8.0 s), opt3 "that doesn't count" (10.0 s).
