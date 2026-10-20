@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-20T00:17Z",
+ "updated": "2026-10-20T07:47Z",
  "from": "state/posted_index.json (fingerprint-checked against every post on @mackygolfs, @mackthegolfer, @moremackygolfs)",
  "note": "Never-posted status comes ONLY from this file (PLAYBOOK DUPLICATE CHECK V2). 'lined_up' = already on the review page / scheduled; once it posts, the next refresh drops it (it matches its own post).",
  "videos": [
@@ -44,29 +44,6 @@
    ],
    "short_overlaps": [],
    "lined_up": "2026-10-20 19:34 MT @mackthegolfer (035_mountain-par-3-red-shirt, on the review page 2026-10-20_B_pm, waiting on Mack)"
-  },
-  {
-   "name": "Video Sep 23 2026, 1 04 53 PM.mov",
-   "dropbox_id": "id:etyjxrk_8sAAAAAAAAAE_g",
-   "duration": 25.63,
-   "path": "/Golf Captions/Video Sep 23 2026, 1 04 53 PM.mov",
-   "folder": "Golf Captions",
-   "trip": "Colorado round(s), Sep 21 + Sep 23 (red Hawaiian shirt, navy cap; mountains behind)",
-   "files": [
-    {
-     "path": "/Golf Captions/Video Sep 23 2026, 1 04 53 PM.mov",
-     "id": "id:etyjxrk_8sAAAAAAAAAE_g",
-     "duration": 25.63
-    }
-   ],
-   "group_size": 1,
-   "fingerprints": [
-    "state/fp/sources/Video Sep 23 2026, 1 04 53 PM.mov.json"
-   ],
-   "short_overlaps": [
-    "shares ~3 s of the same intro line audio with Video Sep 21 2026, 7 09 34 PM.mov (rest is a different hole)"
-   ],
-   "lined_up": "2026-10-19 18:49 MT @mackygolfs (031_bunker-par-4-red-shirt, on the review page 2026-10-19_A_pm, waiting on Mack)"
   },
   {
    "name": "Video Sep 23 2026, 1 07 33 PM.mov",

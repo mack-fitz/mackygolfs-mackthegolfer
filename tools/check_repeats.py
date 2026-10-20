@@ -247,6 +247,19 @@ def recent_hits(u, uses, now):
     return out
 
 
+_CAT = None
+
+
+def golfclips_sources(sources):
+    """HARD RULE (Mack, Oct 20): @mackygolfs/@mackthegolfer use ONLY /Golf Captions. Returns the sources that have
+    no copy in /Golf Captions (a twin that exists in both folders counts as Golf Captions and is allowed).
+    A source missing from state/sources.json is treated as not allowed until it is catalogued."""
+    global _CAT
+    if _CAT is None:
+        _CAT = json.load(open(os.path.join(CLIPS, "state", "sources.json")))["sources"]
+    return [s for s in sources if not any(f.startswith("/Golf Captions/") for f in _CAT.get(s, {}).get("files", []))]
+
+
 def candidate_report(cands, uses, mmap, now):
     """review-page gate: returns list of (label, ok, reasons, earliest_clear)"""
     out = []
@@ -261,6 +274,19 @@ def candidate_report(cands, uses, mmap, now):
         if c["media"].startswith("mackygolfs-mackthegolfer:"):
             _, u.blob = media_key("https://raw.githubusercontent.com/mack-fitz/mackygolfs-mackthegolfer/main/" + c["media"].split(":", 1)[1])
         reasons, block_until = recent_hits(u, uses, now), t
+        # HARD RULE 12 (Mack, Oct 20): /golfclips feeds the clip pages only, never the main accounts.
+        if u.account in POOL:
+            cpo = clip_pages_only_sources()
+            bad = [s for s in u.sources if s in cpo]
+            if bad or "/golfclips/" in c["media"] or ":golfclips/" in c["media"]:
+                reasons.append("CLIP-PAGES ONLY: /golfclips footage never goes on @mackygolfs/@mackthegolfer (HARD RULE 12) "
+                               + ", ".join(bad))
+                block_until = dt.datetime.max.replace(tzinfo=dt.timezone.utc)
+        if u.account in POOL:
+            gc = golfclips_sources(u.sources)
+            if gc:
+                reasons.append("R4 /golfclips footage is never allowed on @mackygolfs/@mackthegolfer: " + ", ".join(gc))
+                block_until = dt.datetime.max.replace(tzinfo=dt.timezone.utc)
         for o in uses:
             if o.status == "draft" or o.post_id == c["label"]:
                 continue
@@ -273,6 +299,15 @@ def candidate_report(cands, uses, mmap, now):
                     block_until = max(block_until, o.t + WEEK)
         out.append((c["label"], not reasons, reasons, None if not reasons else block_until))
     return out
+
+
+def clip_pages_only_sources():
+    """source ids that are clip-pages only (state/sources.json clip_pages_only, built by build_media_map.py)."""
+    try:
+        cat = json.load(open(os.path.join(CLIPS, "state", "sources.json")))["sources"]
+    except Exception:
+        return set()
+    return {k for k, v in cat.items() if v.get("clip_pages_only")}
 
 
 def C_parse(s):
@@ -299,6 +334,10 @@ def check(uses, now, show_all=False):
                 if hit:
                     v.append(("R2 same reel on @mackygolfs/@mackthegolfer < 7 days", a, b, ", ".join(sorted(hit))))
     for a in uses:
+        if a.account in POOL and a.status != "published" and a.t > now:
+            gc = golfclips_sources(a.sources)
+            if gc:
+                v.append(("R4 /golfclips footage on @mackygolfs/@mackthegolfer (only /Golf Captions allowed)", a, a, ", ".join(gc)))
         if a.status in ("scheduled", "pending", "planned") and a.t > now:
             for r in recent_hits(a, uses, now):
                 v.append(("R3 posted on @mackygolfs/@mackthegolfer this past week", a, a, r))

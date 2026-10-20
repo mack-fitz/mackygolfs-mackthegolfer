@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-20T00:17Z",
+ "updated": "2026-10-20T07:47Z",
  "rule": "PLAYBOOK DUPLICATE CHECK V2: a source is ALREADY POSTED if its audio fingerprint lines up with a posted reel for > 5 s in one stretch (or >= 12 s across several >= 3 s stretches, for re-edits) or its 2-s frame hashes line up for >= 8 s of changing picture (or, for posts where only the cover image could be fetched, the cover matches a source frame). Never judge by length or caption.",
  "accounts": {
   "mackygolfs": "6acce837f3bd55021dad245f",
@@ -7,9 +7,9 @@
   "moremackygolfs": "6acc2885bac230e9d1133105"
  },
  "coverage": {
-  "posts": 329,
-  "fingerprinted": 325,
-  "video_fp": 322,
+  "posts": 332,
+  "fingerprinted": 328,
+  "video_fp": 325,
   "thumbnail_only": 3,
   "missing": [
    "https://www.instagram.com/p/DZyE2hYESab/",
@@ -1110,9 +1110,31 @@
    "name": "Video Sep 23 2026, 1 04 53 PM.mov",
    "dropbox_id": "id:etyjxrk_8sAAAAAAAAAE_g",
    "duration": 25.63,
-   "status": "never posted",
-   "first_posted": null,
-   "matches": []
+   "status": "ALREADY POSTED",
+   "first_posted": {
+    "account": "mackygolfs",
+    "platformPostUrl": "https://www.instagram.com/reel/Deslf0CG8F7/",
+    "date_mt": "2026-10-19 18:51 MT",
+    "caption": "what do you think I’m shooting on this par 4?",
+    "audio_overlap_s": 23.0,
+    "audio_total_s": 23.0,
+    "frame_overlap_s": 20.0,
+    "thumb_dist": null,
+    "how": "audio+frames"
+   },
+   "matches": [
+    {
+     "account": "mackygolfs",
+     "platformPostUrl": "https://www.instagram.com/reel/Deslf0CG8F7/",
+     "date_mt": "2026-10-19 18:51 MT",
+     "caption": "what do you think I’m shooting on this par 4?",
+     "audio_overlap_s": 23.0,
+     "audio_total_s": 23.0,
+     "frame_overlap_s": 20.0,
+     "thumb_dist": null,
+     "how": "audio+frames"
+    }
+   ]
   },
   {
    "name": "Video Sep 23 2026, 1 07 33 PM.mov",
@@ -6813,6 +6835,53 @@
    "fp_kind": "video",
    "fp_from": "video_url",
    "sources": []
+  },
+  {
+   "account": "mackygolfs",
+   "platformPostUrl": "https://www.instagram.com/reel/DeseRliRZ13/",
+   "date": "2026-10-19T23:48:10.000Z",
+   "date_mt": "2026-10-19 17:48 MT",
+   "caption": "really tough think to reckon with",
+   "duration": 8,
+   "zernio_id": "6ad6d04c22bbc9a309bbd133",
+   "late_post_id": null,
+   "media_type": "video",
+   "fingerprint": "state/fp/posts/mackygolfs_18109425373932974.json",
+   "fp_kind": "video",
+   "fp_from": "video_url",
+   "sources": []
+  },
+  {
+   "account": "mackthegolfer",
+   "platformPostUrl": "https://www.instagram.com/reel/DesiUzKBQov/",
+   "date": "2026-10-20T00:24:26.000Z",
+   "date_mt": "2026-10-19 18:24 MT",
+   "caption": "I hate this sport actually",
+   "duration": 46,
+   "zernio_id": "6ad6c66689a11fcad8bbdbc8",
+   "late_post_id": null,
+   "media_type": "video",
+   "fingerprint": "state/fp/posts/mackthegolfer_18286316302295380.json",
+   "fp_kind": "video",
+   "fp_from": "video_url",
+   "sources": []
+  },
+  {
+   "account": "mackygolfs",
+   "platformPostUrl": "https://www.instagram.com/reel/Deslf0CG8F7/",
+   "date": "2026-10-20T00:51:14.000Z",
+   "date_mt": "2026-10-19 18:51 MT",
+   "caption": "what do you think I’m shooting on this par 4?",
+   "duration": 25,
+   "zernio_id": "6ad6d04c22bbc9a309bbd132",
+   "late_post_id": "6ad05e8b694b4089c8713931",
+   "media_type": "video",
+   "fingerprint": "state/fp/posts/mackygolfs_17914420881513639.json",
+   "fp_kind": "video",
+   "fp_from": "video_url",
+   "sources": [
+    "Video Sep 23 2026, 1 04 53 PM.mov"
+   ]
   }
  ]
 }

@@ -364,3 +364,12 @@ Format (her reference: a guy lining up an iron, on-screen text "Me after decidin
    from the same Zernio pull: drafts are shown as "DRAFT: awaiting Mack approval", never as scheduled. Never publish
    dashboard rows from memory, from an old schedule.json, or from what you meant to schedule.
    (mackygolfs-mackthegolfer tools/dash_trials.py upnext already reads Zernio directly; give it the same fresh pull.)
+12. /GOLFCLIPS = CLIP PAGES ONLY (Mack, Oct 20). Files added to /golfclips on Oct 20 (the 68-reel batch) are clip-pages only,
+   never @mackygolfs/@mackthegolfer. Broader rule: NOTHING from Dropbox /golfclips, old or new, is ever used for @mackygolfs or
+   @mackthegolfer (no rotation/inventory pool, no debut edits, no re-edits, no compilation/shorty bits, no Trial Reels Review
+   cards). /golfclips feeds only @moremackygolfs, @mackygolfs X + TikTok and the macky.golfs Facebook Page. State:
+   mack-fitz/clips state/processed.json "clip_pages_only" (every /golfclips file id) and state/sources.json
+   "clip_pages_only": true on every source whose only copies are in /golfclips (tools/build_media_map.py sets it).
+   tools/inventory.py --free never offers those sources and tools/check_repeats.py --candidates FAILS any @mackygolfs/
+   @mackthegolfer candidate that contains one. A reel that also exists as its own file in /Golf Captions may still reach the
+   main accounts only from the /Golf Captions file. @moremackygolfs still needs a named proof post (no proof = skip it).
