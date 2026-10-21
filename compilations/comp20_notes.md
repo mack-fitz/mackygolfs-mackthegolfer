@@ -51,3 +51,19 @@
 
 - Reuse: bit 2 + bit 5 were never in a comp (comp1 posted uses 12 22 39 33.10–39.30 + 109.95–111.80 only). Bits 1, 3, 4 = r1's.
 - Covers r2: opt1 + opt4 = r1's opt1/opt4 (same frames still in the cut); opt2 @19.5 "that's in some tall grass" blue pill in the sky (0.13–0.24); opt3 @30.0 "surrounded by cactus" purple pill at her waist (0.58–0.69, above her captions).
+
+## Round 3 (Oct 21) — Mack: "You did not do what I said. Should be a quick video with clips of me just saying where is my ball I can't find my ball"
+- Rebuilt from scratch: ONLY the moments where she literally says she can't see / can't find her ball, nothing before or after. Searched every /Golf Captions transcript (see / find / where / lost / search / fetch / which one / went / no idea / track) — these are the only literal ones.
+- Left out on purpose (not literally "can't find my ball"): 12 17 30 "that's in some tall grass, I'm not fetching that" (won't look), 12 22 39 "…and I don't feel like searching for the ball" (mid-sentence, would need the cactus/pink-ball setup), 12 14 03 "neon yellow ball when the grass is so bright green" (in posted comp3), 12 14 03 18.2 "you can't even see it" (the tee), 7 26 20 "I don't see a flag".
+- Video: `compilations/comp20_where-did-it-go_r3.mp4` — 8.9 s (was 32.9), 3 bits, ONE crf-17 encode, `COMP_FINAL_LIMIT=0.71` (bits in `comp20_r3_bits.json`). −15.9 LUFS, peak −3.0 dBFS. Sources sha256 re-verified Oct 21.
+- Cuts only in measured gaps between words; whole sentences only. No text, no wipes. Export checked frame by frame at every cut + audio at every join.
+- Bit 1's own caption reads "I don't see the ball oh I do" (one caption line); the audio stops after "ball" (100 ms gap before "Oh"), so the caption shows "oh I do" for the last ~0.6 s.
+- SPACING: pinstripe → green polo → pinstripe (other hole).
+
+| # | out (s) | source | src in–out (s) | what |
+|---|---|---|---|---|
+| 1 | 0.00–1.00 | Video Oct 12 2026, 12 11 12 AM.mov | 148.60–149.60 | "I don't see the ball." |
+| 2 | 1.00–3.85 | Video Oct 12 2026, 12 22 39 AM.mov | 4.70–7.55 | "I already know I'm going to be pissed with this yellow ball, I'm not going to be able to find it." |
+| 3 | 3.85–8.83 | Video Oct 12 2026, 12 14 03 AM.mov | 56.97–61.95 | "I know it went into like one of these divots… but which one?" |
+
+- Covers r3: opt1 @0.6 close-up looking for it, red pill over her cap (0.15–0.26); opt2 @2.5 on the tee, blue pill in the sky (0.16–0.27); opt3 @7.8 "but which one", purple pill in the sky (0.15–0.26); opt4 @0.3 typewriter "i don't see the ball" (0.16–0.22). Chest clear on all, checked full size + grid size.

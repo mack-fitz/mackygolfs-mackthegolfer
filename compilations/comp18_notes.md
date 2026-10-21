@@ -44,3 +44,18 @@
 
 - Reuse: bit 1 was a spare; bit 4 not in any other comp/shorty. comp20 r2 does not use 7 30 44.
 - Covers r2: opt1 @3.0 pinstripe + tracer into the tree, red pill (0.17–0.22); opt2 @13.5 green polo watching the tracer into the tree, blue pill low (0.77–0.82); opt3 @25.6 white shirt follow-through under the branches, purple pill (0.15–0.20); opt4 @36.0 "landed in the edge of the trees", orange pill in the sky (0.14–0.20).
+
+## Round 3 (Oct 21) — Mack: "Just shots no talking before and after. Should be much quicker"
+- Kept ONLY the tree shots themselves: address → swing → full tracer into the tree, with the natural sound and only what she says WHILE the ball is in the air. All setup talk ("don't hit this tree above me", "I'm a little worried about this tree") and after-talk ("but that was going to be a perfect shot", "well hit the tree") cut. Each bit starts on the first frame after her previous caption clears.
+- Dropped r2 bit 4 (7 30 44 desert drive): no tracer and no visible tree hit — without the talk after it ("landed in the edge of the trees… in the cactus") it is just a drive, so it doesn't read as a tree shot. No other tree shots exist in /Golf Captions (r2 search).
+- Video: `compilations/comp18_trees_r3.mp4` — 14.4 s (was 39.2), 3 bits, ONE crf-17 encode with `tools/render_comp.py` + `COMP_FINAL_LIMIT=0.71` (bits in `comp18_r3_bits.json`). −16.2 LUFS, peak −2.3 dBFS. Sources = /Golf Captions originals in tools/src, sha256 re-verified vs the relay .sha256 Oct 21 (10.6 / 9.9 / 9.7 Mbps).
+- Cuts only in measured silence (10 ms RMS ≤ −45 dB), never inside a word; every shot whole; swearing kept ("god damn it"). No text, no wipes. Export checked frame by frame at every cut (no leftover captions from cut talk, no black/flash frames) and by audio at every join.
+- Note: bit 3's own caption reads "god damn it well hit the tree" (one caption line); the audio ends after "god damn it" because "well hit the tree" comes after the ball is down.
+
+| # | out (s) | source | src in–out (s) | what |
+|---|---|---|---|---|
+| 1 | 0.00–3.95 | Video Oct 12 2026, 12 11 12 AM.mov (pinstripe) | 75.60–79.55 | address → swing (impact 77.15) → tracer into the tree → "oh, I pulled that and it hit the tree" (said while the tracer is still up) |
+| 2 | 3.95–10.70 | Video Oct 12 2026, 12 22 39 AM.mov (green polo) | 63.20–69.95 | address under the tree → chip (impact ~64.75) → tracer up into the branches → "well I hit the tree" … "don't tell me I'm in the sand" (both while the tracer is on screen) |
+| 3 | 10.70–14.40 | Video Oct 12 2026, 7 26 20 AM.mov (white/camo) | 48.60–52.25 | address → shot (impact 50.4) → tracer into the tree → "god damn it" |
+
+- Covers r3: opt1 @2.4 pinstripe + tracer, red pill in the sky (0.17–0.22); opt2 @6.6 green polo watching the tracer into the branches, blue pill low over the grass (0.77–0.82); opt3 @13.1 white shirt follow-through under the branches, purple pill in the clouds (0.15–0.20); opt4 @6.6 typewriter "trees are 90% air they said" low (0.77–0.87). Chest clear on all, checked full size + grid size.
