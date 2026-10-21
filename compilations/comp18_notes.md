@@ -59,3 +59,8 @@
 | 3 | 10.70–14.40 | Video Oct 12 2026, 7 26 20 AM.mov (white/camo) | 48.60–52.25 | address → shot (impact 50.4) → tracer into the tree → "god damn it" |
 
 - Covers r3: opt1 @2.4 pinstripe + tracer, red pill in the sky (0.17–0.22); opt2 @6.6 green polo watching the tracer into the branches, blue pill low over the grass (0.77–0.82); opt3 @13.1 white shirt follow-through under the branches, purple pill in the clouds (0.15–0.20); opt4 @6.6 typewriter "trees are 90% air they said" low (0.77–0.87). Chest clear on all, checked full size + grid size.
+
+## Round 4 (Oct 21) — Mack: "Extend like one or two more seconds to hear me say I hit the tree on the last one"
+- Only change: bit 3 (7 26 20, white/camo) now ends at 53.43 (was 52.25), so "well hit the tree" (52.56–53.28) plays in full. 53.43 is in measured silence (−46 dB) and right before her own scene cut at 53.467 (the next setup), so the clip ends on the same shot.
+- Video: `compilations/comp18_trees_r4.mp4` — 15.6 s (was 14.4), 3 bits, ONE crf-17 encode, `COMP_FINAL_LIMIT=0.71` (`comp18_r4_bits.json`). Checked frame by frame at both joins and over the new tail (no frame from the next scene).
+- Covers: r3's four (frames unchanged).
