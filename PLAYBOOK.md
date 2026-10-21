@@ -91,8 +91,8 @@ Build them with `tools/dash_trials.py` (see its header).
 6. Fix it yourself rules apply. Then message Mack in the same short format as the main run.
 
 ## Editing rules (B edits, and A re-edits)
-- Open on the attention moment if there is one (e.g. the shirt wipe) and keep it,
-  then the first full sentence. Otherwise open on the strongest action.
+- A re-edits: open on the shirt wipe, then the first full sentence (no wipe in the source: strongest action).
+  B (@mackthegolfer): never the wipe — open on her first spoken line (rules below).
 - Never start or end a cut mid-word or mid-sentence. Cut only on measured audio
   pauses (no transcription available — snap cuts to the quietest point nearby).
 - Tighten: remove filler talk, dead air, waiting between shots. Keep every shot
@@ -219,7 +219,7 @@ Mostly use style 1, some style 2, rarely 3. Words fit the specific video (the ho
 
 ## COMPILATIONS (Mack, Oct 13) — make a bunch over the next week
 Why: compilations avoid the duplicate flag that single re-posts get. Mack wants many.
-- Format (proven by comp #1 "what it's like playing with me", which she loved): HER TALKING while playing; 2–7 s bits back to back; 30–45 s; open on the strongest bit; never cut a shot out of a setup→shot→result bit; never cut swearing; no shirt wipes (except the shirt-wipe compilation); no text burned in; even loudness; 1080x1920 30 fps crf 17. Method + sources: compilations/comp1_notes.md.
+- Format (proven by comp #1 "what it's like playing with me", which she loved): HER TALKING while playing; 2–7 s bits back to back; 30–45 s; open on the strongest bit; never cut a shot out of a setup→shot→result bit; never cut swearing; OPENS ON A SHIRT WIPE then the bits (Mack, Oct 21) for @mackygolfs / @moremackygolfs / Facebook versions, NO wipe at all in @mackthegolfer versions; no text burned in; even loudness; 1080x1920 30 fps crf 17. Method + sources: compilations/comp1_notes.md.
 - Cover: strong face/reaction frame + the title in her grid style (white bold Poppins on a rounded colored box, inside the grid crop and never over her chest — Oct 17 rule; rotate colors). Always give 3+ cover options. Caption: short, lowercase, dry (her edit of comp1: "why do I like this sport").
 - Every compilation goes on the review page (https://claude.ai/artifact/KFJoqNkDr6kpxYDkpniAZ7, collection "compilations") for her notes/approval; notify her when one is up or when notes are applied. Nothing posts without approval. Default account: @mackthegolfer trial unless she says otherwise (the shirt-wipe one is for @mackygolfs).
 - Don't reuse the same bit in two compilations that would post within 2 weeks of each other.
@@ -245,7 +245,7 @@ Why: compilations avoid the duplicate flag that single re-posts get. Mack wants 
 - SPACING (Mack): do NOT put the orange-checkered-shirt bits back to back. Alternate outfits/days so it's clear this is over many rounds — no two consecutive bits from the same shirt/day where avoidable. (Applies to all compilations.)
 - Cover text: something about golf lingo to use on your next round (e.g. "golf lingo to use next round"); 3+ cover options in her grid styles.
 - Caption: "make sure to really get your hips involved"
-- Usual compilation rules: her talking, never cut a shot or swearing, no shirt wipes, no added text, true originals, single high-quality export.
+- Usual compilation rules: her talking, never cut a shot or swearing, shirt wipe first except on @mackthegolfer (never a wipe there; Oct 21 rule at the bottom), no added text, true originals, single high-quality export.
 - BASE CAMP — COMPILATIONS (Mack, Oct 13): every compilation that posts or gets scheduled must appear in Base Camp's schedule on its account's doc, with where = 'trial reel (compilation "<title>", posted)' (or 'scheduled'), time in Mountain, and its caption. Do this in the same run that posts it.
 - NEW-VIDEO FOLDER (Mack, Oct 14): as Mack gets new videos back from the tracer, she'll put them in a NEW SUBFOLDER inside the trial reels Dropbox folder (/Golf Captions). Anything in a subfolder she adds = guaranteed never posted — use those first for "new" slots, no guessing needed (still log them in state/never_posted.json; once used, mark used). Check for new subfolders every run. Until then, never-posted status comes from the fingerprint check (DUPLICATE CHECK V2). Goal she's working toward: ~28 brand-new videos a week so BOTH @mackygolfs and @mackthegolfer get only brand-new videos (2/day each, never the same video on both) — but B stays re-edits-only until she says to switch.
 
@@ -391,3 +391,16 @@ Format (her reference: a guy lining up an iron, on-screen text "Me after decidin
   paths outside the sparse cone); push as usual.
 - The tools (check_repeats.py, sync_schedule.py, inventory.py, build_media_map.py, upnext.py) work without video files
   present: they read state/*.json and list dirs via `git ls-files`.
+
+## SHIRT WIPE OPENS EVERYTHING EXCEPT @mackthegolfer (Mack, Oct 21) — newest rule, wins over anything above
+Mack, Oct 21 10:01am: "everything on moremackygolfs ig should be starting with the shirt wipe" and "basically everything
+always starts with the shirt wipe except for mackthegolfer".
+- EVERY video on every golf account opens on Mack's shirt wipe: @mackygolfs IG (originals, re-edits, compilations,
+  shorties), @moremackygolfs IG reels + stories, macky.golfs Facebook (edits, compilations, shorties), X/TikTok/FB originals.
+- @mackthegolfer: NEVER the wipe (reels, compilations, shorties, covers) — unchanged.
+- Compilations and shorties (not @mackthegolfer): a shirt wipe comes first, then the bits / the moment. A comp/shorty first
+  made for @mackthegolfer needs its own wipe-first version before it goes to @mackygolfs, @moremackygolfs or Facebook.
+  Replaces "no shirt wipes (except the shirt-wipe compilation)".
+- Edits still follow every other rule (restructure after the wipe, 25-40 % cut on @moremackygolfs, punch-ins, never cut
+  shots or swearing, no captions during the wipe). X/TikTok/FB originals stay untouched: just confirm they open on the wipe.
+- Source with no wipe: open on the strongest action and list the clip in the run report.
