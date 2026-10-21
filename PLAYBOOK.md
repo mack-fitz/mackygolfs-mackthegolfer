@@ -379,3 +379,15 @@ Format (her reference: a guy lining up an iron, on-screen text "Me after decidin
    tools/inventory.py --free never offers those sources and tools/check_repeats.py --candidates FAILS any @mackygolfs/
    @mackthegolfer candidate that contains one. A reel that also exists as its own file in /Golf Captions may still reach the
    main accounts only from the /Golf Captions file. @moremackygolfs still needs a named proof post (no proof = skip it).
+
+## CLONING (Oct 21)
+- The repos hold ~7-9 GB of video at HEAD. A plain or `--depth 1` clone runs a fresh container out of disk/time (every
+  scheduled task errored out after ~20 min on Oct 21). ALWAYS clone blobless + sparse:
+  `git clone --filter=blob:none --no-checkout https://github.com/mack-fitz/<repo>; cd <repo>; git sparse-checkout init --no-cone;`
+  write `.git/info/sparse-checkout` = `/*` `!*.mp4` `!*.mov` `!*.MOV` `!*.MP4` `!*.m4v` `!*.part[0-9][0-9]` (one per line); `git checkout main`.
+  (clips: ~70 MB, ~5 s.)
+- Fetch an individual video only when you actually need it (`git show HEAD:path > file`, or the Dropbox relay). Never
+  check out all videos. Committing a new video still works: `git add --sparse path/to/file.mp4` (plain `git add` refuses
+  paths outside the sparse cone); push as usual.
+- The tools (check_repeats.py, sync_schedule.py, inventory.py, build_media_map.py, upnext.py) work without video files
+  present: they read state/*.json and list dirs via `git ls-files`.
