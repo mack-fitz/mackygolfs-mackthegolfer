@@ -67,3 +67,17 @@
 | 3 | 3.85–8.83 | Video Oct 12 2026, 12 14 03 AM.mov | 56.97–61.95 | "I know it went into like one of these divots… but which one?" |
 
 - Covers r3: opt1 @0.6 close-up looking for it, red pill over her cap (0.15–0.26); opt2 @2.5 on the tee, blue pill in the sky (0.16–0.27); opt3 @7.8 "but which one", purple pill in the sky (0.15–0.26); opt4 @0.3 typewriter "i don't see the ball" (0.16–0.22). Chest clear on all, checked full size + grid size.
+
+## Round 4 (Oct 21) — Mack: "Second clip shouldn't be in there. I should have way more clips of me saying I can't find the ball. Add them"
+- Removed the yellow-ball tee clip (12 22 39 4.70–7.55).
+- Searched again, much wider, three ways: (1) every /Golf Captions transcript (29 files) for can't find / where is it / where'd it go / I don't see / lost / looking for / any idea / did anyone see / search / fetch / gone / landed / ball; (2) OCR of her own burned-in captions on every video at 1 fps (catches quiet lines Whisper missed); (3) 1 fps contact sheets of all 29 videos.
+- Result: only 2 moments in /Golf Captions where she says she can't find / see her ball, and both are already in: "I don't see the ball" (12 11 12) and "I know it went into like one of these divots… but which one?" (12 14 03).
+- Near-misses (not added):
+  * 12 22 39 51.9 "…and I don't feel like searching for the ball" (cactus / pink ball): it's in "Macky vs. nature", which posted on @mackthegolfer this morning (2-week comp-reuse rule).
+  * 7 30 44 17.1 "I think that landed in the edge of the trees" → 19.5 "seems it actually landed in the cactus": also in "Macky vs. nature" (posted this morning).
+  * 12 14 03 49.9 "I've really got to stop playing with a neon yellow ball when the grass is so bright green": in comp3 "every excuse I've ever made" (posted on @mackthegolfer).
+  * 12 17 30 60.0 "That's in some tall grass. I'm not fetching that.": she knows where it is (cut in r3 per her note).
+  * 7 26 20 84–88 "think I landed off… a little to the left of what I'm assuming is the green… we'll see, found the flag": about the landing spot, not a lost ball.
+  * 12 11 12 154.9 "But I do see it, it's on the other side of the green", 7 26 20 101 "you can see the ball", 7 16 02 73.7 "I hit the ball, you didn't see that", 12 14 03 18.2 "you can't even see it" (the tee pushed into the ground), 7 26 20 68 "I don't see a flag", Sep 21 7 24 34 13.0 "still can't see the hole": not about a lost ball.
+- Video: `compilations/comp20_where-did-it-go_r4.mp4` — 6.0 s (was 8.9), 2 clips, ONE crf-17 encode, `COMP_FINAL_LIMIT=0.71` (`comp20_r4_bits.json`). −15.9 LUFS, peak −5.5 dBFS. Join checked frame by frame + audio (cut in silence, −55 dB).
+- Covers: r3 opt1 (@0.6), opt3 ("but which one", now @4.8) and opt4 (typewriter "i don't see the ball") still match; r3 opt2 was the removed yellow-ball clip, dropped.
