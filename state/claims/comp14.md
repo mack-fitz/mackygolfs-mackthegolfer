@@ -1,1 +1,1 @@
-claimed by interactive session session_014WRwoQrNqn5i2cZMDf1UNQ at 2026-10-21T18:31:29Z UTC: applying Mack's Oct 21 11:28-11:32 Reviewer decision. Other runs: skip this doc.
+DONE (interactive session, Oct 21). Not re-scheduled: comp14_golf-lingo_r3.mp4 + opt2 cover + caption already published as a trial reel on @mackthegolfer Oct 20 7:34pm MT (Zernio 6ad7632a232f615ea390e290, instagram.com/reel/DevPRNsFDc4). check_repeats.py FAILS it (same file, same account). Reviewer doc set to posted. Do not schedule it again on @mackthegolfer.

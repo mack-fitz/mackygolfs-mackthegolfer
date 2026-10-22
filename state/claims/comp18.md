@@ -1,1 +1,1 @@
-claimed by interactive session session_014WRwoQrNqn5i2cZMDf1UNQ at 2026-10-21T18:31:29Z UTC: applying Mack's Oct 21 11:28-11:32 Reviewer decision. Other runs: skip this doc.
+CLAIMED by interactive session (Oct 21). Renders done and pushed (680d85d86c18679b04dc12f7173bdda99a25347c). PENDING: Reviewer upload (720 preview + covers) and the comp doc update; the asset upload needed Mack's approval and got no answer. Do not re-edit; only finish the upload + doc update from the files listed in compilations/comp18_notes.md.
