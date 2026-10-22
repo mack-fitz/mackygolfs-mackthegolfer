@@ -404,3 +404,18 @@ Mack, Oct 21 11:20am: "If it's a shorty or a comp that doesn't have a wipe then 
 - Edits still follow every other rule (restructure after the wipe, 25-40 % cut on @moremackygolfs, punch-ins, never cut
   shots or swearing, no captions during the wipe). X/TikTok/FB originals stay untouched: just confirm they open on the wipe.
 - Source with no wipe: open on the strongest action and list the clip in the run report.
+
+## SCHEDULED TASK ROLES (Oct 21)
+Several runs errored (RUN_ERRORED) because the review checks, the makers and the morning run all re-edited the same items
+at once. Mack agreed this split on Oct 21:
+- Review page checks (:17 and :47, 6am-10pm MT): ONLY schedule/post what Mack approved. They never edit or render video.
+  They use the repo only for check_repeats.py and pinned media URLs.
+- "Reviewer notes (one per run)" (:32, 6am-10pm MT): the ONLY job that applies Mack's notes (decision "changes") on
+  reels, compilations and shorties. One item per run, oldest first, under a claim.
+- Compilation maker / Shorties maker: make ONE new piece per run under a claim; never apply notes. 6+ waiting with no
+  decision = don't make a new one. Shorties split ~60% @mackygolfs / 40% @mackthegolfer (never a wipe on @mackthegolfer).
+- Golf trials morning run (4:38am MT): schedules approved reels and stays ahead on new reels; never applies notes.
+
+Claim files: before working on an item, commit + push state/claims/<doc or slug>.md (job name + UTC time). Any job skips
+an item whose claim was committed less than 60 minutes ago by another job. Delete the claim in your final commit (or, if
+you give up, in a commit of its own so the next run can retry). A claim older than 60 minutes is stale: take it over.
