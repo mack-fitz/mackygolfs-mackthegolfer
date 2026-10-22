@@ -994,6 +994,33 @@
     "zernio": "6ad640819720052ead0b3e0d",
     "review_doc": "2026-10-20_A_am"
    }
+  },
+  "id:etyjxrk_8sAAAAAAAAAE_w": {
+   "name": "Video Sep 21 2026, 7 24 34 PM.mov",
+   "slug": "052_pent-bogey-par-5-red-shirt",
+   "A_history": "already on @mackygolfs 2026-09-22 09:40 MT \"what do you guys call a pent-bogey?\" https://www.instagram.com/reel/DdmFF-0hUDO/ (Mack's own post, whole clip incl. wipe)",
+   "B_new_2026-10-22": {
+    "file": "trials/052_pent-bogey-par-5-red-shirt_b.mp4",
+    "cover_options": [
+     "trials/052_pent-bogey-par-5-red-shirt_b_cover_opt1.jpg",
+     "trials/052_pent-bogey-par-5-red-shirt_b_cover_opt2.jpg",
+     "trials/052_pent-bogey-par-5-red-shirt_b_cover_opt3.jpg"
+    ],
+    "version": "talk-first trim: starts on her intro line right after the wipe; wipe removed, nothing else cut (single export, IG spec H.264 High@4.1 crf18 maxrate 4.5M, AAC 128k, faststart)",
+    "planned": "NOT on the review page yet: check_repeats.py FAILS R3 on 2026-10-22 (Mack's @mackygolfs post Sep 22 09:40 MT is inside the 30 calendar days since 00:00 MT Sep 22). Eligible from 2026-10-23 00:00 MT -> re-run the guard, then review doc 2026-10-22_B_now (or a new id), post immediately on approval.",
+    "length_test": "short",
+    "duration": 27.17,
+    "source": "/Golf Captions/Video Sep 21 2026, 7 24 34 PM.mov",
+    "source_bitrate_bps": 11222547,
+    "segs": "trials/052_pent-bogey-par-5-red-shirt_b_segs.json",
+    "opening": "talk-first (intro line \"Hey, it's Mack. Should we play a par 5 together?\" right after the wipe)",
+    "batch": "red hawaiian shirt (Mack, Oct 14)",
+    "dup_check": "never posted on @mackthegolfer; last pool post @mackygolfs 2026-09-22 09:40 MT, cleared the 30-day pool rule 2026-10-22 09:40 MT",
+    "approval": {
+     "review_doc": null,
+     "status": "blocked by R3 until 2026-10-23 00:00 MT (guard exit 1, 2026-10-22 09:56 MT)"
+    }
+   }
   }
  },
  "unfilled": {
