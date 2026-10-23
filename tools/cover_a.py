@@ -91,5 +91,5 @@ elif style == "type":
         d.text(((W - d.textlength(l, font=f)) / 2, y0 + i * lh), l, font=f, fill="black")
 if top is not None and (top < H * 0.13 or bot > H * 0.87):
     sys.exit(f"text block {top/H:.2f}-{bot/H:.2f} leaves the grid crop / hits the top bar; move COVER_Y")
-im.save(out, quality=92)
+im.save(out, quality=95, subsampling=0)  # Mack, Oct 23: full-res JPEG q95
 print(out, W, H, style, repr(text), "" if top is None else f"text block {top/H:.2f}-{bot/H:.2f} of height")
