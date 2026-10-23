@@ -29,3 +29,14 @@ Note: the old "Macky vs. nature" comp had already published as a trial reel on @
 - Now 5 clips, 6.6 s: orange (1) 45.25–46.50 → white 7 13 58 91.75–92.93 → red Sep 23 26.95–28.20 → orange (2) 57.60–59.20 → blue 7 33 50 25.75–27.00. Spacing OK.
 - Video: `compilations/comp19_tweeners_r3.mp4` (bits `comp19_tweeners_r3_bits.json`), one crf-17 encode via tools/render_comp.py + COMP_FINAL_LIMIT=0.71, same overlay (`comp19_tweeners_overlay.png`). −18.2 LUFS, peak −2.9 dBFS. Every cut checked frame by frame.
 - Covers unchanged (opt1–opt4; none used the dropped clip). Caption unchanged: "can a scientist weigh in on this".
+
+## Round 4 (Mack, Oct 23: "On the second clip you cut off me hitting the ball")
+- Correct: clip 2 (Video Oct 12 2026, 7 13 58 AM.mov, white/camo) started at 91.75, after the ball had already dropped (in at ~90.93), so the stroke was missing. Now 89.60–91.50: starts with her standing over the ball before the putter moves back, plays the whole tweener stroke (putter between the legs ~89.8–90.5), the ball rolling and dropping in at the flagstick (~90.93), ends 0.57 s later. Her talking over it ("tween her" 89.6–89.82, "tween the legs, blue ball" 90.66–91.7) is fully muted (pg −90 on 89.60–89.85 and 90.65–91.50); the quiet stroke in between keeps its natural sound. Her own caption "tweener between the legs / blue ball" shows through this clip (her burned-in caption, y ~1500, below our line). The ball/cup sit just above our on-screen line (cup at the top edge of "have a"); the ball is visible right up to the drop.
+- Checked every other clip for the full stroke (never cut out shots):
+  - Orange (1) Oct 11 (1): her scene starts at 45.200; start moved 45.25 → 45.19 so no frame of the scene is lost. Stroke + ball in all inside.
+  - Red Sep 23: scene starts 26.967 (first frame already in); putter covers the ball at the cut and swings back ~27.23, ball in. Unchanged.
+  - Orange (2) Oct 11 (2): putter still until ~57.9, stroke 58.0–58.5, ball in. Start 57.60 unchanged.
+  - Blue 7 33 50: scene starts 25.733; start moved 25.75 → 25.72 so the first stroke frame isn't dropped (putter already moving at her cut — nothing earlier exists).
+- Now 5 clips, 7.5 s: orange (1) 45.19–46.50 → white 7 13 58 89.60–91.50 → red Sep 23 26.95–28.20 → orange (2) 57.60–59.20 → blue 7 33 50 25.72–27.00.
+- Video: `compilations/comp19_tweeners_r4.mp4` (bits `comp19_tweeners_r4_bits.json`), one crf-17 encode via tools/render_comp.py + COMP_FINAL_LIMIT=0.71, same overlay (`comp19_tweeners_overlay.png`, "why do tweeners have a / 100% success rate", low). −16.1 LUFS, peak −2.3 dBFS. No talking. Cuts at 1.333 / 3.267 / 4.533 / 6.133 checked frame by frame (no stray frames).
+- Covers unchanged (opt1–opt4; opt3 is 7 13 58 @92.3, still a valid frame of that source, not part of the new clip window but same shot/outfit). Caption unchanged: "can a scientist weigh in on this".
