@@ -1,8 +1,0 @@
-fp/audio/w1_B_PM.ogg
-fp/audio/w1_B_w1-1nutrl.ogg
-fp/audio/w1_B_w1-2.ogg
-fp/audio/w1_B_w1-3.ogg
-fp/audio/w1_B_w1-4.ogg
-fp/audio/w1_B_w1-5.ogg
-fp/audio/w1_B_w1-6.ogg
-fp/audio/w1_B_w1-7.ogg

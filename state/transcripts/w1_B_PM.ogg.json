@@ -1,0 +1,103 @@
+{
+"source": "fp/audio/w1_B_PM.ogg",
+"duration": 33.6906875,
+"segments": [
+{
+"start": 0.88,
+"end": 4.66,
+"text": "Hey, I want to be a better golfer. Help me understand what I'm doing wrong with my driver.",
+"words": [
+[
+0.88,
+1.2,
+" Hey,"
+],
+[
+1.38,
+1.6,
+" I"
+],
+[
+1.6,
+1.7,
+" want"
+],
+[
+1.7,
+1.78,
+" to"
+],
+[
+1.78,
+1.86,
+" be"
+],
+[
+1.86,
+1.96,
+" a"
+],
+[
+1.96,
+2.1,
+" better"
+],
+[
+2.1,
+2.54,
+" golfer."
+],
+[
+2.94,
+3.0,
+" Help"
+],
+[
+3.0,
+3.14,
+" me"
+],
+[
+3.14,
+3.44,
+" understand"
+],
+[
+3.44,
+3.6,
+" what"
+],
+[
+3.6,
+3.7,
+" I'm"
+],
+[
+3.7,
+3.82,
+" doing"
+],
+[
+3.82,
+4.04,
+" wrong"
+],
+[
+4.04,
+4.16,
+" with"
+],
+[
+4.16,
+4.32,
+" my"
+],
+[
+4.32,
+4.66,
+" driver."
+]
+]
+}
+]
+}
