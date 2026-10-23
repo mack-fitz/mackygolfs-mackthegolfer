@@ -23,3 +23,9 @@ Note: the old "Macky vs. nature" comp had already published as a trial reel on @
 - Spacing: green → orange → white → red → orange (other hole) → blue.
 - Covers: opt1 Oct 11 (1) @45.8 red pill in the sky (0.16–0.27); opt2 Sep 23 @27.45 blue pill (0.18–0.29); opt3 7 13 58 @92.3 purple pill (0.16–0.27); opt4 Oct 11 (2) @58.3 typewriter (0.17–0.27). All from the clean source frames, chest clear, checked full size + grid size.
 - Caption: "can a scientist weigh in on this".
+
+## Round 3 (Mack, Oct 22: "First one isn't a tweener??")
+- Correct: clip 1 (Video Oct 12 2026, 12 17 30 AM.mov, green pinstripe, 170.85–172.08) was not a tweener. Removed it. No other real tweener in /Golf Captions to replace it (7 38 06 is the same putt as 7 33 50).
+- Now 5 clips, 6.6 s: orange (1) 45.25–46.50 → white 7 13 58 91.75–92.93 → red Sep 23 26.95–28.20 → orange (2) 57.60–59.20 → blue 7 33 50 25.75–27.00. Spacing OK.
+- Video: `compilations/comp19_tweeners_r3.mp4` (bits `comp19_tweeners_r3_bits.json`), one crf-17 encode via tools/render_comp.py + COMP_FINAL_LIMIT=0.71, same overlay (`comp19_tweeners_overlay.png`). −18.2 LUFS, peak −2.9 dBFS. Every cut checked frame by frame.
+- Covers unchanged (opt1–opt4; none used the dropped clip). Caption unchanged: "can a scientist weigh in on this".
