@@ -49,7 +49,7 @@ regular reels from the mack-fitz/clips repo. X and TikTok setups are not touched
 - **Order: each account pulls randomly on its own.** B is NOT staggered behind A. Each day pick
   B's reels at random from everything in /Golf Captions not yet used on B (same for A). The only
   rule: never post the same reel on both accounts on the same day.
-- **Pace:** start at 3 trial reels a day per account (A ~7:30-8:00am, 1-2pm, 6:30-7:30pm MT; mornings early to catch the East Coast;
+- **Pace:** **[SUPERSEDED Oct 23 by POSTING RULES v2 at the bottom: weekly folders, 1 morning 7:00-8:30 + afternoons 2:00-3:30 MT]** start at 3 trial reels a day per account (A ~7:30-8:00am, 1-2pm, 6:30-7:30pm MT; mornings early to catch the East Coast;
   B offset by ~45 min). Raise to 4-5 a day only if reach holds and no Account Status warnings.
   Stay under 10 a day.
 - **Posting:** Zernio posts_create_post, instagram, platformSpecificData
@@ -102,7 +102,7 @@ Build them with `tools/dash_trials.py` (see its header).
 - Keep Mack's captions untouched (they sit mid-frame).
 - Target length: tight, usually 30–70s depending on the story.
 - Cover: strongest frame (action or reaction, never suggestive out of context), no text.
-- Export once, high quality: `tools/render.sh` (libx264 -crf 17 -preset slow, source resolution/fps, AAC 192k 48 kHz). No bitrate caps, no double encodes.
+- Export once, high quality: `tools/render.sh` (libx264 -crf 17 -preset slow, source resolution/fps, AAC 192k 48 kHz). No bitrate caps, no double encodes. (Oct 23: see Quality in POSTING RULES v2 — level 4.2, AAC 256k, originals untouched.)
 
 ## Captions (all platforms)
 - Dumb, short, lowercase, Mack's voice. Reference style: "golf is so easy guys",
@@ -150,7 +150,7 @@ already on @mackthegolfer; "new shirt" and "absolutely brutal" were already on @
    30-day pool rule in HARD RULES 1-2 applies and wins.)
 5. Log every check in state/trials.json (`dup_check`: matched post date + caption, or "clear").
 
-## What to post (Mack's rules, Oct 12)
+## What to post (Mack's rules, Oct 12) **[SUPERSEDED Oct 23 by POSTING RULES v2 at the bottom: weekly folders, 1 morning 7:00-8:30 + afternoons 2:00-3:30 MT]**
 - NO compilations for now.
 - PRIORITY 1: UNUSED reels (never posted on any of Mack's accounts: check @mackygolfs and
   @mackthegolfer full history per the duplicate check). Most unused reels go to @mackygolfs
@@ -168,7 +168,7 @@ already on @mackthegolfer; "new shirt" and "absolutely brutal" were already on @
 - The unused "putting with a driver" video (golfclips 010_wrong-clubs, find it in Golf Captions
   by content/length ~99.5 s) was pulled from @moremackygolfs: use it on the trials.
 
-## Length test (Mack, Oct 13)
+## Length test (Mack, Oct 13) **[SUPERSEDED Oct 23 by POSTING RULES v2 at the bottom: weekly folders, 1 morning 7:00-8:30 + afternoons 2:00-3:30 MT]**
 Each day, of each account's 2 trial reels, one must be SHORTER and one LONGER, so Mack can compare.
 - Shorter = under ~35 s; longer = over ~60 s (A: pick never-posted originals that naturally fall in each range; B: pick source videos and edits that land in each range — still 25–40% cut from the original).
 - Alternate which slot (morning/evening) gets the short one day to day. Log `length_test: "short"|"long"` and the final duration on each entry in state/trials.json, and report short-vs-long views/skip rate in the daily message.
@@ -190,6 +190,7 @@ Cover words copy Mack's own @mackygolfs grid (screenshot: covers/grid-reference.
 Mostly use style 1, some style 2, rarely 3. Words fit the specific video (the hole, club, food or situation). @mackthegolfer covers: same styles but brand-safe (no "wet"/innuendo; never a shirt-wipe frame). "No words" covers stay as the on/off test for A.
 
 ## CURRENT RULES (Mack, Oct 13, 12am) — override anything above that conflicts
+**[SUPERSEDED Oct 23 by POSTING RULES v2 at the bottom: the 2/day morning+evening slots, short/long test, A = 1 new + 1 re-edit, B = re-edits-only rotation and the 3-day spacing are replaced. Approval flow, never cut shots/swearing, and B opening rules still apply.]**
 - Exactly 2 trial reels per day per account (morning + evening). Never 3. No midday.
 - Every day, on EACH account: one SHORT (under ~35 s) and one LONG (over ~60 s). Alternate which slot gets the short one.
 - @mackygolfs (A): never-posted footage only, Mack's original untouched.
@@ -200,7 +201,7 @@ Mostly use style 1, some style 2, rarely 3. Words fit the specific video (the ho
 - @mackthegolfer (B) OPENING (Mack, Oct 13 10:18am): ALWAYS open on Mack talking at the beginning (the first spoken line right after where the shirt wipe would be). NO cold opens, NO teasers of later moments, NO "cut to the end" openings. Restructure only after the opening (trim, tighten, reorder the middle, change the ending, punch-ins).
 - TWO-INTRO VIDEOS (Mack, Oct 13): some new uploads will have two intros back to back at the start (often "2 intros" in the file name; a pause or clap separates them): first = shirt-wipe while talking, second = just talking (no wipe). Split them: @mackygolfs (A) = intro 1 + the rest (remove intro 2 only; otherwise unedited, Mack's quality untouched where possible); @mackthegolfer (B) = intro 2 + the rest, edited per B rules. These count as NEW footage for both accounts; post the two versions at least 3 days apart. Check every new upload for a second intro even without the file-name tag.
 - BASE CAMP QUEUE COUNTS (Mack, Oct 13): trials-mackygolfs days_left = never-posted videos left (A uses 1 new per day), warn_under_days 3; detail says how many new videos are left and that the other daily slot is a re-edit. trials-mackthegolfer = already-posted source videos not yet re-edited on B ÷ 2 per day, capped at 30; it is NOT low just because Golf Captions is used up (B can re-edit Mack's whole @mackygolfs/@mackthegolfer history).
-- ONE NEW VIDEO A DAY ON A (Mack, Oct 13 11am, "just do one new video a day on mackygolfs for now"): @mackygolfs (A) gets exactly ONE never-posted video per day. A's other daily slot is a RE-EDIT of already-posted footage (Mack's own posts on any account, or @moremackygolfs/X/TikTok; never footage A itself already posted; never the same footage as B within 3 days), still opening on the shirt wipe, A cover style, clearly different cut. Short/long rule still applies across the two. B = re-edits of already-posted footage only (the two-intro B version above is the one exception).
+- [SUPERSEDED Oct 23 by POSTING RULES v2] ONE NEW VIDEO A DAY ON A (Mack, Oct 13 11am, "just do one new video a day on mackygolfs for now"): @mackygolfs (A) gets exactly ONE never-posted video per day. A's other daily slot is a RE-EDIT of already-posted footage (Mack's own posts on any account, or @moremackygolfs/X/TikTok; never footage A itself already posted; never the same footage as B within 3 days), still opening on the shirt wipe, A cover style, clearly different cut. Short/long rule still applies across the two. B = re-edits of already-posted footage only (the two-intro B version above is the one exception).
 - APPROVAL (Mack, Oct 13 11am, "I want to see and approve everything you are posting on mackygolfs/mackthegolfer"): NOTHING posts on A or B unless Mack approved that exact reel (video, cover, caption) on the **Trial Reels Review** page (https://claude.ai/artifact/KFJoqNkDr6kpxYDkpniAZ7).
   - Every evening the prep run ("Trial reels nightly prep for review", 6:47pm MT) makes the NEXT day's 4 reels (2 A + 2 B: per account one short + one long, morning + evening) and has them on the review page by **9:00pm Mountain (10pm Central)**, then messages Mack the link.
   - Unapproved reels are Zernio DRAFTS (posts_update_post `is_draft: true`, or posts_create_post `is_draft: true` with `scheduled_for` + `timezone: "America/Denver"` + trialParams MANUAL + pinned media/cover URLs). Never `scheduled` until approved. If drafts ever stop working, delete the Zernio post and keep file + planned time in state/trials.json.
@@ -405,7 +406,7 @@ Mack, Oct 21 11:20am: "If it's a shorty or a comp that doesn't have a wipe then 
   shots or swearing, no captions during the wipe). X/TikTok/FB originals stay untouched: just confirm they open on the wipe.
 - Source with no wipe: open on the strongest action and list the clip in the run report.
 
-## SCHEDULED TASK ROLES (Oct 21)
+## SCHEDULED TASK ROLES (Oct 21) **[SUPERSEDED Oct 23 — see SCHEDULED TASK ROLES (Mack, Oct 23) at the bottom]**
 Several runs errored (RUN_ERRORED) because the review checks, the makers and the morning run all re-edited the same items
 at once. Mack agreed this split on Oct 21:
 - Review page checks (:17 and :47, 6am-10pm MT): ONLY schedule/post what Mack approved. They never edit or render video.
@@ -419,3 +420,102 @@ at once. Mack agreed this split on Oct 21:
 Claim files: before working on an item, commit + push state/claims/<doc or slug>.md (job name + UTC time). Any job skips
 an item whose claim was committed less than 60 minutes ago by another job. Delete the claim in your final commit (or, if
 you give up, in a commit of its own so the next run can retry). A claim older than 60 minutes is stale: take it over.
+
+## POSTING RULES v2 (Mack, Oct 23, 4:11pm MT) — NEWEST, WINS OVER EVERYTHING ABOVE
+Replaces for @mackygolfs (A) / @mackthegolfer (B): the A = 1 new + 1 re-edit / B = re-edits-only rotation, the old
+morning/evening trial times (A ~7:30-8:00 / 6:30-7:30pm, B +45 min; "2 per day morning + evening", short/long test
+slots), and the 2.5/day cadence for TikTok + Facebook (they now follow the weekly folders). @moremackygolfs keeps 2.5/day.
+Sources for A/B are now the weekly folders below (+ old /Golf Captions reels for afternoon bounces); /golfclips stays
+clip-pages only.
+
+**Weekly folders.** Mack makes a new "week N" folder each week in each account's folder, with at least 7 new reels each:
+  Dropbox /Golf/for claude/mackygolfs/week N   (ns:3302941984//Golf/for claude/mackygolfs/week N)
+  Dropbox /Golf/for claude/mackthegolfer/week N (ns:3302941984//Golf/for claude/mackthegolfer/week N)
+  File order/names are just her counting: post in any order. Loose files directly in /Golf/for claude/<account>/
+  (outside a week folder, e.g. the 4 copy_….MOV in mackygolfs/) are NOT used — list them for Mack.
+  Registry: mack-fitz/clips state/weekly_sources.json (source id "<account>/week N/<file>": home account, pm flag,
+  dropbox id, duration, wipe end); tools/build_media_map.py + check_repeats.py read it.
+  Relay: clips inbox/relay_links.tsv (links mode, scratch/<branch>), never main. Fingerprint: fp/want_links.tsv here.
+
+**Mornings: ONE trial reel per account every morning.** @mackygolfs posts from its own weekly folder, @mackthegolfer
+  from its own. Window 7:00-8:30am MT; vary the minute day to day (never the same time every day; A and B at different
+  times). Morning = new footage only, own account only.
+
+**Afternoons: window 2:00-3:30pm MT, also varied.** Afternoon slots take: extras beyond 7 in a weekly folder; PM files;
+  comps and shorties (she still wants these); back-and-forth reposts (old /Golf Captions reels too).
+  AFTERNOON PRIORITY (Mack, Oct 23): PM files > turn dog reels > YouTube promos > bounces > comps/shorties.
+  Comps/shorties only fill empty afternoons (turn dog reels and YouTube promos will take these slots soon).
+
+**PM files.** Files named PM ("pm.MOV", "PM.MOV", any case) are ALWAYS afternoon and NEVER bounce to the other account.
+
+**Shirt wipe.** Every upload in the weekly folders includes her shirt wipe.
+  - @mackygolfs ALWAYS opens on the wipe: use the upload as-is.
+  - @mackthegolfer NEVER has a wipe: cut out ONLY the wipe, change nothing else (cut right after the shirt is down,
+    before her first word; check frame by frame at the start, 10 fps).
+  - An upload with no wipe: just proceed as is (list it in the report).
+
+**Back and forth (bounces).**
+  - A reel posted in an account's morning slot can go to the OTHER account in an afternoon slot 30 days later: WITH the
+    wipe if going to @mackygolfs (use the original upload, which has it), WITHOUT it if going to @mackthegolfer.
+  - 60 days after its first post it can go back to the original account, again in an afternoon slot.
+  - The 30 days always count from the MOST RECENT time it was posted. PM files never bounce.
+  - After the first month, afternoons may pull from the other account's folder under this rule.
+  - Old /Golf Captions reels continue under the same back-and-forth rule.
+  - BOUNCES (Mack, Oct 23): every back-and-forth repost gets a NEW caption and a NEW cover, plus light edits to lower the
+    duplicate-flag risk (a different trim/end point, a different opening beat after the wipe, punch-ins). Never cut
+    shots or swearing. (@mackygolfs bounces still open on the wipe; @mackthegolfer bounces never show it.)
+  - tools/check_repeats.py enforces it (R5/R6: morning = debut from own folder; repost only 2:00-3:30pm; 30 days from the
+    most recent pool post; back on an account only 60 days after its first post there; PM never on the other account).
+
+**Review.** EVERYTHING for these two accounts goes through The Reviewer first (caption + cover approval).
+  ADVANCE REVIEW (Mack, Oct 23): when a new "week N" folder appears, the morning run puts the WHOLE week on The Reviewer
+  that day; it always keeps at least the next 5-7 days of morning slots on The Reviewer. Unapproved = Zernio DRAFT
+  (trialParams {graduationStrategy:"MANUAL"}), so approval -> schedule is instant.
+
+**Quality (Mack, Oct 23: "I want everything uploaded at the highest quality") — replaces the <=5 Mbps IG spec.**
+  - @mackygolfs and TikTok/Facebook originals: her original file UNTOUCHED whenever the platform accepts it, no re-encode.
+  - Only if a file is unsupported (HEVC, wrong container, over a size limit) do ONE high-quality conversion:
+    H.264 High, level 4.2, 1080x1920, CRF 17, maxrate ~25 Mbps (bufsize 50M), AAC 256k 48 kHz, +faststart, original
+    frame rate. Never downscale, never double-encode.
+  - @mackthegolfer wipe cuts: ONE CRF-17 encode from her original with the same settings (lossless stream copy if the
+    wipe ends on a keyframe).
+  - Covers: full-resolution JPEG, quality 95. Reviewer previews may stay 720 px (only for her to look at).
+  - Files over 100 MB never go through raw.githubusercontent: upload to Zernio storage (media_get_media_presigned_url ->
+    clips zupload workflow PUTs it from the scratch branch, since the workspace can't reach R2; Zernio keeps temp uploads
+    7 days, creating/scheduling a post copies them to permanent storage).
+  - If IG rejects a file (the old level-5.0 "XPV publish blocking encoding" error), re-encode once at level 4.2, ~20 Mbps,
+    not 5 Mbps. Record source vs export bitrate in each notes file.
+
+**TikTok (@mackygolfs) and the macky.golfs Facebook Page.** Anything in the weekly folders, PM files included, can post
+  as-is: wipe kept, cover = first frame. Facebook is on the same schedule as TikTok. At first they may go up the same day
+  as the IG post; as the library grows, Mack prefers TikTok/FB AFTER IG, not the same day. Schedule them only after the
+  IG version is approved (plan in mack-fitz/clips state/schedule.json "weekly_plan").
+
+**@moremackygolfs.** Subject to the 30-day rule counted from the most recent time that footage posted ANYWHERE on IG
+  (@mackygolfs, @mackthegolfer or @moremackygolfs). Every video there is edited (clearly different) and opens on the wipe.
+  Cadence stays 2.5/day.
+
+**Sunday note (Mack, Oct 23).** Every Sunday the morning run sends Mack a short note: which trials beat her normal
+  numbers and are worth sharing to followers; and morning trials vs afternoon trials vs bounced reposts.
+
+**Unchanged:** never cut shots or swearing; no added text on trial reels; cover text never over her chest or face and
+  never high in the frame (mid-frame between face and chest, or below the chest, always inside the grid crop); captions
+  short, dry, lowercase; the same file never twice on the same account.
+
+## SCHEDULED TASK ROLES (Mack, Oct 23 — replaces the Oct 21 version above)
+Tasks created Oct 13 or later fail to start (platform issue), so ALL work runs in the 4 tasks created Oct 12:
+- Golf trials morning run (trig_01P9WD8sS4Du6GLG8xj8z3BM, 4:38am MT): APPROVALS (schedule every approved reel/comp/
+  shorty from The Reviewer — the full approval-scheduling step), weekly folders (new week folder -> whole week on The
+  Reviewer that day; always 5-7 days of morning slots on it; afternoon fill), applies Reviewer notes only if any are
+  older than 12 h, Sunday note.
+- Clip page daily run (trig_01LF9nY2ySafUThxsSh2UvQg, 12:24pm MT): APPROVALS (same step), applies ALL pending Reviewer
+  notes every day, makes 1 compilation + 1 shorty per run for afternoon slots (6+ waiting with no decision = don't make
+  one; claim files; Mack picks the account for shorties AND comps; never add a wipe), TikTok/FB from the weekly folders,
+  @moremackygolfs (30 days from the most recent IG post, edited, wipe first, 2.5/day).
+- Nightly post check (trig_01WnerdLHmdyaKw1s5FJDLzB, 10:07pm MT): APPROVALS (same step) + checks.
+- heyymackyy (trig_0119mkSwEHeV2n5yGaNJgeDt): not part of golf; never touched.
+- DISABLED (fail to start): Review check :17 (trig_012oyY6XmBNE1jTZ28haCufw), Reviewer notes (trig_01AWcyfNhcWgnYheJ8fvEr4c),
+  Compilation maker (trig_01CXKLDqcJuWgi338oKsYTsr), Shorties maker (trig_015yiarZSeTSG3oQKtPdn1Ek), :47 check
+  (trig_012AZU8wjhSmNqzs9LsR3opk).
+- Claim files still apply between the 3 runs: commit + push state/claims/<doc or slug>.md before working on an item;
+  skip an item claimed < 60 min ago by another job; delete the claim in your final commit.
