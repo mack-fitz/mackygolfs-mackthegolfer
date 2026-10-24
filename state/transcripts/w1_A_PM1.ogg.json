@@ -1,0 +1,281 @@
+{
+"source": "fp/audio/w1_A_PM1.ogg",
+"duration": 20.223125,
+"segments": [
+{
+"start": 1.22,
+"end": 5.26,
+"text": "Dude, why is nobody talking about fall golf?",
+"words": [
+[
+1.22,
+1.82,
+" Dude,"
+],
+[
+2.36,
+2.72,
+" why"
+],
+[
+2.72,
+2.96,
+" is"
+],
+[
+2.96,
+3.26,
+" nobody"
+],
+[
+3.26,
+3.72,
+" talking"
+],
+[
+3.72,
+4.2,
+" about"
+],
+[
+4.2,
+4.72,
+" fall"
+],
+[
+4.72,
+5.26,
+" golf?"
+]
+]
+},
+{
+"start": 5.86,
+"end": 9.86,
+"text": "Tonight was my first night, absolutely electric vibes in the air, dude.",
+"words": [
+[
+5.86,
+5.88,
+" Tonight"
+],
+[
+5.88,
+6.12,
+" was"
+],
+[
+6.12,
+6.32,
+" my"
+],
+[
+6.32,
+6.7,
+" first"
+],
+[
+6.7,
+7.0,
+" night,"
+],
+[
+7.4,
+8.0,
+" absolutely"
+],
+[
+8.0,
+8.68,
+" electric"
+],
+[
+8.68,
+9.2,
+" vibes"
+],
+[
+9.2,
+9.3,
+" in"
+],
+[
+9.3,
+9.4,
+" the"
+],
+[
+9.4,
+9.56,
+" air,"
+],
+[
+9.56,
+9.86,
+" dude."
+]
+]
+},
+{
+"start": 10.32,
+"end": 14.66,
+"text": "We've got crisp air, I'm making horrible shots, don't even care.",
+"words": [
+[
+10.32,
+10.54,
+" We've"
+],
+[
+10.54,
+10.76,
+" got"
+],
+[
+10.76,
+11.14,
+" crisp"
+],
+[
+11.14,
+11.6,
+" air,"
+],
+[
+12.16,
+12.34,
+" I'm"
+],
+[
+12.34,
+12.52,
+" making"
+],
+[
+12.52,
+12.98,
+" horrible"
+],
+[
+12.98,
+13.38,
+" shots,"
+],
+[
+13.7,
+14.06,
+" don't"
+],
+[
+14.06,
+14.26,
+" even"
+],
+[
+14.26,
+14.66,
+" care."
+]
+]
+},
+{
+"start": 15.12,
+"end": 18.08,
+"text": "Don't even care, that's how beautiful and perfect it is outside.",
+"words": [
+[
+15.12,
+15.42,
+" Don't"
+],
+[
+15.42,
+15.6,
+" even"
+],
+[
+15.6,
+15.92,
+" care,"
+],
+[
+15.98,
+16.16,
+" that's"
+],
+[
+16.16,
+16.28,
+" how"
+],
+[
+16.28,
+16.76,
+" beautiful"
+],
+[
+16.76,
+17.06,
+" and"
+],
+[
+17.06,
+17.42,
+" perfect"
+],
+[
+17.42,
+17.66,
+" it"
+],
+[
+17.66,
+17.82,
+" is"
+],
+[
+17.82,
+18.08,
+" outside."
+]
+]
+},
+{
+"start": 18.48,
+"end": 19.98,
+"text": "Not enough people talking about this.",
+"words": [
+[
+18.48,
+18.72,
+" Not"
+],
+[
+18.72,
+18.94,
+" enough"
+],
+[
+18.94,
+19.16,
+" people"
+],
+[
+19.16,
+19.48,
+" talking"
+],
+[
+19.48,
+19.72,
+" about"
+],
+[
+19.72,
+19.98,
+" this."
+]
+]
+}
+]
+}
