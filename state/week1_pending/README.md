@@ -9,3 +9,12 @@ ArtifactData / asset-upload calls needed approval and nobody answered, so these 
      sets media_url = Zernio temp upload, media_expires, media_reupload);
    - set docs 2026-10-30_A_am, 2026-11-01_A_pm, 2026-10-28_B_am, 2026-10-29_B_am, 2026-10-30_B_am.
 4. No Zernio drafts: the post is created only on approval (PLAYBOOK v2).
+
+# Oct 24 ~16:20Z: 4 missed PM files (added by Mack Oct 23 ~4-5pm MT, after the week 1 listing) — DONE
+LESSON: re-list EVERY week folder on EVERY run (file ids vs clips state/weekly_sources.json); Mack adds files later.
+On The Reviewer ("reels", set v1, no Zernio drafts; full files on clips scratch/w1-pm-exports + Zernio temp uploads, expire Oct 31 16:08Z):
+- 2026-10-25_A_pm  076_cart-rant-pm_a          PM (1).MOV                              Sun 14:41 MT
+- 2026-10-27_A_pm  077_long-drive-record-pm_a  PM - never post as a bounce.mov (A)     Tue 15:08 MT  (no wipe in source; HDR->SDR)
+- 2026-10-29_A_pm  078_car-talk-pm_a           PM - never post on mackthegolfer.mov    Thu 14:12 MT  (no wipe in source)
+- 2026-10-30_B_pm  079_long-drive-record-pm_b  PM - never post as a bounce.mov (B)     Fri 14:54 MT  (no wipe -> nothing cut; HDR->SDR)
+All 4 never posted (fingerprints vs 342 IG posts); guard PASS. docs/*.json here = what was written.

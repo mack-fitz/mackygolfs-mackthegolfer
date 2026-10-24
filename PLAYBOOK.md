@@ -433,6 +433,11 @@ clip-pages only.
   Dropbox /Golf/for claude/mackthegolfer/week N (ns:3302941984//Golf/for claude/mackthegolfer/week N)
   File order/names are just her counting: post in any order. Loose files directly in /Golf/for claude/<account>/
   (outside a week folder, e.g. the 4 copy_….MOV in mackygolfs/) are NOT used — list them for Mack.
+  RE-LIST EVERY WEEK FOLDER ON EVERY RUN (Oct 24): Mack adds files AFTER a folder first appears (Oct 23 ~4-5pm MT she
+  added 4 PM files to week 1 after the week 1 job had listed it; they were missed until Oct 24 -> 076-079). Every run
+  lists every week N folder again and compares Dropbox file ids with the registry; anything new gets registered,
+  fingerprinted and put on The Reviewer. Words in a filename ("never post as a bounce", "never post on mackthegolfer")
+  are Mack's instructions; any name starting with PM/pm is a PM file.
   Registry: mack-fitz/clips state/weekly_sources.json (source id "<account>/week N/<file>": home account, pm flag,
   dropbox id, duration, wipe end); tools/build_media_map.py + check_repeats.py read it.
   Relay: clips inbox/relay_links.tsv (links mode, scratch/<branch>), never main. Fingerprint: fp/want_links.tsv here.
