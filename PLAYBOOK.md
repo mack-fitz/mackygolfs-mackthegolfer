@@ -469,8 +469,12 @@ clip-pages only.
 
 **Review.** EVERYTHING for these two accounts goes through The Reviewer first (caption + cover approval).
   ADVANCE REVIEW (Mack, Oct 23): when a new "week N" folder appears, the morning run puts the WHOLE week on The Reviewer
-  that day; it always keeps at least the next 5-7 days of morning slots on The Reviewer. Unapproved = Zernio DRAFT
-  (trialParams {graduationStrategy:"MANUAL"}), so approval -> schedule is instant.
+  that day; it always keeps at least the next 5-7 days of morning slots on The Reviewer.
+  NO ZERNIO DRAFTS FOR ITEMS WAITING ON REVIEW (Mack, Oct 23 late — drafts show in her scheduler and confused her): create
+  the Zernio post ONLY when the item is approved (posts_create_post, scheduled, trialParams {graduationStrategy:"MANUAL"}).
+  Keep the full-quality file ready instead: upload it to Zernio temp storage (presigned + zupload) and store media_url,
+  media_expires (7 days) and media_reupload (scratch branch:file) on the review doc; if the temp upload expired by approval
+  time, re-upload from the scratch branch first. (Deleting a Zernio post also deletes its /media/ copy.)
 
 **Quality (Mack, Oct 23: "I want everything uploaded at the highest quality") — replaces the <=5 Mbps IG spec.**
   - @mackygolfs and TikTok/Facebook originals: her original file UNTOUCHED whenever the platform accepts it, no re-encode.
