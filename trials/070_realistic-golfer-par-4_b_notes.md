@@ -7,3 +7,4 @@
 - Fingerprint: CLEAR vs every post on all 3 IG accounts (Oct 23). Guard: PASS.
 - Plan: 2026-10-25 07:26 MT morning (B). Caption: "par 4 with a very realistic golfer. we don't talk about hole 6".
 - Covers (q95): talking frames, words at waist level (0.63-0.71, below the chest, clear of her burned-in captions); opt3 = cart close-up, no words.
+- r2 (Mack Oct 24 notes): "Macky vs. a Par 4" pill, no captioned frames — opt1 red 26.4 s (drive+tracer, Y 0.70), opt2 orange 104.6 s (green, Y 0.72), opt3 blue 102.4 s pill sized to fully cover the burned-in caption (caption px 1448-1557 x 208-854; Y 0.7854, FS 1.25). Caption -> "one shot one opportunity type shit". Source rebuilt from w1-exports parts (sha256 verified). Covers full-res q95; Reviewer previews 360 px.

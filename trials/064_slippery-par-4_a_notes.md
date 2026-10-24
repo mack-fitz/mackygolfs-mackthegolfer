@@ -4,3 +4,4 @@
 - Fingerprint: CLEAR vs every post on @mackygolfs/@mackthegolfer/@moremackygolfs (Oct 23). Guard (check_repeats R1-R6): PASS.
 - Plan: 2026-10-26 07:38 MT morning (A). Caption: "it's a slippery day. that's my excuse and i'm sticking to it".
 - Covers (full-res JPEG q95): wipe frame 0.4 s, words over her hands between face and chest (mid-frame, inside the grid crop).
+- r2 (Mack Oct 24 notes): cover "well, I'm wet" red pill on wipe frames 0.1 s (Y 0.47), 0.4 s (Y 0.48), 0.25 s (Y 0.45, FS 1.15), over the shirt/hands, face and chest clear, no captions. Caption -> "stay til the end for something WEIRD". Source A_w1-2.mp4 from clips scratch/relay-w1a (sha256 verified). Covers full-res q95; Reviewer previews 360 px.

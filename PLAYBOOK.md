@@ -502,6 +502,13 @@ clip-pages only.
 **Sunday note (Mack, Oct 23).** Every Sunday the morning run sends Mack a short note: which trials beat her normal
   numbers and are worth sharing to followers; and morning trials vs afternoon trials vs bounced reposts.
 
+**COVER WORDS vs. HER BURNED-IN CAPTIONS (Mack, Oct 24 9:35am MT) — standing rule.** "If you put cover words don't
+  choose a frame that has captions OR cover the captions with the text box." When a cover has words: pick a frame with NONE
+  of her burned-in captions (wipe frames on @mackygolfs usually have none; on @mackthegolfer check the exact frame), OR place
+  the text box so it fully hides the caption (measure the caption's pixel bounds and size the pill/box past them; check the
+  crop at full size). Never let a caption peek out above/below/beside the box. All the other cover rules still apply (never
+  over her chest or face, never at the very top, inside the grid crop; @mackygolfs wipe frame, @mackthegolfer never the wipe).
+
 **Unchanged:** never cut shots or swearing; no added text on trial reels; cover text never over her chest or face and
   never high in the frame (mid-frame between face and chest, or below the chest, always inside the grid crop); captions
   short, dry, lowercase; the same file never twice on the same account.
