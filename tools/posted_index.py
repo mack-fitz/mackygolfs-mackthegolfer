@@ -61,7 +61,8 @@ def posted_amount(r, src):
 
 def mt(iso):
     t = datetime.datetime.fromisoformat(iso.replace("Z", "+00:00"))
-    return (t - datetime.timedelta(hours=6)).strftime("%Y-%m-%d %H:%M MT")  # MDT (until Nov 1)
+    from zoneinfo import ZoneInfo  # Nov 16: real Mountain time (MDT until Nov 1 2026, MST after)
+    return t.astimezone(ZoneInfo("America/Denver")).strftime("%Y-%m-%d %H:%M MT")
 
 def build(posts_path):
     posts = load(posts_path)

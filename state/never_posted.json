@@ -1,74 +1,8 @@
 {
- "updated": "2026-10-20T07:47Z",
+ "updated": "2026-11-16T05:50Z",
  "from": "state/posted_index.json (fingerprint-checked against every post on @mackygolfs, @mackthegolfer, @moremackygolfs)",
  "note": "Never-posted status comes ONLY from this file (PLAYBOOK DUPLICATE CHECK V2). 'lined_up' = already on the review page / scheduled; once it posts, the next refresh drops it (it matches its own post).",
- "videos": [
-  {
-   "name": "Video Sep 21 2026, 7 09 34 PM.mov",
-   "dropbox_id": "id:etyjxrk_8sAAAAAAAAAFAA",
-   "duration": 20.1,
-   "path": "/Golf Captions/Video Sep 21 2026, 7 09 34 PM.mov",
-   "folder": "Golf Captions",
-   "trip": "Colorado round(s), Sep 21 + Sep 23 (red Hawaiian shirt, navy cap; mountains behind)",
-   "files": [
-    {
-     "path": "/Golf Captions/Video Sep 21 2026, 7 09 34 PM.mov",
-     "id": "id:etyjxrk_8sAAAAAAAAAFAA",
-     "duration": 20.1
-    }
-   ],
-   "group_size": 1,
-   "fingerprints": [
-    "state/fp/sources/Video Sep 21 2026, 7 09 34 PM.mov.json"
-   ],
-   "short_overlaps": [],
-   "lined_up": "2026-10-21 18:44 MT @mackygolfs (032_pine-par-4-red-shirt, on the review page 2026-10-21_A_pm, waiting on Mack)"
-  },
-  {
-   "name": "Video Sep 21 2026, 7 31 40 PM.mov",
-   "dropbox_id": "id:etyjxrk_8sAAAAAAAAAE-g",
-   "duration": 20.34,
-   "path": "/Golf Captions/Video Sep 21 2026, 7 31 40 PM.mov",
-   "folder": "Golf Captions",
-   "trip": "Colorado round(s), Sep 21 + Sep 23 (red Hawaiian shirt, navy cap; mountains behind)",
-   "files": [
-    {
-     "path": "/Golf Captions/Video Sep 21 2026, 7 31 40 PM.mov",
-     "id": "id:etyjxrk_8sAAAAAAAAAE-g",
-     "duration": 20.34
-    }
-   ],
-   "group_size": 1,
-   "fingerprints": [
-    "state/fp/sources/Video Sep 21 2026, 7 31 40 PM.mov.json"
-   ],
-   "short_overlaps": [],
-   "lined_up": "2026-10-20 19:34 MT @mackthegolfer (035_mountain-par-3-red-shirt, on the review page 2026-10-20_B_pm, waiting on Mack)"
-  },
-  {
-   "name": "Video Sep 23 2026, 1 07 33 PM.mov",
-   "dropbox_id": "id:etyjxrk_8sAAAAAAAAAE_A",
-   "duration": 28.23,
-   "path": "/Golf Captions/Video Sep 23 2026, 1 07 33 PM.mov",
-   "folder": "Golf Captions",
-   "trip": "Colorado round(s), Sep 21 + Sep 23 (red Hawaiian shirt, navy cap; mountains behind)",
-   "files": [
-    {
-     "path": "/Golf Captions/Video Sep 23 2026, 1 07 33 PM.mov",
-     "id": "id:etyjxrk_8sAAAAAAAAAE_A",
-     "duration": 28.23
-    }
-   ],
-   "group_size": 1,
-   "fingerprints": [
-    "state/fp/sources/Video Sep 23 2026, 1 07 33 PM.mov.json"
-   ],
-   "short_overlaps": [
-    "first ~4 s (the shirt-wipe intro) are the same clip as the opening of @mackygolfs 2026-09-25 09:51 MT 'once I learn how to putt it's over' https://www.instagram.com/reel/Ddt0l5xR-bY/ (identical frames + 3.2 s audio); the rest of that post is a different hole (0 of the remaining frames match). < 15 s -> stays never posted"
-   ],
-   "lined_up": "2026-10-23 18:48 MT @mackygolfs (033_tree-par-4-red-shirt, on the review page 2026-10-23_A_pm, waiting on Mack)"
-  }
- ],
+ "videos": [],
  "scope": "Mack (Oct 14): source folders are ONLY /Golf Captions and /golfclips (copies collapsed by fingerprint). Other Dropbox folders are not sources.",
  "summary": {
   "unique_videos": 39,
